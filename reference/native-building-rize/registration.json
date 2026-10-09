@@ -1,0 +1,22 @@
+{
+  "key": "BuildingRizeEffectClass",
+  "charId": 8075,
+  "frames": 36,
+  "bitmapSize": [
+    119,
+    112
+  ],
+  "pivot": [
+    60.75,
+    45.25
+  ],
+  "flashOrigin": [
+    60.75,
+    45.25
+  ],
+  "atlasPadding": [
+    0,
+    0
+  ],
+  "source": "reference/native-building-rize/DefineSprite_8075_BuildingRizeEffectClass_BuildingRizeEffectClass/1.svg"
+}

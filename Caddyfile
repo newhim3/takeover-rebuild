@@ -1,0 +1,4 @@
+{$CONQUEST_DOMAIN} {
+    encode zstd gzip
+    reverse_proxy game:4387
+}

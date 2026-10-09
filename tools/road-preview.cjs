@@ -1,0 +1,6 @@
+const fs=require('fs');let g=fs.readFileSync('game.js','utf8');const a=g.indexOf(" const h=hit(mouse),art=commandArt(h),a=drag.start"),z=g.indexOf('\n}',a);g=g.slice(0,a)+` const h=hit(mouse),art=commandArt(h),a=drag.start,target=h?.type==='building'?battle.building(h.id):mouse,u=battle.unit([...unitIds][0]);const route=battle.path(u||a,target),points=[a,...route];
+ ctx.save();ctx.strokeStyle=art==='attack'?'#dc644b':'#9ced45';ctx.lineWidth=3;ctx.setLineDash([8,6]);ctx.lineDashOffset=-performance.now()/65;ctx.beginPath();points.forEach((p,i)=>i?ctx.lineTo(p.x,p.y):ctx.moveTo(p.x,p.y));ctx.stroke();ctx.setLineDash([]);
+ let gap=30;for(let i=1;i<points.length;i++){const p=points[i-1],q=points[i],dx=q.x-p.x,dy=q.y-p.y,length=Math.hypot(dx,dy);for(let d=gap;d<length;d+=55){ctx.save();ctx.translate(p.x+dx*d/length,p.y+dy*d/length);ctx.rotate(Math.atan2(dy,dx));drawUI('move',0,0,22,22);ctx.restore();}gap=(gap-length)%55;if(gap<0)gap+=55;}ctx.restore();art==='attack'?sprite(ctx,'IconAttackClass',target.x,target.y+28,1,performance.now()/35):drawUI(art,target.x,target.y,58,58);
+`+g.slice(z);
+g=g.replace('升级到 2 / 3 级解锁骑兵 / 攻城战车。','四种兵一级城即可招募；升级城堡后直接招募银星、金星精锐。').replace('城池自动收税、恢复魔力，不会自动产兵。','金币基础收入每秒 1，成功修复占领的城堡每秒再加 2，小镇或魔法塔加 1。').replace('城池只自动收税和恢复魔力，不自动产兵。','招兵只扣金币，不需要等待。').replace('金币不足','金币不足');
+fs.writeFileSync('game.js',g);

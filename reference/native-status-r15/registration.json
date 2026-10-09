@@ -1,0 +1,236 @@
+{
+  "ASTChargingClass": {
+    "frames": 7,
+    "bitmap": [
+      16,
+      14
+    ],
+    "flashOrigin": [
+      17.8,
+      -5.0
+    ],
+    "padding": [
+      0,
+      0
+    ],
+    "pivot": [
+      17.8,
+      -5.0
+    ],
+    "boundsAtOrigin": [
+      -17.8,
+      5.0,
+      -1.8000000000000007,
+      19.0
+    ],
+    "svg": "reference/native-status-r15/DefineSprite_7778_ASTChargingClass_ASTChargingClass/1.svg"
+  },
+  "ASTDefendingAndAttackClass": {
+    "frames": 27,
+    "bitmap": [
+      37,
+      31
+    ],
+    "flashOrigin": [
+      34.3,
+      7.55
+    ],
+    "padding": [
+      0,
+      0
+    ],
+    "pivot": [
+      34.3,
+      7.55
+    ],
+    "boundsAtOrigin": [
+      -34.3,
+      -7.55,
+      2.700000000000003,
+      23.45
+    ],
+    "svg": "reference/native-status-r15/DefineSprite_5942_ASTDefendingAndAttackClass_ASTDefendingAndAttackClass/1.svg"
+  },
+  "ASTDefendingClass": {
+    "frames": 1,
+    "bitmap": [
+      14,
+      17
+    ],
+    "flashOrigin": [
+      16.85,
+      -1.4
+    ],
+    "padding": [
+      0,
+      0
+    ],
+    "pivot": [
+      16.85,
+      -1.4
+    ],
+    "boundsAtOrigin": [
+      -16.85,
+      1.4,
+      -2.8500000000000014,
+      18.4
+    ],
+    "svg": "reference/native-status-r15/DefineSprite_5941_ASTDefendingClass_ASTDefendingClass/1.svg"
+  },
+  "ASTMeleeFightingClass": {
+    "frames": 25,
+    "bitmap": [
+      37,
+      28
+    ],
+    "flashOrigin": [
+      25.1,
+      4.6
+    ],
+    "padding": [
+      2,
+      2
+    ],
+    "pivot": [
+      27.1,
+      6.6
+    ],
+    "boundsAtOrigin": [
+      -27.1,
+      -6.6,
+      9.899999999999999,
+      21.4
+    ],
+    "svg": "reference/native-status-r15/DefineSprite_2935_ASTMeleeFightingClass_ASTMeleeFightingClass/1.svg"
+  },
+  "ASTMovingClass": {
+    "frames": 7,
+    "bitmap": [
+      9,
+      14
+    ],
+    "flashOrigin": [
+      14.1,
+      -4.3
+    ],
+    "padding": [
+      0,
+      0
+    ],
+    "pivot": [
+      14.1,
+      -4.3
+    ],
+    "boundsAtOrigin": [
+      -14.1,
+      4.3,
+      -5.1,
+      18.3
+    ],
+    "svg": "reference/native-status-r15/DefineSprite_2136_ASTMovingClass_ASTMovingClass/1.svg"
+  },
+  "ASTRangedFightingClass": {
+    "frames": 27,
+    "bitmap": [
+      36,
+      29
+    ],
+    "flashOrigin": [
+      30.75,
+      6.95
+    ],
+    "padding": [
+      0,
+      0
+    ],
+    "pivot": [
+      30.75,
+      6.95
+    ],
+    "boundsAtOrigin": [
+      -30.75,
+      -6.95,
+      5.25,
+      22.05
+    ],
+    "svg": "reference/native-status-r15/DefineSprite_1946_ASTRangedFightingClass_ASTRangedFightingClass/1.svg"
+  },
+  "ASTRepairingClass": {
+    "frames": 25,
+    "bitmap": [
+      25,
+      30
+    ],
+    "flashOrigin": [
+      17.5,
+      6.55
+    ],
+    "padding": [
+      2,
+      2
+    ],
+    "pivot": [
+      19.5,
+      8.55
+    ],
+    "boundsAtOrigin": [
+      -19.5,
+      -8.55,
+      5.5,
+      21.45
+    ],
+    "svg": "reference/native-status-r15/DefineSprite_7516_ASTRepairingClass_ASTRepairingClass/1.svg"
+  },
+  "ASTSleepingClass": {
+    "frames": 20,
+    "bitmap": [
+      28,
+      17
+    ],
+    "flashOrigin": [
+      22.65,
+      0.0
+    ],
+    "padding": [
+      0,
+      0
+    ],
+    "pivot": [
+      22.65,
+      0.0
+    ],
+    "boundsAtOrigin": [
+      -22.65,
+      -0.0,
+      5.350000000000001,
+      17.0
+    ],
+    "svg": "reference/native-status-r15/DefineSprite_8538_ASTSleepingClass_ASTSleepingClass/1.svg"
+  },
+  "ExplosionClass": {
+    "frames": 18,
+    "bitmap": [
+      131,
+      206
+    ],
+    "flashOrigin": [
+      66.95,
+      140.5
+    ],
+    "padding": [
+      3,
+      3
+    ],
+    "pivot": [
+      69.95,
+      143.5
+    ],
+    "boundsAtOrigin": [
+      -69.95,
+      -143.5,
+      61.05,
+      62.5
+    ],
+    "svg": "reference/native-status-r15/DefineSprite_4970_ExplosionClass_ExplosionClass/1.svg"
+  }
+}

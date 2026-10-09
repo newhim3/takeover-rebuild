@@ -1,0 +1,152 @@
+[
+  {
+    "level": 1,
+    "routes": 7,
+    "points": 21,
+    "edges": 20
+  },
+  {
+    "level": 3,
+    "routes": 18,
+    "points": 31,
+    "edges": 30
+  },
+  {
+    "level": 5,
+    "routes": 20,
+    "points": 46,
+    "edges": 46
+  },
+  {
+    "level": 99,
+    "routes": 33,
+    "points": 73,
+    "edges": 73
+  },
+  {
+    "level": 11,
+    "routes": 11,
+    "points": 40,
+    "edges": 39
+  },
+  {
+    "level": 12,
+    "routes": 18,
+    "points": 55,
+    "edges": 55
+  },
+  {
+    "level": 13,
+    "routes": 16,
+    "points": 56,
+    "edges": 56
+  },
+  {
+    "level": 14,
+    "routes": 14,
+    "points": 36,
+    "edges": 35
+  },
+  {
+    "level": 21,
+    "routes": 11,
+    "points": 40,
+    "edges": 39
+  },
+  {
+    "level": 22,
+    "routes": 14,
+    "points": 43,
+    "edges": 42
+  },
+  {
+    "level": 23,
+    "routes": 21,
+    "points": 65,
+    "edges": 65
+  },
+  {
+    "level": 24,
+    "routes": 27,
+    "points": 60,
+    "edges": 63
+  },
+  {
+    "level": 2,
+    "routes": 11,
+    "points": 20,
+    "edges": 19
+  },
+  {
+    "level": 4,
+    "routes": 21,
+    "points": 61,
+    "edges": 61
+  },
+  {
+    "level": 6,
+    "routes": 18,
+    "points": 55,
+    "edges": 55
+  },
+  {
+    "level": 7,
+    "routes": 27,
+    "points": 56,
+    "edges": 59
+  },
+  {
+    "level": 8,
+    "routes": 31,
+    "points": 63,
+    "edges": 63
+  },
+  {
+    "level": 15,
+    "routes": 23,
+    "points": 69,
+    "edges": 69
+  },
+  {
+    "level": 16,
+    "routes": 24,
+    "points": 77,
+    "edges": 78
+  },
+  {
+    "level": 17,
+    "routes": 27,
+    "points": 60,
+    "edges": 63
+  },
+  {
+    "level": 18,
+    "routes": 31,
+    "points": 63,
+    "edges": 63
+  },
+  {
+    "level": 25,
+    "routes": 24,
+    "points": 77,
+    "edges": 78
+  },
+  {
+    "level": 26,
+    "routes": 23,
+    "points": 69,
+    "edges": 69
+  },
+  {
+    "level": 27,
+    "routes": 14,
+    "points": 36,
+    "edges": 35
+  },
+  {
+    "level": 28,
+    "routes": 31,
+    "points": 59,
+    "edges": 59
+  }
+]

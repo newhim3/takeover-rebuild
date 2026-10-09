@@ -1,0 +1,24 @@
+/* Shared original cloth, panels and button textures for the LAN lobby. */
+.network-screen{background:#100c17 url('assets/takeover/ui/atlases/screens/results--background-Purple.webp?v=20261006-r6') center/100% 100% no-repeat!important;backdrop-filter:none}
+.network-screen .modal{width:min(880px,98%);max-height:97%;overflow:auto;padding:20px 28px;background:transparent url('assets/takeover/ui/frame.png') center/100% 100% no-repeat;container-type:inline-size}
+.network-screen h1{font-size:28px;letter-spacing:2px;margin:6px 0 12px}
+.network-screen p{color:#fff1c8;font-size:12px;line-height:1.6}
+.network-entry,.network-options{display:flex;gap:12px;justify-content:center;align-items:center;flex-wrap:wrap;margin:14px 0}
+.network-screen input,.network-screen select{font:12px 'Microsoft YaHei',sans-serif;color:#fff5d1;border:0;border-radius:0;padding:7px 12px;background:transparent url('assets/takeover/ui/button.png') center/100% 100% no-repeat;max-width:100%}
+.network-screen option{background:#20172a;color:#fff3cd}
+.network-screen input[type=number]{width:65px}.network-entry input{display:block;margin:5px 0}
+.network-invite{display:flex;align-items:center;justify-content:center;gap:6px;flex-wrap:wrap}.network-invite input{width:350px}
+.network-flags{height:240px;display:flex;align-items:stretch;justify-content:center;margin:8px 0}
+body .network-flags button,body .network-flags button:hover:not(:disabled){position:relative;width:25%;height:100%;padding:0;background:none!important;border:0;min-height:0}
+.network-flags img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none}
+.network-flags span,.network-flags small,.network-flags b{position:absolute;left:0;right:0;bottom:8%;color:#fff4cb;text-shadow:0 1px 3px #140e17;pointer-events:none}
+.network-flags small{bottom:0;font-size:11px}.network-flags b{top:12%;bottom:auto;color:#9de5ff}
+.network-buttons{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}.network-buttons button{min-width:100px}
+.network-lan-heading,.network-lan-room{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:8px 0}.network-lan-rooms{max-height:180px;overflow:auto;font-size:12px;color:#fff1c8}.network-lan-room button{flex-shrink:0;min-width:100px}.network-manual{margin:12px 0;color:#fff1c8;font-size:12px}.network-manual summary{cursor:pointer}#networkEntryStatus{min-height:1.6em;margin:4px 0;color:#fff}
+/* These controls use the same original GameButtonClass up/over pair. */
+body .network-screen .network-buttons button:is(:hover,:focus-visible):not(:disabled),
+body .network-screen .network-options button:is(:hover,:focus-visible):not(:disabled),
+body .network-screen .network-invite button:is(:hover,:focus-visible):not(:disabled){background-image:url('assets/takeover/ui/button-hover.png')}
+.network-status{position:absolute;left:50%;top:3%;transform:translateX(-50%);z-index:20;max-width:85%;padding:10px 24px;background:transparent url('assets/takeover/ui/button.png') center/100% 100% no-repeat;color:#fff6ce;text-align:center;font:12px 'Microsoft YaHei',sans-serif;pointer-events:none}
+.title-screen .modal #titleStart{left:23%;width:25%}.title-screen .modal #onlineStart{position:absolute;left:52%;top:86%;width:25%;height:9%;min-height:0;padding:0;font-size:2.2cqw}
+@media(max-width:700px){.network-screen .modal{padding:14px}.network-flags{height:180px}.network-screen h1{font-size:20px}.network-screen p,.network-flags small{font-size:10px}}

@@ -1,0 +1,76 @@
+/* Neutral settlement screen. Nation colours appear only on the original badges. */
+main:has(.native-result-screen:not(.hidden)){width:min(100vw,133.333vh)}
+.battlefield:has(.native-result-screen:not(.hidden)){height:min(100vh,75vw);aspect-ratio:4/3}
+.native-result-screen{padding:0!important;background:#151719!important;backdrop-filter:none!important;overflow:hidden!important}
+.native-result-screen .modal{width:100%!important;max-width:100%!important;max-height:none!important;padding:0!important;border:0!important;background:none!important;box-shadow:none!important;overflow:visible!important}
+.native-results{position:relative;width:100%;aspect-ratio:4/3;container-type:inline-size;overflow:hidden;background:none;color:#eee7d8;font-family:'Microsoft YaHei','PingFang SC',sans-serif;padding:3cqw 4cqw;box-sizing:border-box;display:flex;flex-direction:column;gap:2.2cqw;text-align:left}
+.native-result-header{display:flex;align-items:center;gap:1.8cqw;min-height:8cqw;border-bottom:1px solid #55504a;padding-bottom:1.5cqw}
+.native-result-header img{width:7cqw;height:8cqw;object-fit:contain;pointer-events:none}
+.native-result-header p{margin:0 0 .8cqw;color:#bcb4a4;font-size:1.5cqw}
+.native-result-header h1{position:static;margin:0;font-size:3.5cqw;letter-spacing:.15cqw;color:#f0dfb4}
+.native-result-reward{margin-left:auto;font-size:2cqw;color:#e2c987;white-space:nowrap}
+.native-result-table{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center;gap:.9cqw}
+.native-result-headings,.native-result-row{display:grid;grid-template-columns:2fr repeat(5,.76fr) 1.1fr 1.1fr;gap:.7cqw;align-items:center}
+.native-result-headings{font-size:1.35cqw;color:#b8b5b1;text-align:center;padding:0 1.2cqw 1cqw}
+.native-result-headings span:first-child{text-align:left}
+.native-result-row{min-height:7.8cqw;padding:1.2cqw;background:transparent url('assets/takeover/ui/frame.png') center/100% 100% no-repeat;border:0;border-radius:0;box-sizing:border-box}
+.native-result-country{display:flex;align-items:center;gap:.6cqw;font-size:1.5cqw;white-space:nowrap;color:#eee7d8}
+.native-result-country img{width:3.8cqw;height:3.8cqw;object-fit:contain}
+.native-result-country small{display:block;margin-top:.5cqw;font-size:1.1cqw;color:#aaa5a0}
+.native-result-cell{position:relative;text-align:center;font-size:1.6cqw;overflow:hidden;border-radius:.4cqw;background:#1c1e20;height:3.8cqw;display:grid;place-items:center}
+.native-result-cell span{position:relative;z-index:1;color:#eee7d8;font-variant-numeric:tabular-nums}
+.native-result-bar{position:absolute;left:0;bottom:0;height:.35cqw;width:0;background:#a99564;opacity:.7}
+.native-result-bottom{display:grid;grid-template-columns:1fr 1fr;gap:3cqw;border-top:1px solid #55504a;padding-top:2cqw;min-height:12cqw}
+.native-result-rating strong{display:block;color:#e5d3ac;font-size:1.7cqw}
+.native-result-medal{display:block;font-size:3.4cqw;letter-spacing:.5cqw;color:#dfbb64;margin-bottom:.6cqw}
+.native-result-playtime{margin-top:1cqw;font-size:1.5cqw;color:#bcb5a6}.native-result-playtime b{font-weight:normal;color:#eee7d8}
+.native-result-task{margin-top:.7cqw;color:#b2aaa0;font-size:1.15cqw}
+.native-result-progression{font-size:1.4cqw;color:#c4bdaf}.native-result-progression b{color:#eee7d8;font-size:1.8cqw}
+.native-result-free{float:right}
+.native-result-xp-track{height:2.6cqw;margin:1cqw 0 1.3cqw;background:#121416;border:1px solid #49494a;border-radius:.4cqw;position:relative;overflow:hidden;text-align:center;line-height:2.6cqw;font-size:1.15cqw}
+.native-result-xp-track i{display:block;height:100%;background:#5b666d}.native-result-xp-track span{position:absolute;inset:0;color:#efe9dd}
+body .native-results #continue,body .native-results #continue:hover:not(:disabled){display:block;width:100%;min-height:0;margin:0;padding:1.2cqw;border:1px solid #8c7750;border-radius:.6cqw;background:#444039!important;color:#fff0c7;font:bold 1.7cqw 'Microsoft YaHei',sans-serif;transform:none!important;box-shadow:none!important}
+body .native-results #continue:focus-visible{outline:2px solid #c5b17c;outline-offset:2px}
+
+/* Reusable source materials, without changing the approved table layout. */
+.native-results{background:url('assets/takeover/ui/atlases/screens/results--background-Purple.webp?v=20261006-r6') center/100% 100% no-repeat}
+.native-result-cell{background:none;border-radius:0;overflow:visible}
+.native-result-indicator,.native-result-bar,.native-result-bar img{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;pointer-events:none}
+.native-result-bar{opacity:1;background:none;border-radius:0}
+.native-result-cell span{font-size:1.45cqw;color:#fff3cf;text-shadow:0 1px 2px #20101b}
+.native-result-medal{display:flex;align-items:center;gap:.8cqw;font-size:2.7cqw;letter-spacing:.25cqw}
+.native-result-medal img{width:8cqw;height:5.5cqw;object-fit:contain}
+.native-result-xp-track{height:3cqw;background:none;border:0;border-radius:0;overflow:visible;line-height:3cqw}
+.native-result-xp-art{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;pointer-events:none}
+body .native-results #continue,body .native-results #continue:hover:not(:disabled){border:0;border-radius:0;padding:1.5cqw;background:transparent url('assets/takeover/ui/atlases/screens/results--button.webp?v=20261006-r6') center/100% 100% no-repeat!important;color:#fff3cf;text-shadow:0 1px 2px #381944}
+
+.native-result-header,.native-result-bottom{border:0}
+
+.native-result-header{background:url('assets/takeover/ui/atlases/screens/results--header.webp?v=20261006-r6') center/100% 100% no-repeat;padding:1.3cqw 2cqw}
+.native-result-row[data-country=Green]{background-image:url('assets/takeover/ui/atlases/screens/results--row-Green.webp?v=20261006-r6')}
+.native-result-row[data-country=Red]{background-image:url('assets/takeover/ui/atlases/screens/results--row-Red.webp?v=20261006-r6')}
+.native-result-row[data-country=Blue]{background-image:url('assets/takeover/ui/atlases/screens/results--row-Blue.webp?v=20261006-r6')}
+.native-result-row[data-country=Purple]{background-image:url('assets/takeover/ui/atlases/screens/results--row-Purple.webp?v=20261006-r6')}
+.native-result-xp-track{margin-bottom:2.5cqw}
+.native-result-xp-track span{inset:auto 0;top:100%;font-size:1.1cqw;line-height:1.7cqw;color:#fff8e6;text-shadow:0 1px 2px #171017}
+
+/* Native strips contain the frame once; the source crest is a separate layer. */
+.native-result-country img{width:5.2cqw;height:5.8cqw}
+.native-result-xp-track span{color:#fff!important;font-weight:900;font-size:1.6cqw;text-shadow:-1px -1px #111,1px -1px #111,-1px 1px #111,1px 1px #111}
+
+/* Reuse the actual original map/country frames beneath the native result art. */
+.native-result-landscape{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;opacity:.42}
+.native-results>header,.native-result-table,.native-result-bottom{position:relative;z-index:1}
+.native-result-headings,.native-result-bottom{background:url('assets/takeover/ui/atlases/screens/results--background-Purple.webp?v=20261006-r6') center/cover no-repeat}
+.native-result-bottom{padding:1.4cqw 1.2cqw}
+.native-result-country span,.native-result-headings,.native-result-bottom{text-shadow:-1px -1px #111,1px 1px #111}
+
+/* Keep the native coloured textures; outline the Chinese labels above them. */
+.native-result-rating strong,.native-result-playtime,.native-result-playtime b,.native-result-task,
+.native-result-progression,.native-result-progression b,.native-result-cell span{
+ color:#fff;font-weight:700;
+ text-shadow:-1px -1px #171017,0 -1px #171017,1px -1px #171017,-1px 0 #171017,1px 0 #171017,-1px 1px #171017,0 1px #171017,1px 1px #171017;
+}
+.native-result-xp-track span{
+ text-shadow:-1px -1px #171017,0 -1px #171017,1px -1px #171017,-1px 0 #171017,1px 0 #171017,-1px 1px #171017,0 1px #171017,1px 1px #171017;
+}

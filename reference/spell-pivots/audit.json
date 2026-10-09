@@ -1,0 +1,842 @@
+{
+  "coordinateRule": "draw x-pivotX,y-pivotY at scale 1; map-space Y already projected; ultimate messages use stage origin 0,0",
+  "resources": [
+    {
+      "key": "AvatarBackLightEffectClass",
+      "charId": 7633,
+      "pivot": [
+        16.25,
+        60.5
+      ],
+      "flashOrigin": [
+        11.25,
+        55.5
+      ],
+      "atlasFilterPadding": [
+        5,
+        5
+      ],
+      "bitmapSize": [
+        35,
+        76
+      ],
+      "boundsAtOrigin": [
+        -16.25,
+        -60.5,
+        18.75,
+        15.5
+      ],
+      "source": "reference/spell-pivots/DefineSprite_7633_AvatarBackLightEffectClass_AvatarBackLightEffectClass/1.svg"
+    },
+    {
+      "key": "AvatarFrontLightEffectClass",
+      "charId": 8126,
+      "pivot": [
+        30.75,
+        63.5
+      ],
+      "flashOrigin": [
+        20.75,
+        53.5
+      ],
+      "atlasFilterPadding": [
+        10,
+        10
+      ],
+      "bitmapSize": [
+        66,
+        93
+      ],
+      "boundsAtOrigin": [
+        -30.75,
+        -63.5,
+        35.25,
+        29.5
+      ],
+      "source": "reference/spell-pivots/DefineSprite_8126_AvatarFrontLightEffectClass_AvatarFrontLightEffectClass/1.svg"
+    },
+    {
+      "key": "BannerAuraDesecrationClass",
+      "charId": 8033,
+      "pivot": [
+        76.15,
+        74.0
+      ],
+      "flashOrigin": [
+        73.15,
+        71.0
+      ],
+      "atlasFilterPadding": [
+        3,
+        3
+      ],
+      "bitmapSize": [
+        156,
+        126
+      ],
+      "boundsAtOrigin": [
+        -76.15,
+        -74.0,
+        79.85,
+        52.0
+      ],
+      "source": "reference/spell-pivots/DefineSprite_8033_BannerAuraDesecrationClass_BannerAuraDesecrationClass/1.svg"
+    },
+    {
+      "key": "BannerAuraHealClass",
+      "charId": 4407,
+      "pivot": [
+        82.15,
+        69.55
+      ],
+      "flashOrigin": [
+        79.15,
+        66.55
+      ],
+      "atlasFilterPadding": [
+        3,
+        3
+      ],
+      "bitmapSize": [
+        162,
+        131
+      ],
+      "boundsAtOrigin": [
+        -82.15,
+        -69.55,
+        79.85,
+        61.45
+      ],
+      "source": "reference/spell-pivots/DefineSprite_4407_BannerAuraHealClass_BannerAuraHealClass/1.svg"
+    },
+    {
+      "key": "BannerAuraHeroismClass",
+      "charId": 5762,
+      "pivot": [
+        82.0,
+        40.9
+      ],
+      "flashOrigin": [
+        79.0,
+        37.9
+      ],
+      "atlasFilterPadding": [
+        3,
+        3
+      ],
+      "bitmapSize": [
+        156,
+        86
+      ],
+      "boundsAtOrigin": [
+        -82.0,
+        -40.9,
+        74.0,
+        45.1
+      ],
+      "source": "reference/spell-pivots/DefineSprite_5762_BannerAuraHeroismClass_BannerAuraHeroismClass/1.svg"
+    },
+    {
+      "key": "BannerBloodlustClass",
+      "charId": 6093,
+      "pivot": [
+        16.85,
+        222.05
+      ],
+      "flashOrigin": [
+        14.85,
+        220.05
+      ],
+      "atlasFilterPadding": [
+        2,
+        2
+      ],
+      "bitmapSize": [
+        35,
+        297
+      ],
+      "boundsAtOrigin": [
+        -16.85,
+        -222.05,
+        18.15,
+        74.94999999999999
+      ],
+      "source": "reference/spell-pivots/DefineSprite_6093_BannerBloodlustClass_BannerBloodlustClass/1.svg"
+    },
+    {
+      "key": "BannerDesecrationClass",
+      "charId": 6202,
+      "pivot": [
+        20.1,
+        221.3
+      ],
+      "flashOrigin": [
+        18.1,
+        219.3
+      ],
+      "atlasFilterPadding": [
+        2,
+        2
+      ],
+      "bitmapSize": [
+        41,
+        297
+      ],
+      "boundsAtOrigin": [
+        -20.1,
+        -221.3,
+        20.9,
+        75.69999999999999
+      ],
+      "source": "reference/spell-pivots/DefineSprite_6202_BannerDesecrationClass_BannerDesecrationClass/1.svg"
+    },
+    {
+      "key": "BannerEffectBloodlustClass",
+      "charId": 7841,
+      "pivot": [
+        74.45,
+        73.0
+      ],
+      "flashOrigin": [
+        71.45,
+        70.0
+      ],
+      "atlasFilterPadding": [
+        3,
+        3
+      ],
+      "bitmapSize": [
+        150,
+        110
+      ],
+      "boundsAtOrigin": [
+        -74.45,
+        -73.0,
+        75.55,
+        37.0
+      ],
+      "source": "reference/spell-pivots/DefineSprite_7841_BannerEffectBloodlustClass_BannerEffectBloodlustClass/1.svg"
+    },
+    {
+      "key": "BannerHealClass",
+      "charId": 5347,
+      "pivot": [
+        21.7,
+        222.05
+      ],
+      "flashOrigin": [
+        19.7,
+        220.05
+      ],
+      "atlasFilterPadding": [
+        2,
+        2
+      ],
+      "bitmapSize": [
+        45,
+        297
+      ],
+      "boundsAtOrigin": [
+        -21.7,
+        -222.05,
+        23.3,
+        74.94999999999999
+      ],
+      "source": "reference/spell-pivots/DefineSprite_5347_BannerHealClass_BannerHealClass/1.svg"
+    },
+    {
+      "key": "BannerHeroismClass",
+      "charId": 7646,
+      "pivot": [
+        21.7,
+        223.9
+      ],
+      "flashOrigin": [
+        19.7,
+        221.9
+      ],
+      "atlasFilterPadding": [
+        2,
+        2
+      ],
+      "bitmapSize": [
+        45,
+        297
+      ],
+      "boundsAtOrigin": [
+        -21.7,
+        -223.9,
+        23.3,
+        73.1
+      ],
+      "source": "reference/spell-pivots/DefineSprite_7646_BannerHeroismClass_BannerHeroismClass/1.svg"
+    },
+    {
+      "key": "BannerLiberationClass",
+      "charId": 5330,
+      "pivot": [
+        15.55,
+        222.05
+      ],
+      "flashOrigin": [
+        13.55,
+        220.05
+      ],
+      "atlasFilterPadding": [
+        2,
+        2
+      ],
+      "bitmapSize": [
+        32,
+        297
+      ],
+      "boundsAtOrigin": [
+        -15.55,
+        -222.05,
+        16.45,
+        74.94999999999999
+      ],
+      "source": "reference/spell-pivots/DefineSprite_5330_BannerLiberationClass_BannerLiberationClass/1.svg"
+    },
+    {
+      "key": "BannerLiberationEffectClass",
+      "charId": 1251,
+      "pivot": [
+        73.05,
+        67.0
+      ],
+      "flashOrigin": [
+        70.05,
+        64.0
+      ],
+      "atlasFilterPadding": [
+        3,
+        3
+      ],
+      "bitmapSize": [
+        149,
+        131
+      ],
+      "boundsAtOrigin": [
+        -73.05,
+        -67.0,
+        75.95,
+        64.0
+      ],
+      "source": "reference/spell-pivots/DefineSprite_1251_BannerLiberationEffectClass_BannerLiberationEffectClass/1.svg"
+    },
+    {
+      "key": "CraterFromExplosionClass",
+      "charId": 7571,
+      "pivot": [
+        26.35,
+        17.1
+      ],
+      "flashOrigin": [
+        26.35,
+        17.1
+      ],
+      "atlasFilterPadding": [
+        0,
+        0
+      ],
+      "bitmapSize": [
+        66,
+        34
+      ],
+      "boundsAtOrigin": [
+        -26.35,
+        -17.1,
+        39.65,
+        16.9
+      ],
+      "source": "reference/spell-pivots/DefineSprite_7571_CraterFromExplosionClass_CraterFromExplosionClass/1.svg"
+    },
+    {
+      "key": "FireBallExplosionClass",
+      "charId": 6956,
+      "pivot": [
+        50.0,
+        51.0
+      ],
+      "flashOrigin": [
+        50.0,
+        51.0
+      ],
+      "atlasFilterPadding": [
+        0,
+        0
+      ],
+      "bitmapSize": [
+        100,
+        100
+      ],
+      "boundsAtOrigin": [
+        -50.0,
+        -51.0,
+        50.0,
+        49.0
+      ],
+      "source": "reference/spell-pivots/DefineSprite_6956_FireBallExplosionClass_FireBallExplosionClass/1.svg"
+    },
+    {
+      "key": "FireballEffectClass",
+      "charId": 3899,
+      "pivot": [
+        28.05,
+        409.5
+      ],
+      "flashOrigin": [
+        13.05,
+        394.5
+      ],
+      "atlasFilterPadding": [
+        15,
+        15
+      ],
+      "bitmapSize": [
+        104,
+        438
+      ],
+      "boundsAtOrigin": [
+        -28.05,
+        -409.5,
+        75.95,
+        28.5
+      ],
+      "source": "reference/spell-pivots/DefineSprite_3899_FireballEffectClass_FireballEffectClass/1.svg"
+    },
+    {
+      "key": "FrostEncahntmentEffectClass",
+      "charId": 8303,
+      "pivot": [
+        41.0,
+        64.55
+      ],
+      "flashOrigin": [
+        41.0,
+        64.55
+      ],
+      "atlasFilterPadding": [
+        0,
+        0
+      ],
+      "bitmapSize": [
+        99,
+        90
+      ],
+      "boundsAtOrigin": [
+        -41.0,
+        -64.55,
+        58.0,
+        25.450000000000003
+      ],
+      "source": "reference/spell-pivots/DefineSprite_8303_FrostEncahntmentEffectClass_FrostEncahntmentEffectClass/1.svg"
+    },
+    {
+      "key": "GrandTransformationEffectClass",
+      "charId": 3476,
+      "pivot": [
+        77.0,
+        180.5
+      ],
+      "flashOrigin": [
+        77.0,
+        180.5
+      ],
+      "atlasFilterPadding": [
+        0,
+        0
+      ],
+      "bitmapSize": [
+        158,
+        216
+      ],
+      "boundsAtOrigin": [
+        -77.0,
+        -180.5,
+        81.0,
+        35.5
+      ],
+      "source": "reference/spell-pivots/DefineSprite_3476_GrandTransformationEffectClass_GrandTransformationEffectClass/1.svg"
+    },
+    {
+      "key": "IceBlastEffectClass",
+      "charId": 7756,
+      "pivot": [
+        10.4,
+        335.5
+      ],
+      "flashOrigin": [
+        10.4,
+        335.5
+      ],
+      "atlasFilterPadding": [
+        0,
+        0
+      ],
+      "bitmapSize": [
+        150,
+        342
+      ],
+      "boundsAtOrigin": [
+        -10.4,
+        -335.5,
+        139.6,
+        6.5
+      ],
+      "source": "reference/spell-pivots/DefineSprite_7756_IceBlastEffectClass_IceBlastEffectClass/1.svg"
+    },
+    {
+      "key": "IceBlastExplosionClass",
+      "charId": 5335,
+      "pivot": [
+        77.0,
+        53.05
+      ],
+      "flashOrigin": [
+        77.0,
+        53.05
+      ],
+      "atlasFilterPadding": [
+        0,
+        0
+      ],
+      "bitmapSize": [
+        158,
+        88
+      ],
+      "boundsAtOrigin": [
+        -77.0,
+        -53.05,
+        81.0,
+        34.95
+      ],
+      "source": "reference/spell-pivots/DefineSprite_5335_IceBlastExplosionClass_IceBlastExplosionClass/1.svg"
+    },
+    {
+      "key": "RaiseDeadSpellEffectClass",
+      "charId": 7741,
+      "pivot": [
+        56.0,
+        63.0
+      ],
+      "flashOrigin": [
+        56.0,
+        63.0
+      ],
+      "atlasFilterPadding": [
+        0,
+        0
+      ],
+      "bitmapSize": [
+        120,
+        100
+      ],
+      "boundsAtOrigin": [
+        -56.0,
+        -63.0,
+        64.0,
+        37.0
+      ],
+      "source": "reference/spell-pivots/DefineSprite_7741_RaiseDeadSpellEffectClass_RaiseDeadSpellEffectClass/1.svg"
+    },
+    {
+      "key": "SignOfAdventEffectClass",
+      "charId": 4863,
+      "pivot": [
+        50.0,
+        63.0
+      ],
+      "flashOrigin": [
+        50.0,
+        63.0
+      ],
+      "atlasFilterPadding": [
+        0,
+        0
+      ],
+      "bitmapSize": [
+        100,
+        90
+      ],
+      "boundsAtOrigin": [
+        -50.0,
+        -63.0,
+        50.0,
+        27.0
+      ],
+      "source": "reference/spell-pivots/DefineSprite_4863_SignOfAdventEffectClass_SignOfAdventEffectClass/1.svg"
+    },
+    {
+      "key": "SpellThunderClass",
+      "charId": 8112,
+      "pivot": [
+        77.65,
+        367.6
+      ],
+      "flashOrigin": [
+        77.65,
+        367.6
+      ],
+      "atlasFilterPadding": [
+        0,
+        0
+      ],
+      "bitmapSize": [
+        150,
+        417
+      ],
+      "boundsAtOrigin": [
+        -77.65,
+        -367.6,
+        72.35,
+        49.39999999999998
+      ],
+      "source": "reference/spell-pivots/DefineSprite_8112_SpellThunderClass_SpellThunderClass/1.svg"
+    },
+    {
+      "key": "StoneWormsEffectClass",
+      "charId": 5255,
+      "pivot": [
+        59.55,
+        78.45
+      ],
+      "flashOrigin": [
+        59.55,
+        78.45
+      ],
+      "atlasFilterPadding": [
+        0,
+        0
+      ],
+      "bitmapSize": [
+        111,
+        108
+      ],
+      "boundsAtOrigin": [
+        -59.55,
+        -78.45,
+        51.45,
+        29.549999999999997
+      ],
+      "source": "reference/spell-pivots/DefineSprite_5255_StoneWormsEffectClass_StoneWormsEffectClass/1.svg"
+    },
+    {
+      "key": "StonewormsExplosionEffect",
+      "charId": 7546,
+      "pivot": [
+        64.5,
+        98.5
+      ],
+      "flashOrigin": [
+        64.5,
+        98.5
+      ],
+      "atlasFilterPadding": [
+        0,
+        0
+      ],
+      "bitmapSize": [
+        125,
+        135
+      ],
+      "boundsAtOrigin": [
+        -64.5,
+        -98.5,
+        60.5,
+        36.5
+      ],
+      "source": "reference/spell-pivots/DefineSprite_7546_StonewormsExplosionEffect_StonewormsExplosionEffect/1.svg"
+    },
+    {
+      "key": "TerrorFlyingBatEffectClass",
+      "charId": 5094,
+      "pivot": [
+        62.1,
+        53.1
+      ],
+      "flashOrigin": [
+        62.1,
+        53.1
+      ],
+      "atlasFilterPadding": [
+        0,
+        0
+      ],
+      "bitmapSize": [
+        122,
+        68
+      ],
+      "boundsAtOrigin": [
+        -62.1,
+        -53.1,
+        59.9,
+        14.899999999999999
+      ],
+      "source": "reference/spell-pivots/DefineSprite_5094_TerrorFlyingBatEffectClass_TerrorFlyingBatEffectClass/1.svg"
+    },
+    {
+      "key": "TerrorSpellEffectClass",
+      "charId": 2928,
+      "pivot": [
+        22.25,
+        475.0
+      ],
+      "flashOrigin": [
+        12.25,
+        465.0
+      ],
+      "atlasFilterPadding": [
+        10,
+        10
+      ],
+      "bitmapSize": [
+        47,
+        490
+      ],
+      "boundsAtOrigin": [
+        -22.25,
+        -475.0,
+        24.75,
+        15.0
+      ],
+      "source": "reference/spell-pivots/DefineSprite_2928_TerrorSpellEffectClass_TerrorSpellEffectClass/1.svg"
+    },
+    {
+      "key": "TerrorSplashEffectClass",
+      "charId": 3234,
+      "pivot": [
+        101.0,
+        65.0
+      ],
+      "flashOrigin": [
+        101.0,
+        65.0
+      ],
+      "atlasFilterPadding": [
+        0,
+        0
+      ],
+      "bitmapSize": [
+        200,
+        125
+      ],
+      "boundsAtOrigin": [
+        -101.0,
+        -65.0,
+        99.0,
+        60.0
+      ],
+      "source": "reference/spell-pivots/DefineSprite_3234_TerrorSplashEffectClass_TerrorSplashEffectClass/1.svg"
+    },
+    {
+      "key": "UltimateMessage1Class",
+      "charId": 5067,
+      "pivot": [
+        796.65,
+        0.0
+      ],
+      "flashOrigin": [
+        796.65,
+        0.0
+      ],
+      "atlasFilterPadding": [
+        0,
+        0
+      ],
+      "bitmapSize": [
+        2373,
+        600
+      ],
+      "boundsAtOrigin": [
+        -796.65,
+        -0.0,
+        1576.35,
+        600.0
+      ],
+      "source": "reference/spell-pivots/DefineSprite_5067_UltimateMessage1Class_UltimateMessage1Class/1.svg"
+    },
+    {
+      "key": "UltimateMessage2Class",
+      "charId": 239,
+      "pivot": [
+        242.85,
+        447.3
+      ],
+      "flashOrigin": [
+        242.85,
+        447.3
+      ],
+      "atlasFilterPadding": [
+        0,
+        0
+      ],
+      "bitmapSize": [
+        1203,
+        1385
+      ],
+      "boundsAtOrigin": [
+        -242.85,
+        -447.3,
+        960.15,
+        937.7
+      ],
+      "source": "reference/spell-pivots/DefineSprite_239_UltimateMessage2Class_UltimateMessage2Class/1.svg"
+    },
+    {
+      "key": "UltimateMessage3Class",
+      "charId": 4709,
+      "pivot": [
+        62.0,
+        62.0
+      ],
+      "flashOrigin": [
+        0.0,
+        0.0
+      ],
+      "atlasFilterPadding": [
+        62,
+        62
+      ],
+      "bitmapSize": [
+        1005,
+        724
+      ],
+      "boundsAtOrigin": [
+        -62.0,
+        -62.0,
+        943.0,
+        662.0
+      ],
+      "source": "reference/spell-pivots/DefineSprite_4709_UltimateMessage3Class_UltimateMessage3Class/1.svg"
+    },
+    {
+      "key": "UltimateMessage4Class",
+      "charId": 8150,
+      "pivot": [
+        953.35,
+        37.0
+      ],
+      "flashOrigin": [
+        916.35,
+        0.0
+      ],
+      "atlasFilterPadding": [
+        37,
+        37
+      ],
+      "bitmapSize": [
+        2700,
+        674
+      ],
+      "boundsAtOrigin": [
+        -953.35,
+        -37.0,
+        1746.65,
+        637.0
+      ],
+      "source": "reference/spell-pivots/DefineSprite_8150_UltimateMessage4Class_UltimateMessage4Class/1.svg"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "levels": [
+    {"id":1,"name":"Westaria Gate","gold":320,"enemyGold":320,"neutralCastles":2,"enemyUnit":"Warriors","objective":"Capture the East Keep"},
+    {"id":2,"name":"Broken Road","gold":380,"enemyGold":360,"neutralCastles":2,"enemyUnit":"Hunters","objective":"Capture both enemy keeps"},
+    {"id":3,"name":"Siege Line","gold":500,"enemyGold":450,"neutralCastles":2,"enemyUnit":"Trebuchet","objective":"Destroy or capture the siege line"},
+    {"id":4,"name":"Frozen Pass","gold":440,"enemyGold":520,"neutralCastles":2,"enemyUnit":"Acolytes","objective":"Survive the enemy magic push"},
+    {"id":5,"name":"The Last Stronghold","gold":600,"enemyGold":650,"neutralCastles":2,"enemyUnit":"Knights","objective":"Capture the final stronghold"}
+  ]
+}

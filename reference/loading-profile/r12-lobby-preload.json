@@ -1,0 +1,11 @@
+{
+  "before": {
+    "phase": "lobby",
+    "ready": false
+  },
+  "after": {
+    "phase": "lobby",
+    "ready": true
+  },
+  "errors": []
+}

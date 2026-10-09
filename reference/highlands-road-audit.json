@@ -1,0 +1,35 @@
+{
+  "image": "highlands-B.png",
+  "gridStep": 5,
+  "edges": 48,
+  "needsReview": [
+    {
+      "edge": [
+        2,
+        1
+      ],
+      "paintedRoadFraction": 0.875
+    },
+    {
+      "edge": [
+        1,
+        6
+      ],
+      "paintedRoadFraction": 0.861
+    },
+    {
+      "edge": [
+        6,
+        7
+      ],
+      "paintedRoadFraction": 0.808
+    },
+    {
+      "edge": [
+        23,
+        24
+      ],
+      "paintedRoadFraction": 0.696
+    }
+  ]
+}

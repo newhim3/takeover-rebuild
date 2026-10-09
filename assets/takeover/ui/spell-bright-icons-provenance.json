@@ -1,0 +1,111 @@
+{
+  "Green-fire": {
+    "source": "SpellIconSetClass",
+    "nativeSpellId": 0,
+    "frame": 1,
+    "state": "native icon without a disabled overlay"
+  },
+  "Green-heal": {
+    "source": "SpellIconSetClass",
+    "nativeSpellId": 1,
+    "frame": 2,
+    "state": "native icon without a disabled overlay"
+  },
+  "Green-summon": {
+    "source": "SpellIconSetClass",
+    "nativeSpellId": 2,
+    "frame": 3,
+    "state": "native icon without a disabled overlay"
+  },
+  "Green-ultimate": {
+    "source": "SpellIconSetClass",
+    "nativeSpellId": 3,
+    "frame": 4,
+    "state": "native icon without a disabled overlay"
+  },
+  "Red-fire": {
+    "source": "SpellIconSetClass",
+    "nativeSpellId": 4,
+    "frame": 5,
+    "state": "native icon without a disabled overlay"
+  },
+  "Red-heal": {
+    "source": "SpellIconSetClass",
+    "nativeSpellId": 5,
+    "frame": 6,
+    "state": "native icon without a disabled overlay"
+  },
+  "Red-summon": {
+    "source": "SpellIconSetClass",
+    "nativeSpellId": 6,
+    "frame": 7,
+    "state": "native icon without a disabled overlay"
+  },
+  "Red-ultimate": {
+    "source": "SpellIconSetClass",
+    "nativeSpellId": 7,
+    "frame": 8,
+    "state": "native icon without a disabled overlay"
+  },
+  "Blue-fire": {
+    "source": "SpellIconSetClass",
+    "nativeSpellId": 8,
+    "frame": 9,
+    "state": "native icon without a disabled overlay"
+  },
+  "Blue-heal": {
+    "source": "SpellIconSetClass",
+    "nativeSpellId": 9,
+    "frame": 10,
+    "state": "native icon without a disabled overlay"
+  },
+  "Blue-summon": {
+    "source": "SpellIconSetClass",
+    "nativeSpellId": 10,
+    "frame": 11,
+    "state": "native icon without a disabled overlay"
+  },
+  "Blue-ultimate": {
+    "source": "SpellIconSetClass",
+    "nativeSpellId": 11,
+    "frame": 12,
+    "state": "native icon without a disabled overlay"
+  },
+  "Purple-heal": {
+    "source": "reference/dark-art/spells-video-85.png",
+    "crop": [
+      250,
+      355,
+      282,
+      379
+    ],
+    "manaAtSource": 770,
+    "state": "ready above the original price label, no cooldown curtain baked in"
+  },
+  "Purple-fire": {
+    "source": "reference/dark-art/spells-video-85.png",
+    "crop": [
+      296,
+      355,
+      328,
+      379
+    ],
+    "manaAtSource": 770,
+    "state": "ready above the original price label, no cooldown curtain baked in"
+  },
+  "Purple-summon": {
+    "source": "reference/dark-art/spells-video-85.png",
+    "crop": [
+      342,
+      355,
+      374,
+      379
+    ],
+    "manaAtSource": 770,
+    "state": "ready above the original price label, no cooldown curtain baked in"
+  },
+  "Purple-ultimate": {
+    "source": "original bitmap 1519",
+    "state": "Empire crest; recharge is a separate runtime curtain"
+  }
+}

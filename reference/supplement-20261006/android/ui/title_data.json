@@ -1,0 +1,1 @@
+{"root": {"matrix_b": 0, "name": "root", "alpha": 1, "matrix_a": 1, "matrix_tx": 0, "matrix_d": 1, "matrix_c": 0, "matrix_ty": 0, "type": "sprite", "childs": [{"matrix_b": 0, "name": "instance11242", "alpha": 1, "matrix_a": 1, "matrix_tx": -60, "class_name": "start_screen_back", "matrix_d": 1, "matrix_c": 0, "matrix_ty": 0, "type": "anim"}]}}

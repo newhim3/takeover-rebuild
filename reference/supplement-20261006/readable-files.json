@@ -1,0 +1,296 @@
+[
+  {
+    "archive": "takeover.zip",
+    "path": "takeover/img/battle-data.json",
+    "local": "reference/supplement-20261006/web/img/battle-data.json",
+    "bytes": 195071,
+    "sha256": "a418816a638e4c0c556c73400af549d60dbfb006a416d10fc67b1ee1826b7479"
+  },
+  {
+    "archive": "takeover.zip",
+    "path": "takeover/img/congrats-scr.json",
+    "local": "reference/supplement-20261006/web/img/congrats-scr.json",
+    "bytes": 2131,
+    "sha256": "412589c59ff6dbaa6052344bc81b43770d8b308db05790249a2ce1ff07722f35"
+  },
+  {
+    "archive": "takeover.zip",
+    "path": "takeover/img/layout-test-scr.json",
+    "local": "reference/supplement-20261006/web/img/layout-test-scr.json",
+    "bytes": 282,
+    "sha256": "d8fcd2b1b97ca560a3505815a83195a8c2e7a435c9690f1cb5f96282c104eaf2"
+  },
+  {
+    "archive": "takeover.zip",
+    "path": "takeover/img/levels.json",
+    "local": "reference/supplement-20261006/web/img/levels.json",
+    "bytes": 20948,
+    "sha256": "0ffab7afaabbfb69a051ae5c6cd2da71cc41d20403956b4cfab6754320df9868"
+  },
+  {
+    "archive": "takeover.zip",
+    "path": "takeover/img/permanent.json",
+    "local": "reference/supplement-20261006/web/img/permanent.json",
+    "bytes": 164,
+    "sha256": "e9806401f5150ac6268353f19902c66cf7cb1479cd0f25440612227524156cce"
+  },
+  {
+    "archive": "takeover.zip",
+    "path": "takeover/img/screens.json",
+    "local": "reference/supplement-20261006/web/img/screens.json",
+    "bytes": 52098,
+    "sha256": "92a944d6a783d30641b36af72d0858095bc1568189e76b0446b2b439248abc58"
+  },
+  {
+    "archive": "takeover.zip",
+    "path": "takeover/img/system.json",
+    "local": "reference/supplement-20261006/web/img/system.json",
+    "bytes": 161,
+    "sha256": "bcab3904dfd90601c0b1c28db7aaaf8841dad24378628792bd21d8ba582d9b93"
+  },
+  {
+    "archive": "takeover.zip",
+    "path": "takeover/img/title.json",
+    "local": "reference/supplement-20261006/web/img/title.json",
+    "bytes": 163,
+    "sha256": "d7df83d9af08cf1b052dec48c0a9fc40365200d71fb2d852d1f4d46a8ba19595"
+  },
+  {
+    "archive": "takeover.zip",
+    "path": "takeover/index-2.html",
+    "local": "reference/supplement-20261006/web/index-2.html",
+    "bytes": 4156,
+    "sha256": "e8ae3f4dd7991b54dcc8c78db199b5734c98ecbcbf81e20fd5f29a4d640bb79d"
+  },
+  {
+    "archive": "takeover.zip",
+    "path": "takeover/index.html",
+    "local": "reference/supplement-20261006/web/index.html",
+    "bytes": 4176,
+    "sha256": "d340450e5bf09324879d3b9ec265f6cb8ee8b8918ca9c326d8830e72cf769857"
+  },
+  {
+    "archive": "takeover.zip",
+    "path": "takeover/main.min.js",
+    "local": "reference/supplement-20261006/web/main.min.js",
+    "bytes": 636810,
+    "sha256": "ff7c0d148da75e8cad69a4ab0d4d9f35813a40604849ec81e40ea29a8a8bdfa0"
+  },
+  {
+    "archive": "takeover.zip",
+    "path": "takeover/message.schema.json",
+    "local": "reference/supplement-20261006/web/message.schema.json",
+    "bytes": 6006,
+    "sha256": "04c3ee32fddc6eae461791cebe53760f82da61a34a3039cccd93294cce97ff3a"
+  },
+  {
+    "archive": "takeover.zip",
+    "path": "takeover/takeover.js",
+    "local": "reference/supplement-20261006/web/takeover.js",
+    "bytes": 3913983,
+    "sha256": "7e1c2c163ebae705e3c8f86aae4de8424302c1f7605603841578ae92934900f6"
+  },
+  {
+    "archive": "takeover.zip",
+    "path": "takeover/ui/battle-data_data.json",
+    "local": "reference/supplement-20261006/web/ui/battle-data_data.json",
+    "bytes": 4060886,
+    "sha256": "82f3a38e6948f74ca79b7a01e1bd33f3304647d151c40c2771a86d1b701dc589"
+  },
+  {
+    "archive": "takeover.zip",
+    "path": "takeover/ui/congrats-scr_data.json",
+    "local": "reference/supplement-20261006/web/ui/congrats-scr_data.json",
+    "bytes": 15893,
+    "sha256": "b825d31621f834cc8f6062719e718562c7908428bd079715c4656d82339c9248"
+  },
+  {
+    "archive": "takeover.zip",
+    "path": "takeover/ui/layout-test-scr_data.json",
+    "local": "reference/supplement-20261006/web/ui/layout-test-scr_data.json",
+    "bytes": 837,
+    "sha256": "36abb17ac7c904ea53890aeab03d28baddf562aea67ba9df3bdf9a1f8eb07379"
+  },
+  {
+    "archive": "takeover.zip",
+    "path": "takeover/ui/levels_data.json",
+    "local": "reference/supplement-20261006/web/ui/levels_data.json",
+    "bytes": 3726542,
+    "sha256": "45bfa1760e75fb68a189edc84b2727915c105ab9e11841478700189a3229ed3b"
+  },
+  {
+    "archive": "takeover.zip",
+    "path": "takeover/ui/screens_data.json",
+    "local": "reference/supplement-20261006/web/ui/screens_data.json",
+    "bytes": 1886449,
+    "sha256": "c39d87fd081ee409552f3dbec378d49b968ffb383330eea1ecc8c13cd4c1ea40"
+  },
+  {
+    "archive": "takeover.zip",
+    "path": "takeover/ui/title_data.json",
+    "local": "reference/supplement-20261006/web/ui/title_data.json",
+    "bytes": 344,
+    "sha256": "a320aa43c0f836c12a342b66bda3039bc5963732589510abe94ec0c9672c34fe"
+  },
+  {
+    "archive": "城邦争霸0.2破解版.apk.1",
+    "path": "assets/public/Takeover.beautified.js",
+    "local": "reference/supplement-20261006/android/Takeover.beautified.js",
+    "bytes": 3967966,
+    "sha256": "530b8f62c399b112c06e1084b77ad0ceac313904b84ca33146d017b85a7593eb"
+  },
+  {
+    "archive": "城邦争霸0.2破解版.apk.1",
+    "path": "assets/public/cordova.js",
+    "local": "reference/supplement-20261006/android/cordova.js",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "archive": "城邦争霸0.2破解版.apk.1",
+    "path": "assets/public/cordova_plugins.js",
+    "local": "reference/supplement-20261006/android/cordova_plugins.js",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "archive": "城邦争霸0.2破解版.apk.1",
+    "path": "assets/public/diag/diag.js",
+    "local": "reference/supplement-20261006/android/diag/diag.js",
+    "bytes": 26570,
+    "sha256": "338259294f051566e04f7dafbd3b2cce96147d712f8d0b95078bc1138b661c21"
+  },
+  {
+    "archive": "城邦争霸0.2破解版.apk.1",
+    "path": "assets/public/img/battle-data.json",
+    "local": "reference/supplement-20261006/android/img/battle-data.json",
+    "bytes": 135750,
+    "sha256": "4d45647f4b67c889f5d7af977b199badc9e47f6c4c6d986749746b40347179dc"
+  },
+  {
+    "archive": "城邦争霸0.2破解版.apk.1",
+    "path": "assets/public/img/congrats-scr.json",
+    "local": "reference/supplement-20261006/android/img/congrats-scr.json",
+    "bytes": 947,
+    "sha256": "10a04fba89a7931243617008a17fedef2779158c8bb0ce510184ed7fb61a57c0"
+  },
+  {
+    "archive": "城邦争霸0.2破解版.apk.1",
+    "path": "assets/public/img/layout-test-scr.json",
+    "local": "reference/supplement-20261006/android/img/layout-test-scr.json",
+    "bytes": 134,
+    "sha256": "83b0e987791f933ef4ae2bcff093d4f903af3311d7162e5e808bbfbac84f4f00"
+  },
+  {
+    "archive": "城邦争霸0.2破解版.apk.1",
+    "path": "assets/public/img/levels.json",
+    "local": "reference/supplement-20261006/android/img/levels.json",
+    "bytes": 9343,
+    "sha256": "34df74ae61a2cca39fafb71b8290d218ebab7b1fe7256ae7b35a4ffe6abe1dfd"
+  },
+  {
+    "archive": "城邦争霸0.2破解版.apk.1",
+    "path": "assets/public/img/permanent.json",
+    "local": "reference/supplement-20261006/android/img/permanent.json",
+    "bytes": 82,
+    "sha256": "06f066693f797fdd062493f73806deb5ea87b19c4b0d4ebc049ff252d6a7080e"
+  },
+  {
+    "archive": "城邦争霸0.2破解版.apk.1",
+    "path": "assets/public/img/screens.json",
+    "local": "reference/supplement-20261006/android/img/screens.json",
+    "bytes": 26421,
+    "sha256": "047604c0fae94794334f5ef83d87568b087240c413fa79df3be71c5b21d1f3b8"
+  },
+  {
+    "archive": "城邦争霸0.2破解版.apk.1",
+    "path": "assets/public/img/system.json",
+    "local": "reference/supplement-20261006/android/img/system.json",
+    "bytes": 79,
+    "sha256": "ff8c283869a9f228f5502bfcab0f42b65411bc8080040376e6296864761998ed"
+  },
+  {
+    "archive": "城邦争霸0.2破解版.apk.1",
+    "path": "assets/public/img/title.json",
+    "local": "reference/supplement-20261006/android/img/title.json",
+    "bytes": 82,
+    "sha256": "7bfbb92967ff69327006fd52828c79c2073bfad7598492c433e619e562df9635"
+  },
+  {
+    "archive": "城邦争霸0.2破解版.apk.1",
+    "path": "assets/public/index.html",
+    "local": "reference/supplement-20261006/android/index.html",
+    "bytes": 38468,
+    "sha256": "c858f225402ffcf26d8bdf7d0329fe089bf2097a18be2770a4faa562c343e9af"
+  },
+  {
+    "archive": "城邦争霸0.2破解版.apk.1",
+    "path": "assets/public/main.min.js",
+    "local": "reference/supplement-20261006/android/main.min.js",
+    "bytes": 246,
+    "sha256": "d72c3f1637b519d846b979f52a0ee9e98cab70c71b5028f06ab195de813f2536"
+  },
+  {
+    "archive": "城邦争霸0.2破解版.apk.1",
+    "path": "assets/public/ui/battle-data_data.json",
+    "local": "reference/supplement-20261006/android/ui/battle-data_data.json",
+    "bytes": 6840589,
+    "sha256": "a97069a625bda741503c3335e8b3906af9f56b7bd6db3fcf4a6d413d177d7ad0"
+  },
+  {
+    "archive": "城邦争霸0.2破解版.apk.1",
+    "path": "assets/public/ui/cc_data.js",
+    "local": "reference/supplement-20261006/android/ui/cc_data.js",
+    "bytes": 13249,
+    "sha256": "c39825c130b439ba63184da0d43f47e8869dccd0f3616eab06822d96ad4a211b"
+  },
+  {
+    "archive": "城邦争霸0.2破解版.apk.1",
+    "path": "assets/public/ui/cc_ui.js",
+    "local": "reference/supplement-20261006/android/ui/cc_ui.js",
+    "bytes": 17045,
+    "sha256": "8727e4fc4a39c0b51c1b498ad29e08e0e5acb1800077d4f1c0ae24900f7af498"
+  },
+  {
+    "archive": "城邦争霸0.2破解版.apk.1",
+    "path": "assets/public/ui/congrats-scr_data.json",
+    "local": "reference/supplement-20261006/android/ui/congrats-scr_data.json",
+    "bytes": 14254,
+    "sha256": "01d9795eddc4df0cbd9ba6b6d495ccf277171f9002507ad5f5c28516832f26ab"
+  },
+  {
+    "archive": "城邦争霸0.2破解版.apk.1",
+    "path": "assets/public/ui/custom-levels.js",
+    "local": "reference/supplement-20261006/android/ui/custom-levels.js",
+    "bytes": 16015,
+    "sha256": "b4c00a2e998094c29d27edcc7dea144f8c15118d3b57e0ff60a8545bd5ffd5dc"
+  },
+  {
+    "archive": "城邦争霸0.2破解版.apk.1",
+    "path": "assets/public/ui/layout-test-scr_data.json",
+    "local": "reference/supplement-20261006/android/ui/layout-test-scr_data.json",
+    "bytes": 837,
+    "sha256": "36abb17ac7c904ea53890aeab03d28baddf562aea67ba9df3bdf9a1f8eb07379"
+  },
+  {
+    "archive": "城邦争霸0.2破解版.apk.1",
+    "path": "assets/public/ui/levels_data.json",
+    "local": "reference/supplement-20261006/android/ui/levels_data.json",
+    "bytes": 3726542,
+    "sha256": "45bfa1760e75fb68a189edc84b2727915c105ab9e11841478700189a3229ed3b"
+  },
+  {
+    "archive": "城邦争霸0.2破解版.apk.1",
+    "path": "assets/public/ui/screens_data.json",
+    "local": "reference/supplement-20261006/android/ui/screens_data.json",
+    "bytes": 1852670,
+    "sha256": "aa0583afe4b8f0c57f0fcdce020394fc3289979ee5b82d7cca2e93d16cde99a0"
+  },
+  {
+    "archive": "城邦争霸0.2破解版.apk.1",
+    "path": "assets/public/ui/title_data.json",
+    "local": "reference/supplement-20261006/android/ui/title_data.json",
+    "bytes": 344,
+    "sha256": "a320aa43c0f836c12a342b66bda3039bc5963732589510abe94ec0c9672c34fe"
+  }
+]

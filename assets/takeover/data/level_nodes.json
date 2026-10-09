@@ -1,0 +1,7397 @@
+{
+ "source": "SWF Level{n}GraphMarkersClass display lists (FFDec swf2xml)",
+ "derivedFrom": "城邦争霸.swf",
+ "nameScheme": "l<locationNum>nd_<nodeId>  (see level/LevelParser.as §_-kN§)",
+ "units": "pixels; SWF coordinates are twips/20",
+ "twipsPerPx": 20.0,
+ "companies": [
+  {
+   "company": "Westaria",
+   "levels": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ]
+  },
+  {
+   "company": "TheKhaganate",
+   "levels": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+   ]
+  },
+  {
+   "company": "TheCult",
+   "levels": [
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+   ]
+  },
+  {
+   "company": "Skirmish",
+   "levels": [
+    99
+   ]
+  }
+ ],
+ "count": 25,
+ "totalNodes": 748,
+ "levels": [
+  {
+   "level": 1,
+   "markerCharId": 7458,
+   "landCharId": 4324,
+   "bounds": [
+    -192.0,
+    -87.25,
+    1079.45,
+    770.95
+   ],
+   "nodes": [
+    {
+     "name": "l01nd_080",
+     "locationNum": 1,
+     "nodeId": "080",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 272.1,
+     "y": 125.2
+    },
+    {
+     "name": "l01nd_070",
+     "locationNum": 1,
+     "nodeId": "070",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 200.3,
+     "y": 212.0
+    },
+    {
+     "name": "l00nd_010",
+     "locationNum": 0,
+     "nodeId": "010",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 525.3,
+     "y": 170.2
+    },
+    {
+     "name": "l02nd_060",
+     "locationNum": 2,
+     "nodeId": "060",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 339.95,
+     "y": 286.8
+    },
+    {
+     "name": "l02nd_057",
+     "locationNum": 2,
+     "nodeId": "057",
+     "charId": 2877,
+     "markerClass": "NodeCastleGreenClass",
+     "x": 450.95,
+     "y": 384.7
+    },
+    {
+     "name": "l01nd_077",
+     "locationNum": 1,
+     "nodeId": "077",
+     "charId": 1015,
+     "markerClass": "NodeTownPurpleClass",
+     "x": 150.75,
+     "y": 231.35
+    },
+    {
+     "name": "l00nd_014",
+     "locationNum": 0,
+     "nodeId": "014",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 609.95,
+     "y": 240.9
+    },
+    {
+     "name": "l00nd_024",
+     "locationNum": 0,
+     "nodeId": "024",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 671.0,
+     "y": 200.9
+    },
+    {
+     "name": "l02nd_040",
+     "locationNum": 2,
+     "nodeId": "040",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 408.9,
+     "y": 374.85
+    },
+    {
+     "name": "l00nd_007",
+     "locationNum": 0,
+     "nodeId": "007",
+     "charId": 1016,
+     "markerClass": "NodeCastlePurpleClass",
+     "x": 573.5,
+     "y": 178.1
+    }
+   ],
+   "company": "Westaria",
+   "markerKinds": {
+    "EmptyNodeClass": 5,
+    "NodeCastleGreenClass": 1,
+    "NodeTownPurpleClass": 1,
+    "NodeBuildHereClass": 2,
+    "NodeCastlePurpleClass": 1
+   }
+  },
+  {
+   "level": 2,
+   "markerCharId": 7661,
+   "landCharId": 5976,
+   "bounds": [
+    -193.0,
+    -100.0,
+    1078.45,
+    771.45
+   ],
+   "nodes": [
+    {
+     "name": "l02nd_050",
+     "locationNum": 2,
+     "nodeId": "050",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 396.6,
+     "y": 157.65
+    },
+    {
+     "name": "l01nd_015",
+     "locationNum": 1,
+     "nodeId": "015",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 491.5,
+     "y": 263.6
+    },
+    {
+     "name": "l01nd_017",
+     "locationNum": 1,
+     "nodeId": "017",
+     "charId": 5613,
+     "markerClass": "NodeCampGreenClass",
+     "x": 409.8,
+     "y": 350.8
+    },
+    {
+     "name": "l00nd_007",
+     "locationNum": 0,
+     "nodeId": "007",
+     "charId": 1011,
+     "markerClass": "NodeCastleRedClass",
+     "x": 586.95,
+     "y": 141.05
+    },
+    {
+     "name": "l02nd_027",
+     "locationNum": 2,
+     "nodeId": "027",
+     "charId": 1598,
+     "markerClass": "NodeMageTowerRedClass",
+     "x": 151.5,
+     "y": 199.4
+    },
+    {
+     "name": "l00nd_004",
+     "locationNum": 0,
+     "nodeId": "004",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 519.5,
+     "y": 112.9
+    },
+    {
+     "name": "l01nd_044",
+     "locationNum": 1,
+     "nodeId": "044",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 288.85,
+     "y": 322.2
+    },
+    {
+     "name": "l00nd_024",
+     "locationNum": 0,
+     "nodeId": "024",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 672.65,
+     "y": 160.6
+    },
+    {
+     "name": "l00nd_014",
+     "locationNum": 0,
+     "nodeId": "014",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 609.5,
+     "y": 193.15
+    },
+    {
+     "name": "l01nd_054",
+     "locationNum": 1,
+     "nodeId": "054",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 342.0,
+     "y": 304.55
+    },
+    {
+     "name": "l01nd_034",
+     "locationNum": 1,
+     "nodeId": "034",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 494.9,
+     "y": 368.35
+    },
+    {
+     "name": "l01nd_016",
+     "locationNum": 1,
+     "nodeId": "016",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 546.85,
+     "y": 260.5
+    },
+    {
+     "name": "l02nd_074",
+     "locationNum": 2,
+     "nodeId": "074",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 118.5,
+     "y": 270.75
+    },
+    {
+     "name": "l01nd_030",
+     "locationNum": 1,
+     "nodeId": "030",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 475.05,
+     "y": 271.15
+    },
+    {
+     "name": "l02nd_060",
+     "locationNum": 2,
+     "nodeId": "060",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 216.0,
+     "y": 197.1
+    },
+    {
+     "name": "l02nd_070",
+     "locationNum": 2,
+     "nodeId": "070",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 305.0,
+     "y": 173.05
+    },
+    {
+     "name": "l00nd_090",
+     "locationNum": 0,
+     "nodeId": "090",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 543.0,
+     "y": 154.6
+    },
+    {
+     "name": "l01nd_044",
+     "locationNum": 1,
+     "nodeId": "044",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 520.5,
+     "y": 328.5
+    },
+    {
+     "name": "l01nd_044",
+     "locationNum": 1,
+     "nodeId": "044",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 320.1,
+     "y": 358.05
+    },
+    {
+     "name": "l01nd_056",
+     "locationNum": 1,
+     "nodeId": "056",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 312.45,
+     "y": 110.75
+    },
+    {
+     "name": "l01nd_055",
+     "locationNum": 1,
+     "nodeId": "055",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 348.75,
+     "y": 122.35
+    }
+   ],
+   "company": "Westaria",
+   "markerKinds": {
+    "EmptyNodeClass": 5,
+    "NodeDefenderOgreClass": 2,
+    "NodeCampGreenClass": 1,
+    "NodeCastleRedClass": 1,
+    "NodeMageTowerRedClass": 1,
+    "NodeBuildHereClass": 9,
+    "NodeChestClass": 2
+   }
+  },
+  {
+   "level": 3,
+   "markerCharId": 7666,
+   "landCharId": 5012,
+   "bounds": [
+    -200.4,
+    -100.0,
+    1061.55,
+    816.7
+   ],
+   "nodes": [
+    {
+     "name": "l01nd_010",
+     "locationNum": 1,
+     "nodeId": "010",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 186.5,
+     "y": 262.5
+    },
+    {
+     "name": "l01nd_020",
+     "locationNum": 1,
+     "nodeId": "020",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 128.0,
+     "y": 340.0
+    },
+    {
+     "name": "l00nd_000",
+     "locationNum": 0,
+     "nodeId": "000",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 351.5,
+     "y": 179.5
+    },
+    {
+     "name": "l00nd_005",
+     "locationNum": 0,
+     "nodeId": "005",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 389.15,
+     "y": 228.75
+    },
+    {
+     "name": "l00nd_007",
+     "locationNum": 0,
+     "nodeId": "007",
+     "charId": 2877,
+     "markerClass": "NodeCastleGreenClass",
+     "x": 472.5,
+     "y": 129.5
+    },
+    {
+     "name": "l00nd_004",
+     "locationNum": 0,
+     "nodeId": "004",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 398.0,
+     "y": 109.3
+    },
+    {
+     "name": "l02nd_037",
+     "locationNum": 2,
+     "nodeId": "037",
+     "charId": 1016,
+     "markerClass": "NodeCastlePurpleClass",
+     "x": 130.95,
+     "y": 451.3
+    },
+    {
+     "name": "l03nd_017",
+     "locationNum": 3,
+     "nodeId": "017",
+     "charId": 1015,
+     "markerClass": "NodeTownPurpleClass",
+     "x": 425.4,
+     "y": 475.75
+    },
+    {
+     "name": "l00nd_006",
+     "locationNum": 0,
+     "nodeId": "006",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 421.5,
+     "y": 250.7
+    },
+    {
+     "name": "l01nd_027",
+     "locationNum": 1,
+     "nodeId": "027",
+     "charId": 1003,
+     "markerClass": "NodeMageTowerPurpleClass",
+     "x": 125.2,
+     "y": 210.85
+    },
+    {
+     "name": "l04nd_057",
+     "locationNum": 4,
+     "nodeId": "057",
+     "charId": 1016,
+     "markerClass": "NodeCastlePurpleClass",
+     "x": 648.35,
+     "y": 209.35
+    },
+    {
+     "name": "l00nd_024",
+     "locationNum": 0,
+     "nodeId": "024",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 543.0,
+     "y": 157.3
+    },
+    {
+     "name": "l01nd_029",
+     "locationNum": 1,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 206.0,
+     "y": 211.3
+    },
+    {
+     "name": "l01nd_029",
+     "locationNum": 1,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 112.0,
+     "y": 263.3
+    },
+    {
+     "name": "l05nd_059",
+     "locationNum": 5,
+     "nodeId": "059",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 652.5,
+     "y": 271.3
+    },
+    {
+     "name": "l05nd_016",
+     "locationNum": 5,
+     "nodeId": "016",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 491.7,
+     "y": 308.75
+    },
+    {
+     "name": "l05nd_015",
+     "locationNum": 5,
+     "nodeId": "015",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 521.0,
+     "y": 337.5
+    },
+    {
+     "name": "l02nd_030",
+     "locationNum": 2,
+     "nodeId": "030",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 301.8,
+     "y": 448.8
+    },
+    {
+     "name": "l03nd_040",
+     "locationNum": 3,
+     "nodeId": "040",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 384.6,
+     "y": 409.85
+    },
+    {
+     "name": "l04nd_050",
+     "locationNum": 4,
+     "nodeId": "050",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 548.55,
+     "y": 371.0
+    },
+    {
+     "name": "l05nd_060",
+     "locationNum": 5,
+     "nodeId": "060",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 708.5,
+     "y": 304.5
+    },
+    {
+     "name": "l02nd_080",
+     "locationNum": 2,
+     "nodeId": "080",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 291.1,
+     "y": 526.1
+    },
+    {
+     "name": "l02nd_070",
+     "locationNum": 2,
+     "nodeId": "070",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 322.8,
+     "y": 507.0
+    },
+    {
+     "name": "l01nd_025",
+     "locationNum": 1,
+     "nodeId": "025",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 173.95,
+     "y": 415.35
+    },
+    {
+     "name": "l02nd_039",
+     "locationNum": 2,
+     "nodeId": "039",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 206.0,
+     "y": 467.55
+    },
+    {
+     "name": "l02nd_039",
+     "locationNum": 2,
+     "nodeId": "039",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 169.4,
+     "y": 508.95
+    }
+   ],
+   "company": "Westaria",
+   "markerKinds": {
+    "EmptyNodeClass": 8,
+    "NodeDefenderOgreClass": 3,
+    "NodeCastleGreenClass": 1,
+    "NodeBuildHereClass": 7,
+    "NodeCastlePurpleClass": 2,
+    "NodeTownPurpleClass": 1,
+    "NodeChestClass": 3,
+    "NodeMageTowerPurpleClass": 1
+   }
+  },
+  {
+   "level": 4,
+   "markerCharId": 2888,
+   "landCharId": 4906,
+   "bounds": [
+    -250.35,
+    -100.0,
+    1078.45,
+    752.0
+   ],
+   "nodes": [
+    {
+     "name": "l05nd_006",
+     "locationNum": 5,
+     "nodeId": "006",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 519.0,
+     "y": 268.0
+    },
+    {
+     "name": "l05nd_005",
+     "locationNum": 5,
+     "nodeId": "005",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 476.0,
+     "y": 266.95
+    },
+    {
+     "name": "l00nd_007",
+     "locationNum": 0,
+     "nodeId": "007",
+     "charId": 1008,
+     "markerClass": "NodeCastleBlueClass",
+     "x": 679.55,
+     "y": 196.5
+    },
+    {
+     "name": "l04nd_124",
+     "locationNum": 4,
+     "nodeId": "124",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 93.0,
+     "y": 284.3
+    },
+    {
+     "name": "l04nd_144",
+     "locationNum": 4,
+     "nodeId": "144",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 248.45,
+     "y": 195.0
+    },
+    {
+     "name": "l04nd_134",
+     "locationNum": 4,
+     "nodeId": "134",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 91.0,
+     "y": 198.4
+    },
+    {
+     "name": "l01nd_017",
+     "locationNum": 1,
+     "nodeId": "017",
+     "charId": 1580,
+     "markerClass": "NodeTownBlueClass",
+     "x": 662.5,
+     "y": 386.5
+    },
+    {
+     "name": "l00nd_000",
+     "locationNum": 0,
+     "nodeId": "000",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 693.0,
+     "y": 243.6
+    },
+    {
+     "name": "l03nd_037",
+     "locationNum": 3,
+     "nodeId": "037",
+     "charId": 1015,
+     "markerClass": "NodeTownPurpleClass",
+     "x": 142.6,
+     "y": 469.25
+    },
+    {
+     "name": "l05nd_057",
+     "locationNum": 5,
+     "nodeId": "057",
+     "charId": 1579,
+     "markerClass": "NodeMageTowerBlueClass",
+     "x": 414.5,
+     "y": 208.5
+    },
+    {
+     "name": "l04nd_047",
+     "locationNum": 4,
+     "nodeId": "047",
+     "charId": 2877,
+     "markerClass": "NodeCastleGreenClass",
+     "x": 153.0,
+     "y": 149.65
+    },
+    {
+     "name": "l00nd_004",
+     "locationNum": 0,
+     "nodeId": "004",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 587.5,
+     "y": 226.55
+    },
+    {
+     "name": "l00nd_014",
+     "locationNum": 0,
+     "nodeId": "014",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 570.45,
+     "y": 179.55
+    },
+    {
+     "name": "l00nd_024",
+     "locationNum": 0,
+     "nodeId": "024",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 739.35,
+     "y": 170.2
+    },
+    {
+     "name": "l01nd_034",
+     "locationNum": 1,
+     "nodeId": "034",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 593.4,
+     "y": 423.05
+    },
+    {
+     "name": "l01nd_044",
+     "locationNum": 1,
+     "nodeId": "044",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 647.45,
+     "y": 440.4
+    },
+    {
+     "name": "l02nd_089",
+     "locationNum": 2,
+     "nodeId": "089",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 323.95,
+     "y": 481.05
+    },
+    {
+     "name": "l03nd_094",
+     "locationNum": 3,
+     "nodeId": "094",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 66.45,
+     "y": 470.15
+    },
+    {
+     "name": "l02nd_119",
+     "locationNum": 2,
+     "nodeId": "119",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 481.45,
+     "y": 482.25
+    },
+    {
+     "name": "l05nd_154",
+     "locationNum": 5,
+     "nodeId": "154",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 278.0,
+     "y": 272.3
+    },
+    {
+     "name": "l05nd_164",
+     "locationNum": 5,
+     "nodeId": "164",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 333.0,
+     "y": 314.3
+    },
+    {
+     "name": "l01nd_010",
+     "locationNum": 1,
+     "nodeId": "010",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 661.5,
+     "y": 288.0
+    },
+    {
+     "name": "l01nd_020",
+     "locationNum": 1,
+     "nodeId": "020",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 587.5,
+     "y": 350.15
+    },
+    {
+     "name": "l02nd_040",
+     "locationNum": 2,
+     "nodeId": "040",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 485.0,
+     "y": 430.5
+    },
+    {
+     "name": "l02nd_050",
+     "locationNum": 2,
+     "nodeId": "050",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 477.0,
+     "y": 359.4
+    },
+    {
+     "name": "l05nd_120",
+     "locationNum": 5,
+     "nodeId": "120",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 431.0,
+     "y": 295.0
+    },
+    {
+     "name": "l05nd_110",
+     "locationNum": 5,
+     "nodeId": "110",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 367.0,
+     "y": 270.0
+    },
+    {
+     "name": "l04nd_100",
+     "locationNum": 4,
+     "nodeId": "100",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 240.0,
+     "y": 228.0
+    },
+    {
+     "name": "l04nd_090",
+     "locationNum": 4,
+     "nodeId": "090",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 155.0,
+     "y": 201.5
+    },
+    {
+     "name": "l04nd_080",
+     "locationNum": 4,
+     "nodeId": "080",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 181.0,
+     "y": 268.0
+    },
+    {
+     "name": "l03nd_070",
+     "locationNum": 3,
+     "nodeId": "070",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 193.0,
+     "y": 324.0
+    },
+    {
+     "name": "l03nd_060",
+     "locationNum": 3,
+     "nodeId": "060",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 256.0,
+     "y": 425.0
+    },
+    {
+     "name": "l02nd_130",
+     "locationNum": 2,
+     "nodeId": "130",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 422.9,
+     "y": 465.55
+    },
+    {
+     "name": "l02nd_027",
+     "locationNum": 2,
+     "nodeId": "027",
+     "charId": 1016,
+     "markerClass": "NodeCastlePurpleClass",
+     "x": 397.35,
+     "y": 414.5
+    }
+   ],
+   "company": "Westaria",
+   "markerKinds": {
+    "NodeChestClass": 1,
+    "NodeDefenderOgreClass": 1,
+    "NodeCastleBlueClass": 1,
+    "NodeBuildHereClass": 13,
+    "NodeTownBlueClass": 1,
+    "EmptyNodeClass": 13,
+    "NodeTownPurpleClass": 1,
+    "NodeMageTowerBlueClass": 1,
+    "NodeCastleGreenClass": 1,
+    "NodeCastlePurpleClass": 1
+   }
+  },
+  {
+   "level": 5,
+   "markerCharId": 7014,
+   "landCharId": 6619,
+   "bounds": [
+    -48.89,
+    -88.0,
+    974.72,
+    824.54
+   ],
+   "nodes": [
+    {
+     "name": "l04nd_087",
+     "locationNum": 4,
+     "nodeId": "087",
+     "charId": 1016,
+     "markerClass": "NodeCastlePurpleClass",
+     "x": 209.6,
+     "y": 312.0
+    },
+    {
+     "name": "l01nd_027",
+     "locationNum": 1,
+     "nodeId": "027",
+     "charId": 3978,
+     "markerClass": "NodeTownGreenClass",
+     "x": 599.85,
+     "y": 139.75
+    },
+    {
+     "name": "l03nd_067",
+     "locationNum": 3,
+     "nodeId": "067",
+     "charId": 1011,
+     "markerClass": "NodeCastleRedClass",
+     "x": 103.95,
+     "y": 494.65
+    },
+    {
+     "name": "l00nd_007",
+     "locationNum": 0,
+     "nodeId": "007",
+     "charId": 1003,
+     "markerClass": "NodeMageTowerPurpleClass",
+     "x": 215.9,
+     "y": 166.3
+    },
+    {
+     "name": "l02nd_047",
+     "locationNum": 2,
+     "nodeId": "047",
+     "charId": 1015,
+     "markerClass": "NodeTownPurpleClass",
+     "x": 597.3,
+     "y": 377.85
+    },
+    {
+     "name": "l00nd_000",
+     "locationNum": 0,
+     "nodeId": "000",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 208.35,
+     "y": 132.35
+    },
+    {
+     "name": "l00nd_010",
+     "locationNum": 0,
+     "nodeId": "010",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 386.3,
+     "y": 117.35
+    },
+    {
+     "name": "l01nd_020",
+     "locationNum": 1,
+     "nodeId": "020",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 576.25,
+     "y": 175.35
+    },
+    {
+     "name": "l01nd_030",
+     "locationNum": 1,
+     "nodeId": "030",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 711.25,
+     "y": 287.35
+    },
+    {
+     "name": "l02nd_040",
+     "locationNum": 2,
+     "nodeId": "040",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 628.25,
+     "y": 412.3
+    },
+    {
+     "name": "l02nd_050",
+     "locationNum": 2,
+     "nodeId": "050",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 529.25,
+     "y": 469.3
+    },
+    {
+     "name": "l03nd_060",
+     "locationNum": 3,
+     "nodeId": "060",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 150.35,
+     "y": 471.3
+    },
+    {
+     "name": "l03nd_070",
+     "locationNum": 3,
+     "nodeId": "070",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 105.3,
+     "y": 422.3
+    },
+    {
+     "name": "l04nd_080",
+     "locationNum": 4,
+     "nodeId": "080",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 160.15,
+     "y": 297.35
+    },
+    {
+     "name": "l00nd_090",
+     "locationNum": 0,
+     "nodeId": "090",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 147.35,
+     "y": 178.35
+    },
+    {
+     "name": "l01nd_029",
+     "locationNum": 1,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 692.25,
+     "y": 140.4
+    },
+    {
+     "name": "l01nd_035",
+     "locationNum": 1,
+     "nodeId": "035",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 600.75,
+     "y": 256.15
+    },
+    {
+     "name": "l01nd_036",
+     "locationNum": 1,
+     "nodeId": "036",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 558.45,
+     "y": 264.85
+    },
+    {
+     "name": "l01nd_029",
+     "locationNum": 1,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 716.65,
+     "y": 199.25
+    },
+    {
+     "name": "l01nd_029",
+     "locationNum": 1,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 494.4,
+     "y": 103.6
+    },
+    {
+     "name": "l04nd_029",
+     "locationNum": 4,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 299.4,
+     "y": 295.4
+    },
+    {
+     "name": "l04nd_029",
+     "locationNum": 4,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 282.4,
+     "y": 335.8
+    },
+    {
+     "name": "l04nd_029",
+     "locationNum": 4,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 231.75,
+     "y": 366.3
+    },
+    {
+     "name": "l02nd_029",
+     "locationNum": 2,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 644.65,
+     "y": 454.35
+    },
+    {
+     "name": "l03nd_029",
+     "locationNum": 3,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 206.55,
+     "y": 460.4
+    },
+    {
+     "name": "l02nd_045",
+     "locationNum": 2,
+     "nodeId": "045",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 649.2,
+     "y": 209.95
+    },
+    {
+     "name": "l05nd_055",
+     "locationNum": 5,
+     "nodeId": "055",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 396.3,
+     "y": 501.5
+    },
+    {
+     "name": "l05nd_057",
+     "locationNum": 5,
+     "nodeId": "057",
+     "charId": 1598,
+     "markerClass": "NodeMageTowerRedClass",
+     "x": 401.5,
+     "y": 471.05
+    },
+    {
+     "name": "l05nd_059",
+     "locationNum": 5,
+     "nodeId": "059",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 317.95,
+     "y": 460.7
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 140.8,
+     "y": 110.95
+    },
+    {
+     "name": "l05nd_059",
+     "locationNum": 5,
+     "nodeId": "059",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 487.9,
+     "y": 446.2
+    }
+   ],
+   "company": "Westaria",
+   "markerKinds": {
+    "NodeCastlePurpleClass": 1,
+    "NodeTownGreenClass": 1,
+    "NodeCastleRedClass": 1,
+    "NodeMageTowerPurpleClass": 1,
+    "NodeTownPurpleClass": 1,
+    "EmptyNodeClass": 12,
+    "NodeBuildHereClass": 11,
+    "NodeDefenderOgreClass": 1,
+    "NodeChestClass": 1,
+    "NodeMageTowerRedClass": 1
+   }
+  },
+  {
+   "level": 6,
+   "markerCharId": 6720,
+   "landCharId": 4307,
+   "bounds": [
+    -45.26,
+    -81.85,
+    866.69,
+    824.54
+   ],
+   "nodes": [
+    {
+     "name": "l01nd_037",
+     "locationNum": 1,
+     "nodeId": "037",
+     "charId": 3978,
+     "markerClass": "NodeTownGreenClass",
+     "x": 661.0,
+     "y": 176.05
+    },
+    {
+     "name": "l00nd_010",
+     "locationNum": 0,
+     "nodeId": "010",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 407.7,
+     "y": 155.35
+    },
+    {
+     "name": "l01nd_039",
+     "locationNum": 1,
+     "nodeId": "039",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 579.15,
+     "y": 165.95
+    },
+    {
+     "name": "l03nd_059",
+     "locationNum": 3,
+     "nodeId": "059",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 283.1,
+     "y": 446.4
+    },
+    {
+     "name": "l02nd_049",
+     "locationNum": 2,
+     "nodeId": "049",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 531.1,
+     "y": 407.25
+    },
+    {
+     "name": "l03nd_059",
+     "locationNum": 3,
+     "nodeId": "059",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 224.7,
+     "y": 450.2
+    },
+    {
+     "name": "l03nd_057",
+     "locationNum": 3,
+     "nodeId": "057",
+     "charId": 1577,
+     "markerClass": "NodeTownRedClass",
+     "x": 146.45,
+     "y": 487.6
+    },
+    {
+     "name": "l01nd_020",
+     "locationNum": 1,
+     "nodeId": "020",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 593.7,
+     "y": 120.35
+    },
+    {
+     "name": "l01nd_030",
+     "locationNum": 1,
+     "nodeId": "030",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 691.8,
+     "y": 144.35
+    },
+    {
+     "name": "l01nd_040",
+     "locationNum": 1,
+     "nodeId": "040",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 763.8,
+     "y": 222.35
+    },
+    {
+     "name": "l02nd_050",
+     "locationNum": 2,
+     "nodeId": "050",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 662.85,
+     "y": 297.35
+    },
+    {
+     "name": "l02nd_060",
+     "locationNum": 2,
+     "nodeId": "060",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 535.25,
+     "y": 328.8
+    },
+    {
+     "name": "l02nd_070",
+     "locationNum": 2,
+     "nodeId": "070",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 447.6,
+     "y": 332.95
+    },
+    {
+     "name": "l03nd_090",
+     "locationNum": 3,
+     "nodeId": "090",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 192.8,
+     "y": 478.8
+    },
+    {
+     "name": "l03nd_100",
+     "locationNum": 3,
+     "nodeId": "100",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 177.3,
+     "y": 358.35
+    },
+    {
+     "name": "l00nd_110",
+     "locationNum": 0,
+     "nodeId": "110",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 316.2,
+     "y": 274.95
+    },
+    {
+     "name": "l02nd_063",
+     "locationNum": 2,
+     "nodeId": "063",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 610.8,
+     "y": 368.0
+    },
+    {
+     "name": "l02nd_066",
+     "locationNum": 2,
+     "nodeId": "066",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 666.5,
+     "y": 382.65
+    },
+    {
+     "name": "l02nd_049",
+     "locationNum": 2,
+     "nodeId": "049",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 358.7,
+     "y": 377.3
+    },
+    {
+     "name": "l03nd_059",
+     "locationNum": 3,
+     "nodeId": "059",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 247.9,
+     "y": 489.25
+    },
+    {
+     "name": "l01nd_036",
+     "locationNum": 1,
+     "nodeId": "036",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 221.45,
+     "y": 257.25
+    },
+    {
+     "name": "l01nd_033",
+     "locationNum": 1,
+     "nodeId": "033",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 268.95,
+     "y": 262.4
+    },
+    {
+     "name": "l01nd_039",
+     "locationNum": 1,
+     "nodeId": "039",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 719.2,
+     "y": 226.45
+    },
+    {
+     "name": "l00nd_029",
+     "locationNum": 0,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 342.35,
+     "y": 169.25
+    },
+    {
+     "name": "l02nd_049",
+     "locationNum": 2,
+     "nodeId": "049",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 437.9,
+     "y": 456.2
+    },
+    {
+     "name": "l00nd_027",
+     "locationNum": 0,
+     "nodeId": "027",
+     "charId": 1598,
+     "markerClass": "NodeMageTowerRedClass",
+     "x": 433.05,
+     "y": 187.75
+    },
+    {
+     "name": "l02nd_047",
+     "locationNum": 2,
+     "nodeId": "047",
+     "charId": 1011,
+     "markerClass": "NodeCastleRedClass",
+     "x": 439.85,
+     "y": 397.95
+    }
+   ],
+   "company": "Westaria",
+   "markerKinds": {
+    "NodeTownGreenClass": 1,
+    "EmptyNodeClass": 10,
+    "NodeBuildHereClass": 9,
+    "NodeTownRedClass": 1,
+    "NodeDefenderOgreClass": 2,
+    "NodeChestClass": 2,
+    "NodeMageTowerRedClass": 1,
+    "NodeCastleRedClass": 1
+   }
+  },
+  {
+   "level": 7,
+   "markerCharId": 8076,
+   "landCharId": 5518,
+   "bounds": [
+    -150.79,
+    -104.75,
+    953.66,
+    866.55
+   ],
+   "nodes": [
+    {
+     "name": "l00nd_027",
+     "locationNum": 0,
+     "nodeId": "027",
+     "charId": 2877,
+     "markerClass": "NodeCastleGreenClass",
+     "x": 182.95,
+     "y": 159.0
+    },
+    {
+     "name": "l05nd_077",
+     "locationNum": 5,
+     "nodeId": "077",
+     "charId": 1016,
+     "markerClass": "NodeCastlePurpleClass",
+     "x": 78.85,
+     "y": 404.65
+    },
+    {
+     "name": "l01nd_037",
+     "locationNum": 1,
+     "nodeId": "037",
+     "charId": 1579,
+     "markerClass": "NodeMageTowerBlueClass",
+     "x": 637.9,
+     "y": 157.6
+    },
+    {
+     "name": "l02nd_047",
+     "locationNum": 2,
+     "nodeId": "047",
+     "charId": 1008,
+     "markerClass": "NodeCastleBlueClass",
+     "x": 677.45,
+     "y": 359.2
+    },
+    {
+     "name": "l03nd_057",
+     "locationNum": 3,
+     "nodeId": "057",
+     "charId": 1580,
+     "markerClass": "NodeTownBlueClass",
+     "x": 448.15,
+     "y": 311.45
+    },
+    {
+     "name": "l04nd_067",
+     "locationNum": 4,
+     "nodeId": "067",
+     "charId": 1003,
+     "markerClass": "NodeMageTowerPurpleClass",
+     "x": 307.1,
+     "y": 485.05
+    },
+    {
+     "name": "l02nd_049",
+     "locationNum": 2,
+     "nodeId": "049",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 736.25,
+     "y": 318.4
+    },
+    {
+     "name": "l01nd_039",
+     "locationNum": 1,
+     "nodeId": "039",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 534.3,
+     "y": 128.65
+    },
+    {
+     "name": "l02nd_049",
+     "locationNum": 2,
+     "nodeId": "049",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 623.25,
+     "y": 399.35
+    },
+    {
+     "name": "l05nd_069",
+     "locationNum": 5,
+     "nodeId": "069",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 160.4,
+     "y": 444.35
+    },
+    {
+     "name": "l00nd_010",
+     "locationNum": 0,
+     "nodeId": "010",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 219.35,
+     "y": 180.2
+    },
+    {
+     "name": "l00nd_016",
+     "locationNum": 0,
+     "nodeId": "016",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 274.0,
+     "y": 276.15
+    },
+    {
+     "name": "l00nd_017",
+     "locationNum": 0,
+     "nodeId": "017",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 272.6,
+     "y": 314.75
+    },
+    {
+     "name": "l00nd_029",
+     "locationNum": 0,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 92.5,
+     "y": 88.55
+    },
+    {
+     "name": "l02nd_049",
+     "locationNum": 2,
+     "nodeId": "049",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 644.7,
+     "y": 489.2
+    },
+    {
+     "name": "l00nd_029",
+     "locationNum": 0,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 249.9,
+     "y": 121.95
+    },
+    {
+     "name": "l00nd_029",
+     "locationNum": 0,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 118.95,
+     "y": 199.95
+    },
+    {
+     "name": "l01nd_039",
+     "locationNum": 1,
+     "nodeId": "039",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 591.2,
+     "y": 193.35
+    },
+    {
+     "name": "l05nd_079",
+     "locationNum": 5,
+     "nodeId": "079",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 92.05,
+     "y": 469.9
+    },
+    {
+     "name": "l03nd_036",
+     "locationNum": 3,
+     "nodeId": "036",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 455.15,
+     "y": 192.25
+    },
+    {
+     "name": "l03nd_033",
+     "locationNum": 3,
+     "nodeId": "033",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 488.45,
+     "y": 186.65
+    },
+    {
+     "name": "l02nd_044",
+     "locationNum": 2,
+     "nodeId": "044",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 616.95,
+     "y": 289.15
+    },
+    {
+     "name": "l02nd_048",
+     "locationNum": 2,
+     "nodeId": "048",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 568.9,
+     "y": 260.05
+    },
+    {
+     "name": "l00nd_020",
+     "locationNum": 0,
+     "nodeId": "020",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 413.95,
+     "y": 159.45
+    },
+    {
+     "name": "l01nd_030",
+     "locationNum": 1,
+     "nodeId": "030",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 616.75,
+     "y": 96.25
+    },
+    {
+     "name": "l02nd_040",
+     "locationNum": 2,
+     "nodeId": "040",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 723.95,
+     "y": 234.95
+    },
+    {
+     "name": "l00nd_050",
+     "locationNum": 0,
+     "nodeId": "050",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 608.95,
+     "y": 358.95
+    },
+    {
+     "name": "l04nd_060",
+     "locationNum": 4,
+     "nodeId": "060",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 344.5,
+     "y": 497.1
+    },
+    {
+     "name": "l05nd_070",
+     "locationNum": 5,
+     "nodeId": "070",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 137.35,
+     "y": 392.45
+    },
+    {
+     "name": "l03nd_032",
+     "locationNum": 3,
+     "nodeId": "032",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 482.65,
+     "y": 284.5
+    },
+    {
+     "name": "l03nd_066",
+     "locationNum": 3,
+     "nodeId": "066",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 443.95,
+     "y": 325.95
+    },
+    {
+     "name": "l00nd_015",
+     "locationNum": 0,
+     "nodeId": "015",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 276.95,
+     "y": 215.95
+    },
+    {
+     "name": "l05nd_079",
+     "locationNum": 5,
+     "nodeId": "079",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 153.75,
+     "y": 345.0
+    },
+    {
+     "name": "l01nd_031",
+     "locationNum": 1,
+     "nodeId": "031",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 591.3,
+     "y": 125.4
+    },
+    {
+     "name": "l03nd_035",
+     "locationNum": 3,
+     "nodeId": "035",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 543.95,
+     "y": 182.6
+    }
+   ],
+   "company": "Westaria",
+   "markerKinds": {
+    "NodeCastleGreenClass": 1,
+    "NodeCastlePurpleClass": 1,
+    "NodeMageTowerBlueClass": 1,
+    "NodeCastleBlueClass": 1,
+    "NodeTownBlueClass": 1,
+    "NodeMageTowerPurpleClass": 1,
+    "NodeBuildHereClass": 11,
+    "EmptyNodeClass": 12,
+    "NodeDefenderOgreClass": 3,
+    "NodeChestClass": 3
+   }
+  },
+  {
+   "level": 8,
+   "markerCharId": 6986,
+   "landCharId": 3811,
+   "bounds": [
+    -85.65,
+    -82.75,
+    900.46,
+    682.98
+   ],
+   "nodes": [
+    {
+     "name": "l06nd_067",
+     "locationNum": 6,
+     "nodeId": "067",
+     "charId": 1016,
+     "markerClass": "NodeCastlePurpleClass",
+     "x": 419.85,
+     "y": 475.85
+    },
+    {
+     "name": "l02nd_027",
+     "locationNum": 2,
+     "nodeId": "027",
+     "charId": 1015,
+     "markerClass": "NodeTownPurpleClass",
+     "x": 584.5,
+     "y": 127.95
+    },
+    {
+     "name": "l00nd_007",
+     "locationNum": 0,
+     "nodeId": "007",
+     "charId": 3978,
+     "markerClass": "NodeTownGreenClass",
+     "x": 131.25,
+     "y": 151.35
+    },
+    {
+     "name": "l03nd_037",
+     "locationNum": 3,
+     "nodeId": "037",
+     "charId": 1016,
+     "markerClass": "NodeCastlePurpleClass",
+     "x": 240.0,
+     "y": 322.45
+    },
+    {
+     "name": "l01nd_017",
+     "locationNum": 1,
+     "nodeId": "017",
+     "charId": 1016,
+     "markerClass": "NodeCastlePurpleClass",
+     "x": 410.95,
+     "y": 165.45
+    },
+    {
+     "name": "l04nd_047",
+     "locationNum": 4,
+     "nodeId": "047",
+     "charId": 1016,
+     "markerClass": "NodeCastlePurpleClass",
+     "x": 601.0,
+     "y": 277.9
+    },
+    {
+     "name": "l07nd_077",
+     "locationNum": 7,
+     "nodeId": "077",
+     "charId": 1003,
+     "markerClass": "NodeMageTowerPurpleClass",
+     "x": 700.6,
+     "y": 427.9
+    },
+    {
+     "name": "l05nd_057",
+     "locationNum": 5,
+     "nodeId": "057",
+     "charId": 5679,
+     "markerClass": "NodeMageTowerGreenClass",
+     "x": 75.9,
+     "y": 424.95
+    },
+    {
+     "name": "l05nd_059",
+     "locationNum": 5,
+     "nodeId": "059",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 114.95,
+     "y": 467.55
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 91.45,
+     "y": 194.95
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 159.5,
+     "y": 203.2
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 217.7,
+     "y": 145.1
+    },
+    {
+     "name": "l02nd_029",
+     "locationNum": 2,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 531.9,
+     "y": 118.25
+    },
+    {
+     "name": "l02nd_029",
+     "locationNum": 2,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 703.45,
+     "y": 128.55
+    },
+    {
+     "name": "l02nd_029",
+     "locationNum": 2,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 646.9,
+     "y": 142.9
+    },
+    {
+     "name": "l05nd_059",
+     "locationNum": 5,
+     "nodeId": "059",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 162.95,
+     "y": 439.15
+    },
+    {
+     "name": "l05nd_059",
+     "locationNum": 5,
+     "nodeId": "059",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 121.45,
+     "y": 374.6
+    },
+    {
+     "name": "l07nd_079",
+     "locationNum": 7,
+     "nodeId": "079",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 646.9,
+     "y": 454.0
+    },
+    {
+     "name": "l07nd_079",
+     "locationNum": 7,
+     "nodeId": "079",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 707.45,
+     "y": 472.05
+    },
+    {
+     "name": "l07nd_079",
+     "locationNum": 7,
+     "nodeId": "079",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 767.45,
+     "y": 451.6
+    },
+    {
+     "name": "l07nd_076",
+     "locationNum": 7,
+     "nodeId": "076",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 702.3,
+     "y": 518.95
+    },
+    {
+     "name": "l07nd_073",
+     "locationNum": 7,
+     "nodeId": "073",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 665.95,
+     "y": 499.25
+    },
+    {
+     "name": "l06nd_080",
+     "locationNum": 6,
+     "nodeId": "080",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 419.0,
+     "y": 521.0
+    },
+    {
+     "name": "l00nd_016",
+     "locationNum": 0,
+     "nodeId": "016",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 93.75,
+     "y": 236.1
+    },
+    {
+     "name": "l00nd_013",
+     "locationNum": 0,
+     "nodeId": "013",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 132.5,
+     "y": 238.45
+    },
+    {
+     "name": "l00nd_010",
+     "locationNum": 0,
+     "nodeId": "010",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 211.1,
+     "y": 236.45
+    },
+    {
+     "name": "l02nd_056",
+     "locationNum": 2,
+     "nodeId": "056",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 713.45,
+     "y": 197.15
+    },
+    {
+     "name": "l02nd_053",
+     "locationNum": 2,
+     "nodeId": "053",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 681.5,
+     "y": 189.05
+    },
+    {
+     "name": "l00nd_116",
+     "locationNum": 0,
+     "nodeId": "116",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 163.8,
+     "y": 496.9
+    },
+    {
+     "name": "l00nd_113",
+     "locationNum": 0,
+     "nodeId": "113",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 193.45,
+     "y": 471.15
+    },
+    {
+     "name": "l00nd_020",
+     "locationNum": 0,
+     "nodeId": "020",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 243.0,
+     "y": 202.5
+    },
+    {
+     "name": "l01nd_030",
+     "locationNum": 1,
+     "nodeId": "030",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 404.0,
+     "y": 119.0
+    },
+    {
+     "name": "l02nd_040",
+     "locationNum": 2,
+     "nodeId": "040",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 574.0,
+     "y": 172.0
+    },
+    {
+     "name": "l02nd_050",
+     "locationNum": 2,
+     "nodeId": "050",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 649.0,
+     "y": 224.9
+    },
+    {
+     "name": "l03nd_060",
+     "locationNum": 3,
+     "nodeId": "060",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 665.0,
+     "y": 285.0
+    },
+    {
+     "name": "l07nd_070",
+     "locationNum": 7,
+     "nodeId": "070",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 592.0,
+     "y": 461.0
+    },
+    {
+     "name": "l07nd_071",
+     "locationNum": 7,
+     "nodeId": "071",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 630.0,
+     "y": 408.55
+    },
+    {
+     "name": "l06nd_090",
+     "locationNum": 6,
+     "nodeId": "090",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 292.0,
+     "y": 474.0
+    },
+    {
+     "name": "l05nd_100",
+     "locationNum": 5,
+     "nodeId": "100",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 161.1,
+     "y": 398.55
+    },
+    {
+     "name": "l03nd_120",
+     "locationNum": 3,
+     "nodeId": "120",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 169.0,
+     "y": 329.0
+    },
+    {
+     "name": "l06nd_095",
+     "locationNum": 6,
+     "nodeId": "095",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 221.1,
+     "y": 415.55
+    },
+    {
+     "name": "l00nd_005",
+     "locationNum": 0,
+     "nodeId": "005",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 172.0,
+     "y": 168.55
+    },
+    {
+     "name": "l02nd_045",
+     "locationNum": 2,
+     "nodeId": "045",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 590.95,
+     "y": 147.05
+    }
+   ],
+   "company": "Westaria",
+   "markerKinds": {
+    "NodeCastlePurpleClass": 4,
+    "NodeTownPurpleClass": 1,
+    "NodeTownGreenClass": 1,
+    "NodeMageTowerPurpleClass": 1,
+    "NodeMageTowerGreenClass": 1,
+    "NodeBuildHereClass": 12,
+    "NodeChestClass": 4,
+    "NodeDefenderOgreClass": 4,
+    "EmptyNodeClass": 15
+   }
+  },
+  {
+   "level": 11,
+   "markerCharId": 2565,
+   "landCharId": 1979,
+   "bounds": [
+    -51.64,
+    -125.95,
+    912.71,
+    824.54
+   ],
+   "nodes": [
+    {
+     "name": "l02nd_027",
+     "locationNum": 2,
+     "nodeId": "027",
+     "charId": 1016,
+     "markerClass": "NodeCastlePurpleClass",
+     "x": 271.6,
+     "y": 130.85
+    },
+    {
+     "name": "l01nd_017",
+     "locationNum": 1,
+     "nodeId": "017",
+     "charId": 1015,
+     "markerClass": "NodeTownPurpleClass",
+     "x": 618.8,
+     "y": 320.65
+    },
+    {
+     "name": "l00nd_007",
+     "locationNum": 0,
+     "nodeId": "007",
+     "charId": 1577,
+     "markerClass": "NodeTownRedClass",
+     "x": 314.7,
+     "y": 439.75
+    },
+    {
+     "name": "l02nd_029",
+     "locationNum": 2,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 221.35,
+     "y": 187.55
+    },
+    {
+     "name": "l02nd_029",
+     "locationNum": 2,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 288.9,
+     "y": 198.95
+    },
+    {
+     "name": "l03nd_023",
+     "locationNum": 3,
+     "nodeId": "023",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 452.9,
+     "y": 346.0
+    },
+    {
+     "name": "l03nd_026",
+     "locationNum": 3,
+     "nodeId": "026",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 408.65,
+     "y": 322.75
+    },
+    {
+     "name": "l01nd_019",
+     "locationNum": 1,
+     "nodeId": "019",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 653.4,
+     "y": 384.25
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 400.35,
+     "y": 409.9
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 233.45,
+     "y": 401.9
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 196.95,
+     "y": 484.9
+    },
+    {
+     "name": "l00nd_010",
+     "locationNum": 0,
+     "nodeId": "010",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 314.6,
+     "y": 476.3
+    },
+    {
+     "name": "l00nd_020",
+     "locationNum": 0,
+     "nodeId": "020",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 444.45,
+     "y": 459.95
+    },
+    {
+     "name": "l00nd_030",
+     "locationNum": 0,
+     "nodeId": "030",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 599.45,
+     "y": 359.35
+    },
+    {
+     "name": "l00nd_040",
+     "locationNum": 0,
+     "nodeId": "040",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 192.5,
+     "y": 438.9
+    },
+    {
+     "name": "l00nd_050",
+     "locationNum": 0,
+     "nodeId": "050",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 133.5,
+     "y": 303.95
+    },
+    {
+     "name": "l00nd_060",
+     "locationNum": 0,
+     "nodeId": "060",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 268.1,
+     "y": 236.95
+    },
+    {
+     "name": "l02nd_070",
+     "locationNum": 2,
+     "nodeId": "070",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 304.6,
+     "y": 158.95
+    }
+   ],
+   "company": "TheKhaganate",
+   "markerKinds": {
+    "NodeCastlePurpleClass": 1,
+    "NodeTownPurpleClass": 1,
+    "NodeTownRedClass": 1,
+    "NodeBuildHereClass": 6,
+    "NodeDefenderOgreClass": 1,
+    "NodeChestClass": 1,
+    "EmptyNodeClass": 7
+   }
+  },
+  {
+   "level": 12,
+   "markerCharId": 7901,
+   "landCharId": 7006,
+   "bounds": [
+    -45.26,
+    -81.85,
+    866.69,
+    824.54
+   ],
+   "nodes": [
+    {
+     "name": "l01nd_037",
+     "locationNum": 1,
+     "nodeId": "037",
+     "charId": 3978,
+     "markerClass": "NodeTownGreenClass",
+     "x": 661.0,
+     "y": 176.05
+    },
+    {
+     "name": "l00nd_010",
+     "locationNum": 0,
+     "nodeId": "010",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 407.7,
+     "y": 155.35
+    },
+    {
+     "name": "l01nd_039",
+     "locationNum": 1,
+     "nodeId": "039",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 579.15,
+     "y": 165.95
+    },
+    {
+     "name": "l03nd_059",
+     "locationNum": 3,
+     "nodeId": "059",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 283.1,
+     "y": 446.4
+    },
+    {
+     "name": "l02nd_049",
+     "locationNum": 2,
+     "nodeId": "049",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 531.1,
+     "y": 407.25
+    },
+    {
+     "name": "l03nd_059",
+     "locationNum": 3,
+     "nodeId": "059",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 224.7,
+     "y": 450.2
+    },
+    {
+     "name": "l01nd_020",
+     "locationNum": 1,
+     "nodeId": "020",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 593.7,
+     "y": 120.35
+    },
+    {
+     "name": "l01nd_030",
+     "locationNum": 1,
+     "nodeId": "030",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 691.8,
+     "y": 144.35
+    },
+    {
+     "name": "l01nd_040",
+     "locationNum": 1,
+     "nodeId": "040",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 763.8,
+     "y": 222.35
+    },
+    {
+     "name": "l02nd_050",
+     "locationNum": 2,
+     "nodeId": "050",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 662.85,
+     "y": 297.35
+    },
+    {
+     "name": "l02nd_060",
+     "locationNum": 2,
+     "nodeId": "060",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 535.25,
+     "y": 328.8
+    },
+    {
+     "name": "l02nd_070",
+     "locationNum": 2,
+     "nodeId": "070",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 447.6,
+     "y": 332.95
+    },
+    {
+     "name": "l03nd_090",
+     "locationNum": 3,
+     "nodeId": "090",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 192.8,
+     "y": 478.8
+    },
+    {
+     "name": "l03nd_100",
+     "locationNum": 3,
+     "nodeId": "100",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 177.3,
+     "y": 358.35
+    },
+    {
+     "name": "l00nd_110",
+     "locationNum": 0,
+     "nodeId": "110",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 316.2,
+     "y": 274.95
+    },
+    {
+     "name": "l02nd_063",
+     "locationNum": 2,
+     "nodeId": "063",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 610.8,
+     "y": 368.0
+    },
+    {
+     "name": "l02nd_066",
+     "locationNum": 2,
+     "nodeId": "066",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 666.5,
+     "y": 382.65
+    },
+    {
+     "name": "l02nd_049",
+     "locationNum": 2,
+     "nodeId": "049",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 358.7,
+     "y": 375.3
+    },
+    {
+     "name": "l03nd_059",
+     "locationNum": 3,
+     "nodeId": "059",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 247.9,
+     "y": 489.25
+    },
+    {
+     "name": "l01nd_036",
+     "locationNum": 1,
+     "nodeId": "036",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 221.45,
+     "y": 257.25
+    },
+    {
+     "name": "l01nd_033",
+     "locationNum": 1,
+     "nodeId": "033",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 268.95,
+     "y": 262.4
+    },
+    {
+     "name": "l01nd_039",
+     "locationNum": 1,
+     "nodeId": "039",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 719.2,
+     "y": 226.45
+    },
+    {
+     "name": "l00nd_027",
+     "locationNum": 0,
+     "nodeId": "027",
+     "charId": 5679,
+     "markerClass": "NodeMageTowerGreenClass",
+     "x": 433.85,
+     "y": 191.0
+    },
+    {
+     "name": "l00nd_029",
+     "locationNum": 0,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 342.35,
+     "y": 169.25
+    },
+    {
+     "name": "l02nd_049",
+     "locationNum": 2,
+     "nodeId": "049",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 437.9,
+     "y": 456.2
+    },
+    {
+     "name": "l02nd_047",
+     "locationNum": 2,
+     "nodeId": "047",
+     "charId": 1011,
+     "markerClass": "NodeCastleRedClass",
+     "x": 439.85,
+     "y": 394.95
+    },
+    {
+     "name": "l03nd_057",
+     "locationNum": 3,
+     "nodeId": "057",
+     "charId": 3978,
+     "markerClass": "NodeTownGreenClass",
+     "x": 144.75,
+     "y": 486.45
+    }
+   ],
+   "company": "TheKhaganate",
+   "markerKinds": {
+    "NodeTownGreenClass": 2,
+    "EmptyNodeClass": 10,
+    "NodeBuildHereClass": 9,
+    "NodeDefenderOgreClass": 2,
+    "NodeChestClass": 2,
+    "NodeMageTowerGreenClass": 1,
+    "NodeCastleRedClass": 1
+   }
+  },
+  {
+   "level": 13,
+   "markerCharId": 5600,
+   "landCharId": 4341,
+   "bounds": [
+    -94.0,
+    -116.8,
+    896.71,
+    824.54
+   ],
+   "nodes": [
+    {
+     "name": "l02nd_027",
+     "locationNum": 2,
+     "nodeId": "027",
+     "charId": 1015,
+     "markerClass": "NodeTownPurpleClass",
+     "x": 494.0,
+     "y": 130.1
+    },
+    {
+     "name": "l04nd_047",
+     "locationNum": 4,
+     "nodeId": "047",
+     "charId": 1003,
+     "markerClass": "NodeMageTowerPurpleClass",
+     "x": 686.7,
+     "y": 216.95
+    },
+    {
+     "name": "l03nd_037",
+     "locationNum": 3,
+     "nodeId": "037",
+     "charId": 1016,
+     "markerClass": "NodeCastlePurpleClass",
+     "x": 463.7,
+     "y": 367.8
+    },
+    {
+     "name": "l00nd_007",
+     "locationNum": 0,
+     "nodeId": "007",
+     "charId": 1011,
+     "markerClass": "NodeCastleRedClass",
+     "x": 117.1,
+     "y": 302.25
+    },
+    {
+     "name": "l01nd_017",
+     "locationNum": 1,
+     "nodeId": "017",
+     "charId": 1015,
+     "markerClass": "NodeTownPurpleClass",
+     "x": 156.5,
+     "y": 171.6
+    },
+    {
+     "name": "l01nd_019",
+     "locationNum": 1,
+     "nodeId": "019",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 259.3,
+     "y": 133.65
+    },
+    {
+     "name": "l01nd_019",
+     "locationNum": 1,
+     "nodeId": "019",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 220.9,
+     "y": 84.95
+    },
+    {
+     "name": "l00nd_013",
+     "locationNum": 0,
+     "nodeId": "013",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 202.95,
+     "y": 409.0
+    },
+    {
+     "name": "l00nd_016",
+     "locationNum": 0,
+     "nodeId": "016",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 153.7,
+     "y": 428.15
+    },
+    {
+     "name": "l02nd_029",
+     "locationNum": 2,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 592.4,
+     "y": 133.65
+    },
+    {
+     "name": "l03nd_039",
+     "locationNum": 3,
+     "nodeId": "039",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 466.35,
+     "y": 440.7
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 95.45,
+     "y": 367.8
+    },
+    {
+     "name": "l03nd_056",
+     "locationNum": 3,
+     "nodeId": "056",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 361.0,
+     "y": 422.8
+    },
+    {
+     "name": "l03nd_053",
+     "locationNum": 3,
+     "nodeId": "053",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 380.25,
+     "y": 461.85
+    },
+    {
+     "name": "l02nd_029",
+     "locationNum": 2,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 558.4,
+     "y": 168.5
+    },
+    {
+     "name": "l02nd_029",
+     "locationNum": 2,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 432.4,
+     "y": 169.5
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 164.45,
+     "y": 375.35
+    },
+    {
+     "name": "l03nd_039",
+     "locationNum": 3,
+     "nodeId": "039",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 549.4,
+     "y": 332.95
+    },
+    {
+     "name": "l03nd_039",
+     "locationNum": 3,
+     "nodeId": "039",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 558.4,
+     "y": 392.05
+    },
+    {
+     "name": "l00nd_010",
+     "locationNum": 0,
+     "nodeId": "010",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 179.9,
+     "y": 309.05
+    },
+    {
+     "name": "l01nd_020",
+     "locationNum": 1,
+     "nodeId": "020",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 288.3,
+     "y": 184.95
+    },
+    {
+     "name": "l02nd_030",
+     "locationNum": 2,
+     "nodeId": "030",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 372.45,
+     "y": 178.45
+    },
+    {
+     "name": "l04nd_040",
+     "locationNum": 4,
+     "nodeId": "040",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 633.45,
+     "y": 236.95
+    },
+    {
+     "name": "l03nd_050",
+     "locationNum": 3,
+     "nodeId": "050",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 584.45,
+     "y": 445.85
+    },
+    {
+     "name": "l03nd_060",
+     "locationNum": 3,
+     "nodeId": "060",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 405.2,
+     "y": 500.0
+    },
+    {
+     "name": "l00nd_070",
+     "locationNum": 0,
+     "nodeId": "070",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 224.0,
+     "y": 366.0
+    }
+   ],
+   "company": "TheKhaganate",
+   "markerKinds": {
+    "NodeTownPurpleClass": 2,
+    "NodeMageTowerPurpleClass": 1,
+    "NodeCastlePurpleClass": 1,
+    "NodeCastleRedClass": 1,
+    "NodeBuildHereClass": 10,
+    "NodeDefenderOgreClass": 2,
+    "NodeChestClass": 2,
+    "EmptyNodeClass": 7
+   }
+  },
+  {
+   "level": 14,
+   "markerCharId": 6725,
+   "landCharId": 516,
+   "bounds": [
+    -84.1,
+    -101.8,
+    868.28,
+    824.54
+   ],
+   "nodes": [
+    {
+     "name": "l04nd_047",
+     "locationNum": 4,
+     "nodeId": "047",
+     "charId": 1016,
+     "markerClass": "NodeCastlePurpleClass",
+     "x": 664.95,
+     "y": 431.85
+    },
+    {
+     "name": "l01nd_017",
+     "locationNum": 1,
+     "nodeId": "017",
+     "charId": 1015,
+     "markerClass": "NodeTownPurpleClass",
+     "x": 112.7,
+     "y": 166.7
+    },
+    {
+     "name": "l02nd_027",
+     "locationNum": 2,
+     "nodeId": "027",
+     "charId": 1015,
+     "markerClass": "NodeTownPurpleClass",
+     "x": 644.45,
+     "y": 180.2
+    },
+    {
+     "name": "l03nd_037",
+     "locationNum": 3,
+     "nodeId": "037",
+     "charId": 1003,
+     "markerClass": "NodeMageTowerPurpleClass",
+     "x": 465.55,
+     "y": 283.3
+    },
+    {
+     "name": "l00nd_007",
+     "locationNum": 0,
+     "nodeId": "007",
+     "charId": 1011,
+     "markerClass": "NodeCastleRedClass",
+     "x": 305.45,
+     "y": 284.8
+    },
+    {
+     "name": "l01nd_019",
+     "locationNum": 1,
+     "nodeId": "019",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 191.9,
+     "y": 203.45
+    },
+    {
+     "name": "l01nd_019",
+     "locationNum": 1,
+     "nodeId": "019",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 196.3,
+     "y": 133.95
+    },
+    {
+     "name": "l02nd_029",
+     "locationNum": 2,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 653.35,
+     "y": 248.75
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 344.35,
+     "y": 351.8
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 283.4,
+     "y": 356.0
+    },
+    {
+     "name": "l04nd_049",
+     "locationNum": 4,
+     "nodeId": "049",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 695.9,
+     "y": 487.4
+    },
+    {
+     "name": "l04nd_049",
+     "locationNum": 4,
+     "nodeId": "049",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 631.9,
+     "y": 491.5
+    },
+    {
+     "name": "l03nd_033",
+     "locationNum": 3,
+     "nodeId": "033",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 448.9,
+     "y": 388.1
+    },
+    {
+     "name": "l03nd_036",
+     "locationNum": 3,
+     "nodeId": "036",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 456.65,
+     "y": 431.2
+    },
+    {
+     "name": "l02nd_053",
+     "locationNum": 2,
+     "nodeId": "053",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 573.4,
+     "y": 145.55
+    },
+    {
+     "name": "l02nd_056",
+     "locationNum": 2,
+     "nodeId": "056",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 550.45,
+     "y": 111.3
+    },
+    {
+     "name": "l00nd_010",
+     "locationNum": 0,
+     "nodeId": "010",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 277.45,
+     "y": 321.45
+    },
+    {
+     "name": "l04nd_060",
+     "locationNum": 4,
+     "nodeId": "060",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 630.95,
+     "y": 457.6
+    },
+    {
+     "name": "l01nd_020",
+     "locationNum": 1,
+     "nodeId": "020",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 193.5,
+     "y": 171.45
+    },
+    {
+     "name": "l03nd_030",
+     "locationNum": 3,
+     "nodeId": "030",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 448.7,
+     "y": 313.4
+    },
+    {
+     "name": "l02nd_040",
+     "locationNum": 2,
+     "nodeId": "040",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 580.95,
+     "y": 292.4
+    },
+    {
+     "name": "l02nd_050",
+     "locationNum": 2,
+     "nodeId": "050",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 594.45,
+     "y": 195.7
+    }
+   ],
+   "company": "TheKhaganate",
+   "markerKinds": {
+    "NodeCastlePurpleClass": 1,
+    "NodeTownPurpleClass": 2,
+    "NodeMageTowerPurpleClass": 1,
+    "NodeCastleRedClass": 1,
+    "NodeBuildHereClass": 7,
+    "NodeDefenderOgreClass": 2,
+    "NodeChestClass": 2,
+    "EmptyNodeClass": 6
+   }
+  },
+  {
+   "level": 15,
+   "markerCharId": 1592,
+   "landCharId": 4079,
+   "bounds": [
+    -76.44,
+    -154.25,
+    905.95,
+    824.54
+   ],
+   "nodes": [
+    {
+     "name": "l01nd_017",
+     "locationNum": 1,
+     "nodeId": "017",
+     "charId": 1016,
+     "markerClass": "NodeCastlePurpleClass",
+     "x": 126.7,
+     "y": 269.4
+    },
+    {
+     "name": "l00nd_007",
+     "locationNum": 0,
+     "nodeId": "007",
+     "charId": 1577,
+     "markerClass": "NodeTownRedClass",
+     "x": 125.6,
+     "y": 414.5
+    },
+    {
+     "name": "l02nd_027",
+     "locationNum": 2,
+     "nodeId": "027",
+     "charId": 1579,
+     "markerClass": "NodeMageTowerBlueClass",
+     "x": 491.5,
+     "y": 183.45
+    },
+    {
+     "name": "l03nd_037",
+     "locationNum": 3,
+     "nodeId": "037",
+     "charId": 1580,
+     "markerClass": "NodeTownBlueClass",
+     "x": 639.15,
+     "y": 338.4
+    },
+    {
+     "name": "l04nd_047",
+     "locationNum": 4,
+     "nodeId": "047",
+     "charId": 1008,
+     "markerClass": "NodeCastleBlueClass",
+     "x": 370.05,
+     "y": 371.2
+    },
+    {
+     "name": "l01nd_019",
+     "locationNum": 1,
+     "nodeId": "019",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 209.3,
+     "y": 235.95
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 120.4,
+     "y": 472.0
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 59.45,
+     "y": 439.2
+    },
+    {
+     "name": "l03nd_039",
+     "locationNum": 3,
+     "nodeId": "039",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 572.9,
+     "y": 310.45
+    },
+    {
+     "name": "l03nd_052",
+     "locationNum": 3,
+     "nodeId": "052",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 256.45,
+     "y": 161.2
+    },
+    {
+     "name": "l03nd_054",
+     "locationNum": 3,
+     "nodeId": "054",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 208.2,
+     "y": 142.2
+    },
+    {
+     "name": "l03nd_023",
+     "locationNum": 3,
+     "nodeId": "023",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 460.9,
+     "y": 449.1
+    },
+    {
+     "name": "l03nd_026",
+     "locationNum": 3,
+     "nodeId": "026",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 416.25,
+     "y": 476.4
+    },
+    {
+     "name": "l02nd_043",
+     "locationNum": 2,
+     "nodeId": "043",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 566.2,
+     "y": 97.55
+    },
+    {
+     "name": "l02nd_046",
+     "locationNum": 2,
+     "nodeId": "046",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 524.65,
+     "y": 70.3
+    },
+    {
+     "name": "l00nd_012",
+     "locationNum": 0,
+     "nodeId": "012",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 177.0,
+     "y": 534.2
+    },
+    {
+     "name": "l00nd_011",
+     "locationNum": 0,
+     "nodeId": "011",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 127.45,
+     "y": 542.15
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 180.35,
+     "y": 465.65
+    },
+    {
+     "name": "l01nd_019",
+     "locationNum": 1,
+     "nodeId": "019",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 192.1,
+     "y": 330.85
+    },
+    {
+     "name": "l03nd_039",
+     "locationNum": 3,
+     "nodeId": "039",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 553.9,
+     "y": 393.05
+    },
+    {
+     "name": "l03nd_039",
+     "locationNum": 3,
+     "nodeId": "039",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 618.9,
+     "y": 406.4
+    },
+    {
+     "name": "l04nd_049",
+     "locationNum": 4,
+     "nodeId": "049",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 439.35,
+     "y": 343.2
+    },
+    {
+     "name": "l04nd_049",
+     "locationNum": 4,
+     "nodeId": "049",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 481.85,
+     "y": 311.35
+    },
+    {
+     "name": "l04nd_049",
+     "locationNum": 4,
+     "nodeId": "049",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 285.4,
+     "y": 375.9
+    },
+    {
+     "name": "l02nd_049",
+     "locationNum": 2,
+     "nodeId": "049",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 395.25,
+     "y": 151.35
+    },
+    {
+     "name": "l02nd_049",
+     "locationNum": 2,
+     "nodeId": "049",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 623.25,
+     "y": 183.8
+    },
+    {
+     "name": "l00nd_010",
+     "locationNum": 0,
+     "nodeId": "010",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 173.45,
+     "y": 435.85
+    },
+    {
+     "name": "l00nd_020",
+     "locationNum": 0,
+     "nodeId": "020",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 529.45,
+     "y": 335.9
+    },
+    {
+     "name": "l00nd_030",
+     "locationNum": 0,
+     "nodeId": "030",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 605.5,
+     "y": 364.5
+    },
+    {
+     "name": "l00nd_040",
+     "locationNum": 0,
+     "nodeId": "040",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 496.95,
+     "y": 214.45
+    },
+    {
+     "name": "l00nd_050",
+     "locationNum": 0,
+     "nodeId": "050",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 269.5,
+     "y": 244.45
+    },
+    {
+     "name": "l00nd_060",
+     "locationNum": 0,
+     "nodeId": "060",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 164.7,
+     "y": 288.45
+    },
+    {
+     "name": "l00nd_025",
+     "locationNum": 0,
+     "nodeId": "025",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 381.85,
+     "y": 411.1
+    },
+    {
+     "name": "l00nd_015",
+     "locationNum": 0,
+     "nodeId": "015",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 229.45,
+     "y": 415.3
+    },
+    {
+     "name": "l00nd_065",
+     "locationNum": 0,
+     "nodeId": "065",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 201.8,
+     "y": 284.15
+    },
+    {
+     "name": "l00nd_022",
+     "locationNum": 0,
+     "nodeId": "022",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 487.95,
+     "y": 360.0
+    }
+   ],
+   "company": "TheKhaganate",
+   "markerKinds": {
+    "NodeCastlePurpleClass": 1,
+    "NodeTownRedClass": 1,
+    "NodeMageTowerBlueClass": 1,
+    "NodeTownBlueClass": 1,
+    "NodeCastleBlueClass": 1,
+    "NodeBuildHereClass": 13,
+    "NodeDefenderOgreClass": 4,
+    "NodeChestClass": 4,
+    "EmptyNodeClass": 10
+   }
+  },
+  {
+   "level": 16,
+   "markerCharId": 7032,
+   "landCharId": 6172,
+   "bounds": [
+    -130.39,
+    -159.35,
+    889.36,
+    824.54
+   ],
+   "nodes": [
+    {
+     "name": "l00nd_007",
+     "locationNum": 0,
+     "nodeId": "007",
+     "charId": 1577,
+     "markerClass": "NodeTownRedClass",
+     "x": 79.6,
+     "y": 376.5
+    },
+    {
+     "name": "l01nd_017",
+     "locationNum": 1,
+     "nodeId": "017",
+     "charId": 1579,
+     "markerClass": "NodeMageTowerBlueClass",
+     "x": 143.05,
+     "y": 153.45
+    },
+    {
+     "name": "l03nd_037",
+     "locationNum": 3,
+     "nodeId": "037",
+     "charId": 1580,
+     "markerClass": "NodeTownBlueClass",
+     "x": 652.15,
+     "y": 152.45
+    },
+    {
+     "name": "l02nd_027",
+     "locationNum": 2,
+     "nodeId": "027",
+     "charId": 1008,
+     "markerClass": "NodeCastleBlueClass",
+     "x": 378.1,
+     "y": 233.5
+    },
+    {
+     "name": "l04nd_047",
+     "locationNum": 4,
+     "nodeId": "047",
+     "charId": 1579,
+     "markerClass": "NodeMageTowerBlueClass",
+     "x": 425.25,
+     "y": 454.1
+    },
+    {
+     "name": "l02nd_029",
+     "locationNum": 2,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 465.85,
+     "y": 216.35
+    },
+    {
+     "name": "l00nd_018",
+     "locationNum": 0,
+     "nodeId": "018",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 134.45,
+     "y": 522.1
+    },
+    {
+     "name": "l00nd_019",
+     "locationNum": 0,
+     "nodeId": "019",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 91.8,
+     "y": 536.55
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 122.95,
+     "y": 436.05
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 83.9,
+     "y": 471.95
+    },
+    {
+     "name": "l03nd_039",
+     "locationNum": 3,
+     "nodeId": "039",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 569.8,
+     "y": 170.6
+    },
+    {
+     "name": "l03nd_093",
+     "locationNum": 3,
+     "nodeId": "093",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 393.9,
+     "y": 519.1
+    },
+    {
+     "name": "l03nd_096",
+     "locationNum": 3,
+     "nodeId": "096",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 344.75,
+     "y": 524.25
+    },
+    {
+     "name": "l02nd_043",
+     "locationNum": 2,
+     "nodeId": "043",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 422.2,
+     "y": 135.55
+    },
+    {
+     "name": "l02nd_046",
+     "locationNum": 2,
+     "nodeId": "046",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 471.65,
+     "y": 158.3
+    },
+    {
+     "name": "l02nd_029",
+     "locationNum": 2,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 373.1,
+     "y": 311.45
+    },
+    {
+     "name": "l02nd_029",
+     "locationNum": 2,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 441.4,
+     "y": 302.45
+    },
+    {
+     "name": "l02nd_063",
+     "locationNum": 2,
+     "nodeId": "063",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 567.7,
+     "y": 280.55
+    },
+    {
+     "name": "l02nd_066",
+     "locationNum": 2,
+     "nodeId": "066",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 601.65,
+     "y": 301.3
+    },
+    {
+     "name": "l00nd_050",
+     "locationNum": 0,
+     "nodeId": "050",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 338.1,
+     "y": 274.6
+    },
+    {
+     "name": "l00nd_060",
+     "locationNum": 0,
+     "nodeId": "060",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 561.45,
+     "y": 237.1
+    },
+    {
+     "name": "l00nd_070",
+     "locationNum": 0,
+     "nodeId": "070",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 650.45,
+     "y": 188.55
+    },
+    {
+     "name": "l00nd_080",
+     "locationNum": 0,
+     "nodeId": "080",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 678.45,
+     "y": 332.25
+    },
+    {
+     "name": "l00nd_090",
+     "locationNum": 0,
+     "nodeId": "090",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 496.45,
+     "y": 440.0
+    },
+    {
+     "name": "l00nd_100",
+     "locationNum": 0,
+     "nodeId": "100",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 286.45,
+     "y": 395.0
+    },
+    {
+     "name": "l00nd_010",
+     "locationNum": 0,
+     "nodeId": "010",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 154.95,
+     "y": 387.35
+    },
+    {
+     "name": "l00nd_020",
+     "locationNum": 0,
+     "nodeId": "020",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 86.7,
+     "y": 204.55
+    },
+    {
+     "name": "l00nd_030",
+     "locationNum": 0,
+     "nodeId": "030",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 109.0,
+     "y": 128.35
+    },
+    {
+     "name": "l00nd_040",
+     "locationNum": 0,
+     "nodeId": "040",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 344.8,
+     "y": 123.95
+    }
+   ],
+   "company": "TheKhaganate",
+   "markerKinds": {
+    "NodeTownRedClass": 1,
+    "NodeMageTowerBlueClass": 2,
+    "NodeTownBlueClass": 1,
+    "NodeCastleBlueClass": 1,
+    "NodeBuildHereClass": 6,
+    "NodeDefenderOgreClass": 4,
+    "NodeChestClass": 4,
+    "EmptyNodeClass": 10
+   }
+  },
+  {
+   "level": 17,
+   "markerCharId": 1037,
+   "landCharId": 6086,
+   "bounds": [
+    -150.79,
+    -104.75,
+    953.66,
+    866.55
+   ],
+   "nodes": [
+    {
+     "name": "l04nd_067",
+     "locationNum": 4,
+     "nodeId": "067",
+     "charId": 1003,
+     "markerClass": "NodeMageTowerPurpleClass",
+     "x": 311.85,
+     "y": 496.9
+    },
+    {
+     "name": "l00nd_027",
+     "locationNum": 0,
+     "nodeId": "027",
+     "charId": 1008,
+     "markerClass": "NodeCastleBlueClass",
+     "x": 187.0,
+     "y": 164.35
+    },
+    {
+     "name": "l02nd_047",
+     "locationNum": 2,
+     "nodeId": "047",
+     "charId": 1011,
+     "markerClass": "NodeCastleRedClass",
+     "x": 676.4,
+     "y": 358.8
+    },
+    {
+     "name": "l03nd_057",
+     "locationNum": 3,
+     "nodeId": "057",
+     "charId": 1015,
+     "markerClass": "NodeTownPurpleClass",
+     "x": 446.65,
+     "y": 310.7
+    },
+    {
+     "name": "l05nd_077",
+     "locationNum": 5,
+     "nodeId": "077",
+     "charId": 1016,
+     "markerClass": "NodeCastlePurpleClass",
+     "x": 78.85,
+     "y": 405.65
+    },
+    {
+     "name": "l01nd_037",
+     "locationNum": 1,
+     "nodeId": "037",
+     "charId": 1003,
+     "markerClass": "NodeMageTowerPurpleClass",
+     "x": 639.85,
+     "y": 154.6
+    },
+    {
+     "name": "l01nd_039",
+     "locationNum": 1,
+     "nodeId": "039",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 534.3,
+     "y": 128.65
+    },
+    {
+     "name": "l02nd_049",
+     "locationNum": 2,
+     "nodeId": "049",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 623.25,
+     "y": 399.35
+    },
+    {
+     "name": "l05nd_069",
+     "locationNum": 5,
+     "nodeId": "069",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 156.4,
+     "y": 444.35
+    },
+    {
+     "name": "l00nd_010",
+     "locationNum": 0,
+     "nodeId": "010",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 219.35,
+     "y": 180.2
+    },
+    {
+     "name": "l00nd_016",
+     "locationNum": 0,
+     "nodeId": "016",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 274.0,
+     "y": 276.15
+    },
+    {
+     "name": "l00nd_017",
+     "locationNum": 0,
+     "nodeId": "017",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 272.6,
+     "y": 314.75
+    },
+    {
+     "name": "l00nd_029",
+     "locationNum": 0,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 92.5,
+     "y": 88.55
+    },
+    {
+     "name": "l02nd_049",
+     "locationNum": 2,
+     "nodeId": "049",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 644.7,
+     "y": 489.2
+    },
+    {
+     "name": "l00nd_029",
+     "locationNum": 0,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 249.9,
+     "y": 121.95
+    },
+    {
+     "name": "l00nd_029",
+     "locationNum": 0,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 118.95,
+     "y": 199.95
+    },
+    {
+     "name": "l01nd_039",
+     "locationNum": 1,
+     "nodeId": "039",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 591.2,
+     "y": 193.35
+    },
+    {
+     "name": "l05nd_079",
+     "locationNum": 5,
+     "nodeId": "079",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 92.05,
+     "y": 469.9
+    },
+    {
+     "name": "l03nd_036",
+     "locationNum": 3,
+     "nodeId": "036",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 455.75,
+     "y": 196.25
+    },
+    {
+     "name": "l03nd_033",
+     "locationNum": 3,
+     "nodeId": "033",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 498.65,
+     "y": 181.8
+    },
+    {
+     "name": "l02nd_044",
+     "locationNum": 2,
+     "nodeId": "044",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 616.95,
+     "y": 289.15
+    },
+    {
+     "name": "l02nd_048",
+     "locationNum": 2,
+     "nodeId": "048",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 568.9,
+     "y": 260.05
+    },
+    {
+     "name": "l00nd_020",
+     "locationNum": 0,
+     "nodeId": "020",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 413.95,
+     "y": 159.45
+    },
+    {
+     "name": "l01nd_030",
+     "locationNum": 1,
+     "nodeId": "030",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 616.75,
+     "y": 96.25
+    },
+    {
+     "name": "l02nd_040",
+     "locationNum": 2,
+     "nodeId": "040",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 723.95,
+     "y": 234.95
+    },
+    {
+     "name": "l00nd_050",
+     "locationNum": 0,
+     "nodeId": "050",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 608.95,
+     "y": 358.95
+    },
+    {
+     "name": "l04nd_060",
+     "locationNum": 4,
+     "nodeId": "060",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 344.5,
+     "y": 497.1
+    },
+    {
+     "name": "l05nd_070",
+     "locationNum": 5,
+     "nodeId": "070",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 137.35,
+     "y": 392.45
+    },
+    {
+     "name": "l03nd_032",
+     "locationNum": 3,
+     "nodeId": "032",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 491.75,
+     "y": 264.75
+    },
+    {
+     "name": "l03nd_066",
+     "locationNum": 3,
+     "nodeId": "066",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 443.95,
+     "y": 325.95
+    },
+    {
+     "name": "l00nd_015",
+     "locationNum": 0,
+     "nodeId": "015",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 276.95,
+     "y": 215.95
+    },
+    {
+     "name": "l05nd_079",
+     "locationNum": 5,
+     "nodeId": "079",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 152.75,
+     "y": 346.0
+    },
+    {
+     "name": "l01nd_031",
+     "locationNum": 1,
+     "nodeId": "031",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 696.8,
+     "y": 139.6
+    },
+    {
+     "name": "l03nd_034",
+     "locationNum": 3,
+     "nodeId": "034",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 547.1,
+     "y": 181.25
+    }
+   ],
+   "company": "TheKhaganate",
+   "markerKinds": {
+    "NodeMageTowerPurpleClass": 2,
+    "NodeCastleBlueClass": 1,
+    "NodeCastleRedClass": 1,
+    "NodeTownPurpleClass": 1,
+    "NodeCastlePurpleClass": 1,
+    "NodeBuildHereClass": 10,
+    "EmptyNodeClass": 12,
+    "NodeDefenderOgreClass": 3,
+    "NodeChestClass": 3
+   }
+  },
+  {
+   "level": 18,
+   "markerCharId": 8395,
+   "landCharId": 5667,
+   "bounds": [
+    -85.65,
+    -82.75,
+    900.46,
+    682.98
+   ],
+   "nodes": [
+    {
+     "name": "l00nd_007",
+     "locationNum": 0,
+     "nodeId": "007",
+     "charId": 3978,
+     "markerClass": "NodeTownGreenClass",
+     "x": 131.25,
+     "y": 151.35
+    },
+    {
+     "name": "l01nd_017",
+     "locationNum": 1,
+     "nodeId": "017",
+     "charId": 2877,
+     "markerClass": "NodeCastleGreenClass",
+     "x": 408.55,
+     "y": 165.9
+    },
+    {
+     "name": "l04nd_047",
+     "locationNum": 4,
+     "nodeId": "047",
+     "charId": 2877,
+     "markerClass": "NodeCastleGreenClass",
+     "x": 602.3,
+     "y": 283.05
+    },
+    {
+     "name": "l03nd_037",
+     "locationNum": 3,
+     "nodeId": "037",
+     "charId": 2877,
+     "markerClass": "NodeCastleGreenClass",
+     "x": 240.7,
+     "y": 326.0
+    },
+    {
+     "name": "l06nd_067",
+     "locationNum": 6,
+     "nodeId": "067",
+     "charId": 2877,
+     "markerClass": "NodeCastleGreenClass",
+     "x": 419.2,
+     "y": 472.35
+    },
+    {
+     "name": "l05nd_057",
+     "locationNum": 5,
+     "nodeId": "057",
+     "charId": 5679,
+     "markerClass": "NodeMageTowerGreenClass",
+     "x": 78.7,
+     "y": 423.6
+    },
+    {
+     "name": "l07nd_077",
+     "locationNum": 7,
+     "nodeId": "077",
+     "charId": 1598,
+     "markerClass": "NodeMageTowerRedClass",
+     "x": 704.05,
+     "y": 424.7
+    },
+    {
+     "name": "l05nd_059",
+     "locationNum": 5,
+     "nodeId": "059",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 114.95,
+     "y": 467.55
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 91.45,
+     "y": 194.95
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 159.5,
+     "y": 203.2
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 217.7,
+     "y": 145.1
+    },
+    {
+     "name": "l02nd_029",
+     "locationNum": 2,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 531.35,
+     "y": 117.35
+    },
+    {
+     "name": "l02nd_029",
+     "locationNum": 2,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 705.1,
+     "y": 128.55
+    },
+    {
+     "name": "l02nd_029",
+     "locationNum": 2,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 646.9,
+     "y": 142.9
+    },
+    {
+     "name": "l05nd_059",
+     "locationNum": 5,
+     "nodeId": "059",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 162.95,
+     "y": 439.15
+    },
+    {
+     "name": "l05nd_059",
+     "locationNum": 5,
+     "nodeId": "059",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 121.45,
+     "y": 374.6
+    },
+    {
+     "name": "l07nd_079",
+     "locationNum": 7,
+     "nodeId": "079",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 646.9,
+     "y": 454.0
+    },
+    {
+     "name": "l07nd_079",
+     "locationNum": 7,
+     "nodeId": "079",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 707.45,
+     "y": 472.05
+    },
+    {
+     "name": "l07nd_079",
+     "locationNum": 7,
+     "nodeId": "079",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 767.45,
+     "y": 451.6
+    },
+    {
+     "name": "l07nd_076",
+     "locationNum": 7,
+     "nodeId": "076",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 702.3,
+     "y": 518.95
+    },
+    {
+     "name": "l07nd_073",
+     "locationNum": 7,
+     "nodeId": "073",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 665.95,
+     "y": 499.25
+    },
+    {
+     "name": "l06nd_080",
+     "locationNum": 6,
+     "nodeId": "080",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 419.0,
+     "y": 521.0
+    },
+    {
+     "name": "l00nd_016",
+     "locationNum": 0,
+     "nodeId": "016",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 93.75,
+     "y": 236.1
+    },
+    {
+     "name": "l00nd_013",
+     "locationNum": 0,
+     "nodeId": "013",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 132.5,
+     "y": 238.45
+    },
+    {
+     "name": "l00nd_010",
+     "locationNum": 0,
+     "nodeId": "010",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 211.1,
+     "y": 236.45
+    },
+    {
+     "name": "l02nd_056",
+     "locationNum": 2,
+     "nodeId": "056",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 709.15,
+     "y": 197.15
+    },
+    {
+     "name": "l02nd_053",
+     "locationNum": 2,
+     "nodeId": "053",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 670.0,
+     "y": 180.95
+    },
+    {
+     "name": "l00nd_116",
+     "locationNum": 0,
+     "nodeId": "116",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 163.8,
+     "y": 496.9
+    },
+    {
+     "name": "l00nd_113",
+     "locationNum": 0,
+     "nodeId": "113",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 193.45,
+     "y": 471.15
+    },
+    {
+     "name": "l00nd_020",
+     "locationNum": 0,
+     "nodeId": "020",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 243.0,
+     "y": 202.5
+    },
+    {
+     "name": "l01nd_030",
+     "locationNum": 1,
+     "nodeId": "030",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 404.0,
+     "y": 119.0
+    },
+    {
+     "name": "l02nd_040",
+     "locationNum": 2,
+     "nodeId": "040",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 582.0,
+     "y": 182.5
+    },
+    {
+     "name": "l02nd_050",
+     "locationNum": 2,
+     "nodeId": "050",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 649.0,
+     "y": 224.9
+    },
+    {
+     "name": "l03nd_060",
+     "locationNum": 3,
+     "nodeId": "060",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 665.0,
+     "y": 285.0
+    },
+    {
+     "name": "l07nd_070",
+     "locationNum": 7,
+     "nodeId": "070",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 592.0,
+     "y": 461.0
+    },
+    {
+     "name": "l07nd_071",
+     "locationNum": 7,
+     "nodeId": "071",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 630.0,
+     "y": 408.55
+    },
+    {
+     "name": "l06nd_090",
+     "locationNum": 6,
+     "nodeId": "090",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 292.0,
+     "y": 474.0
+    },
+    {
+     "name": "l05nd_100",
+     "locationNum": 5,
+     "nodeId": "100",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 161.1,
+     "y": 398.55
+    },
+    {
+     "name": "l03nd_120",
+     "locationNum": 3,
+     "nodeId": "120",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 169.0,
+     "y": 329.0
+    },
+    {
+     "name": "l06nd_095",
+     "locationNum": 6,
+     "nodeId": "095",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 221.1,
+     "y": 415.55
+    },
+    {
+     "name": "l00nd_005",
+     "locationNum": 0,
+     "nodeId": "005",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 172.0,
+     "y": 168.55
+    },
+    {
+     "name": "l02nd_027",
+     "locationNum": 2,
+     "nodeId": "027",
+     "charId": 1577,
+     "markerClass": "NodeTownRedClass",
+     "x": 586.65,
+     "y": 125.3
+    },
+    {
+     "name": "l02nd_045",
+     "locationNum": 2,
+     "nodeId": "045",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 588.4,
+     "y": 159.5
+    }
+   ],
+   "company": "TheKhaganate",
+   "markerKinds": {
+    "NodeTownGreenClass": 1,
+    "NodeCastleGreenClass": 4,
+    "NodeMageTowerGreenClass": 1,
+    "NodeMageTowerRedClass": 1,
+    "NodeBuildHereClass": 12,
+    "NodeChestClass": 4,
+    "NodeDefenderOgreClass": 4,
+    "EmptyNodeClass": 15,
+    "NodeTownRedClass": 1
+   }
+  },
+  {
+   "level": 21,
+   "markerCharId": 8375,
+   "landCharId": 5793,
+   "bounds": [
+    -73.01,
+    -142.3,
+    858.91,
+    824.54
+   ],
+   "nodes": [
+    {
+     "name": "l00nd_007",
+     "locationNum": 0,
+     "nodeId": "007",
+     "charId": 1580,
+     "markerClass": "NodeTownBlueClass",
+     "x": 671.15,
+     "y": 228.8
+    },
+    {
+     "name": "l01nd_017",
+     "locationNum": 1,
+     "nodeId": "017",
+     "charId": 1003,
+     "markerClass": "NodeMageTowerPurpleClass",
+     "x": 430.05,
+     "y": 486.05
+    },
+    {
+     "name": "l02nd_029",
+     "locationNum": 2,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 62.9,
+     "y": 307.05
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 577.8,
+     "y": 211.6
+    },
+    {
+     "name": "l02nd_053",
+     "locationNum": 2,
+     "nodeId": "053",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 199.25,
+     "y": 158.65
+    },
+    {
+     "name": "l02nd_056",
+     "locationNum": 2,
+     "nodeId": "056",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 263.7,
+     "y": 156.3
+    },
+    {
+     "name": "l02nd_029",
+     "locationNum": 2,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 139.45,
+     "y": 311.95
+    },
+    {
+     "name": "l00nd_013",
+     "locationNum": 0,
+     "nodeId": "013",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 517.45,
+     "y": 111.55
+    },
+    {
+     "name": "l00nd_016",
+     "locationNum": 0,
+     "nodeId": "016",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 595.65,
+     "y": 85.3
+    },
+    {
+     "name": "l00nd_010",
+     "locationNum": 0,
+     "nodeId": "010",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 650.45,
+     "y": 261.6
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 751.4,
+     "y": 255.95
+    },
+    {
+     "name": "l01nd_020",
+     "locationNum": 1,
+     "nodeId": "020",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 617.45,
+     "y": 423.4
+    },
+    {
+     "name": "l01nd_030",
+     "locationNum": 1,
+     "nodeId": "030",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 428.45,
+     "y": 511.4
+    },
+    {
+     "name": "l02nd_040",
+     "locationNum": 2,
+     "nodeId": "040",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 220.3,
+     "y": 364.4
+    },
+    {
+     "name": "l02nd_050",
+     "locationNum": 2,
+     "nodeId": "050",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 149.5,
+     "y": 243.45
+    },
+    {
+     "name": "l02nd_027",
+     "locationNum": 2,
+     "nodeId": "027",
+     "charId": 1016,
+     "markerClass": "NodeCastlePurpleClass",
+     "x": 94.65,
+     "y": 237.1
+    }
+   ],
+   "company": "TheCult",
+   "markerKinds": {
+    "NodeTownBlueClass": 1,
+    "NodeMageTowerPurpleClass": 1,
+    "NodeBuildHereClass": 4,
+    "NodeDefenderOgreClass": 2,
+    "NodeChestClass": 2,
+    "EmptyNodeClass": 5,
+    "NodeCastlePurpleClass": 1
+   }
+  },
+  {
+   "level": 22,
+   "markerCharId": 5779,
+   "landCharId": 7106,
+   "bounds": [
+    -81.61,
+    -131.2,
+    970.81,
+    825.98
+   ],
+   "nodes": [
+    {
+     "name": "l01nd_017",
+     "locationNum": 1,
+     "nodeId": "017",
+     "charId": 1003,
+     "markerClass": "NodeMageTowerPurpleClass",
+     "x": 315.05,
+     "y": 488.05
+    },
+    {
+     "name": "l03nd_037",
+     "locationNum": 3,
+     "nodeId": "037",
+     "charId": 1003,
+     "markerClass": "NodeMageTowerPurpleClass",
+     "x": 478.2,
+     "y": 185.2
+    },
+    {
+     "name": "l00nd_007",
+     "locationNum": 0,
+     "nodeId": "007",
+     "charId": 1008,
+     "markerClass": "NodeCastleBlueClass",
+     "x": 696.95,
+     "y": 359.55
+    },
+    {
+     "name": "l02nd_029",
+     "locationNum": 2,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 146.9,
+     "y": 245.05
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 595.85,
+     "y": 342.9
+    },
+    {
+     "name": "l02nd_043",
+     "locationNum": 2,
+     "nodeId": "043",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 148.25,
+     "y": 359.05
+    },
+    {
+     "name": "l02nd_046",
+     "locationNum": 2,
+     "nodeId": "046",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 191.7,
+     "y": 392.65
+    },
+    {
+     "name": "l02nd_029",
+     "locationNum": 2,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 333.4,
+     "y": 241.5
+    },
+    {
+     "name": "l00nd_053",
+     "locationNum": 0,
+     "nodeId": "053",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 622.4,
+     "y": 83.25
+    },
+    {
+     "name": "l00nd_056",
+     "locationNum": 0,
+     "nodeId": "056",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 679.65,
+     "y": 77.9
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 586.4,
+     "y": 434.9
+    },
+    {
+     "name": "l00nd_010",
+     "locationNum": 0,
+     "nodeId": "010",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 635.45,
+     "y": 373.4
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 668.85,
+     "y": 425.35
+    },
+    {
+     "name": "l02nd_029",
+     "locationNum": 2,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 241.45,
+     "y": 298.55
+    },
+    {
+     "name": "l00nd_020",
+     "locationNum": 0,
+     "nodeId": "020",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 523.45,
+     "y": 401.45
+    },
+    {
+     "name": "l01nd_030",
+     "locationNum": 1,
+     "nodeId": "030",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 368.15,
+     "y": 486.9
+    },
+    {
+     "name": "l02nd_040",
+     "locationNum": 2,
+     "nodeId": "040",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 293.45,
+     "y": 267.95
+    },
+    {
+     "name": "l03nd_050",
+     "locationNum": 3,
+     "nodeId": "050",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 535.45,
+     "y": 176.95
+    },
+    {
+     "name": "l00nd_013",
+     "locationNum": 0,
+     "nodeId": "013",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 691.4,
+     "y": 477.55
+    },
+    {
+     "name": "l00nd_015",
+     "locationNum": 0,
+     "nodeId": "015",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 635.75,
+     "y": 476.2
+    },
+    {
+     "name": "l02nd_027",
+     "locationNum": 2,
+     "nodeId": "027",
+     "charId": 1016,
+     "markerClass": "NodeCastlePurpleClass",
+     "x": 237.0,
+     "y": 236.4
+    }
+   ],
+   "company": "TheCult",
+   "markerKinds": {
+    "NodeMageTowerPurpleClass": 2,
+    "NodeCastleBlueClass": 1,
+    "NodeBuildHereClass": 6,
+    "NodeDefenderOgreClass": 3,
+    "NodeChestClass": 3,
+    "EmptyNodeClass": 5,
+    "NodeCastlePurpleClass": 1
+   }
+  },
+  {
+   "level": 23,
+   "markerCharId": 6597,
+   "landCharId": 6992,
+   "bounds": [
+    -250.35,
+    -100.0,
+    1078.45,
+    752.0
+   ],
+   "nodes": [
+    {
+     "name": "l05nd_006",
+     "locationNum": 5,
+     "nodeId": "006",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 519.0,
+     "y": 268.0
+    },
+    {
+     "name": "l05nd_005",
+     "locationNum": 5,
+     "nodeId": "005",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 476.0,
+     "y": 266.95
+    },
+    {
+     "name": "l00nd_007",
+     "locationNum": 0,
+     "nodeId": "007",
+     "charId": 1008,
+     "markerClass": "NodeCastleBlueClass",
+     "x": 679.55,
+     "y": 196.5
+    },
+    {
+     "name": "l04nd_124",
+     "locationNum": 4,
+     "nodeId": "124",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 93.0,
+     "y": 284.3
+    },
+    {
+     "name": "l04nd_144",
+     "locationNum": 4,
+     "nodeId": "144",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 248.45,
+     "y": 195.0
+    },
+    {
+     "name": "l04nd_134",
+     "locationNum": 4,
+     "nodeId": "134",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 91.0,
+     "y": 198.4
+    },
+    {
+     "name": "l00nd_000",
+     "locationNum": 0,
+     "nodeId": "000",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 693.0,
+     "y": 243.6
+    },
+    {
+     "name": "l04nd_047",
+     "locationNum": 4,
+     "nodeId": "047",
+     "charId": 2877,
+     "markerClass": "NodeCastleGreenClass",
+     "x": 153.0,
+     "y": 149.65
+    },
+    {
+     "name": "l00nd_004",
+     "locationNum": 0,
+     "nodeId": "004",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 587.0,
+     "y": 226.05
+    },
+    {
+     "name": "l00nd_014",
+     "locationNum": 0,
+     "nodeId": "014",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 571.45,
+     "y": 179.05
+    },
+    {
+     "name": "l00nd_024",
+     "locationNum": 0,
+     "nodeId": "024",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 739.35,
+     "y": 170.2
+    },
+    {
+     "name": "l01nd_034",
+     "locationNum": 1,
+     "nodeId": "034",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 593.4,
+     "y": 423.05
+    },
+    {
+     "name": "l01nd_044",
+     "locationNum": 1,
+     "nodeId": "044",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 647.45,
+     "y": 440.4
+    },
+    {
+     "name": "l02nd_089",
+     "locationNum": 2,
+     "nodeId": "089",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 323.95,
+     "y": 481.05
+    },
+    {
+     "name": "l03nd_094",
+     "locationNum": 3,
+     "nodeId": "094",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 66.45,
+     "y": 470.15
+    },
+    {
+     "name": "l02nd_119",
+     "locationNum": 2,
+     "nodeId": "119",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 482.45,
+     "y": 481.25
+    },
+    {
+     "name": "l05nd_154",
+     "locationNum": 5,
+     "nodeId": "154",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 272.0,
+     "y": 280.3
+    },
+    {
+     "name": "l05nd_164",
+     "locationNum": 5,
+     "nodeId": "164",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 333.0,
+     "y": 314.3
+    },
+    {
+     "name": "l01nd_010",
+     "locationNum": 1,
+     "nodeId": "010",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 661.5,
+     "y": 288.0
+    },
+    {
+     "name": "l01nd_020",
+     "locationNum": 1,
+     "nodeId": "020",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 587.5,
+     "y": 350.15
+    },
+    {
+     "name": "l02nd_040",
+     "locationNum": 2,
+     "nodeId": "040",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 485.0,
+     "y": 430.5
+    },
+    {
+     "name": "l02nd_050",
+     "locationNum": 2,
+     "nodeId": "050",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 477.0,
+     "y": 359.4
+    },
+    {
+     "name": "l05nd_120",
+     "locationNum": 5,
+     "nodeId": "120",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 431.0,
+     "y": 295.0
+    },
+    {
+     "name": "l05nd_110",
+     "locationNum": 5,
+     "nodeId": "110",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 367.0,
+     "y": 270.0
+    },
+    {
+     "name": "l04nd_100",
+     "locationNum": 4,
+     "nodeId": "100",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 240.0,
+     "y": 228.0
+    },
+    {
+     "name": "l04nd_090",
+     "locationNum": 4,
+     "nodeId": "090",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 155.0,
+     "y": 201.5
+    },
+    {
+     "name": "l04nd_080",
+     "locationNum": 4,
+     "nodeId": "080",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 181.0,
+     "y": 268.0
+    },
+    {
+     "name": "l03nd_070",
+     "locationNum": 3,
+     "nodeId": "070",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 193.0,
+     "y": 324.0
+    },
+    {
+     "name": "l03nd_060",
+     "locationNum": 3,
+     "nodeId": "060",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 256.0,
+     "y": 425.0
+    },
+    {
+     "name": "l02nd_130",
+     "locationNum": 2,
+     "nodeId": "130",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 422.9,
+     "y": 465.55
+    },
+    {
+     "name": "l02nd_027",
+     "locationNum": 2,
+     "nodeId": "027",
+     "charId": 2877,
+     "markerClass": "NodeCastleGreenClass",
+     "x": 395.95,
+     "y": 416.75
+    },
+    {
+     "name": "l05nd_057",
+     "locationNum": 5,
+     "nodeId": "057",
+     "charId": 5679,
+     "markerClass": "NodeMageTowerGreenClass",
+     "x": 413.35,
+     "y": 207.4
+    },
+    {
+     "name": "l03nd_037",
+     "locationNum": 3,
+     "nodeId": "037",
+     "charId": 3978,
+     "markerClass": "NodeTownGreenClass",
+     "x": 140.15,
+     "y": 467.8
+    },
+    {
+     "name": "l01nd_017",
+     "locationNum": 1,
+     "nodeId": "017",
+     "charId": 1580,
+     "markerClass": "NodeTownBlueClass",
+     "x": 668.0,
+     "y": 380.5
+    }
+   ],
+   "company": "TheCult",
+   "markerKinds": {
+    "NodeChestClass": 1,
+    "NodeDefenderOgreClass": 1,
+    "NodeCastleBlueClass": 1,
+    "NodeBuildHereClass": 13,
+    "EmptyNodeClass": 13,
+    "NodeCastleGreenClass": 2,
+    "NodeMageTowerGreenClass": 1,
+    "NodeTownGreenClass": 1,
+    "NodeTownBlueClass": 1
+   }
+  },
+  {
+   "level": 24,
+   "markerCharId": 5628,
+   "landCharId": 6573,
+   "bounds": [
+    -150.79,
+    -104.75,
+    953.66,
+    866.55
+   ],
+   "nodes": [
+    {
+     "name": "l04nd_067",
+     "locationNum": 4,
+     "nodeId": "067",
+     "charId": 1003,
+     "markerClass": "NodeMageTowerPurpleClass",
+     "x": 311.85,
+     "y": 496.9
+    },
+    {
+     "name": "l02nd_047",
+     "locationNum": 2,
+     "nodeId": "047",
+     "charId": 1011,
+     "markerClass": "NodeCastleRedClass",
+     "x": 676.4,
+     "y": 358.8
+    },
+    {
+     "name": "l05nd_077",
+     "locationNum": 5,
+     "nodeId": "077",
+     "charId": 1016,
+     "markerClass": "NodeCastlePurpleClass",
+     "x": 81.85,
+     "y": 404.65
+    },
+    {
+     "name": "l01nd_037",
+     "locationNum": 1,
+     "nodeId": "037",
+     "charId": 1579,
+     "markerClass": "NodeMageTowerBlueClass",
+     "x": 640.55,
+     "y": 154.6
+    },
+    {
+     "name": "l03nd_057",
+     "locationNum": 3,
+     "nodeId": "057",
+     "charId": 1577,
+     "markerClass": "NodeTownRedClass",
+     "x": 446.7,
+     "y": 310.75
+    },
+    {
+     "name": "l00nd_027",
+     "locationNum": 0,
+     "nodeId": "027",
+     "charId": 1016,
+     "markerClass": "NodeCastlePurpleClass",
+     "x": 186.5,
+     "y": 161.4
+    },
+    {
+     "name": "l01nd_039",
+     "locationNum": 1,
+     "nodeId": "039",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 534.3,
+     "y": 128.65
+    },
+    {
+     "name": "l02nd_049",
+     "locationNum": 2,
+     "nodeId": "049",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 623.25,
+     "y": 399.35
+    },
+    {
+     "name": "l05nd_069",
+     "locationNum": 5,
+     "nodeId": "069",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 158.4,
+     "y": 443.35
+    },
+    {
+     "name": "l00nd_010",
+     "locationNum": 0,
+     "nodeId": "010",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 219.35,
+     "y": 180.2
+    },
+    {
+     "name": "l00nd_016",
+     "locationNum": 0,
+     "nodeId": "016",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 274.0,
+     "y": 276.15
+    },
+    {
+     "name": "l00nd_017",
+     "locationNum": 0,
+     "nodeId": "017",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 272.6,
+     "y": 314.75
+    },
+    {
+     "name": "l00nd_029",
+     "locationNum": 0,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 92.5,
+     "y": 88.55
+    },
+    {
+     "name": "l02nd_049",
+     "locationNum": 2,
+     "nodeId": "049",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 644.7,
+     "y": 489.2
+    },
+    {
+     "name": "l00nd_029",
+     "locationNum": 0,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 249.9,
+     "y": 121.95
+    },
+    {
+     "name": "l00nd_029",
+     "locationNum": 0,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 118.95,
+     "y": 199.95
+    },
+    {
+     "name": "l01nd_039",
+     "locationNum": 1,
+     "nodeId": "039",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 591.2,
+     "y": 193.35
+    },
+    {
+     "name": "l05nd_079",
+     "locationNum": 5,
+     "nodeId": "079",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 92.05,
+     "y": 469.9
+    },
+    {
+     "name": "l03nd_036",
+     "locationNum": 3,
+     "nodeId": "036",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 455.75,
+     "y": 196.25
+    },
+    {
+     "name": "l03nd_033",
+     "locationNum": 3,
+     "nodeId": "033",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 498.65,
+     "y": 181.8
+    },
+    {
+     "name": "l02nd_044",
+     "locationNum": 2,
+     "nodeId": "044",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 616.95,
+     "y": 289.15
+    },
+    {
+     "name": "l02nd_048",
+     "locationNum": 2,
+     "nodeId": "048",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 568.9,
+     "y": 260.05
+    },
+    {
+     "name": "l00nd_020",
+     "locationNum": 0,
+     "nodeId": "020",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 413.95,
+     "y": 159.45
+    },
+    {
+     "name": "l01nd_030",
+     "locationNum": 1,
+     "nodeId": "030",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 616.75,
+     "y": 96.25
+    },
+    {
+     "name": "l02nd_040",
+     "locationNum": 2,
+     "nodeId": "040",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 723.95,
+     "y": 234.95
+    },
+    {
+     "name": "l00nd_050",
+     "locationNum": 0,
+     "nodeId": "050",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 608.95,
+     "y": 358.95
+    },
+    {
+     "name": "l04nd_060",
+     "locationNum": 4,
+     "nodeId": "060",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 344.5,
+     "y": 497.1
+    },
+    {
+     "name": "l05nd_070",
+     "locationNum": 5,
+     "nodeId": "070",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 137.35,
+     "y": 392.45
+    },
+    {
+     "name": "l03nd_032",
+     "locationNum": 3,
+     "nodeId": "032",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 491.75,
+     "y": 264.75
+    },
+    {
+     "name": "l03nd_066",
+     "locationNum": 3,
+     "nodeId": "066",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 443.95,
+     "y": 325.95
+    },
+    {
+     "name": "l00nd_015",
+     "locationNum": 0,
+     "nodeId": "015",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 276.95,
+     "y": 215.95
+    },
+    {
+     "name": "l05nd_079",
+     "locationNum": 5,
+     "nodeId": "079",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 154.45,
+     "y": 346.0
+    },
+    {
+     "name": "l01nd_031",
+     "locationNum": 1,
+     "nodeId": "031",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 696.8,
+     "y": 139.6
+    },
+    {
+     "name": "l03nd_034",
+     "locationNum": 3,
+     "nodeId": "034",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 547.1,
+     "y": 181.25
+    }
+   ],
+   "company": "TheCult",
+   "markerKinds": {
+    "NodeMageTowerPurpleClass": 1,
+    "NodeCastleRedClass": 1,
+    "NodeCastlePurpleClass": 2,
+    "NodeMageTowerBlueClass": 1,
+    "NodeTownRedClass": 1,
+    "NodeBuildHereClass": 10,
+    "EmptyNodeClass": 12,
+    "NodeDefenderOgreClass": 3,
+    "NodeChestClass": 3
+   }
+  },
+  {
+   "level": 25,
+   "markerCharId": 7129,
+   "landCharId": 7127,
+   "bounds": [
+    -130.39,
+    -159.35,
+    889.36,
+    824.54
+   ],
+   "nodes": [
+    {
+     "name": "l00nd_007",
+     "locationNum": 0,
+     "nodeId": "007",
+     "charId": 1577,
+     "markerClass": "NodeTownRedClass",
+     "x": 79.6,
+     "y": 376.5
+    },
+    {
+     "name": "l03nd_037",
+     "locationNum": 3,
+     "nodeId": "037",
+     "charId": 1580,
+     "markerClass": "NodeTownBlueClass",
+     "x": 652.15,
+     "y": 152.45
+    },
+    {
+     "name": "l02nd_027",
+     "locationNum": 2,
+     "nodeId": "027",
+     "charId": 1016,
+     "markerClass": "NodeCastlePurpleClass",
+     "x": 376.0,
+     "y": 233.5
+    },
+    {
+     "name": "l01nd_017",
+     "locationNum": 1,
+     "nodeId": "017",
+     "charId": 1598,
+     "markerClass": "NodeMageTowerRedClass",
+     "x": 143.3,
+     "y": 152.95
+    },
+    {
+     "name": "l04nd_047",
+     "locationNum": 4,
+     "nodeId": "047",
+     "charId": 1598,
+     "markerClass": "NodeMageTowerRedClass",
+     "x": 424.6,
+     "y": 452.9
+    },
+    {
+     "name": "l02nd_029",
+     "locationNum": 2,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 465.85,
+     "y": 216.35
+    },
+    {
+     "name": "l00nd_018",
+     "locationNum": 0,
+     "nodeId": "018",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 134.45,
+     "y": 522.1
+    },
+    {
+     "name": "l00nd_019",
+     "locationNum": 0,
+     "nodeId": "019",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 91.8,
+     "y": 536.55
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 122.95,
+     "y": 436.05
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 83.9,
+     "y": 471.95
+    },
+    {
+     "name": "l03nd_039",
+     "locationNum": 3,
+     "nodeId": "039",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 569.8,
+     "y": 170.6
+    },
+    {
+     "name": "l03nd_093",
+     "locationNum": 3,
+     "nodeId": "093",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 393.9,
+     "y": 519.1
+    },
+    {
+     "name": "l03nd_096",
+     "locationNum": 3,
+     "nodeId": "096",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 344.75,
+     "y": 524.25
+    },
+    {
+     "name": "l02nd_043",
+     "locationNum": 2,
+     "nodeId": "043",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 422.2,
+     "y": 135.55
+    },
+    {
+     "name": "l02nd_046",
+     "locationNum": 2,
+     "nodeId": "046",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 471.65,
+     "y": 158.3
+    },
+    {
+     "name": "l02nd_029",
+     "locationNum": 2,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 374.95,
+     "y": 311.95
+    },
+    {
+     "name": "l02nd_029",
+     "locationNum": 2,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 441.4,
+     "y": 302.45
+    },
+    {
+     "name": "l02nd_063",
+     "locationNum": 2,
+     "nodeId": "063",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 571.7,
+     "y": 285.85
+    },
+    {
+     "name": "l02nd_066",
+     "locationNum": 2,
+     "nodeId": "066",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 601.65,
+     "y": 301.3
+    },
+    {
+     "name": "l00nd_050",
+     "locationNum": 0,
+     "nodeId": "050",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 335.45,
+     "y": 278.05
+    },
+    {
+     "name": "l00nd_060",
+     "locationNum": 0,
+     "nodeId": "060",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 563.45,
+     "y": 235.6
+    },
+    {
+     "name": "l00nd_070",
+     "locationNum": 0,
+     "nodeId": "070",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 650.45,
+     "y": 188.55
+    },
+    {
+     "name": "l00nd_080",
+     "locationNum": 0,
+     "nodeId": "080",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 678.45,
+     "y": 332.25
+    },
+    {
+     "name": "l00nd_090",
+     "locationNum": 0,
+     "nodeId": "090",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 496.45,
+     "y": 440.0
+    },
+    {
+     "name": "l00nd_100",
+     "locationNum": 0,
+     "nodeId": "100",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 286.45,
+     "y": 395.0
+    },
+    {
+     "name": "l00nd_010",
+     "locationNum": 0,
+     "nodeId": "010",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 154.95,
+     "y": 387.35
+    },
+    {
+     "name": "l00nd_020",
+     "locationNum": 0,
+     "nodeId": "020",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 86.7,
+     "y": 204.55
+    },
+    {
+     "name": "l00nd_030",
+     "locationNum": 0,
+     "nodeId": "030",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 109.0,
+     "y": 128.35
+    },
+    {
+     "name": "l00nd_040",
+     "locationNum": 0,
+     "nodeId": "040",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 344.8,
+     "y": 123.95
+    }
+   ],
+   "company": "TheCult",
+   "markerKinds": {
+    "NodeTownRedClass": 1,
+    "NodeTownBlueClass": 1,
+    "NodeCastlePurpleClass": 1,
+    "NodeMageTowerRedClass": 2,
+    "NodeBuildHereClass": 6,
+    "NodeDefenderOgreClass": 4,
+    "NodeChestClass": 4,
+    "EmptyNodeClass": 10
+   }
+  },
+  {
+   "level": 26,
+   "markerCharId": 5601,
+   "landCharId": 3941,
+   "bounds": [
+    -76.44,
+    -154.25,
+    905.95,
+    824.54
+   ],
+   "nodes": [
+    {
+     "name": "l00nd_007",
+     "locationNum": 0,
+     "nodeId": "007",
+     "charId": 1577,
+     "markerClass": "NodeTownRedClass",
+     "x": 125.6,
+     "y": 414.5
+    },
+    {
+     "name": "l03nd_037",
+     "locationNum": 3,
+     "nodeId": "037",
+     "charId": 1577,
+     "markerClass": "NodeTownRedClass",
+     "x": 639.55,
+     "y": 339.7
+    },
+    {
+     "name": "l01nd_019",
+     "locationNum": 1,
+     "nodeId": "019",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 209.3,
+     "y": 235.95
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 120.4,
+     "y": 472.0
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 59.45,
+     "y": 439.2
+    },
+    {
+     "name": "l03nd_039",
+     "locationNum": 3,
+     "nodeId": "039",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 572.9,
+     "y": 310.45
+    },
+    {
+     "name": "l03nd_052",
+     "locationNum": 3,
+     "nodeId": "052",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 256.45,
+     "y": 161.2
+    },
+    {
+     "name": "l03nd_054",
+     "locationNum": 3,
+     "nodeId": "054",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 208.2,
+     "y": 142.2
+    },
+    {
+     "name": "l03nd_023",
+     "locationNum": 3,
+     "nodeId": "023",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 460.9,
+     "y": 449.1
+    },
+    {
+     "name": "l03nd_026",
+     "locationNum": 3,
+     "nodeId": "026",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 416.25,
+     "y": 476.4
+    },
+    {
+     "name": "l02nd_043",
+     "locationNum": 2,
+     "nodeId": "043",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 566.2,
+     "y": 97.55
+    },
+    {
+     "name": "l02nd_046",
+     "locationNum": 2,
+     "nodeId": "046",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 524.65,
+     "y": 70.3
+    },
+    {
+     "name": "l00nd_012",
+     "locationNum": 0,
+     "nodeId": "012",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 177.0,
+     "y": 534.2
+    },
+    {
+     "name": "l00nd_011",
+     "locationNum": 0,
+     "nodeId": "011",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 127.45,
+     "y": 542.15
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 180.35,
+     "y": 465.65
+    },
+    {
+     "name": "l01nd_019",
+     "locationNum": 1,
+     "nodeId": "019",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 192.1,
+     "y": 330.85
+    },
+    {
+     "name": "l03nd_039",
+     "locationNum": 3,
+     "nodeId": "039",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 553.9,
+     "y": 393.05
+    },
+    {
+     "name": "l03nd_039",
+     "locationNum": 3,
+     "nodeId": "039",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 618.9,
+     "y": 406.4
+    },
+    {
+     "name": "l04nd_049",
+     "locationNum": 4,
+     "nodeId": "049",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 439.35,
+     "y": 343.2
+    },
+    {
+     "name": "l04nd_049",
+     "locationNum": 4,
+     "nodeId": "049",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 481.85,
+     "y": 311.35
+    },
+    {
+     "name": "l04nd_049",
+     "locationNum": 4,
+     "nodeId": "049",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 285.4,
+     "y": 375.9
+    },
+    {
+     "name": "l02nd_049",
+     "locationNum": 2,
+     "nodeId": "049",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 621.35,
+     "y": 183.8
+    },
+    {
+     "name": "l02nd_049",
+     "locationNum": 2,
+     "nodeId": "049",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 393.25,
+     "y": 151.95
+    },
+    {
+     "name": "l00nd_010",
+     "locationNum": 0,
+     "nodeId": "010",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 173.45,
+     "y": 435.85
+    },
+    {
+     "name": "l00nd_020",
+     "locationNum": 0,
+     "nodeId": "020",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 529.45,
+     "y": 335.9
+    },
+    {
+     "name": "l00nd_030",
+     "locationNum": 0,
+     "nodeId": "030",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 605.5,
+     "y": 364.5
+    },
+    {
+     "name": "l00nd_040",
+     "locationNum": 0,
+     "nodeId": "040",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 496.95,
+     "y": 214.45
+    },
+    {
+     "name": "l00nd_050",
+     "locationNum": 0,
+     "nodeId": "050",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 269.5,
+     "y": 244.45
+    },
+    {
+     "name": "l01nd_017",
+     "locationNum": 1,
+     "nodeId": "017",
+     "charId": 1011,
+     "markerClass": "NodeCastleRedClass",
+     "x": 131.3,
+     "y": 276.15
+    },
+    {
+     "name": "l00nd_060",
+     "locationNum": 0,
+     "nodeId": "060",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 164.7,
+     "y": 288.45
+    },
+    {
+     "name": "l00nd_025",
+     "locationNum": 0,
+     "nodeId": "025",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 381.85,
+     "y": 411.1
+    },
+    {
+     "name": "l00nd_015",
+     "locationNum": 0,
+     "nodeId": "015",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 229.45,
+     "y": 415.3
+    },
+    {
+     "name": "l00nd_065",
+     "locationNum": 0,
+     "nodeId": "065",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 201.8,
+     "y": 284.15
+    },
+    {
+     "name": "l00nd_022",
+     "locationNum": 0,
+     "nodeId": "022",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 487.95,
+     "y": 360.0
+    },
+    {
+     "name": "l04nd_047",
+     "locationNum": 4,
+     "nodeId": "047",
+     "charId": 1011,
+     "markerClass": "NodeCastleRedClass",
+     "x": 368.25,
+     "y": 372.35
+    },
+    {
+     "name": "l02nd_027",
+     "locationNum": 2,
+     "nodeId": "027",
+     "charId": 1579,
+     "markerClass": "NodeMageTowerBlueClass",
+     "x": 492.5,
+     "y": 184.0
+    }
+   ],
+   "company": "TheCult",
+   "markerKinds": {
+    "NodeTownRedClass": 2,
+    "NodeBuildHereClass": 13,
+    "NodeDefenderOgreClass": 4,
+    "NodeChestClass": 4,
+    "EmptyNodeClass": 10,
+    "NodeCastleRedClass": 2,
+    "NodeMageTowerBlueClass": 1
+   }
+  },
+  {
+   "level": 27,
+   "markerCharId": 2627,
+   "landCharId": 4869,
+   "bounds": [
+    -84.1,
+    -101.8,
+    868.28,
+    824.54
+   ],
+   "nodes": [
+    {
+     "name": "l04nd_047",
+     "locationNum": 4,
+     "nodeId": "047",
+     "charId": 1016,
+     "markerClass": "NodeCastlePurpleClass",
+     "x": 664.95,
+     "y": 431.85
+    },
+    {
+     "name": "l01nd_017",
+     "locationNum": 1,
+     "nodeId": "017",
+     "charId": 1015,
+     "markerClass": "NodeTownPurpleClass",
+     "x": 112.7,
+     "y": 166.7
+    },
+    {
+     "name": "l03nd_037",
+     "locationNum": 3,
+     "nodeId": "037",
+     "charId": 1003,
+     "markerClass": "NodeMageTowerPurpleClass",
+     "x": 465.55,
+     "y": 285.3
+    },
+    {
+     "name": "l02nd_027",
+     "locationNum": 2,
+     "nodeId": "027",
+     "charId": 1580,
+     "markerClass": "NodeTownBlueClass",
+     "x": 643.45,
+     "y": 182.4
+    },
+    {
+     "name": "l00nd_007",
+     "locationNum": 0,
+     "nodeId": "007",
+     "charId": 1016,
+     "markerClass": "NodeCastlePurpleClass",
+     "x": 304.7,
+     "y": 287.7
+    },
+    {
+     "name": "l01nd_019",
+     "locationNum": 1,
+     "nodeId": "019",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 191.9,
+     "y": 203.45
+    },
+    {
+     "name": "l01nd_019",
+     "locationNum": 1,
+     "nodeId": "019",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 196.3,
+     "y": 133.95
+    },
+    {
+     "name": "l02nd_029",
+     "locationNum": 2,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 653.35,
+     "y": 248.75
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 344.35,
+     "y": 351.8
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 283.4,
+     "y": 356.0
+    },
+    {
+     "name": "l04nd_049",
+     "locationNum": 4,
+     "nodeId": "049",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 695.9,
+     "y": 487.4
+    },
+    {
+     "name": "l04nd_049",
+     "locationNum": 4,
+     "nodeId": "049",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 631.9,
+     "y": 491.5
+    },
+    {
+     "name": "l03nd_033",
+     "locationNum": 3,
+     "nodeId": "033",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 448.9,
+     "y": 388.1
+    },
+    {
+     "name": "l03nd_036",
+     "locationNum": 3,
+     "nodeId": "036",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 456.65,
+     "y": 431.2
+    },
+    {
+     "name": "l02nd_053",
+     "locationNum": 2,
+     "nodeId": "053",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 573.4,
+     "y": 145.55
+    },
+    {
+     "name": "l02nd_056",
+     "locationNum": 2,
+     "nodeId": "056",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 550.45,
+     "y": 111.3
+    },
+    {
+     "name": "l00nd_010",
+     "locationNum": 0,
+     "nodeId": "010",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 277.45,
+     "y": 321.45
+    },
+    {
+     "name": "l04nd_060",
+     "locationNum": 4,
+     "nodeId": "060",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 630.95,
+     "y": 457.6
+    },
+    {
+     "name": "l01nd_020",
+     "locationNum": 1,
+     "nodeId": "020",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 193.5,
+     "y": 171.45
+    },
+    {
+     "name": "l03nd_030",
+     "locationNum": 3,
+     "nodeId": "030",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 451.85,
+     "y": 314.4
+    },
+    {
+     "name": "l02nd_040",
+     "locationNum": 2,
+     "nodeId": "040",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 580.95,
+     "y": 292.4
+    },
+    {
+     "name": "l02nd_050",
+     "locationNum": 2,
+     "nodeId": "050",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 594.45,
+     "y": 195.7
+    }
+   ],
+   "company": "TheCult",
+   "markerKinds": {
+    "NodeCastlePurpleClass": 2,
+    "NodeTownPurpleClass": 1,
+    "NodeMageTowerPurpleClass": 1,
+    "NodeTownBlueClass": 1,
+    "NodeBuildHereClass": 7,
+    "NodeDefenderOgreClass": 2,
+    "NodeChestClass": 2,
+    "EmptyNodeClass": 6
+   }
+  },
+  {
+   "level": 28,
+   "markerCharId": 6077,
+   "landCharId": 5554,
+   "bounds": [
+    -85.65,
+    -82.75,
+    900.46,
+    682.98
+   ],
+   "nodes": [
+    {
+     "name": "l06nd_067",
+     "locationNum": 6,
+     "nodeId": "067",
+     "charId": 1016,
+     "markerClass": "NodeCastlePurpleClass",
+     "x": 419.85,
+     "y": 475.85
+    },
+    {
+     "name": "l03nd_037",
+     "locationNum": 3,
+     "nodeId": "037",
+     "charId": 1016,
+     "markerClass": "NodeCastlePurpleClass",
+     "x": 240.0,
+     "y": 322.45
+    },
+    {
+     "name": "l01nd_017",
+     "locationNum": 1,
+     "nodeId": "017",
+     "charId": 1016,
+     "markerClass": "NodeCastlePurpleClass",
+     "x": 410.95,
+     "y": 165.45
+    },
+    {
+     "name": "l04nd_047",
+     "locationNum": 4,
+     "nodeId": "047",
+     "charId": 1016,
+     "markerClass": "NodeCastlePurpleClass",
+     "x": 601.0,
+     "y": 277.9
+    },
+    {
+     "name": "l05nd_057",
+     "locationNum": 5,
+     "nodeId": "057",
+     "charId": 1003,
+     "markerClass": "NodeMageTowerPurpleClass",
+     "x": 71.9,
+     "y": 424.9
+    },
+    {
+     "name": "l00nd_007",
+     "locationNum": 0,
+     "nodeId": "007",
+     "charId": 1015,
+     "markerClass": "NodeTownPurpleClass",
+     "x": 132.45,
+     "y": 152.05
+    },
+    {
+     "name": "l02nd_027",
+     "locationNum": 2,
+     "nodeId": "027",
+     "charId": 1015,
+     "markerClass": "NodeTownPurpleClass",
+     "x": 587.5,
+     "y": 125.25
+    },
+    {
+     "name": "l07nd_077",
+     "locationNum": 7,
+     "nodeId": "077",
+     "charId": 1579,
+     "markerClass": "NodeMageTowerBlueClass",
+     "x": 702.6,
+     "y": 426.6
+    },
+    {
+     "name": "l05nd_059",
+     "locationNum": 5,
+     "nodeId": "059",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 114.95,
+     "y": 467.55
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 91.45,
+     "y": 194.95
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 159.5,
+     "y": 203.2
+    },
+    {
+     "name": "l00nd_009",
+     "locationNum": 0,
+     "nodeId": "009",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 217.7,
+     "y": 145.1
+    },
+    {
+     "name": "l02nd_029",
+     "locationNum": 2,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 532.85,
+     "y": 117.05
+    },
+    {
+     "name": "l02nd_029",
+     "locationNum": 2,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 703.5,
+     "y": 129.05
+    },
+    {
+     "name": "l02nd_029",
+     "locationNum": 2,
+     "nodeId": "029",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 646.9,
+     "y": 142.9
+    },
+    {
+     "name": "l05nd_059",
+     "locationNum": 5,
+     "nodeId": "059",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 162.95,
+     "y": 439.15
+    },
+    {
+     "name": "l05nd_059",
+     "locationNum": 5,
+     "nodeId": "059",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 120.45,
+     "y": 374.6
+    },
+    {
+     "name": "l07nd_079",
+     "locationNum": 7,
+     "nodeId": "079",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 646.9,
+     "y": 454.0
+    },
+    {
+     "name": "l07nd_079",
+     "locationNum": 7,
+     "nodeId": "079",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 707.45,
+     "y": 472.05
+    },
+    {
+     "name": "l07nd_079",
+     "locationNum": 7,
+     "nodeId": "079",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 767.45,
+     "y": 451.6
+    },
+    {
+     "name": "l07nd_076",
+     "locationNum": 7,
+     "nodeId": "076",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 702.3,
+     "y": 518.95
+    },
+    {
+     "name": "l07nd_073",
+     "locationNum": 7,
+     "nodeId": "073",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 665.95,
+     "y": 499.25
+    },
+    {
+     "name": "l06nd_080",
+     "locationNum": 6,
+     "nodeId": "080",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 419.0,
+     "y": 521.0
+    },
+    {
+     "name": "l00nd_016",
+     "locationNum": 0,
+     "nodeId": "016",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 76.25,
+     "y": 251.75
+    },
+    {
+     "name": "l00nd_013",
+     "locationNum": 0,
+     "nodeId": "013",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 115.0,
+     "y": 254.1
+    },
+    {
+     "name": "l00nd_010",
+     "locationNum": 0,
+     "nodeId": "010",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 168.5,
+     "y": 268.45
+    },
+    {
+     "name": "l02nd_056",
+     "locationNum": 2,
+     "nodeId": "056",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 711.3,
+     "y": 196.3
+    },
+    {
+     "name": "l02nd_053",
+     "locationNum": 2,
+     "nodeId": "053",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 677.95,
+     "y": 184.05
+    },
+    {
+     "name": "l00nd_116",
+     "locationNum": 0,
+     "nodeId": "116",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 163.8,
+     "y": 496.9
+    },
+    {
+     "name": "l00nd_113",
+     "locationNum": 0,
+     "nodeId": "113",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 193.45,
+     "y": 471.15
+    },
+    {
+     "name": "l00nd_020",
+     "locationNum": 0,
+     "nodeId": "020",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 243.0,
+     "y": 202.5
+    },
+    {
+     "name": "l01nd_030",
+     "locationNum": 1,
+     "nodeId": "030",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 404.0,
+     "y": 119.0
+    },
+    {
+     "name": "l02nd_040",
+     "locationNum": 2,
+     "nodeId": "040",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 583.0,
+     "y": 184.65
+    },
+    {
+     "name": "l02nd_050",
+     "locationNum": 2,
+     "nodeId": "050",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 649.0,
+     "y": 224.9
+    },
+    {
+     "name": "l03nd_060",
+     "locationNum": 3,
+     "nodeId": "060",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 665.0,
+     "y": 285.0
+    },
+    {
+     "name": "l07nd_070",
+     "locationNum": 7,
+     "nodeId": "070",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 592.0,
+     "y": 461.0
+    },
+    {
+     "name": "l07nd_071",
+     "locationNum": 7,
+     "nodeId": "071",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 630.0,
+     "y": 408.55
+    },
+    {
+     "name": "l06nd_090",
+     "locationNum": 6,
+     "nodeId": "090",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 292.0,
+     "y": 474.0
+    },
+    {
+     "name": "l05nd_100",
+     "locationNum": 5,
+     "nodeId": "100",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 161.1,
+     "y": 398.55
+    },
+    {
+     "name": "l03nd_120",
+     "locationNum": 3,
+     "nodeId": "120",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 169.0,
+     "y": 329.0
+    },
+    {
+     "name": "l06nd_095",
+     "locationNum": 6,
+     "nodeId": "095",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 221.1,
+     "y": 415.55
+    },
+    {
+     "name": "l00nd_005",
+     "locationNum": 0,
+     "nodeId": "005",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 172.0,
+     "y": 168.55
+    },
+    {
+     "name": "l02nd_045",
+     "locationNum": 2,
+     "nodeId": "045",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 589.9,
+     "y": 140.5
+    }
+   ],
+   "company": "TheCult",
+   "markerKinds": {
+    "NodeCastlePurpleClass": 4,
+    "NodeMageTowerPurpleClass": 1,
+    "NodeTownPurpleClass": 2,
+    "NodeMageTowerBlueClass": 1,
+    "NodeBuildHereClass": 12,
+    "NodeChestClass": 4,
+    "NodeDefenderOgreClass": 4,
+    "EmptyNodeClass": 15
+   }
+  },
+  {
+   "level": 99,
+   "markerCharId": 6010,
+   "landCharId": 5438,
+   "bounds": [
+    -100.0,
+    -100.0,
+    900.0,
+    798.4
+   ],
+   "nodes": [
+    {
+     "name": "l01nd_000",
+     "locationNum": 1,
+     "nodeId": "000",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 214.0,
+     "y": 85.0
+    },
+    {
+     "name": "l01nd_010",
+     "locationNum": 1,
+     "nodeId": "010",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 240.95,
+     "y": 131.0
+    },
+    {
+     "name": "l02nd_020",
+     "locationNum": 2,
+     "nodeId": "020",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 287.0,
+     "y": 190.0
+    },
+    {
+     "name": "l02nd_030",
+     "locationNum": 2,
+     "nodeId": "030",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 156.0,
+     "y": 243.0
+    },
+    {
+     "name": "l03nd_040",
+     "locationNum": 3,
+     "nodeId": "040",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 389.95,
+     "y": 238.0
+    },
+    {
+     "name": "l00nd_016",
+     "locationNum": 0,
+     "nodeId": "016",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 315.0,
+     "y": 74.0
+    },
+    {
+     "name": "l01nd_015",
+     "locationNum": 1,
+     "nodeId": "015",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 291.7,
+     "y": 82.5
+    },
+    {
+     "name": "l03nd_050",
+     "locationNum": 3,
+     "nodeId": "050",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 497.9,
+     "y": 187.2
+    },
+    {
+     "name": "l04nd_060",
+     "locationNum": 4,
+     "nodeId": "060",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 405.95,
+     "y": 309.2
+    },
+    {
+     "name": "l04nd_070",
+     "locationNum": 4,
+     "nodeId": "070",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 347.95,
+     "y": 339.2
+    },
+    {
+     "name": "l04nd_065",
+     "locationNum": 4,
+     "nodeId": "065",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 453.9,
+     "y": 331.15
+    },
+    {
+     "name": "l03nd_066",
+     "locationNum": 3,
+     "nodeId": "066",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 477.9,
+     "y": 344.2
+    },
+    {
+     "name": "l08nd_080",
+     "locationNum": 8,
+     "nodeId": "080",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 232.25,
+     "y": 423.15
+    },
+    {
+     "name": "l08nd_086",
+     "locationNum": 8,
+     "nodeId": "086",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 188.25,
+     "y": 359.15
+    },
+    {
+     "name": "l08nd_090",
+     "locationNum": 8,
+     "nodeId": "090",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 172.25,
+     "y": 468.15
+    },
+    {
+     "name": "l08nd_100",
+     "locationNum": 8,
+     "nodeId": "100",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 302.0,
+     "y": 485.15
+    },
+    {
+     "name": "l07nd_110",
+     "locationNum": 7,
+     "nodeId": "110",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 426.95,
+     "y": 493.15
+    },
+    {
+     "name": "l07nd_120",
+     "locationNum": 7,
+     "nodeId": "120",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 604.95,
+     "y": 462.15
+    },
+    {
+     "name": "l06nd_130",
+     "locationNum": 6,
+     "nodeId": "130",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 710.95,
+     "y": 385.65
+    },
+    {
+     "name": "l06nd_140",
+     "locationNum": 6,
+     "nodeId": "140",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 673.95,
+     "y": 327.2
+    },
+    {
+     "name": "l05nd_150",
+     "locationNum": 5,
+     "nodeId": "150",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 676.95,
+     "y": 242.3
+    },
+    {
+     "name": "l05nd_160",
+     "locationNum": 5,
+     "nodeId": "160",
+     "charId": 1019,
+     "markerClass": "EmptyNodeClass",
+     "x": 658.95,
+     "y": 151.3
+    },
+    {
+     "name": "l05nd_136",
+     "locationNum": 5,
+     "nodeId": "136",
+     "charId": 1023,
+     "markerClass": "NodeChestClass",
+     "x": 755.95,
+     "y": 307.4
+    },
+    {
+     "name": "l06nd_135",
+     "locationNum": 6,
+     "nodeId": "135",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 760.95,
+     "y": 336.65
+    },
+    {
+     "name": "l04nd_167",
+     "locationNum": 4,
+     "nodeId": "167",
+     "charId": 1008,
+     "markerClass": "NodeCastleBlueClass",
+     "x": 698.45,
+     "y": 119.0
+    },
+    {
+     "name": "l03nd_064",
+     "locationNum": 3,
+     "nodeId": "064",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 348.8,
+     "y": 275.25
+    },
+    {
+     "name": "l06nd_117",
+     "locationNum": 6,
+     "nodeId": "117",
+     "charId": 5679,
+     "markerClass": "NodeMageTowerGreenClass",
+     "x": 460.15,
+     "y": 461.55
+    },
+    {
+     "name": "l08nd_085",
+     "locationNum": 8,
+     "nodeId": "085",
+     "charId": 1021,
+     "markerClass": "NodeDefenderOgreClass",
+     "x": 199.25,
+     "y": 379.15
+    },
+    {
+     "name": "l07nd_097",
+     "locationNum": 7,
+     "nodeId": "097",
+     "charId": 1016,
+     "markerClass": "NodeCastlePurpleClass",
+     "x": 96.25,
+     "y": 461.15
+    },
+    {
+     "name": "l01nd_037",
+     "locationNum": 1,
+     "nodeId": "037",
+     "charId": 1011,
+     "markerClass": "NodeCastleRedClass",
+     "x": 92.25,
+     "y": 250.3
+    },
+    {
+     "name": "l00nd_007",
+     "locationNum": 0,
+     "nodeId": "007",
+     "charId": 6009,
+     "markerClass": "NodeCampRedClass",
+     "x": 146.65,
+     "y": 75.0
+    },
+    {
+     "name": "l05nd_147",
+     "locationNum": 5,
+     "nodeId": "147",
+     "charId": 5613,
+     "markerClass": "NodeCampGreenClass",
+     "x": 612.95,
+     "y": 305.4
+    },
+    {
+     "name": "l02nd_057",
+     "locationNum": 2,
+     "nodeId": "057",
+     "charId": 5486,
+     "markerClass": "NodeCampBlueClass",
+     "x": 452.9,
+     "y": 161.3
+    },
+    {
+     "name": "l03nd_077",
+     "locationNum": 3,
+     "nodeId": "077",
+     "charId": 2977,
+     "markerClass": "NodeCampPurpleClass",
+     "x": 307.7,
+     "y": 315.3
+    },
+    {
+     "name": "l00nd_004",
+     "locationNum": 0,
+     "nodeId": "004",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 243.35,
+     "y": 58.55
+    },
+    {
+     "name": "l00nd_014",
+     "locationNum": 0,
+     "nodeId": "014",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 171.35,
+     "y": 129.9
+    },
+    {
+     "name": "l01nd_024",
+     "locationNum": 1,
+     "nodeId": "024",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 192.35,
+     "y": 194.2
+    },
+    {
+     "name": "l01nd_034",
+     "locationNum": 1,
+     "nodeId": "034",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 158.35,
+     "y": 284.05
+    },
+    {
+     "name": "l07nd_094",
+     "locationNum": 7,
+     "nodeId": "094",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 156.35,
+     "y": 412.15
+    },
+    {
+     "name": "l07nd_084",
+     "locationNum": 7,
+     "nodeId": "084",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 255.3,
+     "y": 454.7
+    },
+    {
+     "name": "l06nd_0114",
+     "locationNum": 6,
+     "nodeId": "0114",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 380.9,
+     "y": 447.5
+    },
+    {
+     "name": "l03nd_074",
+     "locationNum": 3,
+     "nodeId": "074",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 399.85,
+     "y": 366.55
+    },
+    {
+     "name": "l02nd_044",
+     "locationNum": 2,
+     "nodeId": "044",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 356.8,
+     "y": 168.95
+    },
+    {
+     "name": "l04nd_164",
+     "locationNum": 4,
+     "nodeId": "164",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 595.9,
+     "y": 93.95
+    },
+    {
+     "name": "l04nd_154",
+     "locationNum": 4,
+     "nodeId": "154",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 615.9,
+     "y": 182.9
+    },
+    {
+     "name": "l02nd_054",
+     "locationNum": 2,
+     "nodeId": "054",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 469.35,
+     "y": 247.95
+    },
+    {
+     "name": "l04nd_1544",
+     "locationNum": 4,
+     "nodeId": "1544",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 734.0,
+     "y": 198.9
+    },
+    {
+     "name": "l05nd_134",
+     "locationNum": 5,
+     "nodeId": "134",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 623.0,
+     "y": 379.15
+    },
+    {
+     "name": "l06nd_124",
+     "locationNum": 6,
+     "nodeId": "124",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 547.0,
+     "y": 432.2
+    },
+    {
+     "name": "l05nd_1244",
+     "locationNum": 5,
+     "nodeId": "1244",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 699.3,
+     "y": 468.15
+    },
+    {
+     "name": "l05nd_1344",
+     "locationNum": 5,
+     "nodeId": "1344",
+     "charId": 1018,
+     "markerClass": "NodeBuildHereClass",
+     "x": 776.3,
+     "y": 421.2
+    }
+   ],
+   "company": "Skirmish",
+   "markerKinds": {
+    "EmptyNodeClass": 17,
+    "NodeChestClass": 4,
+    "NodeDefenderOgreClass": 4,
+    "NodeCastleBlueClass": 1,
+    "NodeBuildHereClass": 18,
+    "NodeMageTowerGreenClass": 1,
+    "NodeCastlePurpleClass": 1,
+    "NodeCastleRedClass": 1,
+    "NodeCampRedClass": 1,
+    "NodeCampGreenClass": 1,
+    "NodeCampBlueClass": 1,
+    "NodeCampPurpleClass": 1
+   }
+  }
+ ]
+}

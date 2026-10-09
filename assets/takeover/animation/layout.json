@@ -1,0 +1,989 @@
+{
+  "_README": [
+    "界面布局数据。改这个文件就能移动/缩放/换帧,不用碰 C#。",
+    "",
+    "坐标系:舞台 800x600,原点左上,y 向下(Flash 约定)。",
+    "每项字段:",
+    "  art    图集里的键名(见 Assets/StreamingAssets/takeover/anim_manifest.json 的 sheets[].key)",
+    "  x,y    放置点(默认是图集格子的左上角;有 reg 时 reg 点落在 x,y)",
+    "  w,h    绘制尺寸(省略则用图集原始尺寸)",
+    "  fps    动画帧率;0 = 静止在第 frame 帧",
+    "  frame  静止时的帧号",
+    "  reg    注册点在格子内的位置 [x,y];省略则按左上角对齐",
+    "  note   备注,程序忽略",
+    "",
+    "运行时按 F1 进入调整模式:方向键移动选中项,Shift+方向键改尺寸,",
+    "PgUp/PgDn 换选中项,F2 存回本文件,F3 重新载入。"
+  ],
+  "screens": [
+    {
+      "key": "title",
+      "screen": {
+        "background": {
+          "art": "scrTitleClass",
+          "x": -15,
+          "y": -15,
+          "w": 872,
+          "h": 640,
+          "fps": 0,
+          "note": "整屏图：1:1 绘制，内容区左上角对到舞台 (0,0)。数值=实测不透明包围盒的负偏移与图集尺寸。多出 800x600 的部分由舞台裁掉。"
+        },
+        "elements": [
+          {
+            "art": "#60",
+            "x": 398,
+            "y": 539,
+            "reg": [
+              95.5,
+              29.5
+            ],
+            "fps": 0,
+            "note": "START 按钮底板"
+          },
+          {
+            "art": "scrTitleClass",
+            "x": 0,
+            "y": 0,
+            "w": 800,
+            "h": 600,
+            "fps": 0,
+            "note": "标题整屏"
+          }
+        ],
+        "captions": [
+          {
+            "text": "START",
+            "x": 398,
+            "y": 539,
+            "size": 17,
+            "action": "start"
+          }
+        ]
+      }
+    },
+    {
+      "key": "companyselect",
+      "screen": {
+        "background": {
+          "art": "scrChooseCampaignClass",
+          "x": -316,
+          "y": -184,
+          "w": 1379,
+          "h": 948,
+          "fps": 0,
+          "note": "整屏图：1:1 绘制，内容区左上角对到舞台 (0,0)。数值=实测不透明包围盒的负偏移与图集尺寸。多出 800x600 的部分由舞台裁掉。"
+        },
+        "elements": [
+          {
+            "art": "#6674",
+            "x": 398.5,
+            "y": 287.5,
+            "fps": 0,
+            "note": "Westaria 按钮"
+          },
+          {
+            "art": "#6690",
+            "x": 164.0,
+            "y": 299.6,
+            "fps": 0,
+            "note": "TheCult 按钮"
+          },
+          {
+            "art": "#6706",
+            "x": 633.0,
+            "y": 293.5,
+            "fps": 0,
+            "note": "TheKhaganate 按钮"
+          }
+        ],
+        "captions": [
+          {
+            "text": "QUIT",
+            "x": 83,
+            "y": 570,
+            "size": 17,
+            "action": "quit"
+          }
+        ]
+      }
+    },
+    {
+      "key": "campaignmap",
+      "screen": {
+        "background": {
+          "art": "scrCompaignMapClass",
+          "x": -11,
+          "y": -12,
+          "w": 864,
+          "h": 628,
+          "fps": 0,
+          "note": "整屏图：1:1 绘制，内容区左上角对到舞台 (0,0)。数值=实测不透明包围盒的负偏移与图集尺寸。多出 800x600 的部分由舞台裁掉。"
+        },
+        "elements": [
+          {
+            "art": "#8478",
+            "x": 139.0,
+            "y": 262.25,
+            "w": 133,
+            "h": 150,
+            "fps": 0,
+            "reg": [
+              66.5,
+              75
+            ],
+            "note": "关卡图标 #8478。fps 必须是 0：40 帧是 4 个状态各 10 帧（_up/_over/_down/_disabled），写成 fps=10 会让它自己循环闪烁。数字由运行时画（GlobalMapScreen.as:507 传 String(_levelNum+1)）。",
+            "frame": 0
+          },
+          {
+            "art": "#8478",
+            "x": 172.3,
+            "y": 187.15,
+            "w": 133,
+            "h": 150,
+            "fps": 0,
+            "reg": [
+              66.5,
+              75
+            ],
+            "note": "关卡图标 #8478。fps 必须是 0：40 帧是 4 个状态各 10 帧（_up/_over/_down/_disabled），写成 fps=10 会让它自己循环闪烁。数字由运行时画（GlobalMapScreen.as:507 传 String(_levelNum+1)）。",
+            "frame": 0
+          },
+          {
+            "art": "#8478",
+            "x": 322.85,
+            "y": 138.15,
+            "w": 133,
+            "h": 150,
+            "fps": 0,
+            "reg": [
+              66.5,
+              75
+            ],
+            "note": "关卡图标 #8478。fps 必须是 0：40 帧是 4 个状态各 10 帧（_up/_over/_down/_disabled），写成 fps=10 会让它自己循环闪烁。数字由运行时画（GlobalMapScreen.as:507 传 String(_levelNum+1)）。",
+            "frame": 0
+          },
+          {
+            "art": "#8478",
+            "x": 414.8,
+            "y": 165.65,
+            "w": 133,
+            "h": 150,
+            "fps": 0,
+            "reg": [
+              66.5,
+              75
+            ],
+            "note": "关卡图标 #8478。fps 必须是 0：40 帧是 4 个状态各 10 帧（_up/_over/_down/_disabled），写成 fps=10 会让它自己循环闪烁。数字由运行时画（GlobalMapScreen.as:507 传 String(_levelNum+1)）。",
+            "frame": 0
+          },
+          {
+            "art": "#8478",
+            "x": 322.85,
+            "y": 231.65,
+            "w": 133,
+            "h": 150,
+            "fps": 0,
+            "reg": [
+              66.5,
+              75
+            ],
+            "note": "关卡图标 #8478。fps 必须是 0：40 帧是 4 个状态各 10 帧（_up/_over/_down/_disabled），写成 fps=10 会让它自己循环闪烁。数字由运行时画（GlobalMapScreen.as:507 传 String(_levelNum+1)）。",
+            "frame": 0
+          },
+          {
+            "art": "#8478",
+            "x": 290.85,
+            "y": 338.65,
+            "w": 133,
+            "h": 150,
+            "fps": 0,
+            "reg": [
+              66.5,
+              75
+            ],
+            "note": "关卡图标 #8478。fps 必须是 0：40 帧是 4 个状态各 10 帧（_up/_over/_down/_disabled），写成 fps=10 会让它自己循环闪烁。数字由运行时画（GlobalMapScreen.as:507 传 String(_levelNum+1)）。",
+            "frame": 0
+          },
+          {
+            "art": "#8478",
+            "x": 527.8,
+            "y": 172.65,
+            "w": 133,
+            "h": 150,
+            "fps": 0,
+            "reg": [
+              66.5,
+              75
+            ],
+            "note": "关卡图标 #8478。fps 必须是 0：40 帧是 4 个状态各 10 帧（_up/_over/_down/_disabled），写成 fps=10 会让它自己循环闪烁。数字由运行时画（GlobalMapScreen.as:507 传 String(_levelNum+1)）。",
+            "frame": 0
+          },
+          {
+            "art": "#8478",
+            "x": 473.8,
+            "y": 281.65,
+            "w": 133,
+            "h": 150,
+            "fps": 0,
+            "reg": [
+              66.5,
+              75
+            ],
+            "note": "关卡图标 #8478。fps 必须是 0：40 帧是 4 个状态各 10 帧（_up/_over/_down/_disabled），写成 fps=10 会让它自己循环闪烁。数字由运行时画（GlobalMapScreen.as:507 传 String(_levelNum+1)）。",
+            "frame": 0
+          }
+        ],
+        "captions": [
+          {
+            "text": "QUIT",
+            "x": 88.0,
+            "y": 563.0,
+            "size": 17,
+            "action": "quit"
+          },
+          {
+            "text": "EDICTS",
+            "x": 618.8,
+            "y": 522.7,
+            "size": 17,
+            "action": "edicts"
+          },
+          {
+            "text": "1",
+            "x": 153.5,
+            "y": 271.7,
+            "size": 12,
+            "align": "center"
+          },
+          {
+            "text": "2",
+            "x": 186.8,
+            "y": 196.6,
+            "size": 12,
+            "align": "center"
+          },
+          {
+            "text": "3",
+            "x": 337.35,
+            "y": 147.6,
+            "size": 12,
+            "align": "center"
+          },
+          {
+            "text": "4",
+            "x": 429.3,
+            "y": 175.1,
+            "size": 12,
+            "align": "center"
+          },
+          {
+            "text": "5",
+            "x": 337.35,
+            "y": 241.1,
+            "size": 12,
+            "align": "center"
+          },
+          {
+            "text": "6",
+            "x": 305.35,
+            "y": 348.1,
+            "size": 12,
+            "align": "center"
+          },
+          {
+            "text": "7",
+            "x": 542.3,
+            "y": 182.1,
+            "size": 12,
+            "align": "center"
+          },
+          {
+            "text": "8",
+            "x": 488.3,
+            "y": 291.1,
+            "size": 12,
+            "align": "center"
+          }
+        ],
+        "_note": " 按钮位置来自 scrCompaignMapClass 时间轴：butQuit #617 @(88,563) scale0.8、EDICTS #617 @(618.8,522.7) scale1。BADGES 那个 caption 已删除：scrCompaignMapClass 时间轴上没有对应的 GameButtonClass（#8474 是进度条，不是按钮），而且它原本放在 y=610 已经出画。勋章室用键盘 B 进入（M=大地图 T=王座厅 B=勋章室）。",
+        "hotspots": [
+          {
+            "x": 72.5,
+            "y": 187.25,
+            "w": 133,
+            "h": 150,
+            "action": "level",
+            "arg": 1,
+            "note": "关卡 1 的点击区（#8478 格子）。arg 是关卡编号，Westaria 8 关正好对上 8 个图标；动作见 GameScreenShell.RunAction。"
+          },
+          {
+            "x": 105.8,
+            "y": 112.15,
+            "w": 133,
+            "h": 150,
+            "action": "level",
+            "arg": 2,
+            "note": "关卡 2 的点击区（#8478 格子）。arg 是关卡编号，Westaria 8 关正好对上 8 个图标；动作见 GameScreenShell.RunAction。"
+          },
+          {
+            "x": 256.35,
+            "y": 63.15,
+            "w": 133,
+            "h": 150,
+            "action": "level",
+            "arg": 3,
+            "note": "关卡 3 的点击区（#8478 格子）。arg 是关卡编号，Westaria 8 关正好对上 8 个图标；动作见 GameScreenShell.RunAction。"
+          },
+          {
+            "x": 348.3,
+            "y": 90.65,
+            "w": 133,
+            "h": 150,
+            "action": "level",
+            "arg": 4,
+            "note": "关卡 4 的点击区（#8478 格子）。arg 是关卡编号，Westaria 8 关正好对上 8 个图标；动作见 GameScreenShell.RunAction。"
+          },
+          {
+            "x": 256.35,
+            "y": 156.65,
+            "w": 133,
+            "h": 150,
+            "action": "level",
+            "arg": 5,
+            "note": "关卡 5 的点击区（#8478 格子）。arg 是关卡编号，Westaria 8 关正好对上 8 个图标；动作见 GameScreenShell.RunAction。"
+          },
+          {
+            "x": 224.35,
+            "y": 263.65,
+            "w": 133,
+            "h": 150,
+            "action": "level",
+            "arg": 6,
+            "note": "关卡 6 的点击区（#8478 格子）。arg 是关卡编号，Westaria 8 关正好对上 8 个图标；动作见 GameScreenShell.RunAction。"
+          },
+          {
+            "x": 461.3,
+            "y": 97.65,
+            "w": 133,
+            "h": 150,
+            "action": "level",
+            "arg": 7,
+            "note": "关卡 7 的点击区（#8478 格子）。arg 是关卡编号，Westaria 8 关正好对上 8 个图标；动作见 GameScreenShell.RunAction。"
+          },
+          {
+            "x": 407.3,
+            "y": 206.65,
+            "w": 133,
+            "h": 150,
+            "action": "level",
+            "arg": 8,
+            "note": "关卡 8 的点击区（#8478 格子）。arg 是关卡编号，Westaria 8 关正好对上 8 个图标；动作见 GameScreenShell.RunAction。"
+          }
+        ]
+      }
+    },
+    {
+      "key": "throneroom",
+      "screen": {
+        "background": {
+          "art": "scrThroneRoomClass",
+          "x": -245.25,
+          "y": -55.61,
+          "w": 1111,
+          "h": 762,
+          "fps": 0,
+          "note": "整屏图。tile->stage 偏移 (-245.25,-55.61) 是用屏幕上 15 个 mcUnitIcon_* 的已知舞台坐标标定出来的（tools/verify_geom.py，15/15 误差 <3px）。这张图是**去掉 _hitArea 之后**重新导出的：FFDec 会把 hitArea 画成不透明白块，而 Flash 里它永远不可见（Button 助手类里有 this.button.hitArea.visible = false）。"
+        },
+        "elements": [
+          {
+            "art": "#6833",
+            "x": -85.87,
+            "y": 36.82,
+            "w": 735.7,
+            "h": 139.4,
+            "fps": 0,
+            "note": "法令行 mcIcon1：#6833 容器，舞台位置来自 scrThroneRoomClass 时间轴（scratch/dump_place.py 6877），缩放 0.9231；tile->容器 偏移由 tools/match_sprite.py 定位 mcIcon 得到。"
+          },
+          {
+            "art": "#6833",
+            "x": -86.57,
+            "y": 141.62,
+            "w": 735.7,
+            "h": 139.4,
+            "fps": 0,
+            "note": "法令行 mcIcon3：#6833 容器，舞台位置来自 scrThroneRoomClass 时间轴（scratch/dump_place.py 6877），缩放 0.9231；tile->容器 偏移由 tools/match_sprite.py 定位 mcIcon 得到。"
+          },
+          {
+            "art": "#6833",
+            "x": -86.57,
+            "y": 245.82,
+            "w": 735.7,
+            "h": 139.4,
+            "fps": 0,
+            "note": "法令行 mcIcon5：#6833 容器，舞台位置来自 scrThroneRoomClass 时间轴（scratch/dump_place.py 6877），缩放 0.9231；tile->容器 偏移由 tools/match_sprite.py 定位 mcIcon 得到。"
+          },
+          {
+            "art": "#6833",
+            "x": -86.57,
+            "y": 350.07,
+            "w": 735.7,
+            "h": 139.4,
+            "fps": 0,
+            "note": "法令行 mcIcon7：#6833 容器，舞台位置来自 scrThroneRoomClass 时间轴（scratch/dump_place.py 6877），缩放 0.9231；tile->容器 偏移由 tools/match_sprite.py 定位 mcIcon 得到。"
+          },
+          {
+            "art": "#6833",
+            "x": -84.67,
+            "y": 453.67,
+            "w": 735.7,
+            "h": 139.4,
+            "fps": 0,
+            "note": "法令行 mcIcon8：#6833 容器，舞台位置来自 scrThroneRoomClass 时间轴（scratch/dump_place.py 6877），缩放 0.9231；tile->容器 偏移由 tools/match_sprite.py 定位 mcIcon 得到。"
+          },
+          {
+            "art": "#6852",
+            "x": 150.15,
+            "y": 36.62,
+            "w": 735.7,
+            "h": 139.4,
+            "fps": 0,
+            "note": "法令行 mcIcon0：#6852 容器，舞台位置来自 scrThroneRoomClass 时间轴（scratch/dump_place.py 6877），缩放 0.9231；tile->容器 偏移由 tools/match_sprite.py 定位 mcIcon 得到。"
+          },
+          {
+            "art": "#6852",
+            "x": 149.4,
+            "y": 141.37,
+            "w": 735.7,
+            "h": 139.4,
+            "fps": 0,
+            "note": "法令行 mcIcon2：#6852 容器，舞台位置来自 scrThroneRoomClass 时间轴（scratch/dump_place.py 6877），缩放 0.9231；tile->容器 偏移由 tools/match_sprite.py 定位 mcIcon 得到。"
+          },
+          {
+            "art": "#6852",
+            "x": 149.4,
+            "y": 245.62,
+            "w": 735.7,
+            "h": 139.4,
+            "fps": 0,
+            "note": "法令行 mcIcon4：#6852 容器，舞台位置来自 scrThroneRoomClass 时间轴（scratch/dump_place.py 6877），缩放 0.9231；tile->容器 偏移由 tools/match_sprite.py 定位 mcIcon 得到。"
+          },
+          {
+            "art": "#6852",
+            "x": 149.35,
+            "y": 348.72,
+            "w": 735.7,
+            "h": 139.4,
+            "fps": 0,
+            "note": "法令行 mcIcon6：#6852 容器，舞台位置来自 scrThroneRoomClass 时间轴（scratch/dump_place.py 6877），缩放 0.9231；tile->容器 偏移由 tools/match_sprite.py 定位 mcIcon 得到。"
+          },
+          {
+            "art": "#6821",
+            "x": 17.52,
+            "y": 90.36,
+            "w": 78.9,
+            "h": 78.9,
+            "fps": 0,
+            "frame": 1,
+            "note": "法令图标 DUCAL SOVEREIGNITY（data/edicts.json n=2，EdictIcon.as:463 用 1 基帧号）"
+          },
+          {
+            "art": "#6821",
+            "x": 16.82,
+            "y": 195.16,
+            "w": 78.9,
+            "h": 78.9,
+            "fps": 0,
+            "frame": 3,
+            "note": "法令图标 TOWN GUILDS（data/edicts.json n=4，EdictIcon.as:463 用 1 基帧号）"
+          },
+          {
+            "art": "#6821",
+            "x": 16.82,
+            "y": 299.36,
+            "w": 78.9,
+            "h": 78.9,
+            "fps": 0,
+            "frame": 5,
+            "note": "法令图标 MECHANICS RESEARCH（data/edicts.json n=6，EdictIcon.as:463 用 1 基帧号）"
+          },
+          {
+            "art": "#6821",
+            "x": 16.82,
+            "y": 403.61,
+            "w": 78.9,
+            "h": 78.9,
+            "fps": 0,
+            "frame": 7,
+            "note": "法令图标 REGULAR TOURNAMENTS（data/edicts.json n=8，EdictIcon.as:463 用 1 基帧号）"
+          },
+          {
+            "art": "#6821",
+            "x": 18.72,
+            "y": 507.21,
+            "w": 78.9,
+            "h": 78.9,
+            "fps": 0,
+            "frame": 8,
+            "note": "法令图标 LEGION（data/edicts.json n=9，EdictIcon.as:463 用 1 基帧号）"
+          },
+          {
+            "art": "#6821",
+            "x": 701.24,
+            "y": 90.16,
+            "w": 78.9,
+            "h": 78.9,
+            "fps": 0,
+            "frame": 0,
+            "note": "法令图标 THE LORD'S CHURCH（data/edicts.json n=1，EdictIcon.as:463 用 1 基帧号）"
+          },
+          {
+            "art": "#6821",
+            "x": 700.49,
+            "y": 194.91,
+            "w": 78.9,
+            "h": 78.9,
+            "fps": 0,
+            "frame": 2,
+            "note": "法令图标 CALL FOR THE CRUSADE（data/edicts.json n=3，EdictIcon.as:463 用 1 基帧号）"
+          },
+          {
+            "art": "#6821",
+            "x": 700.49,
+            "y": 299.16,
+            "w": 78.9,
+            "h": 78.9,
+            "fps": 0,
+            "frame": 4,
+            "note": "法令图标 THE ZEALOTS ORDER（data/edicts.json n=5，EdictIcon.as:463 用 1 基帧号）"
+          },
+          {
+            "art": "#6821",
+            "x": 700.44,
+            "y": 402.26,
+            "w": 78.9,
+            "h": 78.9,
+            "fps": 0,
+            "frame": 6,
+            "note": "法令图标 HEROIC EPOS（data/edicts.json n=7，EdictIcon.as:463 用 1 基帧号）"
+          },
+          {
+            "art": "#60",
+            "x": 618.8,
+            "y": 522.7,
+            "reg": [
+              95.5,
+              29.5
+            ],
+            "fps": 0,
+            "w": 191.0,
+            "h": 59.0,
+            "note": "按钮底板 OK（原版 GameButtonClass 里的 #60，注册点在正中）"
+          },
+          {
+            "art": "#60",
+            "x": 357.95,
+            "y": 28.8,
+            "reg": [
+              95.5,
+              29.5
+            ],
+            "fps": 0,
+            "w": 135.6,
+            "h": 41.9,
+            "note": "按钮底板 RESET（原版 GameButtonClass 里的 #60，注册点在正中）"
+          }
+        ],
+        "captions": [
+          {
+            "text": "OK",
+            "x": 618.8,
+            "y": 522.7,
+            "size": 17,
+            "action": "back"
+          },
+          {
+            "text": "RESET",
+            "x": 357.95,
+            "y": 28.8,
+            "size": 12,
+            "action": "reset"
+          },
+          {
+            "text": "DUCAL SOVEREIGNITY",
+            "x": 125.52,
+            "y": 104.28,
+            "size": 11,
+            "align": "left",
+            "color": "#FFD98A"
+          },
+          {
+            "text": "+75 gold in the beginning of the mission",
+            "x": 119.75,
+            "y": 127.36,
+            "size": 11,
+            "align": "left",
+            "color": "#FFFFFF"
+          },
+          {
+            "text": "+150 gold in the beginning of the mission",
+            "x": 119.75,
+            "y": 147.21,
+            "size": 11,
+            "align": "left",
+            "color": "#FFFFFF"
+          },
+          {
+            "text": "TOWN GUILDS",
+            "x": 124.82,
+            "y": 209.08,
+            "size": 11,
+            "align": "left",
+            "color": "#FFD98A"
+          },
+          {
+            "text": "+15% strongholds' HP",
+            "x": 119.05,
+            "y": 232.16,
+            "size": 11,
+            "align": "left",
+            "color": "#FFFFFF"
+          },
+          {
+            "text": "+30% strongholds' HP",
+            "x": 119.05,
+            "y": 252.01,
+            "size": 11,
+            "align": "left",
+            "color": "#FFFFFF"
+          },
+          {
+            "text": "MECHANICS RESEARCH",
+            "x": 124.82,
+            "y": 313.28,
+            "size": 11,
+            "align": "left",
+            "color": "#FFD98A"
+          },
+          {
+            "text": "+10% bows / seige weapons damage",
+            "x": 119.05,
+            "y": 336.36,
+            "size": 11,
+            "align": "left",
+            "color": "#FFFFFF"
+          },
+          {
+            "text": "+20% bows / seige weapons damage",
+            "x": 119.05,
+            "y": 356.21,
+            "size": 11,
+            "align": "left",
+            "color": "#FFFFFF"
+          },
+          {
+            "text": "REGULAR TOURNAMENTS",
+            "x": 124.82,
+            "y": 417.53,
+            "size": 11,
+            "align": "left",
+            "color": "#FFD98A"
+          },
+          {
+            "text": "Cavalry charge causes 2.5x damage",
+            "x": 119.05,
+            "y": 440.61,
+            "size": 11,
+            "align": "left",
+            "color": "#FFFFFF"
+          },
+          {
+            "text": "Cavalry charge causes 3x damagee",
+            "x": 119.05,
+            "y": 460.46,
+            "size": 11,
+            "align": "left",
+            "color": "#FFFFFF"
+          },
+          {
+            "text": "LEGION",
+            "x": 126.72,
+            "y": 521.13,
+            "size": 11,
+            "align": "left",
+            "color": "#FFD98A"
+          },
+          {
+            "text": "+15% infantry HP",
+            "x": 120.95,
+            "y": 544.21,
+            "size": 11,
+            "align": "left",
+            "color": "#FFFFFF"
+          },
+          {
+            "text": "+30% infantry HP",
+            "x": 120.95,
+            "y": 564.06,
+            "size": 11,
+            "align": "left",
+            "color": "#FFFFFF"
+          },
+          {
+            "text": "THE LORD'S CHURCH",
+            "x": 434.88,
+            "y": 104.08,
+            "size": 11,
+            "align": "left",
+            "color": "#FFD98A"
+          },
+          {
+            "text": "+25% banners` duration",
+            "x": 435.67,
+            "y": 127.16,
+            "size": 11,
+            "align": "left",
+            "color": "#FFFFFF"
+          },
+          {
+            "text": "+50% banners` duration",
+            "x": 435.67,
+            "y": 147.01,
+            "size": 11,
+            "align": "left",
+            "color": "#FFFFFF"
+          },
+          {
+            "text": "CALL FOR THE CRUSADE",
+            "x": 434.13,
+            "y": 208.83,
+            "size": 11,
+            "align": "left",
+            "color": "#FFD98A"
+          },
+          {
+            "text": "+15% Lord`s Judgement damage",
+            "x": 434.92,
+            "y": 231.91,
+            "size": 11,
+            "align": "left",
+            "color": "#FFFFFF"
+          },
+          {
+            "text": "+30% Lord`s Judgement damage",
+            "x": 434.92,
+            "y": 251.76,
+            "size": 11,
+            "align": "left",
+            "color": "#FFFFFF"
+          },
+          {
+            "text": "THE ZEALOTS ORDER",
+            "x": 434.13,
+            "y": 313.08,
+            "size": 11,
+            "align": "left",
+            "color": "#FFD98A"
+          },
+          {
+            "text": "-10% ultimate power cooldown",
+            "x": 434.92,
+            "y": 336.16,
+            "size": 11,
+            "align": "left",
+            "color": "#FFFFFF"
+          },
+          {
+            "text": "-20% ultimate power cooldown",
+            "x": 434.92,
+            "y": 356.01,
+            "size": 11,
+            "align": "left",
+            "color": "#FFFFFF"
+          },
+          {
+            "text": "HEROIC EPOS",
+            "x": 434.08,
+            "y": 416.18,
+            "size": 11,
+            "align": "left",
+            "color": "#FFD98A"
+          },
+          {
+            "text": "+7% troops base morale",
+            "x": 434.87,
+            "y": 439.26,
+            "size": 11,
+            "align": "left",
+            "color": "#FFFFFF"
+          },
+          {
+            "text": "15% troops base morale",
+            "x": 434.87,
+            "y": 459.11,
+            "size": 11,
+            "align": "left",
+            "color": "#FFFFFF"
+          }
+        ],
+        "_note": "法令行整体用 #6833（左列）/#6852（镜像，右列）两个容器，每行一个。**绝对不要单独画 #6833/#6852 的子元件**，也不要画 #6827 —— 它是 _hitArea，Flash 里 visible=false，FFDec 却渲染成白块。舞台位置、缩放 0.9231、每列 5/4 行，全部来自 SWF 时间轴，不是量的。行帧号 = 状态（0 起）：0-14 可购买/已购买橙红、15-20 灰/锁定、21-27 橙红；该对应关系尚未逐帧确认，暂用第 0 帧。背景里的 ISSUED/FREE 数字、RANK/NEXT 进度是作者占位文字，尚无运行时替换。"
+      }
+    },
+    {
+      "key": "badgesroom",
+      "screen": {
+        "background": {
+          "art": "scrBadgesRoomClass",
+          "x": -245.25,
+          "y": -55.61,
+          "w": 1111,
+          "h": 684,
+          "fps": 0,
+          "note": "tile->stage 偏移 (-245.25,-55.61)。标定方法：三个界面 (#2388/#3827 与王座厅) 美术里烙死的 OK 底板中心都在 tile (863.0,577.5)，而时间轴里 butOk (#617) 都在舞台 (618.8,522.7)，相减即得；与王座厅用 15 个 mcUnitIcon_* 独立标定出的 (-245.25,-55.61) 相差不到 1px，互相印证。之前写的 (-182,-50) 偏了 62px。"
+        },
+        "grid": {
+          "art": "#7440",
+          "reg": [
+            96,
+            209
+          ],
+          "origin": [
+            85.9,
+            115.5
+          ],
+          "colPitch": 364.1,
+          "rowPitch": 106.0,
+          "cols": 2,
+          "rows": 4,
+          "note": "8 格勋章页;格子里的名称/描述/进度在 textBands 指定的位置写运行时数据"
+        },
+        "textBands": {
+          "name": {
+            "dx": 159,
+            "dy": -48.5,
+            "w": 240,
+            "h": 16,
+            "size": 11,
+            "padColor": "#E7B543",
+            "pad": [
+              30,
+              -58,
+              245,
+              20
+            ]
+          },
+          "desc": {
+            "dx": 159,
+            "dy": -6.0,
+            "w": 240,
+            "h": 52,
+            "size": 10,
+            "padColor": "#501F1F",
+            "pad": [
+              30,
+              -31,
+              245,
+              62
+            ]
+          },
+          "progress": {
+            "dx": 159,
+            "dy": 39.5,
+            "w": 200,
+            "h": 14,
+            "size": 10,
+            "padColor": "#501F1F",
+            "pad": [
+              34,
+              33,
+              240,
+              15
+            ]
+          }
+        },
+        "captions": [
+          {
+            "text": "OK",
+            "x": 618.8,
+            "y": 522.7,
+            "size": 17,
+            "action": "back",
+            "note": "scrBadgesRoomClass 时间轴 f0 d46 c617 butOk @(618.8,522.7)，不是 714/552.1"
+          }
+        ],
+        "_note": "textBands 的 dx 是相对格子原点(85.9)的偏移，应为内容区中心 245 => dx=159。pad 是遮蔽作者占位文字用的矩形，宽度必须 <= 格子内容宽度(约 245)，否则会盖到相邻格。",
+        "hotspots": [
+          {
+            "x": 0,
+            "y": 270,
+            "w": 46,
+            "h": 46,
+            "action": "badgepage",
+            "arg": -1,
+            "note": "BadgesArrowButton 上一页（scrBadgesRoomClass f0 d78 @22.45,291.9）"
+          },
+          {
+            "x": 754,
+            "y": 270,
+            "w": 46,
+            "h": 46,
+            "action": "badgepage",
+            "arg": 1,
+            "note": "BadgesArrowButton 下一页（f0 d83 @776.45,291.9 sx=-1 镜像）"
+          }
+        ]
+      }
+    },
+    {
+      "key": "missionover",
+      "screen": {
+        "background": {
+          "art": "scrMissionOverClass",
+          "x": -245.25,
+          "y": -55.61,
+          "w": 1111,
+          "h": 712,
+          "fps": 0,
+          "note": "tile->stage 偏移 (-245.25,-55.61)。标定方法：三个界面 (#2388/#3827 与王座厅) 美术里烙死的 OK 底板中心都在 tile (863.0,577.5)，而时间轴里 butOk (#617) 都在舞台 (618.8,522.7)，相减即得；与王座厅用 15 个 mcUnitIcon_* 独立标定出的 (-245.25,-55.61) 相差不到 1px，互相印证。之前写的 (-182,-50) 偏了 62px。"
+        },
+        "elements": [],
+        "captions": [
+          {
+            "text": "OK",
+            "x": 618.8,
+            "y": 522.7,
+            "size": 17,
+            "action": "back"
+          }
+        ],
+        "_note": "scrMissionOverClass 根图已包含结果横幅(_victory/_defeat 两帧)与奖章、战报条纹，所以不要再单独画 #2261 / #2357 —— 之前重复画导致出现两个 VICTORY!。需要按结果换帧时，应让根图整体切帧，而不是叠一个横幅。"
+      }
+    }
+  ],
+  "battle": {
+    "_note": "战场由相机渲染精灵,BattleView 读取 BattlePrototype 的模拟状态。这里放的是 HUD 与镜头参数。",
+    "camera": {
+      "padding": 40,
+      "z": -10
+    },
+    "healthBar": {
+      "art": "KeyNodeHealthBarClass",
+      "colorStrip": "#7867",
+      "reg": [
+        115.3,
+        30.9
+      ],
+      "risePx": 60,
+      "gapPx": 8,
+      "cropFrom": 0.5,
+      "note": "颜色条 4 帧 = 金/绿/青/紫,按归属选帧(FKeyNodeContent.as:1049)"
+    },
+    "unitScale": 1.0
+  },
+  "editable": {
+    "_note": "F1 调整模式的设置。改完按 F2 会覆盖写回本文件,只改动过的项。",
+    "nudgeStep": 1,
+    "nudgeStepFast": 10,
+    "gridSnap": 1,
+    "showOrigin": true
+  }
+}

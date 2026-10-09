@@ -1,0 +1,73 @@
+'use strict';
+const PROFILE_KEY=typeof location!=='undefined'&&new URLSearchParams(location.search).has('qa')?'conquest-qa-profiles-v2':'conquest-profiles-v2';
+let profileIndex=0,profiles=[];
+try{const p=JSON.parse(localStorage.getItem(PROFILE_KEY)||'[]');if(Array.isArray(p))profiles=p.slice(0,3);}catch{}
+function freshProfile(){return {created:new Date().toLocaleDateString(),campaigns:{},lastFaction:'Green'};}
+function profile(){return profiles[profileIndex]||(profiles[profileIndex]=freshProfile());}
+function progress(){const p=profile(),c=p.campaigns[player]||(p.campaigns[player]={completed:[],stars:{}});c.edicts??=Progression.initial(player);if(player==='Purple'){c.edicts=Progression.migrate(player,c.edicts);}CampaignXP.ensure(c,c.campaignCatalogVersion===CampaignCatalog.version?CampaignCatalog.rewardTable(player):CampaignCatalog.legacyRewards);CampaignCatalog.migrateProgress(c,player);return c;}
+function persist(){try{localStorage.setItem(PROFILE_KEY,JSON.stringify(profiles));}catch{toast('浏览器未允许保存，本次仍可继续游玩');}}
+function stage(style,html){const art=style.includes('title-screen')?'native-title-background.svg':style.includes('profile-screen')?'native-profile-background.svg':style.includes('native-campaign-screen')?'native-campaign-background.svg':!style.includes('world-screen')&&!style.includes('edict-screen')&&!style.includes('result-screen')?'results/background-Purple.svg':null;if(art)nativeUIAsset(art);const menu=$('hudMenu');if(menu)menu.className='hud-menu hidden';modal(html);$('overlay').className='overlay '+style;warmNextMenu(style,art);}
+function showTitle(){paused=true;stage('title-screen','<div class="eyebrow">王国等待统帅归来</div><div class="modal-crest"><img src="assets/takeover/ui/crest.png" alt=""></div><h1>城邦征战</h1><p class="subheading">黑 暗 边 境</p><p>建立军队 · 摧毁堡垒 · 占领领土</p><button id="titleStart" class="primary large">开始游戏</button><button id="onlineStart" class="primary large">联机争霸</button>');$('titleStart').onclick=showStory;$('onlineStart').onclick=()=>Network.showMenu();}
+function showStory(){stage('story-screen','<div class="eyebrow">序章</div><h1>破碎的王国</h1><div class="manual story"><p>旧王朝的旗帜已经倒下。</p><p>西方的公国、冰谷的教团与赤焰部落各自为战，而黑暗帝国正从边境步步逼近。</p><p>你将从一座孤立的城堡起步。训练士兵，夺回失陷的城镇，让新的王旗飘扬在每一座堡垒上。</p></div><button id="skipStory" class="primary large">跳过剧情 →</button>');$('skipStory').onclick=showProfiles;}
+function showProfiles(){stage('profile-screen',`<div class="eyebrow">选择征战记录</div><h1>选择存档</h1><div class="save-slots">${[0,1,2].map(i=>{const p=profiles[i],count=p?Object.values(p.campaigns||{}).reduce((n,c)=>n+(c.completed?.length||0),0):0;return `<button data-profile="${i}"><b>0${i+1}</b><span>${p?'领主存档 '+(i+1):'空存档'}</span><small>${p?`已通关 ${count} 关 · ${p.created}`:'创建新的征战记录'}</small></button>`;}).join('')}</div><p class="tips">进度保存在当前浏览器。选择已有存档会继续其战役进度。</p>`);document.querySelectorAll('[data-profile]').forEach(b=>b.onclick=()=>{profileIndex=Number(b.dataset.profile);profile();persist();showCampaign();});}
+function showCampaign(){
+ paused=true;
+ const introductions={Blue:'统率寒冰与机械军团，利用冰霜法术阻滞敌军，以枪炮和法师拓展疆域。',Green:'卫兵逐步成长为剑士与军团步兵，率领坚韧军团，借助神圣召唤开辟王国。',Red:'集结迅捷骑兵与精锐部落，以毒系攻势席卷城邦，召唤沙虫击穿敌阵。',Purple:'统领里瓦迪斯的亡灵军团，唤醒不死战士、骷髅弓手与暗黑骑士，以死亡魔法征服大陆。'};
+ stage('campaign-screen native-campaign-screen',`<div class="native-campaign four-campaigns"><h1>选择战役</h1><div class="native-factions">${['Blue','Green','Red','Purple'].map(c=>`<button data-faction="${c}" aria-label="${COLOR_NAMES[c]}战役" aria-describedby="campaign-info-${c}"><img class="campaign-flag" src="${nativeUIAsset('native-campaign-flag-'+c+'.svg')}" alt=""><div class="campaign-description" id="campaign-info-${c}">${introductions[c]}</div><span>${COLOR_NAMES[c]}</span><small>${profile().campaigns[c]?.completed?.length||0} / ${missions.length}</small></button>`).join('')}</div><button id="profilesBack">更换存档</button>${started&&!battle.result?'<button id="resumeBattle">继续战斗</button>':''}</div>`);
+ document.querySelectorAll('.native-campaign button[data-faction]').forEach(b=>{bindNativeCampaignHover(b);b.onpointerenter=()=>nativeUIAsset(firstWorldArt(b.dataset.faction),'low');b.onclick=()=>{player=b.dataset.faction;mission=0;started=false;reset();paused=true;profile().lastFaction=player;persist();showWorld();};});
+ $('profilesBack').onclick=showProfiles;
+ if($('resumeBattle'))$('resumeBattle').onclick=()=>{player=battle.player;mission=battle.mission;paused=false;hideModal();};
+}
+const campaignHoverImages=new Map();
+const readableRatingImages=new Map();
+function bindReadableWorldRating(button){
+ const image=button.querySelector('.level-completed-crown'),rating=image?.dataset.rating,entry=window.NativeWorldRatingArt?.[rating];if(!image||!entry)return;
+ const url=(entry.file.startsWith('assets/')?entry.file:UI_BASE+entry.file)+'?v='+entry.hash;let cached=readableRatingImages.get(url);
+ if(!cached){const bitmap=new Image();bitmap.decoding='async';cached={image:bitmap,ready:false};cached.promise=new Promise(resolve=>{bitmap.onload=async()=>{try{if(bitmap.decode)await bitmap.decode();cached.ready=!!bitmap.naturalWidth;}catch{cached.ready=false;}if(!cached.ready)readableRatingImages.delete(url);resolve(cached.ready);};bitmap.onerror=()=>{readableRatingImages.delete(url);resolve(false);};});readableRatingImages.set(url,cached);bitmap.src=url;}
+ const update=()=>{if(button.isConnected&&image.dataset.rating===rating&&cached.ready)image.src=url;};if(cached.ready)update();else cached.promise.then(update);
+}
+function bindNativeCampaignHover(button){
+ const entry=window.NativeCampaignHoverAssets?.[button.dataset.faction],flag=button.querySelector('.campaign-flag');if(!entry||!flag)return;
+ const still=flag.src,url=UI_BASE+entry.file+'?v='+entry.hash;let cached=campaignHoverImages.get(url);
+ if(!cached){const image=new Image();image.decoding='async';image.fetchPriority='low';cached={image,ready:false};cached.promise=new Promise(resolve=>{image.onload=async()=>{try{if(image.decode)await image.decode();cached.ready=!!image.naturalWidth;}catch{cached.ready=false;}resolve(cached.ready);};image.onerror=()=>resolve(false);});campaignHoverImages.set(url,cached);image.src=url;}
+ const update=()=>{if(!button.isConnected||!cached.ready)return;const hover=button.matches(':hover,:focus-visible'),next=hover?url:still;if(flag.src!==new URL(next,location.href).href)flag.src=next;button.dataset.nativeHoverReady='true';};
+ for(const event of ['pointerenter','pointerleave','focus','blur'])button.addEventListener(event,update);
+ if(cached.ready)update();else cached.promise.then(update);
+}
+let nativeSwordLoad=null;
+function animateLevelHover(button){
+ const image=button.querySelector('.level-swords');let raf=0,hover=false;
+ const stop=()=>{hover=false;cancelAnimationFrame(raf);raf=0;image.hidden=true;};
+ const start=async()=>{if(button.disabled)return;stop();hover=true;if(!nativeSwordLoad)nativeSwordLoad=new Promise(resolve=>{const atlas=new Image();atlas.onload=()=>resolve(true);atlas.onerror=()=>resolve(false);atlas.src=UI_BASE+'atlases/native-world-swords.webp';});if(!await nativeSwordLoad||!hover||!button.isConnected)return;image.hidden=false;const at=performance.now();let frame=-1;const step=now=>{if(!hover||!button.isConnected)return stop();const next=Math.min(59,Math.floor((now-at)*.03));if(next!==frame){frame=next;image.style.backgroundPosition=(frame%10)*100/9+'% '+Math.floor(frame/10)*20+'%';}if(frame<59)raf=requestAnimationFrame(step);};raf=requestAnimationFrame(step);};
+ button.onpointerenter=start;button.onpointerleave=stop;button.onpointercancel=stop;button.onfocus=start;button.onblur=stop;
+}
+
+const campaignPages=new Map();
+function worldEntries(page){return CampaignCatalog.pageEntries(player,page);}
+function pickCampaignNode(entries,positions,p,x,y){return entries.filter(m=>CampaignCatalog.unlocked(p,m.index)).map(m=>{const [px,py]=positions[m.anchorIndex];return{index:m.index,d:Math.hypot(x-px,(y-(py-23))*.85)};}).sort((a,b)=>a.d-b.d)[0]?.index;}
+function worldNodeHTML(m,p,positions){
+ const done=p.completed.includes(m.index),unlocked=CampaignCatalog.unlocked(p,m.index),pos=positions[m.anchorIndex],i=m.index;
+ return `<button data-level="${i}" style="left:${pos[0]/8}%;top:${pos[1]/6}%;" ${unlocked?'':'disabled'} aria-label="第 ${i+1} 关 · ${m.caption}${done?' 已通关':unlocked?' 可出征':' 未解锁'}" class="${done?'completed':''}"><img class="world-node-art" src="${UI_BASE}atlases/native-world-node-${player}.webp?v=20261006-r4" alt="">${done?`<span class="level-completed-marker" aria-label="已通关"><img class="level-completed-crown" data-rating="${p.stars[i]||1}" src="${nativeUIAsset('native-world-rating-'+(p.stars[i]||1)+'.svg')}" alt=""></span>`:unlocked?'<span class="level-open-marker">可出征</span>':''}<i class="level-swords" aria-hidden="true" hidden></i><span>${i+1}</span></button>`;
+}
+function showWorld(page=campaignPages.get(profileIndex+':'+player)){
+ paused=true;const p=progress(),positions=WorldLayout[player],all=CampaignCatalog.missions(player),firstLocked=all.findIndex(m=>!p.completed.includes(m.index)),pages=Math.ceil(all.length/CampaignCatalog.pageSize);
+ page=Math.max(0,Math.min(pages-1,page??Math.floor(Math.max(0,firstLocked)/CampaignCatalog.pageSize)));campaignPages.set(profileIndex+':'+player,page);
+ const entries=worldEntries(page),frame=CampaignCatalog.worldFrame(p,player),rank=CampaignXP.status(p.xp);
+ stage('world-screen native-world-screen',`<div class="campaign-map native-world" data-country="${player}" data-page="${page}" style="--world-art:url('${nativeUIAsset((player==='Purple'?'native-world-Purple':'native-world-'+frame)+'.svg')}');--world-controls:url('${UI_BASE}atlases/native-world-controls-${player}.webp?v=20261006-r4');--xp:${rank.fraction}"><h1>${COLOR_NAMES[player]}</h1>${player==='Purple'?`<img class="empire-world-crest" src="${UI_BASE}empire-crest.svg" alt="里瓦迪斯帝国">`:''}<div class="world-pages"><button id="worldPrevious" class="world-page-button" ${page===0?'disabled':''}>上一段</button><span>第 ${page+1} / ${pages} 段 · ${entries[0].index+1}—${entries.at(-1).index+1} 关</span><button id="worldNext" class="world-page-button" ${page===pages-1?'disabled':''}>下一段</button></div><div class="world-nodes">${entries.map(m=>worldNodeHTML(m,p,positions)).join('')}</div><button id="worldDifficulty" aria-label="切换战役难度">难度 · ${Difficulty.get(difficulty).label}</button><button id="campaignBack">选择战役</button><button id="edictsOpen">${player==='Purple'?'帝国条令':'王国条令'} · ${p.edictTotal-Object.values(p.edicts).reduce((a,b)=>a+b,0)} 点</button><span class="world-rank"><svg viewBox="0 0 62.4 39" aria-label="等级 ${rank.rank}"><text x="31.2" y="19.5" text-anchor="middle" dominant-baseline="central">${rank.rank}</text></svg><small>等级</small></span><span class="world-free">${p.edictTotal-Object.values(p.edicts).reduce((a,b)=>a+b,0)}<small>条令点</small></span><div class="world-xp-fill"></div><div class="campaign-progress">${rank.needed?rank.current+' / '+rank.needed+' 经验':'已达最高等级'}</div></div>`);
+ $('worldPrevious').onclick=()=>{if(!campaignStartPending)showWorld(page-1);};$('worldNext').onclick=()=>{if(!campaignStartPending)showWorld(page+1);};
+ const difficultyTitle=()=>Difficulty.get(difficulty).summary+'；三星时限 '+Math.floor(Difficulty.get(difficulty).three/60)+'分'+Difficulty.get(difficulty).three%60+'秒';
+ $('worldDifficulty').title=difficultyTitle();$('worldDifficulty').onclick=()=>{difficulty=Difficulty.order[(Difficulty.order.indexOf(difficulty)+1)%Difficulty.order.length];$('worldDifficulty').textContent='难度 · '+Difficulty.get(difficulty).label;$('worldDifficulty').title=difficultyTitle();document.querySelector('.level-info-layer')?.remove();};
+ document.querySelectorAll('[data-level]').forEach(button=>{animateLevelHover(button);bindReadableWorldRating(button);button.onclick=e=>{let picked=Number(button.dataset.level);if(e.detail){const r=document.querySelector('.native-world').getBoundingClientRect(),nearest=pickCampaignNode(entries,positions,p,(e.clientX-r.left)/r.width*800,(e.clientY-r.top)/r.height*600);if(nearest!=null)picked=nearest;}mission=picked;showLevelInfo();};});
+ $('campaignBack').onclick=showCampaign;$('edictsOpen').onclick=()=>showEdicts(false);
+}
+
+function showLevelInfo(){
+ const map=document.querySelector('.native-world');if(!map)return;map.querySelector('.level-info-layer')?.remove();
+ loadNativeMap(GAME_DATA.campaigns[player][mission],'low');
+ const [x,ny]=WorldLayout[player][mission%CampaignCatalog.pageSize],y=ny-15,variant=x<200?1:x<360?2:x<550?3:4,layout=LevelPopupLayout[variant-1],button=layout.button,layer=document.createElement('div');layer.className='level-info-layer';
+ const reward=CampaignCatalog.mission(player,mission).reward,info=CampaignCatalog.mission(player,mission)||{caption:'帝国征战 · 第 '+(mission+1)+' 关',intro:'率领帝国军团，占领敌方据点。'},text=t=>String(t).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),asset='native-level-info-'+player+(player==='Purple'?'-restored':'')+'-'+variant+'.svg';
+ layer.innerHTML='<button class="level-dismiss" aria-label="关闭关卡信息"></button><img class="level-info-art" src="'+nativeUIAsset(asset)+'" alt="" style="left:'+((x-650)/8)+'%;top:'+((y-160)/6)+'%"><span class="level-info-title" style="left:'+((x+layout.title[0])/8)+'%;top:'+((y+layout.title[1])/6)+'%">第 '+(mission+1)+' 关 · '+text(info.caption)+'</span><span class="level-info-xp" style="left:'+((x+layout.xp[0])/8)+'%;top:'+((y+layout.xp[1])/6)+'%">'+reward+'</span><p class="level-info-intro" style="left:'+((x+layout.info[0])/8)+'%;top:'+((y+layout.info[1])/6)+'%">'+text(info.intro)+'</p><button id="toBattle" style="left:'+((x+button[0]-60.24)/8)+'%;top:'+((y+button[1]-18.6)/6)+'%" aria-label="开始战斗">开始战斗</button>';
+ map.append(layer);layer.querySelector('.level-dismiss').onclick=()=>{if(!campaignStartPending)layer.remove();};$('toBattle').title=Difficulty.get(difficulty).summary;$('toBattle').onclick=()=>startCampaignBattle($('toBattle'));
+}
+function showPreparation(){showWorld(Math.floor(mission/CampaignCatalog.pageSize));showLevelInfo();}
+function finish(){if(handledResult)return;captureResultTerrain();handledResult=true;spell=null;const win=battle.result==='victory',stars=win?Difficulty.stars(battle.time,difficulty):0,p=progress(),reward=CampaignXP.award(p,mission,win,CampaignCatalog.mission(player,mission).reward);if(win)CampaignCatalog.complete(p,player,mission,stars);persist();stage('result-screen native-result-screen',NativeResults.render({battle,win,stars,reward,progress:p,difficulty:Difficulty.get(difficulty),clock:clock()}));NativeResults.animate(document.querySelector('.native-results'));$('continue').onclick=()=>{if(win)showWorld();else showPreparation();};beep(win?700:180);}

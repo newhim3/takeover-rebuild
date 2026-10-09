@@ -1,0 +1,34 @@
+/* Reference: church 369–372 s; tribe 4.5–6 s; sandbox 28–33 s. */
+.video-hud::before{content:'';position:absolute;left:0;right:0;bottom:0;height:20%;background:var(--hud-back,url('assets/takeover/ui/atlases/screens/native-hud-back-Green.webp?v=20261006-r6')) bottom/100% 100% no-repeat;pointer-events:none}
+.video-hud .resources{left:50%;right:0%;bottom:4px;height:27px;background:transparent;gap:0}
+.video-hud .resources .gold{order:0;color:#ffe84e}.video-hud .resources .population{order:1}.video-hud .resources .mana{order:2}
+.video-hud .resources>div{padding-left:15px}.video-hud .resources i{display:none}
+.video-hud .resources span{font:bold 12px Georgia;background:none}.video-hud .resources small{display:inline;font:10px Georgia;color:#c19ae6}
+.in-world-spells{left:28%;width:22%;bottom:3px;max-width:260px}
+body .in-world-spells .spell-grid button,body .in-world-spells .spell-grid button:hover:not(:disabled){height:44px;background:transparent url('assets/takeover/ui/atlases/screens/native-spell-slot.webp?v=20261006-r6') center/contain no-repeat;border:0;box-shadow:none;border-radius:0}
+.in-world-spells .spell-grid small{background:none!important;color:#d6ecff!important;font:bold 10px Georgia!important;bottom:1px!important}
+.in-world-spells .spell-grid .original-icon{width:100%;height:100%;object-fit:contain;margin:0;display:block;flex:none}
+.in-world-spells .spell-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}
+body .in-world-spells .spell-grid button{display:block;overflow:hidden;flex:none;aspect-ratio:1;max-height:44px}
+.in-world-spells .spell-grid small{pointer-events:none}
+.in-world-spells .spell-grid button:disabled{opacity:.6;filter:grayscale(.75)}
+@media(max-width:700px){.video-hud .resources{height:20px}.video-hud .resources span{font-size:9px}.video-hud .resources small{font-size:7px}body .in-world-spells .spell-grid button{height:27px}.in-world-spells .spell-grid .original-icon{width:100%;height:100%}.in-world-spells .spell-grid small{font-size:7px!important}}
+.video-hud .resources .population small{display:none}
+body .modal button.primary,body .modal button.primary:hover:not(:disabled){background:transparent url('assets/takeover/ui/button.png') center/100% 100% no-repeat;border:0;box-shadow:none;border-radius:0}
+/* Keep the slot, icon and active/hover states at exactly the same dimensions. */
+#battlefield .in-world-spells button[data-spell],#battlefield .in-world-spells button[data-spell]:is(:hover,:focus,:active){min-width:0!important;min-height:0!important;padding:0!important;margin:0!important;border:0!important;background-size:contain!important;transform:none!important;scale:none!important;zoom:1!important;transition:none!important;animation:none!important}
+#battlefield .in-world-spells button[data-spell] img,#battlefield .in-world-spells button[data-spell]:is(:hover,:focus,:active) img{width:100%!important;height:100%!important;max-width:100%!important;object-fit:contain!important;transform:none!important;scale:none!important;zoom:1!important;filter:none!important;transition:none!important}
+/* The picture remains visible when unavailable. Only real cooldown draws shade. */
+#battlefield .in-world-spells{width:191px!important;max-width:191px!important;padding:0}
+#battlefield .in-world-spells .spell-grid{grid-template-columns:repeat(4,44px)!important;gap:5px!important}
+#battlefield .in-world-spells button[data-spell],#battlefield .in-world-spells button[data-spell]:is(:hover,:focus,:active,:disabled){width:44px!important;height:44px!important;min-width:44px!important;max-width:44px!important;min-height:44px!important;max-height:44px!important;position:relative;opacity:1!important;filter:none!important;outline:0;background-color:transparent!important;overflow:hidden}
+#battlefield .in-world-spells button[data-spell]::after{display:none!important}
+#battlefield .in-world-spells .spell-cooldown{position:absolute;inset:1px;background:rgba(4,7,14,.62);clip-path:inset(var(--cooldown-clear,100%) 0 0 0);pointer-events:none}
+#battlefield .in-world-spells .spell-state-mark{position:absolute;top:1px;right:1px;min-width:14px;height:15px;line-height:15px;padding:0 1px;font:bold 10px Georgia;text-align:center;color:#fff4c5;background:#4c3029;border:1px solid #caaa67;border-radius:3px;pointer-events:none}
+#battlefield .in-world-spells .spell-state-mark:empty{display:none}
+#battlefield .in-world-spells [data-state="mana"] .spell-state-mark{background:#123e64;border-color:#7fd7f5;color:#cffaff}
+#battlefield .in-world-spells [data-state="tower"] .spell-state-mark{background:#3d2a67;border-color:#c8a4f5;color:#f0dcff}
+#battlefield .in-world-spells button[data-spell] small{z-index:2;bottom:1px!important;text-shadow:0 1px 2px #000,1px 0 #000,-1px 0 #000;line-height:12px;font-size:10px!important}
+#battlefield .in-world-spells button[data-spell].active::before{content:'';position:absolute;inset:0;background:transparent url('assets/takeover/ui/move.png') center top/24px 11px no-repeat;border:0;box-shadow:none;pointer-events:none;z-index:3}
+
+#battlefield .in-world-spells .spell-state-mark,#battlefield .in-world-spells [data-state] .spell-state-mark{background:transparent url('assets/takeover/ui/spell-frame.png') center/100% 100% no-repeat;border:0;border-radius:0;text-shadow:0 1px 2px #100c17}

@@ -1,0 +1,1145 @@
+{
+  "base": "https://house-easter-highland-nothing.trycloudflare.com",
+  "label": "before-public",
+  "errors": [],
+  "samples": [
+    {
+      "name": "cold-title",
+      "elapsed": 16464.899999976158,
+      "tasks": [],
+      "resources": [
+        {
+          "url": "snapshot-codec.js?v=20261006-r10",
+          "ms": 10810,
+          "bytes": 1170,
+          "transfer": 1470,
+          "type": "script"
+        },
+        {
+          "url": "multiplayer-client.js?v=20261006-r10",
+          "ms": 10810,
+          "bytes": 8264,
+          "transfer": 8564,
+          "type": "script"
+        },
+        {
+          "url": "snapshot-motion.js?v=20261006-r6",
+          "ms": 10098,
+          "bytes": 1331,
+          "transfer": 1631,
+          "type": "script"
+        },
+        {
+          "url": "game.js?v=20261006-r10",
+          "ms": 10075,
+          "bytes": 17915,
+          "transfer": 18215,
+          "type": "script"
+        },
+        {
+          "url": "multiplayer-map.js?v=20261006-r6",
+          "ms": 10075,
+          "bytes": 1828,
+          "transfer": 2128,
+          "type": "script"
+        },
+        {
+          "url": "terrain-cache.js?v=20261006-r10",
+          "ms": 9822,
+          "bytes": 1155,
+          "transfer": 1455,
+          "type": "script"
+        },
+        {
+          "url": "assets/takeover/maps/highlands-roads.js?v=20261006-r6",
+          "ms": 9822,
+          "bytes": 2776,
+          "transfer": 3076,
+          "type": "script"
+        },
+        {
+          "url": "animation-cache.js?v=20261006-r10",
+          "ms": 9821,
+          "bytes": 995,
+          "transfer": 1295,
+          "type": "script"
+        },
+        {
+          "url": "native-map-bounds.js?v=20261006-r9",
+          "ms": 9821,
+          "bytes": 510,
+          "transfer": 810,
+          "type": "script"
+        },
+        {
+          "url": "simulation-clock.js?v=20261006-r10",
+          "ms": 8943,
+          "bytes": 760,
+          "transfer": 1060,
+          "type": "script"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/native-render-ui.js?v=20261006-r6",
+          "ms": 8707,
+          "bytes": 314,
+          "transfer": 614,
+          "type": "script"
+        },
+        {
+          "url": "assets/takeover/maps/highlands-regions.js?v=20261006-r6",
+          "ms": 8704,
+          "bytes": 369,
+          "transfer": 669,
+          "type": "script"
+        },
+        {
+          "url": "building-ui-layout.js?v=20261006-r6",
+          "ms": 8696,
+          "bytes": 502,
+          "transfer": 802,
+          "type": "script"
+        },
+        {
+          "url": "highlands-terrain.js?v=20261006-r6",
+          "ms": 8694,
+          "bytes": 1085,
+          "transfer": 1385,
+          "type": "script"
+        },
+        {
+          "url": "native-audio.js?v=20261006-r6",
+          "ms": 8694,
+          "bytes": 1070,
+          "transfer": 1370,
+          "type": "script"
+        },
+        {
+          "url": "assets/takeover/ui/ultimate/atlases/native-declarations.js?v=20261006-r6",
+          "ms": 8621,
+          "bytes": 994,
+          "transfer": 1294,
+          "type": "script"
+        },
+        {
+          "url": "declaration-art.js?v=20261006-r6",
+          "ms": 8550,
+          "bytes": 1327,
+          "transfer": 1627,
+          "type": "script"
+        },
+        {
+          "url": "unit-pivots.js?v=20261006-r6",
+          "ms": 8025,
+          "bytes": 3551,
+          "transfer": 3851,
+          "type": "script"
+        },
+        {
+          "url": "edicts-ui.js?v=20261006-r8",
+          "ms": 7797,
+          "bytes": 2884,
+          "transfer": 3184,
+          "type": "script"
+        },
+        {
+          "url": "building-pivots.js?v=20261006-r6",
+          "ms": 7797,
+          "bytes": 861,
+          "transfer": 1161,
+          "type": "script"
+        },
+        {
+          "url": "spell-pivots.js?v=20261006-r6",
+          "ms": 7797,
+          "bytes": 657,
+          "transfer": 957,
+          "type": "script"
+        },
+        {
+          "url": "flow.js?v=20261006-r6",
+          "ms": 7796,
+          "bytes": 5202,
+          "transfer": 5502,
+          "type": "script"
+        },
+        {
+          "url": "recruit-layout.js?v=20261006-r6",
+          "ms": 7796,
+          "bytes": 278,
+          "transfer": 578,
+          "type": "script"
+        },
+        {
+          "url": "results-ui.js?v=20261006-r6",
+          "ms": 7463,
+          "bytes": 3093,
+          "transfer": 3393,
+          "type": "script"
+        },
+        {
+          "url": "level-popup-layout.js?v=20261006-r6",
+          "ms": 7436,
+          "bytes": 175,
+          "transfer": 475,
+          "type": "script"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/screens/native-screen-assets.js?v=20261006-r8",
+          "ms": 6851,
+          "bytes": 1636,
+          "transfer": 1936,
+          "type": "script"
+        },
+        {
+          "url": "world-layout.js?v=20261006-r6",
+          "ms": 6851,
+          "bytes": 411,
+          "transfer": 711,
+          "type": "script"
+        },
+        {
+          "url": "engine.js?v=20261006-r10",
+          "ms": 6850,
+          "bytes": 13201,
+          "transfer": 13501,
+          "type": "script"
+        },
+        {
+          "url": "campaign-xp.js?v=20261006-r6",
+          "ms": 6850,
+          "bytes": 744,
+          "transfer": 1044,
+          "type": "script"
+        },
+        {
+          "url": "ui.js?v=20261006-r6",
+          "ms": 6850,
+          "bytes": 1200,
+          "transfer": 1500,
+          "type": "script"
+        },
+        {
+          "url": "spell-runtime.js?v=20261006-r8",
+          "ms": 6545,
+          "bytes": 3487,
+          "transfer": 3787,
+          "type": "script"
+        },
+        {
+          "url": "order-runtime.js?v=20261006-r9",
+          "ms": 6545,
+          "bytes": 3228,
+          "transfer": 3528,
+          "type": "script"
+        },
+        {
+          "url": "curved-roads.js?v=20261006-r6",
+          "ms": 6544,
+          "bytes": 1995,
+          "transfer": 2295,
+          "type": "script"
+        },
+        {
+          "url": "ai-presets.js?v=20261006-r6",
+          "ms": 5381,
+          "bytes": 358,
+          "transfer": 658,
+          "type": "script"
+        },
+        {
+          "url": "enemy-ai.js?v=20261006-r8",
+          "ms": 5381,
+          "bytes": 11557,
+          "transfer": 11857,
+          "type": "script"
+        },
+        {
+          "url": "mission-info.js?v=20261006-r6",
+          "ms": 5380,
+          "bytes": 2217,
+          "transfer": 2517,
+          "type": "script"
+        },
+        {
+          "url": "difficulty.js?v=20261006-r8",
+          "ms": 5380,
+          "bytes": 1921,
+          "transfer": 2221,
+          "type": "script"
+        },
+        {
+          "url": "animation-timing.js?v=20261006-r6",
+          "ms": 5380,
+          "bytes": 1022,
+          "transfer": 1322,
+          "type": "script"
+        },
+        {
+          "url": "progression.js?v=20261006-r6",
+          "ms": 3740,
+          "bytes": 6339,
+          "transfer": 6639,
+          "type": "script"
+        },
+        {
+          "url": "unit-art.js?v=20261006-r6",
+          "ms": 3739,
+          "bytes": 1402,
+          "transfer": 1702,
+          "type": "script"
+        },
+        {
+          "url": "spell-data.js?v=20261006-r6",
+          "ms": 3739,
+          "bytes": 1337,
+          "transfer": 1637,
+          "type": "script"
+        },
+        {
+          "url": "assets/takeover/ui/spell-fire.png",
+          "ms": 3738,
+          "bytes": 6979,
+          "transfer": 7279,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/spell-summon.png",
+          "ms": 3738,
+          "bytes": 6511,
+          "transfer": 6811,
+          "type": "img"
+        },
+        {
+          "url": "unit-rules.js?v=20261006-r6",
+          "ms": 3738,
+          "bytes": 3446,
+          "transfer": 3746,
+          "type": "script"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/screens/native-title-background.webp?v=20261006-r6",
+          "ms": 3569,
+          "bytes": 1246214,
+          "transfer": 1246514,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/screens/results--background-Purple.webp?v=20261006-r6",
+          "ms": 3287,
+          "bytes": 321276,
+          "transfer": 321576,
+          "type": "css"
+        },
+        {
+          "url": "assets/takeover/ui/spell-heal.png",
+          "ms": 2986,
+          "bytes": 6718,
+          "transfer": 7018,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/crest.png",
+          "ms": 2966,
+          "bytes": 4327,
+          "transfer": 4627,
+          "type": "img"
+        },
+        {
+          "url": "native-world.css?v=20261006-r6",
+          "ms": 2091,
+          "bytes": 4110,
+          "transfer": 4410,
+          "type": "link"
+        },
+        {
+          "url": "native-results.css?v=20261006-r6",
+          "ms": 2091,
+          "bytes": 2011,
+          "transfer": 2311,
+          "type": "link"
+        },
+        {
+          "url": "game-data.js?v=20261006-r6",
+          "ms": 2046,
+          "bytes": 38701,
+          "transfer": 39001,
+          "type": "script"
+        },
+        {
+          "url": "native-edicts.css?v=20261006-r6",
+          "ms": 2030,
+          "bytes": 1956,
+          "transfer": 2256,
+          "type": "link"
+        },
+        {
+          "url": "assets/takeover/ui/button.png",
+          "ms": 1750,
+          "bytes": 9882,
+          "transfer": 10182,
+          "type": "css"
+        },
+        {
+          "url": "assets/takeover/ui/speed-fast.png",
+          "ms": 1646,
+          "bytes": 3617,
+          "transfer": 3917,
+          "type": "css"
+        },
+        {
+          "url": "assets/takeover/ui/menu.png",
+          "ms": 1645,
+          "bytes": 3535,
+          "transfer": 3835,
+          "type": "css"
+        },
+        {
+          "url": "assets/takeover/ui/upgrade-arrow.png",
+          "ms": 1477,
+          "bytes": 2559,
+          "transfer": 2859,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/sound.png",
+          "ms": 1471,
+          "bytes": 5447,
+          "transfer": 5747,
+          "type": "css"
+        },
+        {
+          "url": "assets/takeover/ui/help.png",
+          "ms": 1460,
+          "bytes": 3208,
+          "transfer": 3508,
+          "type": "css"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/screens/native-hud-back-Green.webp?v=20261006-r6",
+          "ms": 1457,
+          "bytes": 26698,
+          "transfer": 26998,
+          "type": "css"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/screens/native-spell-slot.webp?v=20261006-r6",
+          "ms": 1418,
+          "bytes": 290,
+          "transfer": 590,
+          "type": "css"
+        },
+        {
+          "url": "multiplayer.css?v=20261006-r6",
+          "ms": 1218,
+          "bytes": 1029,
+          "transfer": 1329,
+          "type": "link"
+        },
+        {
+          "url": "style.css?v=20261006-r6",
+          "ms": 1002,
+          "bytes": 4098,
+          "transfer": 4398,
+          "type": "link"
+        },
+        {
+          "url": "original-ui.css?v=20261006-r6",
+          "ms": 951,
+          "bytes": 3577,
+          "transfer": 3877,
+          "type": "link"
+        },
+        {
+          "url": "recruitment.css?v=20261006-r6",
+          "ms": 916,
+          "bytes": 1248,
+          "transfer": 1548,
+          "type": "link"
+        },
+        {
+          "url": "native-hud.css?v=20261006-r6",
+          "ms": 912,
+          "bytes": 1542,
+          "transfer": 1842,
+          "type": "link"
+        }
+      ]
+    },
+    {
+      "name": "campaign",
+      "elapsed": 2321,
+      "tasks": [],
+      "resources": [
+        {
+          "url": "assets/takeover/ui/atlases/screens/native-campaign-flag-Blue.webp?v=20261006-r6",
+          "ms": 2312,
+          "bytes": 302918,
+          "transfer": 303218,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/screens/native-campaign-background.webp?v=20261006-r6",
+          "ms": 2069,
+          "bytes": 367682,
+          "transfer": 367982,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/screens/native-campaign-flag-Green.webp?v=20261006-r6",
+          "ms": 2009,
+          "bytes": 295906,
+          "transfer": 296206,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/screens/native-campaign-flag-Red.webp?v=20261006-r6",
+          "ms": 1843,
+          "bytes": 292506,
+          "transfer": 292806,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/screens/native-campaign-flag-Purple.webp?v=20261006-r6",
+          "ms": 1743,
+          "bytes": 124756,
+          "transfer": 125056,
+          "type": "img"
+        }
+      ]
+    },
+    {
+      "name": "world",
+      "elapsed": 3253.7999999523163,
+      "tasks": [],
+      "resources": [
+        {
+          "url": "assets/takeover/ui/atlases/native-world-swords.webp",
+          "ms": 3231,
+          "bytes": 37356,
+          "transfer": 37656,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/native-world-controls-Green.webp?v=20261006-r4",
+          "ms": 2127,
+          "bytes": 138088,
+          "transfer": 138388,
+          "type": "css"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/screens/results--button.webp?v=20261006-r6",
+          "ms": 2098,
+          "bytes": 17810,
+          "transfer": 18110,
+          "type": "css"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/screens/native-edict-xp-fill.webp?v=20261006-r6",
+          "ms": 2098,
+          "bytes": 1404,
+          "transfer": 1704,
+          "type": "css"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/screens/native-world-1.webp?v=20261006-r6",
+          "ms": 2079,
+          "bytes": 860450,
+          "transfer": 860750,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/native-world-node-Green.webp?v=20261006-r4",
+          "ms": 1145,
+          "bytes": 9768,
+          "transfer": 10068,
+          "type": "img"
+        }
+      ]
+    },
+    {
+      "name": "repeat-world",
+      "elapsed": 10.800000011920929,
+      "tasks": [],
+      "resources": []
+    },
+    {
+      "name": "paused-battle",
+      "elapsed": 13486,
+      "tasks": [
+        {
+          "start": 33971.60000002384,
+          "ms": 320
+        }
+      ],
+      "resources": [
+        {
+          "url": "assets/takeover/animation/anim/GreenInfantryRight_Attack.png",
+          "ms": 8761,
+          "bytes": 7884,
+          "transfer": 8184,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/animation/anim/GreenInfantryLeft_Go.png",
+          "ms": 8566,
+          "bytes": 23017,
+          "transfer": 23317,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/477.png",
+          "ms": 7983,
+          "bytes": 26482,
+          "transfer": 26782,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/479.png",
+          "ms": 7982,
+          "bytes": 29589,
+          "transfer": 29889,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/animation/anim/GreenInfantryRight_Go.png",
+          "ms": 7961,
+          "bytes": 23624,
+          "transfer": 23924,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/animation/anim/CastleGreenAnimClass.png",
+          "ms": 7929,
+          "bytes": 38541,
+          "transfer": 38841,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/468.png",
+          "ms": 7640,
+          "bytes": 21001,
+          "transfer": 21301,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/470.png",
+          "ms": 7384,
+          "bytes": 23679,
+          "transfer": 23979,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/475.png",
+          "ms": 7383,
+          "bytes": 35787,
+          "transfer": 36087,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/473.png",
+          "ms": 7382,
+          "bytes": 33726,
+          "transfer": 34026,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/466.png",
+          "ms": 6869,
+          "bytes": 30059,
+          "transfer": 30359,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/464.png",
+          "ms": 6869,
+          "bytes": 28416,
+          "transfer": 28716,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/456.png",
+          "ms": 6582,
+          "bytes": 3550,
+          "transfer": 3850,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/460.png",
+          "ms": 6579,
+          "bytes": 3570,
+          "transfer": 3870,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/458.png",
+          "ms": 6104,
+          "bytes": 3329,
+          "transfer": 3629,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/451.png",
+          "ms": 6102,
+          "bytes": 3655,
+          "transfer": 3955,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/454.png",
+          "ms": 6095,
+          "bytes": 3044,
+          "transfer": 3344,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/449.png",
+          "ms": 6095,
+          "bytes": 3390,
+          "transfer": 3690,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/447.png",
+          "ms": 5348,
+          "bytes": 1567,
+          "transfer": 1867,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/418.png",
+          "ms": 5195,
+          "bytes": 10153,
+          "transfer": 10453,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/422.png",
+          "ms": 5195,
+          "bytes": 7609,
+          "transfer": 7909,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/413.png",
+          "ms": 5194,
+          "bytes": 11310,
+          "transfer": 11610,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/420.png",
+          "ms": 5194,
+          "bytes": 11494,
+          "transfer": 11794,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/424.png",
+          "ms": 5194,
+          "bytes": 8731,
+          "transfer": 9031,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/445.png",
+          "ms": 5194,
+          "bytes": 4728,
+          "transfer": 5028,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/411.png",
+          "ms": 5193,
+          "bytes": 10621,
+          "transfer": 10921,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/409.png",
+          "ms": 4467,
+          "bytes": 8387,
+          "transfer": 8687,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/403.png",
+          "ms": 3974,
+          "bytes": 8336,
+          "transfer": 8636,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/401.png",
+          "ms": 3974,
+          "bytes": 21753,
+          "transfer": 22053,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/395.png",
+          "ms": 3973,
+          "bytes": 14149,
+          "transfer": 14449,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/animation/anim/CastleGreenClass.png",
+          "ms": 3949,
+          "bytes": 22301,
+          "transfer": 22601,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/399.png",
+          "ms": 3948,
+          "bytes": 11342,
+          "transfer": 11642,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/405.png",
+          "ms": 3948,
+          "bytes": 7909,
+          "transfer": 8209,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/native-render-ui.webp",
+          "ms": 3944,
+          "bytes": 40780,
+          "transfer": 41080,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/maps/level-1.js?v=20261006-r10",
+          "ms": 3907,
+          "bytes": 418547,
+          "transfer": 418847,
+          "type": "script"
+        },
+        {
+          "url": "assets/takeover/art/images/393.png",
+          "ms": 3694,
+          "bytes": 9483,
+          "transfer": 9783,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/391.png",
+          "ms": 3181,
+          "bytes": 16241,
+          "transfer": 16541,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/animation/anim/CastlePurpleClass.png",
+          "ms": 3070,
+          "bytes": 27057,
+          "transfer": 27357,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/389.png",
+          "ms": 3048,
+          "bytes": 12601,
+          "transfer": 12901,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/animation/anim/CastlePurpleAnimClass.png",
+          "ms": 3037,
+          "bytes": 55076,
+          "transfer": 55376,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/animation/anim/TownPurpleClass.png",
+          "ms": 2985,
+          "bytes": 17896,
+          "transfer": 18196,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/building-health-Purple.webp",
+          "ms": 2785,
+          "bytes": 2670,
+          "transfer": 2970,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/368.png",
+          "ms": 2759,
+          "bytes": 68661,
+          "transfer": 68961,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/380.png",
+          "ms": 2759,
+          "bytes": 6434,
+          "transfer": 6734,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/386.png",
+          "ms": 2759,
+          "bytes": 9817,
+          "transfer": 10117,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/366.png",
+          "ms": 2564,
+          "bytes": 60189,
+          "transfer": 60489,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/384.png",
+          "ms": 2307,
+          "bytes": 7709,
+          "transfer": 8009,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/382.png",
+          "ms": 2295,
+          "bytes": 10126,
+          "transfer": 10426,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/364.png",
+          "ms": 2243,
+          "bytes": 102451,
+          "transfer": 102751,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/animation/anim/GreenInfantryDown_Go.png",
+          "ms": 2189,
+          "bytes": 23333,
+          "transfer": 23633,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/animation/anim/TownPurpleAnimClass.png",
+          "ms": 1978,
+          "bytes": 849099,
+          "transfer": 849399,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/spell-frame.png",
+          "ms": 1938,
+          "bytes": 1693,
+          "transfer": 1993,
+          "type": "css"
+        },
+        {
+          "url": "assets/takeover/ui/unit-Green-Cavalry.png",
+          "ms": 1906,
+          "bytes": 1003,
+          "transfer": 1303,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/362.png",
+          "ms": 1658,
+          "bytes": 56835,
+          "transfer": 57135,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/unit-Green-Infantry.png",
+          "ms": 1656,
+          "bytes": 827,
+          "transfer": 1127,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/spell-Green-heal.png?v=20261002",
+          "ms": 1656,
+          "bytes": 6718,
+          "transfer": 7018,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/spell-Green-ultimate.png?v=20261002",
+          "ms": 1655,
+          "bytes": 7038,
+          "transfer": 7338,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/357.png",
+          "ms": 1614,
+          "bytes": 458363,
+          "transfer": 458663,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/animation/anim/GreenInfantryLeft_Attack.png",
+          "ms": 1567,
+          "bytes": 9509,
+          "transfer": 9809,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/ultimate/atlases/UltimateMessage3Class-0.webp?v=20261006-r5",
+          "ms": 1506,
+          "bytes": 809642,
+          "transfer": 809942,
+          "type": "fetch"
+        },
+        {
+          "url": "assets/takeover/ui/spell-Green-summon.png?v=20261002",
+          "ms": 1459,
+          "bytes": 6859,
+          "transfer": 7159,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/screens/native-recruit-Castle-Green-right.webp?v=20261006-r6",
+          "ms": 1443,
+          "bytes": 153140,
+          "transfer": 153440,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/unit-Green-Siege.png",
+          "ms": 1442,
+          "bytes": 1189,
+          "transfer": 1489,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/tile-Green.png",
+          "ms": 1441,
+          "bytes": 3292,
+          "transfer": 3592,
+          "type": "css"
+        },
+        {
+          "url": "assets/takeover/art/images/3806.png",
+          "ms": 1382,
+          "bytes": 6624,
+          "transfer": 6924,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/4321.png",
+          "ms": 1381,
+          "bytes": 24025,
+          "transfer": 24325,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/3802.png",
+          "ms": 1380,
+          "bytes": 7978,
+          "transfer": 8278,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/4322.png",
+          "ms": 1380,
+          "bytes": 16374,
+          "transfer": 16674,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/3804.png",
+          "ms": 1379,
+          "bytes": 6376,
+          "transfer": 6676,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/frame.png",
+          "ms": 1249,
+          "bytes": 6548,
+          "transfer": 6848,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/animation/anim/GreenInfantryUp_Go.png",
+          "ms": 1238,
+          "bytes": 24528,
+          "transfer": 24828,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/animation/anim/BuildHereTopClass.png",
+          "ms": 1006,
+          "bytes": 2392,
+          "transfer": 2692,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/badge-health.webp",
+          "ms": 938,
+          "bytes": 1174,
+          "transfer": 1474,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/animation/anim/ChestClass.png",
+          "ms": 922,
+          "bytes": 5224,
+          "transfer": 5524,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/ultimate/atlases/UltimateMessage1Class-0.webp?v=20261006-r5",
+          "ms": 921,
+          "bytes": 203614,
+          "transfer": 203914,
+          "type": "fetch"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/building-health-Green.webp",
+          "ms": 919,
+          "bytes": 2336,
+          "transfer": 2636,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/animation/anim/GreenInfantryDown_Attack.png",
+          "ms": 918,
+          "bytes": 9718,
+          "transfer": 10018,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/unit-Green-Archers.png",
+          "ms": 918,
+          "bytes": 1050,
+          "transfer": 1350,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/spell-Green-fire.png?v=20261002",
+          "ms": 918,
+          "bytes": 6909,
+          "transfer": 7209,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/art/images/3800.png",
+          "ms": 911,
+          "bytes": 7848,
+          "transfer": 8148,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/native-world-swords.webp",
+          "ms": 1,
+          "bytes": 37356,
+          "transfer": 0,
+          "type": "img"
+        }
+      ]
+    }
+  ]
+}

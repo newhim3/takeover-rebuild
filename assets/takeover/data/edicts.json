@@ -1,0 +1,98 @@
+{
+  "source": "extracted/swf2/scripts/§_-d-§/§_-j5§.as:8-60 (27 static edicts) and §_-d-§/§_-dw§.as (per-faction runtime copies)",
+  "derivedFrom": "城邦争霸.swf",
+  "constructors": {
+    "§_-GC§ (one LEVEL-row of one edict)": {
+      "declaration": "§_-GC§.as:14 public function §_-GC§(param1:int=0, param2:int=0, param3:String=undefined)",
+      "fieldAssignments": { "bonusId": "§_-GC§.as:28 §_-cc§", "value": "§_-GC§.as:33 §_-PH§", "hint": "§_-GC§.as:39 hint" },
+      "note": "there is NO cost field"
+    },
+    "§_-j5§ (one edict line)": {
+      "declaration": "§_-j5§.as:72 public function §_-j5§(param1:String=undefined, param2:Array=undefined, param3:int=0, param4:int=0)",
+      "fieldAssignments": { "name": ":89", "rows": ":90 §_-8Y§", "requiredEdictPoints": ":84 §_-KQ§", "startingPoints": ":93 §_-4a§" }
+    },
+    "pairingProof": "§_-j5§.as:182 `param1.§_-Ta§(§_-8Y§[_loc4_].§_-cc§,§_-8Y§[_loc4_].§_-PH§);` - the only reader of §_-GC§ fields in the whole tree"
+  },
+  "rules": {
+    "levelsPerEdict": 3,
+    "costPerLevel": "1 edict point (no gold cost; §_-j5§.as:191-218 §_-aj§ increments curPoints, guarded by `curPoints >= int(§_-8Y§.length)` at :200)",
+    "gate": "§_-KQ§ is a POINT threshold consumed at §_-l1§/EdictIcon.as:266 `_edictCount >= edict.§_-KQ§`, where edictCount = Σ curPoints (§_-dw§.as:330 §_-mX§, fed from gui/ThroneRoomScreen.as:1122). It is NOT a player rank.",
+    "levelsOverwrite": "§_-j5§.as:157-188 §_-Kj§ walks rows 0..curPoints and calls §_-Ta§(id,value), and §_-kj§.as:165 is a plain assignment `§_-lI§[param1] = param2;`. So higher levels OVERWRITE lower ones - a maxed DUCAL SOVEREIGNITY gives +150, not 75+150=225. The paired values are ABSOLUTE per-level values, not increments.",
+    "freeHeadStart": "CompanyProgress.as:967-1081 §_-53§ grants level 1 of both of a faction's edicts to a fresh company (§_-oQ§(1) + reset())"
+  },
+  "bonusIds": {
+    "note": "§_-kj§.as:8-96 statics; storage is 44 slots (indices 0-43, loop bound `>= 44` at :129/:187). §_-Sc§(id) = (100 + value)/100 multiplier; §_-Tg§(id) = raw int; §_-Ta§(id,value) = absolute set.",
+    "names": ["§_-cw§","§_-oP§","§_-D2§","§_-ht§","§_-fr§","§_-Ho§","§_-xn§","§_-bP§","§_-D9§","§_-lU§","§_-rq§","§_-p8§","§_-8V§","§_-R9§","§_-Xg§","§_-4F§","§_-I7§","§_-oT§","§_-1b§","§_-YE§","§_-LK§","§_-Zg§","§_-AD§","§_-Wg§","§_-77§","§_-13§","§_-RJ§","§_-oF§","§_-1S§","§_-QS§","§_-ow§","§_-0z§","§_-d7§","§_-kw§","§_-Wu§","§_-gg§","§_-qm§","§_-W7§","§_-as§","§_-Se§","§_-nI§","§_-ZD§","§_-ai§","§_-tr§","§_-hl§"],
+    "unitClassTiers": "ids 0-4 are the five unit-class upgrade tiers (infantry/cavalry/ranged/siege/caster), read at battle/§_-Wy§.as:1487-1578 (switch cases 0..4)",
+    "neverWrittenByAnEdict": [41, 42, 43],
+    "deadConstant": 44,
+    "consumers": {
+      "5": "§_-Wy§.as:895 unlock/unused-flag", "6": "§_-dp§.as:54 banner duration x", "7": "§_-Wy§.as:624 charge damage x",
+      "8": "§_-Wy§.as:2508 start gold +", "9": "§_-Wy§.as:880", "10": "§_-dp§.as:72 Lord's Judgement damage x",
+      "11": "§_-oJ§.as:775 stronghold HP x", "12": "§_-Wy§.as:2496 mana cap x (200 * this)", "13": "§_-Wy§.as:615/:773 bow+siege damage x",
+      "14": "§_-Wy§.as:908", "15": "§_-Wy§.as:800 morale x", "16": "§_-Wy§.as:595 infantry HP x",
+      "17": "§_-Wy§.as:943", "18": "§_-Wy§.as:687 damage vs strongholds +", "19": "§_-Wy§.as:646 move speed x",
+      "20": "§_-Wy§.as:920", "21": "Level.as:2371 stoneworm count +", "22": "§_-Wy§.as:2352 gold on capture",
+      "23": "§_-Wy§.as:743 squad size +", "24": "§_-Wy§.as:694 poison +", "25": "§_-Wy§.as:935",
+      "26": "§_-Wy§.as:1417 ultimate charge on squad death", "27": "§_-Wy§.as:666 siege speed (additive)", "28": "undead troop cost -",
+      "29": "§_-Wy§.as:969", "30": "§_-Wy§.as:701 + §_-dp§.as:78 freeze duration +", "31": "§_-Wy§.as:1677 farm/mine/obelisk cost x",
+      "32": "§_-Wy§.as:762 mechanism crit (Mechanism only)", "33": "§_-Wy§.as:604 infantry freeze chance +",
+      "34": "§_-Wy§.as:1025", "35": "§_-dp§.as:103 spell cost x", "36": "§_-Wy§.as:981",
+      "37": "§_-Wy§.as:710 squad xp rate x", "38": "§_-Wy§.as:1025? / §_-oJ§.as:620 magic tower output +",
+      "39": "§_-Wy§.as:631 cavalry HP x", "40": "§_-Wy§.as:726 regen/sec (value/100)"
+    }
+  },
+  "factionEdicts": {
+    "note": "only 3 of 5 races have edicts, and each has exactly 2. §_-dw§.as:88 §_-kx§(race) switches on race.index (battle/§_-Q§.as:62-66: TheEmpire=0, Westaria=1, TheKhaganate=2, TheCult=3, Bandits=4) and the default branch returns an EMPTY array - so TheEmpire and Bandits get an all-zero bonus set.",
+    "Westaria": ["THE LORD'S CHURCH", "DUCAL SOVEREIGNITY"],
+    "TheKhaganate": ["BLOODLUST", "DECLARATION OF WAR"],
+    "TheCult": ["ARCANE FROST", "DECLARATION OF INDEPENDENCE"],
+    "TheEmpire": [],
+    "Bandits": []
+  },
+  "edicts": [
+    {"n":1,"name":"THE LORD'S CHURCH","gate":0,"line":8,"levels":[{"lvl":0,"id":5,"value":1,"hint":"Unlocks Banner of Consecration"},{"lvl":1,"id":6,"value":25,"hint":"+25% banners` duration"},{"lvl":2,"id":6,"value":50,"hint":"+50% banners` duration"}]},
+    {"n":2,"name":"DUCAL SOVEREIGNITY","gate":0,"line":10,"levels":[{"lvl":0,"id":0,"value":0,"hint":"Unlocks basic troops"},{"lvl":1,"id":8,"value":75,"hint":"+75 gold in the beginning of the mission"},{"lvl":2,"id":8,"value":150,"hint":"+150 gold in the beginning of the mission"}]},
+    {"n":3,"name":"CALL FOR THE CRUSADE","gate":4,"line":12,"levels":[{"lvl":0,"id":9,"value":1,"hint":"Unlocks Lord`s Judgement"},{"lvl":1,"id":10,"value":15,"hint":"+15% Lord`s Judgement damage"},{"lvl":2,"id":10,"value":30,"hint":"+30% Lord`s Judgement damage"}]},
+    {"n":4,"name":"TOWN GUILDS","gate":4,"line":14,"levels":[{"lvl":0,"id":0,"value":1,"hint":"Upgrades Guards to Swordsmen"},{"lvl":1,"id":11,"value":15,"hint":"+15% strongholds' HP"},{"lvl":2,"id":11,"value":30,"hint":"+30% strongholds' HP"}]},
+    {"n":5,"name":"THE ZEALOTS ORDER","gate":7,"line":16,"levels":[{"lvl":0,"id":4,"value":1,"hint":"Upgrades Monks to Zealots"},{"lvl":1,"id":12,"value":-10,"hint":"-10% ultimate power cooldown"},{"lvl":2,"id":12,"value":-20,"hint":"-20% ultimate power cooldown"}]},
+    {"n":6,"name":"MECHANICS RESEARCH","gate":7,"line":18,"levels":[{"lvl":0,"id":2,"value":1,"hint":"Upgrades Archers to Crossbowmen"},{"lvl":1,"id":13,"value":10,"hint":"+10% bows / seige weapons damage"},{"lvl":2,"id":13,"value":20,"hint":"+20% bows / seige weapons damage"}]},
+    {"n":7,"name":"HEROIC EPOS","gate":11,"line":20,"levels":[{"lvl":0,"id":14,"value":1,"hint":"Unlocks Banner of Heroism"},{"lvl":1,"id":15,"value":7,"hint":"+7% troops base morale"},{"lvl":2,"id":15,"value":15,"hint":"15% troops base morale"}]},
+    {"n":8,"name":"REGULAR TOURNAMENTS","gate":11,"line":22,"levels":[{"lvl":0,"id":1,"value":1,"hint":"Upgrades Knights to Champions"},{"lvl":1,"id":7,"value":50,"hint":"Cavalry charge causes 2.5x damage"},{"lvl":2,"id":7,"value":100,"hint":"Cavalry charge causes 3x damagee"}]},
+    {"n":9,"name":"LEGION","gate":15,"line":24,"levels":[{"lvl":0,"id":0,"value":2,"hint":"Upgrades infantry to Legionaries"},{"lvl":1,"id":16,"value":15,"hint":"+15% infantry HP"},{"lvl":2,"id":16,"value":30,"hint":"+30% infantry HP"}]},
+    {"n":10,"name":"BLOODLUST","gate":0,"line":26,"levels":[{"lvl":0,"id":17,"value":1,"hint":"Unlocks Banner of Bloodlust"},{"lvl":1,"id":18,"value":25,"hint":"+25% damage vs strongholds"},{"lvl":2,"id":18,"value":50,"hint":"+50% damage vs strongholds"}]},
+    {"n":11,"name":"DECLARATION OF WAR","gate":0,"line":28,"levels":[{"lvl":0,"id":0,"value":0,"hint":"Unlocks basic troops"},{"lvl":1,"id":19,"value":10,"hint":"+10% troops moving speed"},{"lvl":2,"id":19,"value":20,"hint":"+20% troops moving speed"}]},
+    {"n":12,"name":"SPEAKING TO ANIMALS","gate":4,"line":30,"levels":[{"lvl":0,"id":20,"value":1,"hint":"Unlock Lure Stoneworms spell"},{"lvl":1,"id":21,"value":1,"hint":"+1 worm (longer Lure Stoneworms)"},{"lvl":2,"id":21,"value":2,"hint":"+2 worm (longer Lure Stoneworms)"}]},
+    {"n":13,"name":"3 DAYS TO PLUNDER","gate":4,"line":32,"levels":[{"lvl":0,"id":1,"value":1,"hint":"Upgrades Nomads to Riders"},{"lvl":1,"id":22,"value":75,"hint":"+75 gold when capture a stronghold"},{"lvl":2,"id":22,"value":150,"hint":"+150 gold when capture a stronghold"}]},
+    {"n":14,"name":"RAID THE TOMBS","gate":7,"line":34,"levels":[{"lvl":0,"id":0,"value":1,"hint":"Upgrades Warriors to Immortals"},{"lvl":1,"id":23,"value":1,"hint":"+1 unit in an Immortail squad"},{"lvl":2,"id":23,"value":2,"hint":"+2 unit in an Immortail squad"}]},
+    {"n":15,"name":"POISONS RESEARCH","gate":7,"line":36,"levels":[{"lvl":0,"id":2,"value":1,"hint":"Upgrades Hunters to Serpent Archers"},{"lvl":1,"id":24,"value":1,"hint":"+1 poison damage"},{"lvl":2,"id":24,"value":2,"hint":"+2 poison damage"}]},
+    {"n":16,"name":"DARK TEACHING","gate":11,"line":38,"levels":[{"lvl":0,"id":25,"value":1,"hint":"Unlocks Disentomb"},{"lvl":1,"id":26,"value":3,"hint":"+3% ultimate charge if your squad dies"},{"lvl":2,"id":26,"value":6,"hint":"+6% ultimate charge if your squad dies"}]},
+    {"n":17,"name":"DREADFUL MACHINERY","gate":11,"line":40,"levels":[{"lvl":0,"id":3,"value":1,"hint":"Upgrades Trebouchet to Poison Catapult"},{"lvl":1,"id":27,"value":50,"hint":"+50% siege weapons moving speed"},{"lvl":2,"id":27,"value":100,"hint":"+100% siege weapons moving speed"}]},
+    {"n":18,"name":"NECROPOLIS EXCAVATIONS","gate":15,"line":42,"levels":[{"lvl":0,"id":1,"value":2,"hint":"Upgrades cavalry to Ancient Riders"},{"lvl":1,"id":28,"value":-7,"hint":"-7% cost of your undead troops"},{"lvl":2,"id":28,"value":-15,"hint":"-15% cost of your undead troops"}]},
+    {"n":19,"name":"ARCANE FROST","gate":0,"line":44,"levels":[{"lvl":0,"id":29,"value":1,"hint":"Unlocks Ice Blast"},{"lvl":1,"id":30,"value":1,"hint":"+1 second to freeze duration"},{"lvl":2,"id":30,"value":2,"hint":"+2 seconds to freeze duration"}]},
+    {"n":20,"name":"DECLARATION OF INDEPENDENCE","gate":0,"line":46,"levels":[{"lvl":0,"id":0,"value":0,"hint":"Unlocks basic troops"},{"lvl":1,"id":31,"value":-15,"hint":"-15% farms, mines and obelisks cost"},{"lvl":2,"id":31,"value":-30,"hint":"-30% farms, mines and obelisks cost"}]},
+    {"n":21,"name":"ARTISIANS GUILD","gate":4,"line":48,"levels":[{"lvl":0,"id":2,"value":1,"hint":"Upgrades Gunsmiths to Gunbots"},{"lvl":1,"id":32,"value":5,"hint":"+5% crit chance for mechanisms"},{"lvl":2,"id":32,"value":10,"hint":"+10% crit chance for mechanisms"}]},
+    {"n":22,"name":"REBEL ARMY","gate":4,"line":50,"levels":[{"lvl":0,"id":0,"value":1,"hint":"Upgrades Rebels to Myrmidons"},{"lvl":1,"id":33,"value":7,"hint":"+7% freeze chance to infantry"},{"lvl":2,"id":33,"value":15,"hint":"+15% freeze chance to infantry"}]},
+    {"n":23,"name":"MAGIC LIBRARY","gate":7,"line":52,"levels":[{"lvl":0,"id":34,"value":1,"hint":"Unlocks Frost Enchantmnet"},{"lvl":1,"id":35,"value":-10,"hint":"-10% spells cost"},{"lvl":2,"id":35,"value":-20,"hint":"-20% spells cost"}]},
+    {"n":24,"name":"LIBERATION ARMY","gate":7,"line":54,"levels":[{"lvl":0,"id":36,"value":1,"hint":"Unlocks Banner of Liberation"},{"lvl":1,"id":37,"value":15,"hint":"Your squads gain xp 15% faster"},{"lvl":2,"id":37,"value":30,"hint":"Your squads gain xp 30% faster"}]},
+    {"n":25,"name":"MAGIC ACADEMY","gate":11,"line":56,"levels":[{"lvl":0,"id":4,"value":1,"hint":"Upgrades Acolytes to Wizards"},{"lvl":1,"id":38,"value":1,"hint":"Magic Towers give +1 gold/supply/mana"},{"lvl":2,"id":38,"value":2,"hint":"Magic Towers give +2 gold/supply/mana"}]},
+    {"n":26,"name":"TAME THE REPTILES","gate":11,"line":58,"levels":[{"lvl":0,"id":1,"value":1,"hint":"Upgrades Lancers to Dragon Lancers"},{"lvl":1,"id":39,"value":10,"hint":"+10% cavalry HP"},{"lvl":2,"id":39,"value":20,"hint":"+20% cavalry HP"}]},
+    {"n":27,"name":"GIANT CONSTRUCTION","gate":15,"line":60,"levels":[{"lvl":0,"id":2,"value":2,"hint":"Upgrades marskmen to Giant Bots"},{"lvl":1,"id":40,"value":2,"hint":"Giant Bots restore 2% HP per second"},{"lvl":2,"id":40,"value":4,"hint":"Giant Bots restore 4% HP per second"}]}
+  ],
+  "companyRank": {
+    "rankGetter": "§_-Em§/CompanyProgress.as:136-145 §_-Ye§() returns XPConverter.§_-E3§(this.§_-w9§)",
+    "rankTable": "data/XPConverter.as:55 RANK_TABLE, walked by §_-E3§",
+    "skillPointsFormula": "CompanyProgress.as:942 `Math.min(2 + (rank - 1) * SKILL_POINTS_PER_RANK, MAX_SKILL_POINTS)`",
+    "SKILL_POINTS_PER_RANK": 2,
+    "MAX_SKILL_POINTS": 27,
+    "freePointsGetter": "CompanyProgress.as:953 `this.§_-sT§() - this.§package§.§_-mX§()` (method `override()`)",
+    "workedExample": "rank 1 -> 2 points, rank 2 -> 4, ... rank 14 and above -> capped at 27",
+    "whereRankIsRead": ["gui/ChooseCompaignScreen.as:338", "§_-l1§/ProfileIcon.as:551", "§_-l1§/PlayerStatPanel.as:126"],
+    "whereEdictIsBought": "gui/ThroneRoomScreen.as:1254-1258, gated by `override() <= 0` then `_icon.def.edict.§_-aj§()`"
+  },
+  "openQuestions": [
+    "the 27 §_-j5§ statics are DEAD DATA - grepping their names returns only their own declarations; only the 6 runtime copies inside §_-dw§ are used",
+    "§_-dw§.§_-xp§ decompiles as a nested loop implying a 2-D array, but every construction site passes a flat 2-element array; read as flat with the inner loop being decompiler junk (medium confidence)",
+    "the campaign level scripts grant edict/upgrade bonuses by hand at data/LevelInfo.as:1673-2118 (all value 1)"
+  ]
+}

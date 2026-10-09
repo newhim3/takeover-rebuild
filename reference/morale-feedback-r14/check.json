@@ -1,0 +1,29 @@
+{
+  "before": {
+    "time": 0.35,
+    "modes": [
+      "high",
+      "low",
+      "heroic",
+      "fear"
+    ],
+    "frames": [
+      10,
+      10,
+      10,
+      10
+    ],
+    "description": "生命 234 / 234 · 待命 · 士气高昂 750/1000"
+  },
+  "after": {
+    "time": 0.35,
+    "frames": [
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  "errors": [],
+  "scope": "Frozen fixture only; no AI or campaign simulation"
+}

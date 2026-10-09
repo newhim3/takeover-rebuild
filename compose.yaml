@@ -1,0 +1,23 @@
+services:
+  game:
+    build: .
+    restart: unless-stopped
+    expose:
+      - "4387"
+  gateway:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      CONQUEST_DOMAIN: ${CONQUEST_DOMAIN:?请设置你拥有并指向服务器的域名}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - game
+volumes:
+  caddy_data:
+  caddy_config:

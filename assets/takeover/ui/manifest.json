@@ -1,0 +1,825 @@
+{
+  "button": {
+    "source": "GameButtonClass",
+    "frame": 0,
+    "trim": [
+      2,
+      2,
+      193,
+      61
+    ],
+    "crop": null,
+    "width": 191,
+    "height": 59
+  },
+  "tab": {
+    "source": "#4695",
+    "frame": 0,
+    "trim": [
+      0,
+      0,
+      258,
+      23
+    ],
+    "crop": null,
+    "width": 258,
+    "height": 23
+  },
+  "frame": {
+    "source": "#7429",
+    "frame": 0,
+    "trim": [
+      3,
+      3,
+      402,
+      109
+    ],
+    "crop": null,
+    "width": 399,
+    "height": 106
+  },
+  "slot": {
+    "source": "SlotIconNotEmptyClass",
+    "frame": 0,
+    "trim": [
+      22,
+      12,
+      454,
+      189
+    ],
+    "crop": null,
+    "width": 432,
+    "height": 177
+  },
+  "level": {
+    "source": "#8478",
+    "frame": 0,
+    "trim": [
+      32,
+      26,
+      100,
+      123
+    ],
+    "crop": null,
+    "width": 68,
+    "height": 97
+  },
+  "menu": {
+    "source": "#6528",
+    "frame": 0,
+    "trim": [
+      0,
+      1,
+      48,
+      38
+    ],
+    "crop": null,
+    "width": 48,
+    "height": 37
+  },
+  "help": {
+    "source": "#6533",
+    "frame": 0,
+    "trim": [
+      0,
+      0,
+      48,
+      37
+    ],
+    "crop": null,
+    "width": 48,
+    "height": 37
+  },
+  "speed": {
+    "source": "#6520",
+    "frame": 0,
+    "trim": [
+      0,
+      0,
+      48,
+      37
+    ],
+    "crop": null,
+    "width": 48,
+    "height": 37
+  },
+  "speed-fast": {
+    "source": "#6539",
+    "frame": 0,
+    "trim": [
+      9,
+      9,
+      59,
+      47
+    ],
+    "crop": null,
+    "width": 50,
+    "height": 38
+  },
+  "build-farm": {
+    "source": "#4986",
+    "frame": 0,
+    "trim": [
+      0,
+      0,
+      63,
+      58
+    ],
+    "crop": null,
+    "width": 63,
+    "height": 58
+  },
+  "build-mine": {
+    "source": "#4989",
+    "frame": 0,
+    "trim": [
+      0,
+      0,
+      63,
+      58
+    ],
+    "crop": null,
+    "width": 63,
+    "height": 58
+  },
+  "build-obelisk": {
+    "source": "#4992",
+    "frame": 0,
+    "trim": [
+      0,
+      0,
+      63,
+      58
+    ],
+    "crop": null,
+    "width": 63,
+    "height": 58
+  },
+  "build-site": {
+    "source": "NodeBuildHereClass",
+    "frame": 0,
+    "trim": [
+      0,
+      0,
+      29,
+      36
+    ],
+    "crop": null,
+    "width": 29,
+    "height": 36
+  },
+  "repair": {
+    "source": "ASTRepairingClass",
+    "frame": 0,
+    "trim": [
+      2,
+      9,
+      18,
+      27
+    ],
+    "crop": null,
+    "width": 16,
+    "height": 18
+  },
+  "enter": {
+    "source": "IconGoInClass",
+    "frame": 0,
+    "trim": [
+      25,
+      7,
+      101,
+      70
+    ],
+    "crop": null,
+    "width": 76,
+    "height": 63
+  },
+  "attack": {
+    "source": "IconAttackClass",
+    "frame": 0,
+    "trim": [
+      23,
+      20,
+      93,
+      73
+    ],
+    "crop": null,
+    "width": 70,
+    "height": 53
+  },
+  "move": {
+    "source": "IconGoPathClass",
+    "frame": 0,
+    "trim": [
+      25,
+      11,
+      101,
+      44
+    ],
+    "crop": null,
+    "width": 76,
+    "height": 33
+  },
+  "defend": {
+    "source": "ASTDefendingClass",
+    "frame": 0,
+    "trim": [
+      0,
+      0,
+      14,
+      17
+    ],
+    "crop": null,
+    "width": 14,
+    "height": 17
+  },
+  "star-gold": {
+    "source": "GoldStarIconClass",
+    "frame": 0,
+    "trim": [
+      0,
+      0,
+      19,
+      18
+    ],
+    "crop": null,
+    "width": 19,
+    "height": 18
+  },
+  "star-silver": {
+    "source": "SilverStarIconClass",
+    "frame": 0,
+    "trim": [
+      0,
+      0,
+      18,
+      17
+    ],
+    "crop": null,
+    "width": 18,
+    "height": 17
+  },
+  "resource": {
+    "source": "ResourcePanelClass",
+    "frame": 0,
+    "trim": [
+      5,
+      4,
+      503,
+      33
+    ],
+    "crop": null,
+    "width": 498,
+    "height": 29
+  },
+  "spell-frame": {
+    "source": "#6868",
+    "frame": 0,
+    "trim": [
+      0,
+      0,
+      55,
+      55
+    ],
+    "crop": null,
+    "width": 55,
+    "height": 55
+  },
+  "crest": {
+    "source": "SmallLogoPanelClass",
+    "frame": 0,
+    "trim": [
+      21,
+      14,
+      139,
+      48
+    ],
+    "crop": null,
+    "width": 118,
+    "height": 34
+  },
+  "button-hover": {
+    "source": "GameButtonClass",
+    "frame": 7,
+    "trim": [
+      2,
+      2,
+      193,
+      61
+    ],
+    "crop": null,
+    "width": 191,
+    "height": 59
+  },
+  "upgrade": {
+    "source": "#1763",
+    "frame": 0,
+    "trim": [
+      4,
+      4,
+      68,
+      63
+    ],
+    "crop": [
+      0,
+      0,
+      73,
+      45
+    ],
+    "width": 73,
+    "height": 45
+  },
+  "unit-Green-Infantry": {
+    "source": "IconT1_W_InfantryClass",
+    "frame": 0,
+    "trim": null,
+    "crop": null,
+    "width": 20,
+    "height": 24
+  },
+  "unit-Green-Archers": {
+    "source": "IconT1_W_ArchersClass",
+    "frame": 0,
+    "trim": null,
+    "crop": null,
+    "width": 19,
+    "height": 27
+  },
+  "unit-Green-Cavalry": {
+    "source": "IconT1_W_CavalryClass",
+    "frame": 0,
+    "trim": null,
+    "crop": null,
+    "width": 23,
+    "height": 26
+  },
+  "unit-Green-Siege": {
+    "source": "IconT1_W_SiegeClass",
+    "frame": 0,
+    "trim": null,
+    "crop": null,
+    "width": 24,
+    "height": 25
+  },
+  "tile-Green": {
+    "source": "#1771",
+    "frame": 0,
+    "trim": [
+      0,
+      0,
+      63,
+      57
+    ],
+    "crop": null,
+    "width": 63,
+    "height": 57
+  },
+  "tile-hover-Green": {
+    "source": "#1771",
+    "frame": 4,
+    "trim": [
+      0,
+      0,
+      63,
+      57
+    ],
+    "crop": null,
+    "width": 63,
+    "height": 57
+  },
+  "panel-Green": {
+    "source": "WindowEnemyPanelClass",
+    "frame": 0,
+    "trim": [
+      245,
+      7,
+      633,
+      171
+    ],
+    "crop": null,
+    "width": 388,
+    "height": 164
+  },
+  "unit-Red-Infantry": {
+    "source": "IconT1_K_InfantryClass",
+    "frame": 0,
+    "trim": null,
+    "crop": null,
+    "width": 21,
+    "height": 21
+  },
+  "unit-Red-Archers": {
+    "source": "IconT1_K_ArchersClass",
+    "frame": 0,
+    "trim": null,
+    "crop": null,
+    "width": 17,
+    "height": 26
+  },
+  "unit-Red-Cavalry": {
+    "source": "IconT1_K_CavalryClass",
+    "frame": 0,
+    "trim": null,
+    "crop": null,
+    "width": 23,
+    "height": 26
+  },
+  "unit-Red-Siege": {
+    "source": "IconT1_K_SiegeClass",
+    "frame": 0,
+    "trim": null,
+    "crop": null,
+    "width": 24,
+    "height": 25
+  },
+  "tile-Red": {
+    "source": "#1771",
+    "frame": 1,
+    "trim": [
+      0,
+      0,
+      63,
+      57
+    ],
+    "crop": null,
+    "width": 63,
+    "height": 57
+  },
+  "tile-hover-Red": {
+    "source": "#1771",
+    "frame": 5,
+    "trim": [
+      0,
+      0,
+      63,
+      57
+    ],
+    "crop": null,
+    "width": 63,
+    "height": 57
+  },
+  "panel-Red": {
+    "source": "WindowEnemyPanelClass",
+    "frame": 1,
+    "trim": [
+      245,
+      7,
+      640,
+      173
+    ],
+    "crop": null,
+    "width": 395,
+    "height": 166
+  },
+  "unit-Blue-Infantry": {
+    "source": "IconT1_B_InfantryClass",
+    "frame": 0,
+    "trim": null,
+    "crop": null,
+    "width": 11,
+    "height": 28
+  },
+  "unit-Blue-Archers": {
+    "source": "IconT1_B_ArchersClass",
+    "frame": 0,
+    "trim": null,
+    "crop": null,
+    "width": 28,
+    "height": 29
+  },
+  "unit-Blue-Cavalry": {
+    "source": "IconT1_B_CavalryClass",
+    "frame": 0,
+    "trim": null,
+    "crop": null,
+    "width": 23,
+    "height": 26
+  },
+  "unit-Blue-Siege": {
+    "source": "IconT1_B_SiegeClass",
+    "frame": 0,
+    "trim": null,
+    "crop": null,
+    "width": 24,
+    "height": 25
+  },
+  "tile-Blue": {
+    "source": "#1771",
+    "frame": 2,
+    "trim": [
+      0,
+      0,
+      63,
+      57
+    ],
+    "crop": null,
+    "width": 63,
+    "height": 57
+  },
+  "tile-hover-Blue": {
+    "source": "#1771",
+    "frame": 6,
+    "trim": [
+      0,
+      0,
+      63,
+      57
+    ],
+    "crop": null,
+    "width": 63,
+    "height": 57
+  },
+  "panel-Blue": {
+    "source": "WindowEnemyPanelClass",
+    "frame": 2,
+    "trim": [
+      245,
+      7,
+      630,
+      171
+    ],
+    "crop": null,
+    "width": 385,
+    "height": 164
+  },
+  "unit-Purple-Infantry": {
+    "source": "IconT1_E_InfantryClass",
+    "frame": 0,
+    "trim": null,
+    "crop": null,
+    "width": 20,
+    "height": 25
+  },
+  "unit-Purple-Archers": {
+    "source": "IconT1_E_ArchersClass",
+    "frame": 0,
+    "trim": null,
+    "crop": null,
+    "width": 19,
+    "height": 27
+  },
+  "unit-Purple-Cavalry": {
+    "source": "IconT1_E_CavalryClass",
+    "frame": 0,
+    "trim": null,
+    "crop": null,
+    "width": 27,
+    "height": 28
+  },
+  "unit-Purple-Siege": {
+    "source": "IconT1_E_SiegeClass",
+    "frame": 0,
+    "trim": null,
+    "crop": null,
+    "width": 24,
+    "height": 25
+  },
+  "tile-Purple": {
+    "source": "#1771",
+    "frame": 3,
+    "trim": [
+      0,
+      0,
+      63,
+      57
+    ],
+    "crop": null,
+    "width": 63,
+    "height": 57
+  },
+  "tile-hover-Purple": {
+    "source": "#1771",
+    "frame": 7,
+    "trim": [
+      0,
+      0,
+      63,
+      57
+    ],
+    "crop": null,
+    "width": 63,
+    "height": 57
+  },
+  "panel-Purple": {
+    "source": "WindowEnemyPanelClass",
+    "frame": 3,
+    "trim": [
+      245,
+      7,
+      633,
+      173
+    ],
+    "crop": null,
+    "width": 388,
+    "height": 166
+  },
+  "circle-Green": {
+    "source": "SquadRoundIconClass",
+    "frame": 0,
+    "trim": null,
+    "crop": null,
+    "width": 40,
+    "height": 40
+  },
+  "circle-selected-Green": {
+    "source": "SquadRoundIconClass",
+    "frame": 5,
+    "trim": null,
+    "crop": null,
+    "width": 40,
+    "height": 40
+  },
+  "circle-Red": {
+    "source": "SquadRoundIconClass",
+    "frame": 6,
+    "trim": null,
+    "crop": null,
+    "width": 40,
+    "height": 40
+  },
+  "circle-selected-Red": {
+    "source": "SquadRoundIconClass",
+    "frame": 11,
+    "trim": null,
+    "crop": null,
+    "width": 40,
+    "height": 40
+  },
+  "circle-Blue": {
+    "source": "SquadRoundIconClass",
+    "frame": 12,
+    "trim": null,
+    "crop": null,
+    "width": 40,
+    "height": 40
+  },
+  "circle-selected-Blue": {
+    "source": "SquadRoundIconClass",
+    "frame": 2,
+    "trim": null,
+    "crop": null,
+    "width": 40,
+    "height": 40
+  },
+  "circle-Purple": {
+    "source": "SquadRoundIconClass",
+    "frame": 3,
+    "trim": null,
+    "crop": null,
+    "width": 40,
+    "height": 40
+  },
+  "circle-selected-Purple": {
+    "source": "SquadRoundIconClass",
+    "frame": 8,
+    "trim": null,
+    "crop": null,
+    "width": 40,
+    "height": 40
+  },
+  "spell-heal": {
+    "source": "SpellIconSetClass",
+    "frame": 1,
+    "trim": null,
+    "crop": null,
+    "width": 53,
+    "height": 53
+  },
+  "spell-fire": {
+    "source": "SpellIconSetClass",
+    "frame": 7,
+    "trim": null,
+    "crop": null,
+    "width": 53,
+    "height": 53
+  },
+  "spell-summon": {
+    "source": "SpellIconSetClass",
+    "frame": 9,
+    "trim": null,
+    "crop": null,
+    "width": 53,
+    "height": 53
+  },
+  "sound": {
+    "source": "#2387",
+    "frame": 0,
+    "trim": null,
+    "crop": [
+      0,
+      0,
+      69,
+      76
+    ],
+    "width": 69,
+    "height": 76
+  },
+  "music": {
+    "source": "#2387",
+    "frame": 0,
+    "trim": null,
+    "crop": [
+      65,
+      0,
+      130,
+      76
+    ],
+    "width": 65,
+    "height": 76
+  },
+  "castle-window-Green": {
+    "source": "WindowCastleClass",
+    "frame": 0,
+    "trim": [
+      424,
+      7,
+      997,
+      171
+    ],
+    "crop": null,
+    "width": 573,
+    "height": 164
+  },
+  "castle-window-Red": {
+    "source": "WindowCastleClass",
+    "frame": 1,
+    "trim": [
+      424,
+      7,
+      998,
+      171
+    ],
+    "crop": null,
+    "width": 574,
+    "height": 164
+  },
+  "castle-window-Blue": {
+    "source": "WindowCastleClass",
+    "frame": 2,
+    "trim": [
+      424,
+      7,
+      988,
+      171
+    ],
+    "crop": null,
+    "width": 564,
+    "height": 164
+  },
+  "castle-window-Purple": {
+    "source": "WindowCastleClass",
+    "frame": 3,
+    "trim": [
+      424,
+      7,
+      990,
+      171
+    ],
+    "crop": null,
+    "width": 566,
+    "height": 164
+  },
+  "resource-bar": {
+    "source": "GamePanelClass",
+    "frame": 0,
+    "trim": null,
+    "crop": [
+      458,
+      578,
+      870,
+      612
+    ],
+    "width": 412,
+    "height": 34
+  },
+  "recruitWindow": {
+    "source": "WindowCastleClass",
+    "frames": {
+      "Green": 0,
+      "Red": 1,
+      "Blue": 2,
+      "Purple": 3
+    },
+    "rearrangedRegions": [
+      [
+        574,
+        0,
+        852,
+        174
+      ],
+      [
+        420,
+        0,
+        584,
+        174
+      ],
+      [
+        850,
+        0,
+        1000,
+        174
+      ]
+    ],
+    "reference": "video 00:42 selection panel; existing atlas regions only"
+  }
+}

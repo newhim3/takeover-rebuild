@@ -1,0 +1,1698 @@
+[
+  {
+    "name": "native-campaign-background.svg",
+    "sourceBytes": 240564,
+    "gzipSourceBytes": 127015,
+    "cacheBytes": 367682,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-campaign-flag-Blue.svg",
+    "sourceBytes": 2196675,
+    "gzipSourceBytes": 1632130,
+    "cacheBytes": 302918,
+    "width": 600,
+    "height": 980
+  },
+  {
+    "name": "native-campaign-flag-Green.svg",
+    "sourceBytes": 1043486,
+    "gzipSourceBytes": 772911,
+    "cacheBytes": 295906,
+    "width": 600,
+    "height": 980
+  },
+  {
+    "name": "native-campaign-flag-Purple.svg",
+    "sourceBytes": 356778,
+    "gzipSourceBytes": 244806,
+    "cacheBytes": 124756,
+    "width": 600,
+    "height": 980
+  },
+  {
+    "name": "native-campaign-flag-Red.svg",
+    "sourceBytes": 970868,
+    "gzipSourceBytes": 718806,
+    "cacheBytes": 292506,
+    "width": 600,
+    "height": 980
+  },
+  {
+    "name": "native-campaign.svg",
+    "sourceBytes": 4453300,
+    "gzipSourceBytes": 3250872,
+    "cacheBytes": 1090130,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-edict-xp-fill.svg",
+    "sourceBytes": 1008,
+    "gzipSourceBytes": 554,
+    "cacheBytes": 1404,
+    "width": 402,
+    "height": 42
+  },
+  {
+    "name": "native-edicts-Blue.svg",
+    "sourceBytes": 1552791,
+    "gzipSourceBytes": 1096668,
+    "cacheBytes": 152054,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-edicts-Green.svg",
+    "sourceBytes": 1608555,
+    "gzipSourceBytes": 1132048,
+    "cacheBytes": 516634,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-edicts-Purple.svg",
+    "sourceBytes": 1863642,
+    "gzipSourceBytes": 1322222,
+    "cacheBytes": 136658,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-edicts-Red.svg",
+    "sourceBytes": 1519464,
+    "gzipSourceBytes": 1064546,
+    "cacheBytes": 155722,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-hud-back-Blue.svg",
+    "sourceBytes": 137181,
+    "gzipSourceBytes": 40148,
+    "cacheBytes": 30826,
+    "width": 1600,
+    "height": 240
+  },
+  {
+    "name": "native-hud-back-Green.svg",
+    "sourceBytes": 137192,
+    "gzipSourceBytes": 40844,
+    "cacheBytes": 26698,
+    "width": 1600,
+    "height": 240
+  },
+  {
+    "name": "native-hud-back-Purple.svg",
+    "sourceBytes": 137207,
+    "gzipSourceBytes": 38645,
+    "cacheBytes": 30826,
+    "width": 1600,
+    "height": 240
+  },
+  {
+    "name": "native-hud-back-Red.svg",
+    "sourceBytes": 137157,
+    "gzipSourceBytes": 38662,
+    "cacheBytes": 27082,
+    "width": 1600,
+    "height": 240
+  },
+  {
+    "name": "native-level-info-Blue-1.svg",
+    "sourceBytes": 2169638,
+    "gzipSourceBytes": 1540516,
+    "cacheBytes": 346432,
+    "width": 2600,
+    "height": 640
+  },
+  {
+    "name": "native-level-info-Blue-2.svg",
+    "sourceBytes": 2172200,
+    "gzipSourceBytes": 1539790,
+    "cacheBytes": 344412,
+    "width": 2600,
+    "height": 640
+  },
+  {
+    "name": "native-level-info-Blue-3.svg",
+    "sourceBytes": 2172850,
+    "gzipSourceBytes": 1539869,
+    "cacheBytes": 344284,
+    "width": 2600,
+    "height": 640
+  },
+  {
+    "name": "native-level-info-Blue-4.svg",
+    "sourceBytes": 2169698,
+    "gzipSourceBytes": 1540556,
+    "cacheBytes": 347240,
+    "width": 2600,
+    "height": 640
+  },
+  {
+    "name": "native-level-info-Green-1.svg",
+    "sourceBytes": 1091045,
+    "gzipSourceBytes": 716457,
+    "cacheBytes": 278720,
+    "width": 2600,
+    "height": 640
+  },
+  {
+    "name": "native-level-info-Green-2.svg",
+    "sourceBytes": 1098602,
+    "gzipSourceBytes": 720339,
+    "cacheBytes": 280922,
+    "width": 2600,
+    "height": 640
+  },
+  {
+    "name": "native-level-info-Green-3.svg",
+    "sourceBytes": 1099252,
+    "gzipSourceBytes": 720422,
+    "cacheBytes": 278802,
+    "width": 2600,
+    "height": 640
+  },
+  {
+    "name": "native-level-info-Green-4.svg",
+    "sourceBytes": 1091105,
+    "gzipSourceBytes": 716500,
+    "cacheBytes": 276966,
+    "width": 2600,
+    "height": 640
+  },
+  {
+    "name": "native-level-info-Purple-restored-1.svg",
+    "sourceBytes": 991698,
+    "gzipSourceBytes": 642656,
+    "cacheBytes": 272060,
+    "width": 2600,
+    "height": 640
+  },
+  {
+    "name": "native-level-info-Purple-restored-2.svg",
+    "sourceBytes": 979714,
+    "gzipSourceBytes": 637552,
+    "cacheBytes": 260588,
+    "width": 2600,
+    "height": 640
+  },
+  {
+    "name": "native-level-info-Purple-restored-3.svg",
+    "sourceBytes": 980364,
+    "gzipSourceBytes": 637638,
+    "cacheBytes": 262354,
+    "width": 2600,
+    "height": 640
+  },
+  {
+    "name": "native-level-info-Purple-restored-4.svg",
+    "sourceBytes": 991758,
+    "gzipSourceBytes": 642693,
+    "cacheBytes": 271156,
+    "width": 2600,
+    "height": 640
+  },
+  {
+    "name": "native-level-info-Red-1.svg",
+    "sourceBytes": 991552,
+    "gzipSourceBytes": 642648,
+    "cacheBytes": 278076,
+    "width": 2600,
+    "height": 640
+  },
+  {
+    "name": "native-level-info-Red-2.svg",
+    "sourceBytes": 979568,
+    "gzipSourceBytes": 637542,
+    "cacheBytes": 266360,
+    "width": 2600,
+    "height": 640
+  },
+  {
+    "name": "native-level-info-Red-3.svg",
+    "sourceBytes": 980218,
+    "gzipSourceBytes": 637617,
+    "cacheBytes": 267048,
+    "width": 2600,
+    "height": 640
+  },
+  {
+    "name": "native-level-info-Red-4.svg",
+    "sourceBytes": 991612,
+    "gzipSourceBytes": 642686,
+    "cacheBytes": 275082,
+    "width": 2600,
+    "height": 640
+  },
+  {
+    "name": "native-profile-background.svg",
+    "sourceBytes": 5134464,
+    "gzipSourceBytes": 3833628,
+    "cacheBytes": 1192002,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-recruit-Castle-Blue-left.svg",
+    "sourceBytes": 573584,
+    "gzipSourceBytes": 75227,
+    "cacheBytes": 154548,
+    "width": 1180,
+    "height": 348
+  },
+  {
+    "name": "native-recruit-Castle-Blue-right.svg",
+    "sourceBytes": 565907,
+    "gzipSourceBytes": 72901,
+    "cacheBytes": 154504,
+    "width": 1180,
+    "height": 348
+  },
+  {
+    "name": "native-recruit-Castle-Green-left.svg",
+    "sourceBytes": 747749,
+    "gzipSourceBytes": 141372,
+    "cacheBytes": 153802,
+    "width": 1180,
+    "height": 348
+  },
+  {
+    "name": "native-recruit-Castle-Green-right.svg",
+    "sourceBytes": 753690,
+    "gzipSourceBytes": 143329,
+    "cacheBytes": 153140,
+    "width": 1180,
+    "height": 348
+  },
+  {
+    "name": "native-recruit-Castle-Purple-left.svg",
+    "sourceBytes": 793296,
+    "gzipSourceBytes": 121679,
+    "cacheBytes": 124348,
+    "width": 1180,
+    "height": 348
+  },
+  {
+    "name": "native-recruit-Castle-Purple-right.svg",
+    "sourceBytes": 792107,
+    "gzipSourceBytes": 121486,
+    "cacheBytes": 123860,
+    "width": 1180,
+    "height": 348
+  },
+  {
+    "name": "native-recruit-Castle-Red-left.svg",
+    "sourceBytes": 755884,
+    "gzipSourceBytes": 142475,
+    "cacheBytes": 153288,
+    "width": 1180,
+    "height": 348
+  },
+  {
+    "name": "native-recruit-Castle-Red-right.svg",
+    "sourceBytes": 753218,
+    "gzipSourceBytes": 142311,
+    "cacheBytes": 152342,
+    "width": 1180,
+    "height": 348
+  },
+  {
+    "name": "native-recruit-Site-Blue-left.svg",
+    "sourceBytes": 578242,
+    "gzipSourceBytes": 116590,
+    "cacheBytes": 121846,
+    "width": 840,
+    "height": 348
+  },
+  {
+    "name": "native-recruit-Site-Blue-right.svg",
+    "sourceBytes": 575204,
+    "gzipSourceBytes": 115735,
+    "cacheBytes": 121888,
+    "width": 840,
+    "height": 348
+  },
+  {
+    "name": "native-recruit-Site-Green-left.svg",
+    "sourceBytes": 699580,
+    "gzipSourceBytes": 155270,
+    "cacheBytes": 124978,
+    "width": 840,
+    "height": 348
+  },
+  {
+    "name": "native-recruit-Site-Green-right.svg",
+    "sourceBytes": 696542,
+    "gzipSourceBytes": 154370,
+    "cacheBytes": 125592,
+    "width": 840,
+    "height": 348
+  },
+  {
+    "name": "native-recruit-Site-Purple-left.svg",
+    "sourceBytes": 729832,
+    "gzipSourceBytes": 149217,
+    "cacheBytes": 103624,
+    "width": 840,
+    "height": 348
+  },
+  {
+    "name": "native-recruit-Site-Purple-right.svg",
+    "sourceBytes": 726794,
+    "gzipSourceBytes": 148308,
+    "cacheBytes": 102100,
+    "width": 840,
+    "height": 348
+  },
+  {
+    "name": "native-recruit-Site-Red-left.svg",
+    "sourceBytes": 660612,
+    "gzipSourceBytes": 143690,
+    "cacheBytes": 119380,
+    "width": 840,
+    "height": 348
+  },
+  {
+    "name": "native-recruit-Site-Red-right.svg",
+    "sourceBytes": 657574,
+    "gzipSourceBytes": 142790,
+    "cacheBytes": 118262,
+    "width": 840,
+    "height": 348
+  },
+  {
+    "name": "native-recruit-Town-Blue-left.svg",
+    "sourceBytes": 468120,
+    "gzipSourceBytes": 72836,
+    "cacheBytes": 113978,
+    "width": 960,
+    "height": 348
+  },
+  {
+    "name": "native-recruit-Town-Blue-right.svg",
+    "sourceBytes": 460446,
+    "gzipSourceBytes": 70525,
+    "cacheBytes": 114088,
+    "width": 960,
+    "height": 348
+  },
+  {
+    "name": "native-recruit-Town-Green-left.svg",
+    "sourceBytes": 568939,
+    "gzipSourceBytes": 110742,
+    "cacheBytes": 110324,
+    "width": 960,
+    "height": 348
+  },
+  {
+    "name": "native-recruit-Town-Green-right.svg",
+    "sourceBytes": 574883,
+    "gzipSourceBytes": 112672,
+    "cacheBytes": 110070,
+    "width": 960,
+    "height": 348
+  },
+  {
+    "name": "native-recruit-Town-Purple-left.svg",
+    "sourceBytes": 655572,
+    "gzipSourceBytes": 112732,
+    "cacheBytes": 94074,
+    "width": 960,
+    "height": 348
+  },
+  {
+    "name": "native-recruit-Town-Purple-right.svg",
+    "sourceBytes": 654382,
+    "gzipSourceBytes": 112522,
+    "cacheBytes": 93968,
+    "width": 960,
+    "height": 348
+  },
+  {
+    "name": "native-recruit-Town-Red-left.svg",
+    "sourceBytes": 638818,
+    "gzipSourceBytes": 130768,
+    "cacheBytes": 124554,
+    "width": 960,
+    "height": 348
+  },
+  {
+    "name": "native-recruit-Town-Red-right.svg",
+    "sourceBytes": 637007,
+    "gzipSourceBytes": 130646,
+    "cacheBytes": 123106,
+    "width": 960,
+    "height": 348
+  },
+  {
+    "name": "native-spell-slot.svg",
+    "sourceBytes": 395,
+    "gzipSourceBytes": 267,
+    "cacheBytes": 290,
+    "width": 108,
+    "height": 108
+  },
+  {
+    "name": "native-title-background.svg",
+    "sourceBytes": 3736035,
+    "gzipSourceBytes": 2810651,
+    "cacheBytes": 1246214,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-world-1.svg",
+    "sourceBytes": 1403428,
+    "gzipSourceBytes": 979322,
+    "cacheBytes": 860450,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-world-10.svg",
+    "sourceBytes": 1850905,
+    "gzipSourceBytes": 1293707,
+    "cacheBytes": 813236,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-world-11.svg",
+    "sourceBytes": 1834146,
+    "gzipSourceBytes": 1305911,
+    "cacheBytes": 788060,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-world-12.svg",
+    "sourceBytes": 1933561,
+    "gzipSourceBytes": 1341160,
+    "cacheBytes": 805096,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-world-13.svg",
+    "sourceBytes": 1816968,
+    "gzipSourceBytes": 1268651,
+    "cacheBytes": 794242,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-world-14.svg",
+    "sourceBytes": 1830333,
+    "gzipSourceBytes": 1304983,
+    "cacheBytes": 779506,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-world-15.svg",
+    "sourceBytes": 1831783,
+    "gzipSourceBytes": 1305856,
+    "cacheBytes": 777698,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-world-16.svg",
+    "sourceBytes": 1873709,
+    "gzipSourceBytes": 1289252,
+    "cacheBytes": 785990,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-world-17.svg",
+    "sourceBytes": 1967911,
+    "gzipSourceBytes": 1378837,
+    "cacheBytes": 792214,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-world-18.svg",
+    "sourceBytes": 1823218,
+    "gzipSourceBytes": 1262767,
+    "cacheBytes": 794354,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-world-19.svg",
+    "sourceBytes": 1814795,
+    "gzipSourceBytes": 1257377,
+    "cacheBytes": 790438,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-world-2.svg",
+    "sourceBytes": 1707829,
+    "gzipSourceBytes": 1198061,
+    "cacheBytes": 886940,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-world-20.svg",
+    "sourceBytes": 1763472,
+    "gzipSourceBytes": 1259671,
+    "cacheBytes": 783530,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-world-21.svg",
+    "sourceBytes": 1819169,
+    "gzipSourceBytes": 1296279,
+    "cacheBytes": 782160,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-world-22.svg",
+    "sourceBytes": 1828639,
+    "gzipSourceBytes": 1291278,
+    "cacheBytes": 795268,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-world-23.svg",
+    "sourceBytes": 1814380,
+    "gzipSourceBytes": 1256408,
+    "cacheBytes": 811546,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-world-24.svg",
+    "sourceBytes": 1769961,
+    "gzipSourceBytes": 1217069,
+    "cacheBytes": 844768,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-world-25.svg",
+    "sourceBytes": 1829626,
+    "gzipSourceBytes": 1259835,
+    "cacheBytes": 825130,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-world-26.svg",
+    "sourceBytes": 1851040,
+    "gzipSourceBytes": 1292945,
+    "cacheBytes": 827894,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-world-27.svg",
+    "sourceBytes": 1839815,
+    "gzipSourceBytes": 1274445,
+    "cacheBytes": 831154,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-world-3.svg",
+    "sourceBytes": 1700774,
+    "gzipSourceBytes": 1186438,
+    "cacheBytes": 851636,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-world-4.svg",
+    "sourceBytes": 1790148,
+    "gzipSourceBytes": 1263801,
+    "cacheBytes": 835954,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-world-5.svg",
+    "sourceBytes": 1827131,
+    "gzipSourceBytes": 1289270,
+    "cacheBytes": 826010,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-world-6.svg",
+    "sourceBytes": 1744846,
+    "gzipSourceBytes": 1232503,
+    "cacheBytes": 796768,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-world-7.svg",
+    "sourceBytes": 1779210,
+    "gzipSourceBytes": 1251621,
+    "cacheBytes": 771896,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-world-8.svg",
+    "sourceBytes": 1839036,
+    "gzipSourceBytes": 1289774,
+    "cacheBytes": 801254,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-world-9.svg",
+    "sourceBytes": 1841874,
+    "gzipSourceBytes": 1301678,
+    "cacheBytes": 812984,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "native-world-Purple.svg",
+    "sourceBytes": 1403552,
+    "gzipSourceBytes": 979428,
+    "cacheBytes": 860450,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "results/background-Purple.svg",
+    "sourceBytes": 232606,
+    "gzipSourceBytes": 174505,
+    "cacheBytes": 321276,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "results/bar-gold-1.svg",
+    "sourceBytes": 11842,
+    "gzipSourceBytes": 3097,
+    "cacheBytes": 3816,
+    "width": 304,
+    "height": 70
+  },
+  {
+    "name": "results/bar-gold-100.svg",
+    "sourceBytes": 11575,
+    "gzipSourceBytes": 3063,
+    "cacheBytes": 5208,
+    "width": 304,
+    "height": 70
+  },
+  {
+    "name": "results/bar-lost-1.svg",
+    "sourceBytes": 11675,
+    "gzipSourceBytes": 3024,
+    "cacheBytes": 3906,
+    "width": 304,
+    "height": 70
+  },
+  {
+    "name": "results/bar-lost-100.svg",
+    "sourceBytes": 11392,
+    "gzipSourceBytes": 2971,
+    "cacheBytes": 5494,
+    "width": 304,
+    "height": 70
+  },
+  {
+    "name": "results/bar-magic-1.svg",
+    "sourceBytes": 11739,
+    "gzipSourceBytes": 3056,
+    "cacheBytes": 3888,
+    "width": 304,
+    "height": 70
+  },
+  {
+    "name": "results/bar-magic-100.svg",
+    "sourceBytes": 11458,
+    "gzipSourceBytes": 3012,
+    "cacheBytes": 5360,
+    "width": 304,
+    "height": 70
+  },
+  {
+    "name": "results/bar-purchased-1.svg",
+    "sourceBytes": 11809,
+    "gzipSourceBytes": 3127,
+    "cacheBytes": 3890,
+    "width": 304,
+    "height": 70
+  },
+  {
+    "name": "results/bar-purchased-100.svg",
+    "sourceBytes": 11535,
+    "gzipSourceBytes": 3089,
+    "cacheBytes": 5660,
+    "width": 304,
+    "height": 70
+  },
+  {
+    "name": "results/button.svg",
+    "sourceBytes": 6120,
+    "gzipSourceBytes": 2085,
+    "cacheBytes": 17810,
+    "width": 390,
+    "height": 130
+  },
+  {
+    "name": "results/chrome-Blue.svg",
+    "sourceBytes": 1533841,
+    "gzipSourceBytes": 1087080,
+    "cacheBytes": 145164,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "results/chrome-Green.svg",
+    "sourceBytes": 1352837,
+    "gzipSourceBytes": 947874,
+    "cacheBytes": 160896,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "results/chrome-Purple.svg",
+    "sourceBytes": 1526283,
+    "gzipSourceBytes": 1076968,
+    "cacheBytes": 134814,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "results/chrome-Red.svg",
+    "sourceBytes": 1500477,
+    "gzipSourceBytes": 1058070,
+    "cacheBytes": 148748,
+    "width": 1600,
+    "height": 1200
+  },
+  {
+    "name": "results/crown-1.svg",
+    "sourceBytes": 87384,
+    "gzipSourceBytes": 30591,
+    "cacheBytes": 9820,
+    "width": 260,
+    "height": 190
+  },
+  {
+    "name": "results/crown-2.svg",
+    "sourceBytes": 87521,
+    "gzipSourceBytes": 30665,
+    "cacheBytes": 10330,
+    "width": 260,
+    "height": 190
+  },
+  {
+    "name": "results/crown-3.svg",
+    "sourceBytes": 84876,
+    "gzipSourceBytes": 29951,
+    "cacheBytes": 10336,
+    "width": 260,
+    "height": 190
+  },
+  {
+    "name": "results/emblem-Blue.svg",
+    "sourceBytes": 451170,
+    "gzipSourceBytes": 337869,
+    "cacheBytes": 25222,
+    "width": 250,
+    "height": 240
+  },
+  {
+    "name": "results/emblem-Green.svg",
+    "sourceBytes": 277272,
+    "gzipSourceBytes": 205271,
+    "cacheBytes": 28128,
+    "width": 250,
+    "height": 240
+  },
+  {
+    "name": "results/emblem-Purple.svg",
+    "sourceBytes": 505887,
+    "gzipSourceBytes": 379249,
+    "cacheBytes": 16798,
+    "width": 250,
+    "height": 240
+  },
+  {
+    "name": "results/emblem-Red.svg",
+    "sourceBytes": 482016,
+    "gzipSourceBytes": 359455,
+    "cacheBytes": 29626,
+    "width": 250,
+    "height": 240
+  },
+  {
+    "name": "results/header.svg",
+    "sourceBytes": 1527318,
+    "gzipSourceBytes": 1076964,
+    "cacheBytes": 31614,
+    "width": 880,
+    "height": 116
+  },
+  {
+    "name": "results/row-Blue.svg",
+    "sourceBytes": 451298,
+    "gzipSourceBytes": 337891,
+    "cacheBytes": 872,
+    "width": 1650,
+    "height": 212
+  },
+  {
+    "name": "results/row-Green.svg",
+    "sourceBytes": 277402,
+    "gzipSourceBytes": 205292,
+    "cacheBytes": 856,
+    "width": 1650,
+    "height": 212
+  },
+  {
+    "name": "results/row-Purple.svg",
+    "sourceBytes": 506014,
+    "gzipSourceBytes": 379269,
+    "cacheBytes": 870,
+    "width": 1650,
+    "height": 212
+  },
+  {
+    "name": "results/row-Red.svg",
+    "sourceBytes": 482145,
+    "gzipSourceBytes": 359475,
+    "cacheBytes": 854,
+    "width": 1650,
+    "height": 212
+  },
+  {
+    "name": "results/xp-1.svg",
+    "sourceBytes": 13050,
+    "gzipSourceBytes": 3560,
+    "cacheBytes": 4808,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-10.svg",
+    "sourceBytes": 13042,
+    "gzipSourceBytes": 3555,
+    "cacheBytes": 5228,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-100.svg",
+    "sourceBytes": 13026,
+    "gzipSourceBytes": 3558,
+    "cacheBytes": 5412,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-11.svg",
+    "sourceBytes": 13042,
+    "gzipSourceBytes": 3555,
+    "cacheBytes": 5300,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-12.svg",
+    "sourceBytes": 13042,
+    "gzipSourceBytes": 3554,
+    "cacheBytes": 5300,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-13.svg",
+    "sourceBytes": 13046,
+    "gzipSourceBytes": 3556,
+    "cacheBytes": 5224,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-14.svg",
+    "sourceBytes": 13050,
+    "gzipSourceBytes": 3557,
+    "cacheBytes": 5362,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-15.svg",
+    "sourceBytes": 13034,
+    "gzipSourceBytes": 3558,
+    "cacheBytes": 5322,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-16.svg",
+    "sourceBytes": 13034,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5378,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-17.svg",
+    "sourceBytes": 13042,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5474,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-18.svg",
+    "sourceBytes": 13042,
+    "gzipSourceBytes": 3558,
+    "cacheBytes": 5494,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-19.svg",
+    "sourceBytes": 13030,
+    "gzipSourceBytes": 3557,
+    "cacheBytes": 5518,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-2.svg",
+    "sourceBytes": 13050,
+    "gzipSourceBytes": 3560,
+    "cacheBytes": 4874,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-20.svg",
+    "sourceBytes": 13038,
+    "gzipSourceBytes": 3558,
+    "cacheBytes": 5548,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-21.svg",
+    "sourceBytes": 13046,
+    "gzipSourceBytes": 3561,
+    "cacheBytes": 5594,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-22.svg",
+    "sourceBytes": 13046,
+    "gzipSourceBytes": 3561,
+    "cacheBytes": 5604,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-23.svg",
+    "sourceBytes": 13046,
+    "gzipSourceBytes": 3561,
+    "cacheBytes": 5588,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-24.svg",
+    "sourceBytes": 13042,
+    "gzipSourceBytes": 3560,
+    "cacheBytes": 5604,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-25.svg",
+    "sourceBytes": 13034,
+    "gzipSourceBytes": 3558,
+    "cacheBytes": 5636,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-26.svg",
+    "sourceBytes": 13034,
+    "gzipSourceBytes": 3558,
+    "cacheBytes": 5668,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-27.svg",
+    "sourceBytes": 13026,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5684,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-28.svg",
+    "sourceBytes": 13026,
+    "gzipSourceBytes": 3558,
+    "cacheBytes": 5724,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-29.svg",
+    "sourceBytes": 13030,
+    "gzipSourceBytes": 3558,
+    "cacheBytes": 5724,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-3.svg",
+    "sourceBytes": 13046,
+    "gzipSourceBytes": 3558,
+    "cacheBytes": 4924,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-30.svg",
+    "sourceBytes": 13046,
+    "gzipSourceBytes": 3557,
+    "cacheBytes": 5752,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-31.svg",
+    "sourceBytes": 13046,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5774,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-32.svg",
+    "sourceBytes": 13046,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5788,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-33.svg",
+    "sourceBytes": 13046,
+    "gzipSourceBytes": 3558,
+    "cacheBytes": 5798,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-34.svg",
+    "sourceBytes": 13050,
+    "gzipSourceBytes": 3560,
+    "cacheBytes": 5830,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-35.svg",
+    "sourceBytes": 13034,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5834,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-36.svg",
+    "sourceBytes": 13034,
+    "gzipSourceBytes": 3560,
+    "cacheBytes": 5882,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-37.svg",
+    "sourceBytes": 13042,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5896,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-38.svg",
+    "sourceBytes": 13042,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5882,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-39.svg",
+    "sourceBytes": 13038,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5910,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-4.svg",
+    "sourceBytes": 13034,
+    "gzipSourceBytes": 3556,
+    "cacheBytes": 5058,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-40.svg",
+    "sourceBytes": 13038,
+    "gzipSourceBytes": 3560,
+    "cacheBytes": 5892,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-41.svg",
+    "sourceBytes": 13046,
+    "gzipSourceBytes": 3560,
+    "cacheBytes": 5922,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-42.svg",
+    "sourceBytes": 13046,
+    "gzipSourceBytes": 3561,
+    "cacheBytes": 5922,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-43.svg",
+    "sourceBytes": 13046,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5922,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-44.svg",
+    "sourceBytes": 13042,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5950,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-45.svg",
+    "sourceBytes": 13050,
+    "gzipSourceBytes": 3558,
+    "cacheBytes": 5942,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-46.svg",
+    "sourceBytes": 13042,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5984,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-47.svg",
+    "sourceBytes": 13026,
+    "gzipSourceBytes": 3557,
+    "cacheBytes": 5854,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-48.svg",
+    "sourceBytes": 13026,
+    "gzipSourceBytes": 3557,
+    "cacheBytes": 5396,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-49.svg",
+    "sourceBytes": 13030,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5388,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-5.svg",
+    "sourceBytes": 13042,
+    "gzipSourceBytes": 3555,
+    "cacheBytes": 5154,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-50.svg",
+    "sourceBytes": 13030,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5392,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-51.svg",
+    "sourceBytes": 13046,
+    "gzipSourceBytes": 3560,
+    "cacheBytes": 5448,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-52.svg",
+    "sourceBytes": 13046,
+    "gzipSourceBytes": 3558,
+    "cacheBytes": 5450,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-53.svg",
+    "sourceBytes": 13046,
+    "gzipSourceBytes": 3558,
+    "cacheBytes": 5464,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-54.svg",
+    "sourceBytes": 13050,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5454,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-55.svg",
+    "sourceBytes": 13042,
+    "gzipSourceBytes": 3554,
+    "cacheBytes": 5470,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-56.svg",
+    "sourceBytes": 13034,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5472,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-57.svg",
+    "sourceBytes": 13046,
+    "gzipSourceBytes": 3562,
+    "cacheBytes": 5496,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-58.svg",
+    "sourceBytes": 13046,
+    "gzipSourceBytes": 3562,
+    "cacheBytes": 5500,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-59.svg",
+    "sourceBytes": 13034,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5508,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-6.svg",
+    "sourceBytes": 13042,
+    "gzipSourceBytes": 3555,
+    "cacheBytes": 5240,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-60.svg",
+    "sourceBytes": 13034,
+    "gzipSourceBytes": 3560,
+    "cacheBytes": 5504,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-61.svg",
+    "sourceBytes": 13050,
+    "gzipSourceBytes": 3560,
+    "cacheBytes": 5508,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-62.svg",
+    "sourceBytes": 13050,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5514,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-63.svg",
+    "sourceBytes": 13050,
+    "gzipSourceBytes": 3562,
+    "cacheBytes": 5530,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-64.svg",
+    "sourceBytes": 13046,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5520,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-65.svg",
+    "sourceBytes": 13054,
+    "gzipSourceBytes": 3562,
+    "cacheBytes": 5538,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-66.svg",
+    "sourceBytes": 13054,
+    "gzipSourceBytes": 3562,
+    "cacheBytes": 5532,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-67.svg",
+    "sourceBytes": 13038,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5532,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-68.svg",
+    "sourceBytes": 13038,
+    "gzipSourceBytes": 3560,
+    "cacheBytes": 5544,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-69.svg",
+    "sourceBytes": 13042,
+    "gzipSourceBytes": 3563,
+    "cacheBytes": 5560,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-7.svg",
+    "sourceBytes": 13034,
+    "gzipSourceBytes": 3556,
+    "cacheBytes": 5174,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-70.svg",
+    "sourceBytes": 13042,
+    "gzipSourceBytes": 3564,
+    "cacheBytes": 5558,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-71.svg",
+    "sourceBytes": 13042,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5548,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-72.svg",
+    "sourceBytes": 13050,
+    "gzipSourceBytes": 3560,
+    "cacheBytes": 5550,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-73.svg",
+    "sourceBytes": 13050,
+    "gzipSourceBytes": 3563,
+    "cacheBytes": 5564,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-74.svg",
+    "sourceBytes": 13054,
+    "gzipSourceBytes": 3563,
+    "cacheBytes": 5570,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-75.svg",
+    "sourceBytes": 13046,
+    "gzipSourceBytes": 3560,
+    "cacheBytes": 5574,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-76.svg",
+    "sourceBytes": 13046,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5592,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-77.svg",
+    "sourceBytes": 13046,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5580,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-78.svg",
+    "sourceBytes": 13042,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5590,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-79.svg",
+    "sourceBytes": 13042,
+    "gzipSourceBytes": 3560,
+    "cacheBytes": 5590,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-8.svg",
+    "sourceBytes": 13030,
+    "gzipSourceBytes": 3556,
+    "cacheBytes": 5186,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-80.svg",
+    "sourceBytes": 13042,
+    "gzipSourceBytes": 3561,
+    "cacheBytes": 5594,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-81.svg",
+    "sourceBytes": 13042,
+    "gzipSourceBytes": 3558,
+    "cacheBytes": 5506,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-82.svg",
+    "sourceBytes": 13050,
+    "gzipSourceBytes": 3561,
+    "cacheBytes": 5504,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-83.svg",
+    "sourceBytes": 13046,
+    "gzipSourceBytes": 3558,
+    "cacheBytes": 5520,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-84.svg",
+    "sourceBytes": 13046,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5516,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-85.svg",
+    "sourceBytes": 13054,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5590,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-86.svg",
+    "sourceBytes": 13054,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5596,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-87.svg",
+    "sourceBytes": 13038,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5574,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-88.svg",
+    "sourceBytes": 13042,
+    "gzipSourceBytes": 3560,
+    "cacheBytes": 5596,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-89.svg",
+    "sourceBytes": 13042,
+    "gzipSourceBytes": 3560,
+    "cacheBytes": 5592,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-9.svg",
+    "sourceBytes": 13042,
+    "gzipSourceBytes": 3554,
+    "cacheBytes": 5208,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-90.svg",
+    "sourceBytes": 13042,
+    "gzipSourceBytes": 3560,
+    "cacheBytes": 5590,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-91.svg",
+    "sourceBytes": 13042,
+    "gzipSourceBytes": 3561,
+    "cacheBytes": 5586,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-92.svg",
+    "sourceBytes": 13042,
+    "gzipSourceBytes": 3560,
+    "cacheBytes": 5608,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-93.svg",
+    "sourceBytes": 13054,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5592,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-94.svg",
+    "sourceBytes": 13054,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5596,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-95.svg",
+    "sourceBytes": 13046,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5610,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-96.svg",
+    "sourceBytes": 13046,
+    "gzipSourceBytes": 3559,
+    "cacheBytes": 5630,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-97.svg",
+    "sourceBytes": 13054,
+    "gzipSourceBytes": 3557,
+    "cacheBytes": 5600,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-98.svg",
+    "sourceBytes": 13034,
+    "gzipSourceBytes": 3556,
+    "cacheBytes": 5480,
+    "width": 430,
+    "height": 66
+  },
+  {
+    "name": "results/xp-99.svg",
+    "sourceBytes": 13026,
+    "gzipSourceBytes": 3557,
+    "cacheBytes": 5456,
+    "width": 430,
+    "height": 66
+  }
+]

@@ -1,0 +1,12 @@
+'use strict';
+const assert=require('node:assert/strict'),{Battle}=require('./engine'),P=require('./progression');
+const map={grid:Array(60).fill('1'.repeat(80)),roads:{points:[{x:100,y:300},{x:700,y:300}],edges:[[0,1]]},nodes:[{markerClass:'NodeCastleGreenClass',x:100,y:300,locationNum:0},{markerClass:'NodeMageTowerRedClass',x:700,y:300,locationNum:1}]};
+const b=new Battle(map,{player:'Red',edicts:Object.fromEntries(P.tree('Red').map(e=>[e.n,3]))});b.ai=()=>{};
+const target=b.buildings.find(v=>v.owner==='Green'),ally=b.owned()[0];b.factions.Red.mana=500;
+assert.equal(b.cast('fire',target,'Red'),null);const hp=target.hp;b.update(1);assert(target.hp<hp,'Stoneworms must damage hostile strongholds');assert.equal(ally.hp,ally.maxHp);
+const c=new Battle(map,{player:'Green',edicts:Object.fromEntries(P.tree('Green').map(e=>[e.n,3]))});c.ai=()=>{};c.factionBonuses.Red={20:1};c.factions.Red.mana=500;
+const playerMana=c.factions.Green.mana,enemyMana=c.factions.Red.mana;
+assert.equal(c.cast('fire',c.owned()[0],'Red'),null);assert.equal(c.factions.Green.mana,playerMana,'Enemy spells cannot consume player mana');assert.equal(c.factions.Red.mana,enemyMana-100);
+c.update(3);assert.equal(c.ultimateCharge,0,'No tower means no player ultimate charging');assert(c.factions.Red.ultimateCharge>0,'Enemy tower charges enemy ultimate');
+const tower=c.buildings.find(v=>v.owner==='Red');c.destroy(tower);const p=c.factions.Red.ultimateCharge;c.update(.1);assert.equal(c.factions.Red.ultimateCharge,0,'Losing tower clears charge');
+console.log('PASS hostile castle stoneworm damage, side-specific magic spending and secured-tower ultimate charging');

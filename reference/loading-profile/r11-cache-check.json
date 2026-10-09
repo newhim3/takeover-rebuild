@@ -1,0 +1,91 @@
+{
+  "errors": [],
+  "repeat": {
+    "navigationMs": 39.39999997615814,
+    "workerControlled": true,
+    "cacheNames": [
+      "takeover-delivery-53fa6f0e0619caf2"
+    ],
+    "resources": [
+      {
+        "url": "/game-shell.css",
+        "networkBytes": 0,
+        "workerStart": 12.299999952316284
+      },
+      {
+        "url": "/assets/takeover/ui/crest.png",
+        "networkBytes": 0,
+        "workerStart": 12.299999952316284
+      },
+      {
+        "url": "/assets/takeover/ui/spell-heal.png",
+        "networkBytes": 0,
+        "workerStart": 12.399999976158142
+      },
+      {
+        "url": "/assets/takeover/ui/atlases/screens/native-title-background.webp",
+        "networkBytes": 0,
+        "workerStart": 12.299999952316284
+      },
+      {
+        "url": "/assets/takeover/ui/spell-fire.png",
+        "networkBytes": 0,
+        "workerStart": 15.599999964237213
+      },
+      {
+        "url": "/assets/takeover/ui/spell-summon.png",
+        "networkBytes": 0,
+        "workerStart": 15.599999964237213
+      },
+      {
+        "url": "/game-shell.js",
+        "networkBytes": 0,
+        "workerStart": 16.599999964237213
+      },
+      {
+        "url": "/assets/takeover/ui/atlases/screens/results--background-Purple.webp",
+        "networkBytes": 0,
+        "workerStart": 21.599999964237213
+      },
+      {
+        "url": "/assets/takeover/ui/upgrade-arrow.png",
+        "networkBytes": 0,
+        "workerStart": 34.89999997615814
+      },
+      {
+        "url": "/assets/takeover/ui/button.png",
+        "networkBytes": 0,
+        "workerStart": 35.799999952316284
+      },
+      {
+        "url": "/assets/takeover/ui/atlases/screens/native-profile-background.webp",
+        "networkBytes": 0,
+        "workerStart": 389
+      }
+    ]
+  },
+  "repeatedNetwork": [
+    {
+      "url": "/?qa=1",
+      "time": 1791295951397
+    },
+    {
+      "url": "/delivery-worker.js",
+      "time": 1791295951982
+    }
+  ],
+  "shared": {
+    "map7Ready": true,
+    "map17Ready": true,
+    "uniqueDecodedMapImages": 48
+  },
+  "battleState": {
+    "paused": true,
+    "level": 7,
+    "terrainReady": true,
+    "menuHidden": true,
+    "buildingCount": 6,
+    "loadedOriginalImages": 75
+  },
+  "apiRequestsBypassCache": true
+}

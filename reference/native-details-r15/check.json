@@ -1,0 +1,38 @@
+{
+  "scope": "Offline native sizes, pivot composition and timeline samples only; no gameplay or AI verification",
+  "actions": [
+    "moving",
+    "melee",
+    "ranged",
+    "defending",
+    "repairing"
+  ],
+  "actionPivots": {
+    "ASTMovingClass": [
+      14.1,
+      -4.3
+    ],
+    "ASTMeleeFightingClass": [
+      27.1,
+      6.6
+    ],
+    "ASTRangedFightingClass": [
+      30.75,
+      6.95
+    ],
+    "ASTDefendingClass": [
+      16.85,
+      -1.4
+    ],
+    "ASTRepairingClass": [
+      19.5,
+      8.55
+    ],
+    "ExplosionClass": [
+      69.95,
+      143.5
+    ]
+  },
+  "explosionFrames": 18,
+  "arrowDirectionSamples": 2
+}

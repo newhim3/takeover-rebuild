@@ -1,0 +1,1 @@
+const fs=require('fs');let e=fs.readFileSync('engine.js','utf8');e=e.replace("u.garrisonId=assigned.id;u.x=assigned.x;","u.garrisonId=assigned.id;u.defendHome=null;u.x=assigned.x;");fs.writeFileSync('engine.js',e);

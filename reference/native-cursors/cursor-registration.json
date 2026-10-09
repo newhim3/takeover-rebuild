@@ -1,0 +1,98 @@
+{
+  "CursorOn_StoneWormClass": [
+    74.5,
+    44.1
+  ],
+  "CursorOff_StoneWormClass": [
+    74.5,
+    44.1
+  ],
+  "CursorOn_MistyClonesClass": [
+    77.45,
+    48.1
+  ],
+  "CursorOn_LiberationClass": [
+    74.5,
+    56.9
+  ],
+  "CursorOff_LiberationClass": [
+    74.5,
+    56.9
+  ],
+  "CursorOn_HealClass": [
+    74.5,
+    56.9
+  ],
+  "CursorOn_DisentombClass": [
+    50.7,
+    56.75
+  ],
+  "CursorOn_BloodlustClass": [
+    74.5,
+    56.9
+  ],
+  "CursorOff_BloodlustClass": [
+    74.5,
+    56.9
+  ],
+  "CursorOn_HeroismClass": [
+    75.0,
+    57.9
+  ],
+  "CursorOff_HeroismClass": [
+    75.0,
+    57.9
+  ],
+  "CursorOff_DisentombClass": [
+    50.7,
+    56.75
+  ],
+  "CursorOn_LordsJudgementClass": [
+    77.45,
+    50.25
+  ],
+  "CursorOff_LordsJudgementClass": [
+    77.45,
+    50.25
+  ],
+  "CursorOff_MistyClonesClass": [
+    77.45,
+    48.1
+  ],
+  "CursorOff_HealClass": [
+    74.5,
+    56.9
+  ],
+  "CursorOn_IceBlastClass": [
+    77.45,
+    52.8
+  ],
+  "CursorOff_IceBlastClass": [
+    77.45,
+    52.75
+  ],
+  "BulletClass": [
+    1.0,
+    1.0
+  ],
+  "GunbotBulletClass": [
+    6.5,
+    6.8
+  ],
+  "GiantbotBulletClass": [
+    8.9,
+    8.6
+  ],
+  "ZealotBulletClass": [
+    1.5,
+    1.5
+  ],
+  "AcolytesBulletClass": [
+    8.05,
+    8.65
+  ],
+  "CatapultMissileClass": [
+    3.5,
+    3.6
+  ]
+}

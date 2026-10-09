@@ -1,0 +1,470 @@
+{
+  "scope": "Static native Green victory fixtures at one and three stars; no simulation, no save access.",
+  "errors": [],
+  "records": [
+    {
+      "name": "before-3star",
+      "data": {
+        ".native-result-rating strong": {
+          "text": "完美胜利",
+          "color": "rgb(229, 211, 172)",
+          "fontWeight": "700",
+          "textShadow": "rgb(17, 17, 17) -1px -1px 0px, rgb(17, 17, 17) 1px 1px 0px",
+          "fontSize": "18.7677px",
+          "box": {
+            "x": 61.234375,
+            "y": 760.03125,
+            "width": 522.203125,
+            "height": 25
+          }
+        },
+        ".native-result-playtime": {
+          "text": "战斗用时 04:32",
+          "color": "rgb(188, 181, 166)",
+          "fontWeight": "400",
+          "textShadow": "rgb(17, 17, 17) -1px -1px 0px, rgb(17, 17, 17) 1px 1px 0px",
+          "fontSize": "16.5598px",
+          "box": {
+            "x": 61.234375,
+            "y": 796.0625,
+            "width": 522.203125,
+            "height": 22
+          }
+        },
+        ".native-result-task": null,
+        ".native-result-progression": {
+          "text": "统帅等级 3可用条令点 2600 / 1600 经验返回世界地图",
+          "color": "rgb(196, 189, 175)",
+          "fontWeight": "400",
+          "textShadow": "rgb(17, 17, 17) -1px -1px 0px, rgb(17, 17, 17) 1px 1px 0px",
+          "fontSize": "15.4558px",
+          "box": {
+            "x": 616.546875,
+            "y": 692.703125,
+            "width": 522.203125,
+            "height": 155.828125
+          }
+        },
+        ".native-result-xp-track span": {
+          "text": "600 / 1600 经验",
+          "color": "rgb(255, 255, 255)",
+          "fontWeight": "900",
+          "textShadow": "rgb(17, 17, 17) -1px -1px 0px, rgb(17, 17, 17) 1px -1px 0px, rgb(17, 17, 17) -1px 1px 0px, rgb(17, 17, 17) 1px 1px 0px",
+          "fontSize": "17.6637px",
+          "box": {
+            "x": 616.546875,
+            "y": 762.84375,
+            "width": 522.203125,
+            "height": 18.765625
+          }
+        },
+        ".native-result-cell span": {
+          "text": "18",
+          "color": "rgb(255, 243, 207)",
+          "fontWeight": "400",
+          "textShadow": "rgb(32, 16, 27) 0px 1px 2px",
+          "fontSize": "16.0078px",
+          "box": {
+            "x": 364.046875,
+            "y": 274.484375,
+            "width": 18.765625,
+            "height": 21
+          }
+        },
+        ".native-result-bottom": {
+          "text": "完美胜利战斗用时 04:32统帅等级 3可用条令点 2600 / 1600 经验返回世界地图",
+          "color": "rgb(238, 231, 216)",
+          "fontWeight": "400",
+          "textShadow": "rgb(17, 17, 17) -1px -1px 0px, rgb(17, 17, 17) 1px 1px 0px",
+          "fontSize": "13px",
+          "box": {
+            "x": 48,
+            "y": 677.25,
+            "width": 1103.984375,
+            "height": 186.734375
+          }
+        },
+        ".native-result-row": {
+          "text": "翡翠王国我方18571123428764",
+          "color": "rgb(238, 231, 216)",
+          "fontWeight": "400",
+          "textShadow": "none",
+          "fontSize": "13px",
+          "box": {
+            "x": 48,
+            "y": 239.75,
+            "width": 1103.984375,
+            "height": 90.484375
+          }
+        },
+        ".native-result-cell": {
+          "text": "18",
+          "color": "rgb(238, 231, 216)",
+          "fontWeight": "400",
+          "textShadow": "none",
+          "fontSize": "17.6637px",
+          "box": {
+            "x": 324.8125,
+            "y": 264.015625,
+            "width": 97.234375,
+            "height": 41.9375
+          }
+        }
+      }
+    },
+    {
+      "name": "before-1star",
+      "data": {
+        ".native-result-rating strong": {
+          "text": "完成战役",
+          "color": "rgb(229, 211, 172)",
+          "fontWeight": "700",
+          "textShadow": "rgb(17, 17, 17) -1px -1px 0px, rgb(17, 17, 17) 1px 1px 0px",
+          "fontSize": "18.7677px",
+          "box": {
+            "x": 61.234375,
+            "y": 760.03125,
+            "width": 522.203125,
+            "height": 25
+          }
+        },
+        ".native-result-playtime": {
+          "text": "战斗用时 04:32",
+          "color": "rgb(188, 181, 166)",
+          "fontWeight": "400",
+          "textShadow": "rgb(17, 17, 17) -1px -1px 0px, rgb(17, 17, 17) 1px 1px 0px",
+          "fontSize": "16.5598px",
+          "box": {
+            "x": 61.234375,
+            "y": 796.0625,
+            "width": 522.203125,
+            "height": 22
+          }
+        },
+        ".native-result-task": {
+          "text": "在 9:30 内完成可获得二星评级",
+          "color": "rgb(178, 170, 160)",
+          "fontWeight": "400",
+          "textShadow": "rgb(17, 17, 17) -1px -1px 0px, rgb(17, 17, 17) 1px 1px 0px",
+          "fontSize": "12.6958px",
+          "box": {
+            "x": 61.234375,
+            "y": 825.78125,
+            "width": 522.203125,
+            "height": 16
+          }
+        },
+        ".native-result-progression": {
+          "text": "统帅等级 3可用条令点 2600 / 1600 经验返回世界地图",
+          "color": "rgb(196, 189, 175)",
+          "fontWeight": "400",
+          "textShadow": "rgb(17, 17, 17) -1px -1px 0px, rgb(17, 17, 17) 1px 1px 0px",
+          "fontSize": "15.4558px",
+          "box": {
+            "x": 616.546875,
+            "y": 692.703125,
+            "width": 522.203125,
+            "height": 155.828125
+          }
+        },
+        ".native-result-xp-track span": {
+          "text": "600 / 1600 经验",
+          "color": "rgb(255, 255, 255)",
+          "fontWeight": "900",
+          "textShadow": "rgb(17, 17, 17) -1px -1px 0px, rgb(17, 17, 17) 1px -1px 0px, rgb(17, 17, 17) -1px 1px 0px, rgb(17, 17, 17) 1px 1px 0px",
+          "fontSize": "17.6637px",
+          "box": {
+            "x": 616.546875,
+            "y": 762.84375,
+            "width": 522.203125,
+            "height": 18.765625
+          }
+        },
+        ".native-result-cell span": {
+          "text": "18",
+          "color": "rgb(255, 243, 207)",
+          "fontWeight": "400",
+          "textShadow": "rgb(32, 16, 27) 0px 1px 2px",
+          "fontSize": "16.0078px",
+          "box": {
+            "x": 364.046875,
+            "y": 274.484375,
+            "width": 18.765625,
+            "height": 21
+          }
+        },
+        ".native-result-bottom": {
+          "text": "完成战役战斗用时 04:32在 9:30 内完成可获得二星评级统帅等级 3可用条令点 2600 / 1600 经验返回世界地图",
+          "color": "rgb(238, 231, 216)",
+          "fontWeight": "400",
+          "textShadow": "rgb(17, 17, 17) -1px -1px 0px, rgb(17, 17, 17) 1px 1px 0px",
+          "fontSize": "13px",
+          "box": {
+            "x": 48,
+            "y": 677.25,
+            "width": 1103.984375,
+            "height": 186.734375
+          }
+        },
+        ".native-result-row": {
+          "text": "翡翠王国我方18571123428764",
+          "color": "rgb(238, 231, 216)",
+          "fontWeight": "400",
+          "textShadow": "none",
+          "fontSize": "13px",
+          "box": {
+            "x": 48,
+            "y": 239.75,
+            "width": 1103.984375,
+            "height": 90.484375
+          }
+        },
+        ".native-result-cell": {
+          "text": "18",
+          "color": "rgb(238, 231, 216)",
+          "fontWeight": "400",
+          "textShadow": "none",
+          "fontSize": "17.6637px",
+          "box": {
+            "x": 324.8125,
+            "y": 264.015625,
+            "width": 97.234375,
+            "height": 41.9375
+          }
+        }
+      }
+    },
+    {
+      "name": "after-3star",
+      "data": {
+        ".native-result-rating strong": {
+          "text": "完美胜利",
+          "color": "rgb(255, 255, 255)",
+          "fontWeight": "700",
+          "textShadow": "rgb(23, 16, 23) -1px -1px 0px, rgb(23, 16, 23) 0px -1px 0px, rgb(23, 16, 23) 1px -1px 0px, rgb(23, 16, 23) -1px 0px 0px, rgb(23, 16, 23) 1px 0px 0px, rgb(23, 16, 23) -1px 1px 0px, rgb(23, 16, 23) 0px 1px 0px, rgb(23, 16, 23) 1px 1px 0px",
+          "fontSize": "18.7677px",
+          "box": {
+            "x": 61.234375,
+            "y": 760.03125,
+            "width": 522.203125,
+            "height": 25
+          }
+        },
+        ".native-result-playtime": {
+          "text": "战斗用时 04:32",
+          "color": "rgb(255, 255, 255)",
+          "fontWeight": "700",
+          "textShadow": "rgb(23, 16, 23) -1px -1px 0px, rgb(23, 16, 23) 0px -1px 0px, rgb(23, 16, 23) 1px -1px 0px, rgb(23, 16, 23) -1px 0px 0px, rgb(23, 16, 23) 1px 0px 0px, rgb(23, 16, 23) -1px 1px 0px, rgb(23, 16, 23) 0px 1px 0px, rgb(23, 16, 23) 1px 1px 0px",
+          "fontSize": "16.5598px",
+          "box": {
+            "x": 61.234375,
+            "y": 796.0625,
+            "width": 522.203125,
+            "height": 22
+          }
+        },
+        ".native-result-task": null,
+        ".native-result-progression": {
+          "text": "统帅等级 3可用条令点 2600 / 1600 经验返回世界地图",
+          "color": "rgb(255, 255, 255)",
+          "fontWeight": "700",
+          "textShadow": "rgb(23, 16, 23) -1px -1px 0px, rgb(23, 16, 23) 0px -1px 0px, rgb(23, 16, 23) 1px -1px 0px, rgb(23, 16, 23) -1px 0px 0px, rgb(23, 16, 23) 1px 0px 0px, rgb(23, 16, 23) -1px 1px 0px, rgb(23, 16, 23) 0px 1px 0px, rgb(23, 16, 23) 1px 1px 0px",
+          "fontSize": "15.4558px",
+          "box": {
+            "x": 616.546875,
+            "y": 692.703125,
+            "width": 522.203125,
+            "height": 155.828125
+          }
+        },
+        ".native-result-xp-track span": {
+          "text": "600 / 1600 经验",
+          "color": "rgb(255, 255, 255)",
+          "fontWeight": "900",
+          "textShadow": "rgb(23, 16, 23) -1px -1px 0px, rgb(23, 16, 23) 0px -1px 0px, rgb(23, 16, 23) 1px -1px 0px, rgb(23, 16, 23) -1px 0px 0px, rgb(23, 16, 23) 1px 0px 0px, rgb(23, 16, 23) -1px 1px 0px, rgb(23, 16, 23) 0px 1px 0px, rgb(23, 16, 23) 1px 1px 0px",
+          "fontSize": "17.6637px",
+          "box": {
+            "x": 616.546875,
+            "y": 762.84375,
+            "width": 522.203125,
+            "height": 18.765625
+          }
+        },
+        ".native-result-cell span": {
+          "text": "18",
+          "color": "rgb(255, 255, 255)",
+          "fontWeight": "700",
+          "textShadow": "rgb(23, 16, 23) -1px -1px 0px, rgb(23, 16, 23) 0px -1px 0px, rgb(23, 16, 23) 1px -1px 0px, rgb(23, 16, 23) -1px 0px 0px, rgb(23, 16, 23) 1px 0px 0px, rgb(23, 16, 23) -1px 1px 0px, rgb(23, 16, 23) 0px 1px 0px, rgb(23, 16, 23) 1px 1px 0px",
+          "fontSize": "16.0078px",
+          "box": {
+            "x": 363.5625,
+            "y": 274.484375,
+            "width": 19.734375,
+            "height": 21
+          }
+        },
+        ".native-result-bottom": {
+          "text": "完美胜利战斗用时 04:32统帅等级 3可用条令点 2600 / 1600 经验返回世界地图",
+          "color": "rgb(238, 231, 216)",
+          "fontWeight": "400",
+          "textShadow": "rgb(17, 17, 17) -1px -1px 0px, rgb(17, 17, 17) 1px 1px 0px",
+          "fontSize": "13px",
+          "box": {
+            "x": 48,
+            "y": 677.25,
+            "width": 1103.984375,
+            "height": 186.734375
+          }
+        },
+        ".native-result-row": {
+          "text": "翡翠王国我方18571123428764",
+          "color": "rgb(238, 231, 216)",
+          "fontWeight": "400",
+          "textShadow": "none",
+          "fontSize": "13px",
+          "box": {
+            "x": 48,
+            "y": 239.75,
+            "width": 1103.984375,
+            "height": 90.484375
+          }
+        },
+        ".native-result-cell": {
+          "text": "18",
+          "color": "rgb(238, 231, 216)",
+          "fontWeight": "400",
+          "textShadow": "none",
+          "fontSize": "17.6637px",
+          "box": {
+            "x": 324.8125,
+            "y": 264.015625,
+            "width": 97.234375,
+            "height": 41.9375
+          }
+        }
+      }
+    },
+    {
+      "name": "after-1star",
+      "data": {
+        ".native-result-rating strong": {
+          "text": "完成战役",
+          "color": "rgb(255, 255, 255)",
+          "fontWeight": "700",
+          "textShadow": "rgb(23, 16, 23) -1px -1px 0px, rgb(23, 16, 23) 0px -1px 0px, rgb(23, 16, 23) 1px -1px 0px, rgb(23, 16, 23) -1px 0px 0px, rgb(23, 16, 23) 1px 0px 0px, rgb(23, 16, 23) -1px 1px 0px, rgb(23, 16, 23) 0px 1px 0px, rgb(23, 16, 23) 1px 1px 0px",
+          "fontSize": "18.7677px",
+          "box": {
+            "x": 61.234375,
+            "y": 760.03125,
+            "width": 522.203125,
+            "height": 25
+          }
+        },
+        ".native-result-playtime": {
+          "text": "战斗用时 04:32",
+          "color": "rgb(255, 255, 255)",
+          "fontWeight": "700",
+          "textShadow": "rgb(23, 16, 23) -1px -1px 0px, rgb(23, 16, 23) 0px -1px 0px, rgb(23, 16, 23) 1px -1px 0px, rgb(23, 16, 23) -1px 0px 0px, rgb(23, 16, 23) 1px 0px 0px, rgb(23, 16, 23) -1px 1px 0px, rgb(23, 16, 23) 0px 1px 0px, rgb(23, 16, 23) 1px 1px 0px",
+          "fontSize": "16.5598px",
+          "box": {
+            "x": 61.234375,
+            "y": 796.0625,
+            "width": 522.203125,
+            "height": 22
+          }
+        },
+        ".native-result-task": {
+          "text": "在 9:30 内完成可获得二星评级",
+          "color": "rgb(255, 255, 255)",
+          "fontWeight": "700",
+          "textShadow": "rgb(23, 16, 23) -1px -1px 0px, rgb(23, 16, 23) 0px -1px 0px, rgb(23, 16, 23) 1px -1px 0px, rgb(23, 16, 23) -1px 0px 0px, rgb(23, 16, 23) 1px 0px 0px, rgb(23, 16, 23) -1px 1px 0px, rgb(23, 16, 23) 0px 1px 0px, rgb(23, 16, 23) 1px 1px 0px",
+          "fontSize": "12.6958px",
+          "box": {
+            "x": 61.234375,
+            "y": 825.78125,
+            "width": 522.203125,
+            "height": 16
+          }
+        },
+        ".native-result-progression": {
+          "text": "统帅等级 3可用条令点 2600 / 1600 经验返回世界地图",
+          "color": "rgb(255, 255, 255)",
+          "fontWeight": "700",
+          "textShadow": "rgb(23, 16, 23) -1px -1px 0px, rgb(23, 16, 23) 0px -1px 0px, rgb(23, 16, 23) 1px -1px 0px, rgb(23, 16, 23) -1px 0px 0px, rgb(23, 16, 23) 1px 0px 0px, rgb(23, 16, 23) -1px 1px 0px, rgb(23, 16, 23) 0px 1px 0px, rgb(23, 16, 23) 1px 1px 0px",
+          "fontSize": "15.4558px",
+          "box": {
+            "x": 616.546875,
+            "y": 692.703125,
+            "width": 522.203125,
+            "height": 155.828125
+          }
+        },
+        ".native-result-xp-track span": {
+          "text": "600 / 1600 经验",
+          "color": "rgb(255, 255, 255)",
+          "fontWeight": "900",
+          "textShadow": "rgb(23, 16, 23) -1px -1px 0px, rgb(23, 16, 23) 0px -1px 0px, rgb(23, 16, 23) 1px -1px 0px, rgb(23, 16, 23) -1px 0px 0px, rgb(23, 16, 23) 1px 0px 0px, rgb(23, 16, 23) -1px 1px 0px, rgb(23, 16, 23) 0px 1px 0px, rgb(23, 16, 23) 1px 1px 0px",
+          "fontSize": "17.6637px",
+          "box": {
+            "x": 616.546875,
+            "y": 762.84375,
+            "width": 522.203125,
+            "height": 18.765625
+          }
+        },
+        ".native-result-cell span": {
+          "text": "18",
+          "color": "rgb(255, 255, 255)",
+          "fontWeight": "700",
+          "textShadow": "rgb(23, 16, 23) -1px -1px 0px, rgb(23, 16, 23) 0px -1px 0px, rgb(23, 16, 23) 1px -1px 0px, rgb(23, 16, 23) -1px 0px 0px, rgb(23, 16, 23) 1px 0px 0px, rgb(23, 16, 23) -1px 1px 0px, rgb(23, 16, 23) 0px 1px 0px, rgb(23, 16, 23) 1px 1px 0px",
+          "fontSize": "16.0078px",
+          "box": {
+            "x": 363.5625,
+            "y": 274.484375,
+            "width": 19.734375,
+            "height": 21
+          }
+        },
+        ".native-result-bottom": {
+          "text": "完成战役战斗用时 04:32在 9:30 内完成可获得二星评级统帅等级 3可用条令点 2600 / 1600 经验返回世界地图",
+          "color": "rgb(238, 231, 216)",
+          "fontWeight": "400",
+          "textShadow": "rgb(17, 17, 17) -1px -1px 0px, rgb(17, 17, 17) 1px 1px 0px",
+          "fontSize": "13px",
+          "box": {
+            "x": 48,
+            "y": 677.25,
+            "width": 1103.984375,
+            "height": 186.734375
+          }
+        },
+        ".native-result-row": {
+          "text": "翡翠王国我方18571123428764",
+          "color": "rgb(238, 231, 216)",
+          "fontWeight": "400",
+          "textShadow": "none",
+          "fontSize": "13px",
+          "box": {
+            "x": 48,
+            "y": 239.75,
+            "width": 1103.984375,
+            "height": 90.484375
+          }
+        },
+        ".native-result-cell": {
+          "text": "18",
+          "color": "rgb(238, 231, 216)",
+          "fontWeight": "400",
+          "textShadow": "none",
+          "fontSize": "17.6637px",
+          "box": {
+            "x": 324.8125,
+            "y": 264.015625,
+            "width": 97.234375,
+            "height": 41.9375
+          }
+        }
+      }
+    }
+  ]
+}

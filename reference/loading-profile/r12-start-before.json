@@ -1,0 +1,41 @@
+{
+  "waiting": {
+    "time": 1.1000000000000003,
+    "paused": false,
+    "mapReady": false,
+    "menuVisible": false
+  },
+  "after": {
+    "time": 1.4500000000000006,
+    "mapReady": true,
+    "opening": 10,
+    "enemyOrders": [
+      {
+        "owner": "Purple",
+        "order": null,
+        "state": "garrison",
+        "garrisonId": 2
+      },
+      {
+        "owner": "Blue",
+        "order": null,
+        "state": "garrison",
+        "garrisonId": 4
+      },
+      {
+        "owner": "Purple",
+        "order": null,
+        "state": "garrison",
+        "garrisonId": 6
+      },
+      {
+        "owner": "Blue",
+        "order": null,
+        "state": "garrison",
+        "garrisonId": 3
+      }
+    ],
+    "critical": null
+  },
+  "errors": []
+}

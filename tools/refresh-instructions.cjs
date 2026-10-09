@@ -1,0 +1,1 @@
+const fs=require('fs');let f=fs.readFileSync('flow.js','utf8');f=f.replace('先训练两队步兵，拖动城上方圆圈出征，进攻左侧小镇；占领后招募弓箭手，再攻打右上方主城。','四种兵均可直接招募。拖动城上方圆圈沿道路进攻；击毁据点后入驻修复，夺取魔法塔积蓄大招。').replace("300 金币 · 70 魔力${first?' · 0 / 5 人口':''}","300 金币 · 70 魔力 · 初始收入 1 金/秒");fs.writeFileSync('flow.js',f);

@@ -1,0 +1,18 @@
+const assert=require('node:assert/strict'),R=require('./unit-rules'),P=require('./progression');
+const caster=()=>({id:1,owner:'Purple',hp:360,record:P.unit('Purple','Magic',1),stats:R.stats(P.unit('Purple','Magic',1),'magic'),garrisonId:null});
+const archer={id:2,owner:'Green',hp:144,garrisonId:null,stats:R.stats(P.unit('Green','Archers',1),'archers')};
+assert.equal(typeof R.beginHorrificDash,'function','Black assassins must activate their source dash when engaging a field enemy');
+const u=caster(),speed=u.stats.speed;
+assert.equal(R.beginHorrificDash(u,archer,100,10),true);
+const distance=R.horrificDashStep(u,.6,speed,10);
+assert.equal(distance,speed*.6+Math.floor(speed*15/2)*.5,'Movement integrates exactly half a second of additive source speed, then resumes ordinary travel');
+assert.equal(R.horrificDashStep(u,.25,speed,10.6),speed*.25,'Dash expires instead of leaving a permanent speed buff');
+assert.equal(R.beginHorrificDash(u,archer,100,11),false,'A persistent target cannot retrigger dash every AI/frame tick');
+R.beginHorrificDash(u,null,0,11);assert.equal(R.beginHorrificDash(u,archer,100,12),true,'A genuinely new engagement can dash again');
+const alternate=caster();let stepped=0;assert(R.beginHorrificDash(alternate,archer,100,20));for(let i=0;i<12;i++)stepped+=R.horrificDashStep(alternate,.05,speed,20+i*.05);assert(Math.abs(stepped-distance)<1e-7,'Dash travel is independent of frame splitting');
+for(const target of [{...archer,owner:'Purple'},{...archer,hp:0},{...archer,garrisonId:99},{...archer,queue:[]}])assert.equal(R.beginHorrificDash(caster(),target,100,0),false,'Dash is only a live hostile field engagement');
+assert.equal(R.beginHorrificDash(caster(),archer,500,0),false,'A far road march cannot become repeated bursts of speed');
+assert.equal(R.beginHorrificDash(caster(),archer,20,0),false,'A squad already touching its target does not dash');
+const knight=caster();knight.stats.abilities.Charge=2;assert.equal(R.beginHorrificDash(knight,archer,100,0),false,'Original Charge branch takes precedence over HorrificDash');
+const ordinary=caster();ordinary.stats.abilities.HorrificDash=0;assert.equal(R.beginHorrificDash(ordinary,archer,100,0),false);assert.equal(R.horrificDashStep(ordinary,.5,speed,1),speed*.5);
+console.log('PASS: source dash trigger, 0.5-second travel, expiry, per-engagement guard, frame independence, exclusions and Charge precedence');

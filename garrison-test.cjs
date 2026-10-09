@@ -1,0 +1,12 @@
+const assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm'),{Battle}=require('./engine');const ctx={window:{}};vm.runInNewContext(fs.readFileSync('game-data.js','utf8'),ctx);const data=ctx.window.GAME_DATA.levels[0];const tick=(b,t)=>{for(let i=0;i<t*25;i++)b.update(.04)};
+const b=new Battle(data),home=b.owned()[0];b.recruit(home.id,'infantry');tick(b,1.6);const u=b.units.find(u=>u.owner===b.player);assert.equal(u.garrisonId,home.id);assert.equal(u.x,home.x);home.hp=400;tick(b,2);assert(home.hp>419);b.command([u.id],{x:home.x+80,y:home.y});assert.equal(u.garrisonId,null);tick(b,3);b.command([u.id],home,home.id);tick(b,5);assert.equal(u.garrisonId,home.id);assert(home.hp>420);
+const live=new Battle(data);tick(live,10);const enemy=live.units.filter(u=>u.owner!==live.player);assert(enemy.some(u=>!u.garrisonId&&u.order),'First mission must deploy enemies');assert(enemy.some(u=>u.order&&Math.hypot(u.x-live.building(u.order.target).x,u.y-live.building(u.order.target).y)>50));
+const a=live.path(live.buildings[0],live.buildings[1]);const len=a.length;a.shift();assert.equal(live.path(live.buildings[0],live.buildings[1]).length,len);
+console.log('PASS: train inside, garrison repair, dispatch, re-enter; first mission enemies recruit and march; cached paths are independent');
+const stress=new Battle(data,{mission:1});for(let i=0;i<12;i++)for(const base of stress.buildings){const u=stress.spawn(base,'infantry');const target=stress.buildings.find(v=>v.owner!==u.owner);stress.issue(u,target,target.id);}const begin=performance.now();tick(stress,60);console.log('60 simulated seconds / 36 squads:',Math.round(performance.now()-begin)+'ms');
+// Defenders sortie for either faction, return when clear, and obey manual orders.
+for(const owner of ['Green','Purple']){
+ const d=new Battle(data);d.ai=()=>{};const base=d.buildings.find(b=>b.owner===owner&&b.type==='Castle');const guard=d.spawn(base,'infantry');const opposing=d.buildings.find(b=>b.owner!==owner);const raider=d.spawn(opposing,'infantry');d.deploy(raider);const p=d.nearest({x:base.x+65,y:base.y+30});Object.assign(raider,p);d.update(.04);assert.equal(guard.garrisonId,null);assert.equal(guard.defendHome,base.id);assert.equal(guard.order.target,raider.id);raider.hp=0;tick(d,5);assert.equal(guard.garrisonId,base.id);base.hp=300;tick(d,1);assert(base.hp>309);
+}
+console.log('PASS: friendly and enemy garrisons sortie against attackers, re-enter after combat, resume repairs');
+

@@ -1,0 +1,30 @@
+{
+  "before": {
+    "time": 0,
+    "ratio": "50%",
+    "description": "生命 400 / 800 · 待命 · 当前部队：士气平稳 500/1000 · 中毒、冻结",
+    "modes": [
+      "poison",
+      "frozen"
+    ]
+  },
+  "after": {
+    "time": 0,
+    "poison": 2,
+    "frozen": 1,
+    "chilled": 2,
+    "cache": {
+      "frames": 10,
+      "queued": 0,
+      "processedFrames": 10,
+      "estimatedMiB": 0.01
+    }
+  },
+  "shift": {
+    "selected": 6,
+    "expected": 6,
+    "ratio": "25%"
+  },
+  "errors": [],
+  "scope": "One paused display fixture; no AI turns or campaign simulation"
+}

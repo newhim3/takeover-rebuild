@@ -1,0 +1,17 @@
+const assert=require('node:assert/strict'),fs=require('fs'),vm=require('vm'),{Battle,TYPES}=require('./engine');const ctx={window:{}};vm.runInNewContext(fs.readFileSync('game-data.js','utf8'),ctx);const data=ctx.window.GAME_DATA;const tick=(b,t)=>{for(let i=0;i<t*25;i++)b.update(.04)};
+assert.deepEqual(Object.values(TYPES).map(t=>t.cost),[100,120,180,200,150]);
+for(const player of ['Green','Red','Blue','Purple'])for(let mission=0;mission<8;mission++){
+ const map=data.levels.find(l=>l.level===data.campaigns[player][mission]);const b=new Battle(map,{player,mission});b.ai=()=>{};assert(b.owned().length,player+' home');b.factions[player].gold=5000;
+ const home=b.owned()[0];for(const type of b.allowedUnits(home)){b.units=b.units.filter(u=>u.owner!==player);const gold=b.factions[player].gold;assert.equal(b.recruit(home.id,type),null);assert.equal(b.factions[player].gold,gold-TYPES[type].cost);assert.equal(b.units.at(-1).garrisonId,home.id);assert.equal(b.units.at(-1).rank,1);}
+ assert.equal(b.rates().gold,1);b.units=b.units.filter(u=>u.owner!==player);b.upgrade(home.id);b.recruit(home.id,'infantry');assert.equal(b.units.at(-1).rank,2);const silver=b.units.at(-1).maxHp;b.units=b.units.filter(u=>u.owner!==player);b.upgrade(home.id);b.recruit(home.id,'infantry');assert.equal(b.units.at(-1).rank,3);assert(b.units.at(-1).maxHp>silver);
+ const target=b.buildings.find(c=>c.owner!==player);const u=b.units.at(-1);b.command([u.id],target,target.id);for(let i=0;i<60;i++){b.update(.04);if(!u.garrisonId)assert(b.walkable(Math.floor(u.x/10),Math.floor(u.y/10)),player+' off road');}assert.equal(b.result,null);
+ const old=b.rates().gold;b.destroy(target);b.capture(target,player);assert.equal(b.rates().gold,old+(target.type==='Castle'?2:1));
+}
+console.log('PASS: all 32 campaign/faction starts, building-specific units, exact costs, tier upgrades, income and road-only positions');
+for(const player of ['Green','Red','Blue','Purple']){
+ const map=data.levels.find(l=>l.level===data.campaigns[player][0]),b=new Battle(map,{player,edicts:Object.fromEntries(require('./progression').tree(player).map(e=>[e.n,3]))});b.ai=()=>{};const home=b.owned()[0],p={x:home.x,y:home.y},enemyBase=b.buildings.find(c=>c.owner!==player);b.factions[player].mana=500;
+ for(const key of ['fire','heal','summon']){const before=b.factions[player].mana,cost=b.spellSpec(key).cost;assert.equal(b.cast(key,p),null);assert.equal(b.factions[player].mana,before-cost);assert(b.effects.some(e=>e.fx===b.spellSpec(key).fx));}
+ assert(b.cast('ultimate',p));tick(b,5);assert.equal(b.ultimateCharge,0);home.type='MageTower';tick(b,b.ultimateDuration-1);assert(b.cast('ultimate',p));tick(b,1.1);const mana=b.factions[player].mana;for(let i=0;i<4;i++)b.spawn(enemyBase,'infantry');assert.equal(b.cast('ultimate',p),null);assert.equal(b.ultimateCharge,0);assert(b.factions[player].mana>=mana);assert(b.effects.some(e=>e.type==='magic'));if(player==='Green')assert(b.units.some(u=>u.avatar>0));if(player==='Blue')assert(b.units.filter(u=>u.owner!==player&&u.hp<=0).length>=2);if(player==='Purple')assert(b.units.filter(u=>u.owner===player).length>=3);
+}
+console.log('PASS: faction-specific magic costs/animations, 120-second tower charge, distinct ultimates without mana deduction');
+const flow=fs.readFileSync('flow.js','utf8');assert(flow.includes("querySelectorAll('.native-campaign button[data-faction]')"));assert(!flow.includes(":uiTag('attack')"));console.log('PASS: campaign listener scoped to real faction buttons; attack marker removed from defeat screen');

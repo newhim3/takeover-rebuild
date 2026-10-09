@@ -1,0 +1,153 @@
+{
+  "sourceSWF": "D:\\Users\\wtwl\\Documents\\ChatGPT\\takeover拆解\\scratch\\surgery\\inner.swf",
+  "sourceSHA256": "1ce92acf705cf594b5c88cc61b88889d0d585d79fb1752f6b2cce8fdc422521b",
+  "fps": 30,
+  "viewBox": [
+    -150,
+    -245,
+    300,
+    490
+  ],
+  "raster": [
+    450,
+    735
+  ],
+  "labels": {
+    "up": 1,
+    "over": 11,
+    "down": 21
+  },
+  "countries": {
+    "Green": {
+      "parentSymbol": 6674,
+      "overFrame": 11,
+      "animatedChild": 6672,
+      "frames": 10,
+      "removedDynamicFields": [
+        "#text0",
+        "mcRankBlock",
+        "mcNewGameMessage",
+        "#text7",
+        "#text8",
+        "#text1",
+        "#text2",
+        "#text3",
+        "txtField",
+        "txtField",
+        "#text6"
+      ],
+      "originalFiltersRetained": true,
+      "file": "native-campaign-hover-Green.webp",
+      "hash": "b4c0898d68c9fb25",
+      "width": 450,
+      "height": 735,
+      "bytes": 1596528,
+      "sha256": "b4c0898d68c9fb25ce5f1cd32ac6d4cf9761e23d7f372b425031a80a3a1a60de",
+      "delaysMs": [
+        33,
+        33,
+        34,
+        33,
+        33,
+        34,
+        33,
+        33,
+        34,
+        33
+      ],
+      "loop": 0
+    },
+    "Blue": {
+      "parentSymbol": 6690,
+      "overFrame": 11,
+      "animatedChild": 6685,
+      "frames": 10,
+      "removedDynamicFields": [
+        "#text0",
+        "mcRankBlock",
+        "mcNewGameMessage",
+        "#text7",
+        "#text8",
+        "#text1",
+        "#text2",
+        "#text3",
+        "txtField",
+        "txtField",
+        "#text6"
+      ],
+      "originalFiltersRetained": true,
+      "file": "native-campaign-hover-Blue.webp",
+      "hash": "4730ed10f42d1963",
+      "width": 450,
+      "height": 735,
+      "bytes": 1591652,
+      "sha256": "4730ed10f42d1963d6862a3df5851a6627be72cbbabf8c0287c27ee60ecb019d",
+      "delaysMs": [
+        33,
+        33,
+        34,
+        33,
+        33,
+        34,
+        33,
+        33,
+        34,
+        33
+      ],
+      "loop": 0
+    },
+    "Red": {
+      "parentSymbol": 6706,
+      "overFrame": 11,
+      "animatedChild": 6702,
+      "frames": 10,
+      "removedDynamicFields": [
+        "#text0",
+        "mcRankBlock",
+        "mcNewGameMessage",
+        "#text7",
+        "#text8",
+        "#text1",
+        "#text2",
+        "#text3",
+        "txtField",
+        "txtField",
+        "#text6"
+      ],
+      "originalFiltersRetained": true,
+      "file": "native-campaign-hover-Red.webp",
+      "hash": "25d97997022f1ab6",
+      "width": 450,
+      "height": 735,
+      "bytes": 1646424,
+      "sha256": "25d97997022f1ab6fc046fef712be0cb11281216a13eb2b91197e0a3c036039e",
+      "delaysMs": [
+        33,
+        33,
+        34,
+        33,
+        33,
+        34,
+        33,
+        33,
+        34,
+        33
+      ],
+      "loop": 0
+    }
+  },
+  "Purple": "No verified independent fourth-country campaign hover timeline; keep existing original-cloth / genuine Empire-crest adaptation.",
+  "delaysMs": [
+    33,
+    33,
+    34,
+    33,
+    33,
+    34,
+    33,
+    33,
+    34,
+    33
+  ],
+  "loop": 0
+}

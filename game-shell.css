@@ -1,0 +1,483 @@
+/* style.css */
+:root{color-scheme:dark;--gold:#e9c478;--text:#eee6cf;--muted:#a9ac98}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% 0,#283b32,#111d1d 70%);color:var(--text);font:13px 'Microsoft YaHei',system-ui,sans-serif;min-height:100vh}button,select{font:inherit}button{cursor:pointer;color:var(--text);border:1px solid #7f744f;background:linear-gradient(#384338,#202e29);border-radius:5px;padding:8px 12px;transition:background .15s}button:hover:not(:disabled){background:linear-gradient(#58634a,#334332);border-color:var(--gold)}button:disabled{opacity:.4;cursor:not-allowed}button:focus-visible{outline:2px solid #f3d077;outline-offset:3px}.hidden{display:none!important}header{display:flex;align-items:center;gap:25px;padding:15px 28px;background:#111e1def;border-bottom:1px solid #827143;box-shadow:0 4px 20px #0004}.brand{display:flex;align-items:center;gap:10px;white-space:nowrap}.brand>b{font-size:36px;color:var(--gold)}.brand>div{font-size:22px;letter-spacing:4px;font-weight:bold}.brand small{display:block;font-size:9px;letter-spacing:5px;color:var(--gold);margin-top:4px}.mission-label{border-left:1px solid #65705a;padding-left:23px}.mission-label small{display:block;font-size:9px;color:var(--gold);letter-spacing:2px;margin-bottom:5px}.mission-label strong{font-weight:400;white-space:nowrap}.resources{display:flex;gap:28px;margin:auto}.resources>div{display:grid;grid-template-columns:19px auto;column-gap:7px;align-items:center}.resources i{grid-row:span 2;font-size:20px;font-style:normal}.resources span{font:24px Georgia}.resources small{font-size:9px;color:#a8b6a3;margin-top:3px}.gold{color:#f2ce68}.mana{color:#71d6ef}.population{color:#a7d67e}.header-buttons{display:flex;gap:6px;align-items:center}.header-buttons button{min-width:33px;padding:8px;font-size:13px}main{max-width:1300px;margin:auto;padding:16px 25px 24px}.battle-heading{display:flex;justify-content:space-between;margin-bottom:9px;font-size:11px;color:#c0c7af;letter-spacing:1px}.live-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#a0c76c;margin-right:8px}.battlefield{position:relative;aspect-ratio:1000/660;border:2px solid #a68a50;border-radius:8px 8px 0 0;overflow:hidden;box-shadow:0 10px 50px #0005;background:#9ae4f5;max-height:calc(100vh - 300px);min-height:360px}canvas{display:block;width:100%;height:100%;object-fit:contain;touch-action:none}.map-title{position:absolute;left:19px;top:18px;display:flex;align-items:center;gap:12px;color:#eef3d4;text-shadow:0 1px 3px #142820;pointer-events:none;background:#1a342bbd;border:1px solid #d0b96a77;border-radius:6px;padding:9px 13px}.map-title>span{color:var(--gold);font:30px Georgia}.map-title>div{font-size:15px;letter-spacing:2px}.map-title small{display:block;font:8px Georgia;letter-spacing:2px;margin-top:5px}.legend{position:absolute;right:15px;top:20px;display:flex;gap:13px;background:#152e2acc;padding:8px 12px;border:1px solid #d0b96a66;border-radius:4px;font-size:10px;pointer-events:none}.legend i{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px}.quick-tools{position:absolute;bottom:14px;left:15px;display:flex;gap:8px}.quick-tools button{background:#1d342be8;font-size:11px}kbd{font:9px system-ui;border:1px solid #7c8965;padding:0 3px;margin-left:5px;color:#cfddb5}.command-panel{display:grid;grid-template-columns:1.1fr 1.5fr 1fr;gap:20px;background:linear-gradient(#2c3a30,#1b2b27);border:1px solid #a68a50;border-top:3px solid #a68a50;border-radius:0 0 7px 7px;padding:17px;min-height:155px;box-shadow:0 8px 35px #0004}.selection{display:flex;gap:12px;align-items:center;border-right:1px solid #7c78554d;padding-right:15px}.portrait{width:60px;height:76px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:38px;color:var(--gold);border:1px solid #ba975b;background:radial-gradient(#78934b66,#131f1b);border-radius:4px;overflow:hidden}.portrait img{width:55px;height:65px;object-fit:contain}.selection small{color:var(--gold);font-size:9px}.selection h2{font-size:14px;margin:6px 0}.selection p{font-size:10px;line-height:1.6;color:#bdc5af;margin:0}.health-track{height:4px;background:#0d1915;margin-top:8px}.health-track i{display:block;background:#99c75b;height:100%;transition:width .2s}.panel-caption{display:flex;justify-content:space-between;font-size:11px;margin-bottom:10px;color:#eedcad;gap:6px}.panel-caption span:nth-child(2),.spells .panel-caption span{font-size:9px;color:#a4b299}.action-grid{display:flex;gap:6px}.action-grid button{padding:6px;flex:1;min-width:0;min-height:77px}.action-grid button b{font-size:23px;display:block;color:var(--gold);font-family:Georgia}.action-grid button span{font-size:10px;display:block;margin:3px 0}.action-grid button small{font-size:9px;color:var(--gold)}.spells{border-left:1px solid #7c78554d;padding-left:16px}.spell-grid{display:flex;gap:6px}.spell-grid button{flex:1;padding:6px 3px;background:linear-gradient(#344442,#192e31);border-color:#658a83}.spell-grid b{display:block;color:#a9e5de;font-size:24px}.spell-grid span{display:block;font-size:10px;margin:4px 0}.spell-grid small{color:#93c9cb;font-size:8px}.spell-grid .active{outline:2px solid #73e1f9;background:#335b58}footer{display:flex;align-items:center;justify-content:space-between;padding:11px 0;color:#9dac99;font-size:10px;gap:10px}footer button{font-size:10px;padding:5px 10px;margin-left:6px}.war-log{display:flex;gap:18px;border-top:1px solid #ffffff10;padding-top:10px;font-size:10px;color:#a4b19b}.war-log>span{color:#d2bd83;flex-shrink:0}#log{height:18px;overflow:hidden}#toast{position:absolute;left:50%;bottom:60px;transform:translateX(-50%);max-width:90%;padding:11px 20px;border:1px solid #d2b573;background:#193329ec;color:#f1e9cb;border-radius:5px;opacity:0;pointer-events:none;transition:opacity .2s;text-align:center;font-size:12px}#toast.show{opacity:1}.pause-badge{position:absolute;left:50%;top:40%;transform:translate(-50%,-50%);padding:24px 45px;background:#152a24e8;border:1px solid var(--gold);text-align:center;font-size:24px;letter-spacing:5px;pointer-events:none}.pause-badge small{font-size:10px;display:block;margin-top:12px;letter-spacing:1px}.overlay{position:absolute;inset:0;z-index:10;display:flex;align-items:center;justify-content:center;background:#102521c9;backdrop-filter:blur(5px);overflow:auto;padding:20px}.modal{width:min(640px,95%);text-align:center;margin:auto}.eyebrow{font-size:9px;letter-spacing:4px;color:#dfc184}.modal h1{font-size:39px;letter-spacing:7px;color:#f2e6c6;margin:12px 0}.modal>p{color:#c3cfb2;font-size:12px;line-height:1.8}.modal .subheading{color:#bcd094;letter-spacing:5px;font-size:14px}.modal-crest{font-size:45px;color:#e6c481;line-height:1.2}.campaigns{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:20px 0}.campaigns button{padding:13px 7px;text-align:left;background:#1e332ee8;border-color:#728465}.campaigns b{display:block;color:#dcbe81;font:22px Georgia;margin-bottom:8px}.campaigns span{display:block;font-size:11px}.campaigns small{font-size:8px;display:block;color:#a4b593;margin-top:7px}.campaigns .active{border:1px solid #f0ca77;background:#50634088;box-shadow:inset 0 0 20px #a5c96711}.setup-row{display:flex;align-items:center;justify-content:center;gap:18px;margin:18px 0;font-size:11px;color:#c2c8ae}.setup-row select{padding:7px 8px;background:#21372f;color:#eee6cf;border:1px solid #83936b;border-radius:4px;margin-left:5px}.primary{background:linear-gradient(#e8c47d,#b89451);border-color:#f4d894;color:#283221;font-weight:bold}.primary:hover:not(:disabled){background:linear-gradient(#f3d58e,#d2b269);color:#182818}.large{padding:12px 32px;font-size:13px;min-width:220px}.modal .tips{font-size:10px;color:#9fb29c;margin-top:16px}.manual{text-align:left;color:#cfdbc1;font-size:12px;line-height:1.9;margin:20px 0;border-block:1px solid #9bad7844;padding:12px 0}.manual b{color:var(--gold)}.result-stats{display:flex;justify-content:center;gap:35px;margin:25px 0}.result-stats b{display:block;font:28px Georgia;color:var(--gold)}.result-stats span{display:block;margin-top:8px;color:#b9c5a8;font-size:10px}@media(max-width:1050px){header{gap:16px;padding:12px 18px}.mission-label{display:none}.resources{gap:15px}.command-panel{gap:12px;grid-template-columns:1fr 1.4fr}.spells{grid-column:span 2;border:0;border-top:1px solid #7c78554d;padding:12px 0 0;display:flex;align-items:center;gap:20px}.spells .panel-caption{min-width:130px;margin:0;display:block}.spells .panel-caption span{display:block;margin-top:6px}.spell-grid{flex:1}.spell-grid button{display:flex;align-items:center;justify-content:center;gap:9px}.spell-grid b{font-size:18px}.battlefield{max-height:none;min-height:0}main{padding:14px}}@media(max-width:640px){header{flex-wrap:wrap;gap:10px;padding:10px 12px}.brand>div{font-size:17px}.brand>b{font-size:28px}.header-buttons{margin-left:auto}.header-buttons button{font-size:11px;padding:6px;min-width:27px}#sound{display:none}.resources{order:3;justify-content:space-around;width:100%;padding-top:7px;border-top:1px solid #ffffff13;margin:0}.resources span{font-size:19px}.resources small{font-size:8px}main{padding:10px 7px}.battle-heading{font-size:9px}.map-title{top:9px;left:9px;padding:5px 8px;gap:6px}.map-title>span{font-size:19px}.map-title>div{font-size:10px}.map-title small{display:none}.legend{top:10px;right:8px;padding:5px;font-size:8px;gap:5px}.quick-tools{bottom:7px;left:8px;gap:4px}.quick-tools button{font-size:9px;padding:5px}.command-panel{padding:10px;display:flex;flex-wrap:wrap;gap:12px}.selection{width:100%;border:0;padding:0}.portrait{width:42px;height:47px;font-size:27px}.selection h2{margin:3px 0;font-size:12px}.selection p{font-size:9px}.selection .health-track{margin-top:4px}.orders{width:100%}.action-grid button{min-height:68px}.spells{padding-top:9px;gap:8px;width:100%;display:block}.spells .panel-caption{display:flex;margin-bottom:7px}.spells .panel-caption span{margin:0}.spell-grid button{gap:5px}.spell-grid b{font-size:16px}.spell-grid small{font-size:7px}.spell-grid span{font-size:9px}.overlay{padding:12px}.modal h1{font-size:22px;margin:7px 0;letter-spacing:4px}.modal-crest{display:none}.modal .subheading{font-size:10px;letter-spacing:2px}.modal>p{font-size:9px;margin:5px}.eyebrow{font-size:7px}.campaigns{margin:9px 0;gap:5px}.campaigns button{padding:7px 4px}.campaigns b{font-size:15px;margin-bottom:4px}.campaigns span{font-size:8px}.campaigns small{font-size:7px;margin-top:4px}.setup-row{margin:9px 0;font-size:9px;gap:8px}.setup-row select{font-size:9px;padding:4px}.large{padding:8px 20px;font-size:10px;min-width:160px}.modal .tips{font-size:8px;margin-top:8px}.manual{font-size:10px;margin:8px 0;padding:4px}.result-stats{margin:12px 0}.result-stats b{font-size:20px}footer{font-size:8px;align-items:start}footer>span{max-width:60%;line-height:1.6}footer button{font-size:8px;margin-left:3px;padding:4px}.war-log{font-size:9px}.pause-badge{font-size:17px;padding:14px 25px}}
+
+.battlefield{width:100%}
+.command-tabs{display:flex;gap:5px;margin:-3px 0 8px}.command-tabs button{padding:4px 10px;font-size:9px;border-radius:3px}.command-tabs .active{color:#f5d08a;background:#61714a55;border-color:#c5a163}.title-screen{background:linear-gradient(#0a1d14b0,#0a1d14ed),url('assets/takeover/animation/anim/scrTitleClass.png') center/cover}.world-screen{background:linear-gradient(#10261cc4,#10261ce6),url('assets/takeover/animation/anim/scrCompaignMapClass.png') center/cover}.story-screen{background:radial-gradient(#344538eb,#0e201df5)}.save-slots{display:flex;gap:12px;margin:25px 0}.save-slots button{flex:1;padding:24px 12px;background:#1b332cdd;text-align:left}.save-slots b{display:block;color:var(--gold);font:30px Georgia;margin-bottom:15px}.save-slots span{display:block;font-size:13px}.save-slots small{display:block;font-size:9px;margin-top:10px;color:#b0c1a0}.faction-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:25px 0}.faction-cards button{border-color:var(--faction);background:#1a302ade;padding:12px 4px}.faction-cards img{width:95%;height:110px;object-fit:contain;display:block;margin:auto auto 10px}.faction-cards span{display:block;font-size:12px;color:var(--faction)}.faction-cards small{font-size:8px;display:block;margin-top:7px;color:#beccb2}.world-nodes{display:flex;gap:15px;align-items:center;justify-content:center;margin:25px 0}.world-nodes button{flex:1;background:#233f30dd;padding:18px 5px;border:1px solid #9f9a69}.world-nodes button:nth-child(even){margin-top:32px}.world-nodes b{display:block;font:30px Georgia;color:#d5be7b;margin-bottom:8px}.world-nodes span{display:block;font-size:11px}.world-nodes small{display:block;color:#c1ccad;font-size:9px;margin-top:9px}.world-nodes .completed{border-color:#e9ce73;background:#627543cc}.world-nodes .completed small{color:#ffe899}.prepare-castle{height:110px;max-width:130px;object-fit:contain}.prepare-screen .manual{margin:10px 0 17px}.victory-stars{font:40px Georgia;color:#ebc76b;letter-spacing:8px;margin:14px}.story{text-align:center;line-height:2.5}.action-grid:has(>button:only-child)>button{max-width:140px}.quick-tools{gap:5px}.quick-tools button{padding:7px 9px}.battlefield{max-height:none}.command-panel{min-height:170px}@media(min-width:1060px){main{max-width:1200px}.battlefield{aspect-ratio:1000/620}}@media(max-width:640px){.save-slots{gap:6px;margin:13px 0}.save-slots button{padding:13px 6px}.save-slots b{font-size:21px;margin-bottom:8px}.save-slots span{font-size:10px}.save-slots small{font-size:7px}.faction-cards{gap:5px;margin:12px 0}.faction-cards img{height:60px;margin-bottom:6px}.faction-cards span{font-size:9px}.faction-cards small{font-size:7px}.world-nodes{gap:6px;margin:12px 0}.world-nodes button{padding:10px 3px}.world-nodes b{font-size:21px}.world-nodes span{font-size:8px}.world-nodes small{font-size:7px}.prepare-castle{height:55px}.prepare-screen .manual{font-size:8px;margin:6px 0;line-height:1.6}.prepare-screen .manual p{margin:4px 0}.quick-tools button{font-size:8px;padding:4px 6px}.quick-tools kbd{display:none}.victory-stars{font-size:27px;margin:8px}.story{font-size:10px;line-height:1.7}.command-tabs button{font-size:8px}.command-panel{min-height:0}}
+.story p{animation:storyReveal .8s both}.story p:nth-child(2){animation-delay:.5s}.story p:nth-child(3){animation-delay:1s}@keyframes storyReveal{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}@media(prefers-reduced-motion:reduce){.story p{animation:none}}
+
+/* original-ui.css */
+/* All button surfaces and icons are crops of the supplied Takeover atlas. */
+body button,body button:hover:not(:disabled){background:transparent url('assets/takeover/ui/button.png') center/100% 100% no-repeat;border:0;border-radius:0;box-shadow:none;color:#fff2cf;text-shadow:0 1px 2px #160e21;min-height:34px;padding:9px 18px;transition:filter .12s,transform .12s}
+body button:hover:not(:disabled){background-image:url('assets/takeover/ui/button-hover.png');filter:none}
+body button:active:not(:disabled){transform:translateY(1px)}
+body button:disabled{opacity:.5;filter:grayscale(.8)}
+.original-icon{width:34px;height:34px;object-fit:contain;vertical-align:middle;pointer-events:none}
+.brand-art{width:54px;height:50px;object-fit:contain}.modal-crest img{width:80px;height:65px;object-fit:contain}
+body .action-grid button,body .action-grid button:hover:not(:disabled),body .spell-grid button,body .spell-grid button:hover:not(:disabled){background:var(--tile-art,url('assets/takeover/ui/tile-Green.png')) center/100% 100% no-repeat;padding:8px 5px;min-height:93px;min-width:65px}
+.action-grid .original-icon,.spell-grid .original-icon{display:block;margin:0 auto;width:39px;height:39px}.action-grid button span,.spell-grid button span{font-size:10px;margin:3px 0}.action-grid button small,.spell-grid button small{font-size:9px;color:#fff1b9}
+body .command-tabs button,body .command-tabs button:hover:not(:disabled){background:transparent url('assets/takeover/ui/tab.png') center/100% 100% no-repeat;color:#392717;text-shadow:none;padding:8px 18px;min-height:29px}.command-tabs .active{filter:none}
+body #quickSpeed,body #speed,body #quickMenu,body #help,body #sound{width:44px;height:44px;min-width:44px;padding:0;background:transparent center/contain no-repeat;font-size:10px;color:white;text-shadow:0 1px 3px #000}
+body #quickSpeed,body #speed{background-image:url('assets/takeover/ui/speed-fast.png');padding-top:29px}
+body #quickMenu{background-image:url('assets/takeover/ui/menu.png');font-size:0}
+body #help{background-image:url('assets/takeover/ui/help.png');font-size:0}
+body #sound{background-image:url('assets/takeover/ui/sound.png');font-size:0}
+body .save-slots button,body .save-slots button:hover:not(:disabled),body .faction-cards button,body .faction-cards button:hover:not(:disabled),body .world-nodes button,body .world-nodes button:hover:not(:disabled){background:transparent url('assets/takeover/ui/frame.png') center/100% 100% no-repeat;padding:20px 12px}
+.world-nodes b .original-icon{width:45px;height:45px}.world-nodes small .original-icon{width:15px;height:17px}.victory-stars .original-icon{width:48px;height:52px}
+body .primary,body .primary:hover:not(:disabled){color:#fff2cf}.quick-tools button{min-height:36px}.quick-tools{align-items:center}
+.portrait{background:transparent url('assets/takeover/ui/spell-frame.png') center/100% 100% no-repeat;border:0}
+@media(max-width:640px){body .action-grid button,body .spell-grid button{min-height:82px}.action-grid .original-icon,.spell-grid .original-icon{width:28px;height:28px}body button{padding:8px 12px}.header-buttons{gap:2px}body #speed,body #help,body #sound{width:33px;min-width:33px;height:33px}.brand-art{width:35px;height:35px}}
+/* Recruitment and construction belong to the selected location on the map. */
+.command-panel{display:none!important}
+.battlefield{aspect-ratio:1000/660;max-height:none;min-height:420px;border-radius:8px}
+.in-world-spells{position:absolute;right:12px;bottom:12px;padding:0;border:0;z-index:3;width:205px}.in-world-spells .panel-caption{display:none}.in-world-spells .spell-grid{gap:3px}body .in-world-spells .spell-grid button{min-height:74px;min-width:0;padding:6px 3px}.in-world-spells .original-icon{width:30px;height:30px}.in-world-spells .spell-grid span{font-size:8px}.in-world-spells .spell-grid small{font-size:7px}
+.overlay{z-index:10}
+@media(max-width:640px){.in-world-spells{width:155px;bottom:48px;right:5px}.quick-tools{bottom:5px}.battlefield{min-height:420px}}
+/* HUD layout follows the supplied gameplay video; no controls outside the game. */
+body{background:#111;overflow:hidden;min-height:100vh;display:grid;place-items:center}body>header,footer,.war-log,.battle-heading,.map-title,.legend{display:none!important}main{padding:0;margin:0;width:min(100vw,177.78vh);max-width:none!important}.battlefield{border:0;border-radius:0;box-shadow:none;width:100%;height:min(100vh,56.25vw);aspect-ratio:16/9;min-height:0;overflow:hidden}canvas{width:100%;height:100%}.quick-tools{left:10px;bottom:12px;z-index:5}.quick-tools #selectAll,.quick-tools #stop{display:none}body #quickMenu,body #help,body #sound,body #quickSpeed{width:42px;height:42px;min-width:42px}.video-hud{position:absolute;inset:0;pointer-events:none;z-index:5}.video-hud>*{pointer-events:auto}.video-hud #quickSpeed{position:absolute;left:12px;top:8px}.video-hud #clock{position:absolute;left:58px;top:15px;color:#fff1be;font:bold 12px Georgia;background:url('assets/takeover/ui/button.png') center/100% 100% no-repeat;padding:5px 10px}.video-hud #help{position:absolute;left:56px;bottom:12px}.video-hud #sound{position:absolute;right:15px;top:8px}.video-hud .resources{position:absolute;left:55%;right:9%;bottom:18px;height:27px;gap:0;padding:0;background:url('assets/takeover/ui/resource-bar.png') center/100% 100% no-repeat}.resources>div{display:flex;flex:1;gap:2px;justify-content:center;align-items:center}.resources i,.resources small{display:none}.resources span{font:bold 13px Georgia;color:#fce878;text-shadow:0 1px #302713}.resources .mana{order:0}.resources .population{order:1}.resources .gold{order:2}
+.in-world-spells{left:30%;right:auto;bottom:14px;width:23%;max-width:210px}body .in-world-spells .spell-grid button{background:transparent url('assets/takeover/ui/spell-frame.png') center/100% 100% no-repeat;min-height:0;height:48px;padding:4px;position:relative}.in-world-spells .spell-grid .original-icon{width:35px;height:35px}.in-world-spells .spell-grid span{display:none}.in-world-spells .spell-grid small{position:absolute;bottom:0;left:0;right:0;background:#132519b0;color:#6ee8ff;font-size:8px}.hud-menu{position:absolute;left:12px;bottom:63px;display:flex;flex-direction:column;gap:5px;padding:10px;background:url('assets/takeover/ui/frame.png') center/100% 100% no-repeat}.hud-menu button{min-width:115px}#toast{top:65px;bottom:auto;pointer-events:none}
+@media(max-width:700px){.resources span{font-size:10px}.in-world-spells{bottom:14px}body .in-world-spells .spell-grid button{height:38px}.in-world-spells .spell-grid .original-icon{width:27px;height:27px}}
+.video-hud .resources{width:auto!important;min-width:0;margin:0!important;flex-wrap:nowrap!important}.video-hud .resources>div{min-width:0;padding:0;margin:0}.video-hud #sound{display:block!important}.in-world-spells{display:block!important}
+@media(max-width:600px){}
+body button:hover,body button:active{transform:none!important;scale:1!important;transition:filter .12s!important}
+.in-world-spells{left:25%;width:28%;max-width:260px}.in-world-spells .spell-grid{display:flex}.in-world-spells [data-spell=ultimate]{border-bottom:3px solid #b6954b!important;background-size:100% 100%!important}.in-world-spells [data-spell=ultimate]::after{content:'';position:absolute;left:3px;bottom:0;height:3px;width:var(--charge,0%);max-width:calc(100% - 6px);background:#ffe58a}
+.edict-screen .modal{width:min(860px,96%);max-height:95%;overflow:auto;padding:10px}.edict-screen h1{font-size:26px;margin:8px}.edict-screen .modal>p{font-size:11px;line-height:1.5;margin:7px}.edict-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:15px 0}.edict-grid button,.edict-grid button:hover:not(:disabled){background:transparent url('assets/takeover/ui/frame.png') center/100% 100% no-repeat!important;border:0;border-radius:0;padding:10px;min-height:105px;text-align:left}.edict-grid img{float:left;width:34px;height:36px;margin:0 8px 4px 0}.edict-grid b{display:block;font-size:12px;margin:4px 0}.edict-grid span{display:block;color:#e9c96a;letter-spacing:2px;font-size:12px}.edict-grid small{display:block;clear:both;color:#d4d8bf;line-height:1.5;font-size:10px}.edict-note{color:#c9b993!important}@media(max-width:600px){.edict-grid{grid-template-columns:repeat(2,1fr);gap:6px}.edict-grid button{min-height:95px}}
+
+/* Hover never resizes or filters bitmap artwork. */
+body button,body button:hover,body button:focus,body button:active{transform:none!important;scale:none!important;translate:none!important;rotate:none!important;transition:none!important;animation:none!important}
+body button:not(:disabled),body button:hover:not(:disabled){filter:none!important}
+body button img,body button:hover img,body button:focus img,body button:active img{transform:none!important;scale:none!important;filter:none!important;transition:none!important;animation:none!important}
+body button:hover:not(:disabled){outline:0;box-shadow:none!important}
+
+/* No tutorial, action-message or pause text over the battlefield. */
+#battlefield #toast,#battlefield #pauseBadge{display:none!important;pointer-events:none!important}
+
+body .in-world-spells .spell-grid button,body .in-world-spells .spell-grid button:hover:not(:disabled){min-height:0!important;min-width:0!important;padding:0!important}
+.world-screen .modal{width:min(864px,98vw)!important;max-width:98%!important;padding:0!important;background:none!important;border:0;box-shadow:none;max-height:98%;overflow:auto}
+.campaign-map{position:relative;width:100%;aspect-ratio:864/628;background:url('assets/takeover/patched/scrCompaignMapClass/1.png') center/100% 100% no-repeat}
+.campaign-map h1{position:absolute;top:3%;left:9%;margin:0;padding:4px 8px;background:#e0edf0;font-size:clamp(12px,2vw,22px);color:#775918;text-shadow:none}
+.campaign-map .world-nodes{position:absolute;inset:0;display:block;margin:0;padding:0}
+body .campaign-map .world-nodes button,body .campaign-map .world-nodes button:hover:not(:disabled){position:absolute;transform:translate(-50%,-50%)!important;width:8%;height:10%;min-height:0;padding:2px;background:url('assets/takeover/ui/level.png') center/contain no-repeat!important;border:0}
+.campaign-map .world-nodes button span{color:#fff;font:bold 16px Georgia;text-shadow:0 1px 3px #000}.campaign-map .world-nodes button small{display:block;font-size:10px;color:#fff;background:#23432bcc}.campaign-map .world-nodes button:disabled{opacity:.8;filter:grayscale(1)}
+.campaign-map #campaignBack{position:absolute;left:3%;bottom:4%;width:19%}.campaign-map #edictsOpen{position:absolute;right:12%;bottom:8%;width:23%}.campaign-map #worldDifficulty{position:absolute;left:28%;bottom:5%;width:17%}.campaign-progress{position:absolute;right:3%;bottom:4%;color:#402713;background:#eccc7f;padding:4px}
+.edict-screen{background:url('assets/takeover/patched/scrCompaignMapClass/1.png') center/contain no-repeat #10221bcc!important}
+
+/* Ordinary menus also use the supplied panel artwork. */
+.overlay:not(.native-world-screen):not(.native-campaign-screen):not(.edict-screen):not(.native-result-screen):not(.title-screen){background:#100c17 url('assets/takeover/ui/atlases/screens/results--background-Purple.webp?v=20261006-r6') center/100% 100% no-repeat;backdrop-filter:none}
+.profile-screen .modal,.story-screen .modal,.prepare-screen .modal,.overlay:not([class*='screen']) .modal{padding:24px 35px;background:transparent url('assets/takeover/ui/frame.png') center/100% 100% no-repeat}
+.manual{border:0}
+
+/* Original title and profile scenes; the three original save ribbons remain vertical. */
+main:has(.title-screen:not(.hidden)),main:has(.profile-screen:not(.hidden)){width:min(100vw,133.333vh)}
+.battlefield:has(.title-screen:not(.hidden)),.battlefield:has(.profile-screen:not(.hidden)){height:min(100vh,75vw);aspect-ratio:4/3}
+body .title-screen{background:#100c17 url('assets/takeover/ui/atlases/screens/native-title-background.webp?v=20261006-r6') center/100% 100% no-repeat;backdrop-filter:none}
+.title-screen .modal{position:absolute;inset:0;width:100%;height:100%;max-width:none;padding:0;container-type:inline-size}
+.title-screen .modal h1{position:absolute;left:22%;top:76%;width:56%;margin:0;font-size:5cqw;text-shadow:0 2px #211719}
+.title-screen .modal #titleStart{position:absolute;left:37.5%;top:86%;width:25%;height:9%;min-height:0;padding:0;font-size:2.2cqw}
+/* GameButtonClass 617: use its original _over art without resizing the control. */
+body .title-screen .modal #titleStart:is(:hover,:focus-visible):not(:disabled),
+body .title-screen .modal #onlineStart:is(:hover,:focus-visible):not(:disabled){background-image:url('assets/takeover/ui/button-hover.png')}
+.title-screen .eyebrow,.title-screen .modal-crest,.title-screen .subheading,.title-screen .modal>p{display:none}
+body .profile-screen{background:#100c17 url('assets/takeover/ui/atlases/screens/native-profile-background.webp?v=20261006-r6') center/100% 100% no-repeat!important}
+.profile-screen .modal{position:absolute;inset:0;width:100%;height:100%;max-width:none;padding:0;background:none;container-type:inline-size}
+.profile-screen .eyebrow,.profile-screen .tips{display:none}
+.profile-screen .modal h1{position:absolute;left:33%;top:24%;width:38%;margin:0;font:3cqw 'Microsoft YaHei',sans-serif}
+.profile-screen .save-slots{position:absolute;inset:0;display:block;margin:0}
+body .profile-screen .save-slots button,body .profile-screen .save-slots button:hover:not(:disabled){position:absolute;left:31%;top:35%;width:42%;height:14%;padding:1cqw 3cqw;background:none;min-height:0;border:0;display:grid;grid-template-columns:3cqw 1fr;align-content:center;column-gap:2cqw}
+.profile-screen .save-slots button:nth-child(2){top:55%}.profile-screen .save-slots button:nth-child(3){top:75%}
+.profile-screen .save-slots b{grid-row:span 2;font:3cqw Georgia;margin:0}.profile-screen .save-slots span{font-size:1.8cqw}.profile-screen .save-slots small{font-size:1.25cqw;margin-top:.8cqw}
+
+/* Opaque native menu artwork covers these battle-only layers. */
+body.menu-open .video-hud,body.menu-open .in-world-spells,body.menu-open .in-world-orders,body.menu-open .quick-tools{display:none!important}
+
+/* Canvas remains in native coordinates; its surrounding sky must match exactly. */
+.battlefield{background:#9fe5f3}
+
+/* recruitment.css */
+/* One coordinate system, matching the complete 590 × 174 source panel. */
+#battlefield .in-world-orders{
+ position:absolute;z-index:4;left:var(--panel-x);top:var(--panel-y);bottom:auto;
+ width:var(--panel-width);height:calc(var(--panel-width)*var(--panel-aspect));min-height:0;
+ margin:0;padding:0;border:0;border-radius:0;box-shadow:none;transform:none;
+ background:transparent var(--recruit-art) center/100% 100% no-repeat;
+ overflow:visible;pointer-events:none;filter:none;mask:none;
+}
+#battlefield .in-world-orders.hidden{display:none!important}
+#battlefield .in-world-orders .hud-castle-portrait,
+#battlefield .in-world-orders .native-castle-label,
+#battlefield .in-world-orders .panel-caption,
+#battlefield .in-world-orders .command-tabs{display:none!important}
+#battlefield .in-world-orders::before,#battlefield .in-world-orders::after{position:absolute;top:10%;color:#fff6d4;font:bold 10px Georgia;text-align:center;pointer-events:none}
+#battlefield .in-world-orders::before{content:'单位';left:var(--units-label);width:var(--units-label-width)}
+#battlefield .in-world-orders::after{content:'升级';left:var(--upgrade-label);width:19%}
+#battlefield .in-world-orders .action-grid{position:absolute;inset:0;display:block;margin:0;padding:0}
+#battlefield .in-world-orders .action-grid button,
+#battlefield .in-world-orders .action-grid button:hover:not(:disabled){position:absolute;left:calc(var(--unit-start) + var(--slot)*var(--unit-step));top:35.05%;width:var(--button-width);height:28.736%;min-width:0;min-height:0;max-width:none;margin:0;padding:0;border:0;border-radius:0;box-shadow:none;background:transparent;transform:none;transition:none;pointer-events:auto}
+#battlefield .in-world-orders .action-grid button .original-icon{display:block;width:86%;height:86%;margin:3% auto;object-fit:contain}
+#battlefield .in-world-orders .action-grid button .original-icon:nth-child(2){position:absolute;right:-2px;top:-8px;width:12px;height:12px}
+#battlefield .in-world-orders button span{display:none}
+#battlefield .in-world-orders button small{position:absolute;left:0;right:0;bottom:-16px;font:bold 10px/15px Georgia;color:#ffe28e;text-shadow:0 1px 2px #15220c;white-space:nowrap}
+#battlefield .in-world-orders .native-upgrade,
+#battlefield .in-world-orders .native-upgrade:hover:not(:disabled){position:absolute;left:var(--upgrade-x);top:35.05%;width:var(--button-width);height:28.736%;min-width:0;min-height:0;margin:0;padding:0;border:0;border-radius:0;background:var(--tile-art) center/100% 100% no-repeat;pointer-events:auto}
+#battlefield .in-world-orders .native-upgrade .original-icon{width:86%;height:86%;margin:0;object-fit:contain}
+#battlefield .in-world-orders button:disabled{opacity:.45;filter:grayscale(1)}
+
+#battlefield .in-world-orders[data-direction="right"]{--unit-start:171.7;--upgrade-x:79.135%;--units-label:29%;--upgrade-label:75%}
+#battlefield .in-world-orders[data-direction="left"]{--unit-start:160.95;--upgrade-x:9.966%;--units-label:27%;--upgrade-label:5%}
+
+#battlefield .in-world-orders[data-panel-type="Site"]::before{content:"建造"}
+#battlefield .in-world-orders[data-panel-type="Site"]::after{display:none}
+
+#battlefield .in-world-orders .site-management{display:none}
+/* Reuse the three-slot native Site panel for completed buildings. */
+#battlefield .in-world-orders.building-management::before{content:attr(data-site-title)}
+#battlefield .in-world-orders.building-management button span{display:block;position:absolute;left:-10%;right:-10%;top:-23%;margin:0;font:9px/1 'Microsoft YaHei',sans-serif;color:#fff0b8;white-space:nowrap;pointer-events:none}
+#battlefield .in-world-orders.building-management button small{font:8px/15px 'Microsoft YaHei',sans-serif;bottom:-16px}
+
+#battlefield .in-world-orders.inspecting .action-grid,#battlefield .in-world-orders.inspecting::before,#battlefield .in-world-orders.inspecting::after{display:none}
+#battlefield .in-world-orders.inspecting .site-management{display:block;position:absolute;left:28%;right:16%;top:22%;text-align:center;color:#fff;font:12px 'Microsoft YaHei',sans-serif;text-shadow:1px 1px #201713}
+#battlefield .in-world-orders.inspecting .site-management p{margin:6px 0;font-size:11px}
+
+/* native-hud.css */
+/* Reference: church 369–372 s; tribe 4.5–6 s; sandbox 28–33 s. */
+.video-hud::before{content:'';position:absolute;left:0;right:0;bottom:0;height:20%;background:var(--hud-back,url('assets/takeover/ui/atlases/screens/native-hud-back-Green.webp?v=20261006-r6')) bottom/100% 100% no-repeat;pointer-events:none}
+.video-hud .resources{left:50%;right:0%;bottom:4px;height:27px;background:transparent;gap:0}
+.video-hud .resources .gold{order:0;color:#ffe84e}.video-hud .resources .population{order:1}.video-hud .resources .mana{order:2}
+.video-hud .resources>div{padding-left:15px}.video-hud .resources i{display:none}
+.video-hud .resources span{font:bold 12px Georgia;background:none}.video-hud .resources small{display:inline;font:10px Georgia;color:#c19ae6}
+.in-world-spells{left:28%;width:22%;bottom:3px;max-width:260px}
+body .in-world-spells .spell-grid button,body .in-world-spells .spell-grid button:hover:not(:disabled){height:44px;background:transparent url('assets/takeover/ui/atlases/screens/native-spell-slot.webp?v=20261006-r6') center/contain no-repeat;border:0;box-shadow:none;border-radius:0}
+.in-world-spells .spell-grid small{background:none!important;color:#d6ecff!important;font:bold 10px Georgia!important;bottom:1px!important}
+.in-world-spells .spell-grid .original-icon{width:100%;height:100%;object-fit:contain;margin:0;display:block;flex:none}
+.in-world-spells .spell-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}
+body .in-world-spells .spell-grid button{display:block;overflow:hidden;flex:none;aspect-ratio:1;max-height:44px}
+.in-world-spells .spell-grid small{pointer-events:none}
+.in-world-spells .spell-grid button:disabled{opacity:.6;filter:grayscale(.75)}
+@media(max-width:700px){.video-hud .resources{height:20px}.video-hud .resources span{font-size:9px}.video-hud .resources small{font-size:7px}body .in-world-spells .spell-grid button{height:27px}.in-world-spells .spell-grid .original-icon{width:100%;height:100%}.in-world-spells .spell-grid small{font-size:7px!important}}
+.video-hud .resources .population small{display:none}
+body .modal button.primary,body .modal button.primary:hover:not(:disabled){background:transparent url('assets/takeover/ui/button.png') center/100% 100% no-repeat;border:0;box-shadow:none;border-radius:0}
+/* Keep the slot, icon and active/hover states at exactly the same dimensions. */
+#battlefield .in-world-spells button[data-spell],#battlefield .in-world-spells button[data-spell]:is(:hover,:focus,:active){min-width:0!important;min-height:0!important;padding:0!important;margin:0!important;border:0!important;background-size:contain!important;transform:none!important;scale:none!important;zoom:1!important;transition:none!important;animation:none!important}
+#battlefield .in-world-spells button[data-spell] img,#battlefield .in-world-spells button[data-spell]:is(:hover,:focus,:active) img{width:100%!important;height:100%!important;max-width:100%!important;object-fit:contain!important;transform:none!important;scale:none!important;zoom:1!important;filter:none!important;transition:none!important}
+/* The picture remains visible when unavailable. Only real cooldown draws shade. */
+#battlefield .in-world-spells{width:191px!important;max-width:191px!important;padding:0}
+#battlefield .in-world-spells .spell-grid{grid-template-columns:repeat(4,44px)!important;gap:5px!important}
+#battlefield .in-world-spells button[data-spell],#battlefield .in-world-spells button[data-spell]:is(:hover,:focus,:active,:disabled){width:44px!important;height:44px!important;min-width:44px!important;max-width:44px!important;min-height:44px!important;max-height:44px!important;position:relative;opacity:1!important;filter:none!important;outline:0;background-color:transparent!important;overflow:hidden}
+#battlefield .in-world-spells button[data-spell]::after{display:none!important}
+#battlefield .in-world-spells .spell-cooldown{position:absolute;inset:1px;background:rgba(4,7,14,.62);clip-path:inset(var(--cooldown-clear,100%) 0 0 0);pointer-events:none}
+#battlefield .in-world-spells .spell-state-mark{position:absolute;top:1px;right:1px;min-width:14px;height:15px;line-height:15px;padding:0 1px;font:bold 10px Georgia;text-align:center;color:#fff4c5;background:#4c3029;border:1px solid #caaa67;border-radius:3px;pointer-events:none}
+#battlefield .in-world-spells .spell-state-mark:empty{display:none}
+#battlefield .in-world-spells [data-state="mana"] .spell-state-mark{background:#123e64;border-color:#7fd7f5;color:#cffaff}
+#battlefield .in-world-spells [data-state="tower"] .spell-state-mark{background:#3d2a67;border-color:#c8a4f5;color:#f0dcff}
+#battlefield .in-world-spells button[data-spell] small{z-index:2;bottom:1px!important;text-shadow:0 1px 2px #000,1px 0 #000,-1px 0 #000;line-height:12px;font-size:10px!important}
+#battlefield .in-world-spells button[data-spell].active::before{content:'';position:absolute;inset:0;background:transparent url('assets/takeover/ui/move.png') center top/24px 11px no-repeat;border:0;box-shadow:none;pointer-events:none;z-index:3}
+
+#battlefield .in-world-spells .spell-state-mark,#battlefield .in-world-spells [data-state] .spell-state-mark{background:transparent url('assets/takeover/ui/spell-frame.png') center/100% 100% no-repeat;border:0;border-radius:0;text-shadow:0 1px 2px #100c17}
+
+/* native-edicts.css */
+/* Original 800 × 600 throne room and SWF row coordinates. */
+.edict-screen{background:#071509!important;padding:0!important}
+.edict-screen .modal{height:100%;width:auto;aspect-ratio:4/3;max-width:100%;max-height:100%;padding:0!important;overflow:hidden;background:none;border:0;box-shadow:none}
+.native-edicts{position:relative;width:100%;height:100%;container-type:inline-size;background:var(--edict-background) center/100% 100% no-repeat;color:#ffe6ac}
+.native-edicts h1{position:absolute;left:5%;top:1.5%;width:27%;font-size:3.2cqw;letter-spacing:0;margin:0}
+.edict-counts{position:absolute;left:34%;top:1.1%;font:1.6cqw Georgia;line-height:1.6;color:#ffe978}
+.native-edicts .edict-row,.native-edicts .edict-row:hover:not(:disabled){position:absolute;width:48.46%;height:13.847%;min-height:0;min-width:0;margin:0;padding:0;border:0;border-radius:0;box-shadow:none;background:var(--row-art) center/100% 100% no-repeat;filter:none;transform:none!important;transition:none;text-align:left;opacity:1}
+.native-edicts .edict-row[data-locked=true]{filter:grayscale(.85);opacity:.7}
+.edict-row .edict-icon{position:absolute;left:1%;top:4%;width:20.4%;height:94%;object-fit:contain;pointer-events:none}
+.edict-row[data-side=right] .edict-icon{left:79.6%}
+.edict-row .edict-caption,.edict-row .edict-benefit{position:absolute;left:29.5%;right:6%;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font:bold 1.22cqw/1.1 'Microsoft YaHei',sans-serif;pointer-events:none;text-shadow:0 1px #381604}
+.edict-row[data-side=right] .edict-caption,.edict-row[data-side=right] .edict-benefit{left:6%;right:29.5%;text-align:right}
+.edict-row .edict-caption{top:15%;font-size:1.4cqw;color:#fff1b3}
+.edict-row .edict-benefit[data-level='1']{top:43%}.edict-row .edict-benefit[data-level='2']{top:68%}
+.edict-row .edict-benefit[data-owned=true]{color:#ffe73d}.edict-row .edict-benefit[data-owned=false]{color:#c39885}
+.edict-tier{position:absolute;left:24.5%;font:bold 1.5cqw/1 Georgia;pointer-events:none;color:#bb9484}.edict-row[data-side=right] .edict-tier{left:73%;width:3%;text-align:center}
+.edict-tier[data-tier='0']{top:13%}.edict-tier[data-tier='1']{top:43%}.edict-tier[data-tier='2']{top:68%}.edict-tier[data-owned=true]{color:#ffef65}
+.native-edicts #edictsBack,.native-edicts #edictsBack:hover,.native-edicts #edictsReset,.native-edicts #edictsReset:hover{position:absolute;background:none!important;box-shadow:none;border:0;border-radius:0;min-height:0;min-width:0;padding:0;font:bold 2.2cqw Georgia}
+.native-edicts #edictsBack{left:65.5%;top:83.5%;width:23.8%;height:9.8%}
+.native-edicts #edictsReset{left:36.3%;top:1.3%;width:16.9%;height:6.95%;font-size:1.8cqw}
+.edict-counts{left:27%;font-size:1.4cqw;top:1%}
+.edict-rank{position:absolute;left:56%;top:87%;width:7%;text-align:center;font:bold 4.7cqw/1 Georgia;color:#fff4bb;text-shadow:0 2px #46300c;-webkit-text-stroke:1px #674711}
+.edict-rank small{display:block;font-size:1.2cqw}
+.edict-free{position:absolute;right:.8%;top:89.8%;width:8%;text-align:center;font:bold 3cqw Georgia;color:#36cffa;text-shadow:0 1px #46300c}
+.edict-free small{display:block;font-size:1.2cqw}
+.edict-xp-fill{position:absolute;left:64.06%;top:93.15%;width:25.17%;height:3.55%;background:url('assets/takeover/ui/atlases/screens/native-edict-xp-fill.webp?v=20261006-r6') center/100% 100% no-repeat;clip-path:inset(0 calc((1 - var(--xp))*100%) 0 0)}
+.edict-xp{position:absolute;left:64%;top:93.5%;width:25%;font:bold 1.45cqw Georgia;color:#ffef3d;text-align:center;text-shadow:0 1px #46300c}
+.edict-transition{position:absolute;right:5%;top:6%;height:30%;display:flex;align-items:center;gap:.3cqw;pointer-events:none}
+.edict-row[data-side=right] .edict-transition{right:auto;left:5%}
+.edict-unit-circle{width:3.2cqw;height:3.2cqw;display:inline-flex;align-items:center;justify-content:center;background:center/contain no-repeat}
+.edict-unit-circle img{width:75%;height:75%;object-fit:contain}
+.edict-unit-arrow{font:bold 1.6cqw Georgia;color:#ffe878}
+.edict-row .edict-caption[data-has-route=true]{right:26%;top:13%;font-size:1.22cqw}
+.edict-row[data-side=right] .edict-caption[data-has-route=true]{right:29.5%;left:26%}
+@media(max-aspect-ratio:4/3){main{width:100vw}.battlefield{height:min(100vh,66vw);aspect-ratio:1000/660}.battlefield:has(.edict-screen:not(.hidden)){height:min(100vh,75vw);aspect-ratio:4/3}}
+/* Supplied update video: Empire has a plain plum throne backdrop and purple
+   controls, with its own nine icons and the common original scroll ribbons. */
+.native-edicts[data-country=Purple] .edict-caption{color:#fff3c0}
+.native-edicts[data-country=Purple] .edict-benefit[data-owned=false]{color:#c8b1d5}
+.native-edicts[data-country=Purple] .edict-row[data-locked=true]{filter:grayscale(.7);opacity:.78}
+.native-edicts[data-country=Purple] .edict-rank{color:#f4dfff;-webkit-text-stroke:0;text-shadow:0 2px #321345}
+.native-edicts[data-country=Purple] #edictsReset{left:36.3%;top:1.3%}
+/* The original footer remains visible; translated labels sit on its source fields. */
+.native-edicts #edictsBack,.edict-rank,.edict-xp-fill,.edict-xp,.edict-free{z-index:1}
+.native-edicts .edict-rank,.native-edicts .edict-free,.native-edicts .edict-xp{font-family:'Microsoft YaHei',sans-serif}
+
+.native-edicts .edict-xp{top:97%;font-size:1.2cqw;line-height:1.5;color:#fff8e6;text-shadow:0 1px 2px #171017}
+.native-edicts .edict-rank{color:#fff8e6;-webkit-text-stroke:0;text-shadow:0 1px 2px #171017}
+
+body .native-edicts[data-country] .edict-rank,body .native-edicts[data-country] .edict-rank small{color:#fff!important;-webkit-text-stroke:0!important;text-shadow:-1px -1px #171017,1px -1px #171017,-1px 1px #171017,1px 1px #171017!important}
+body .native-edicts[data-country] .edict-xp{top:93.15%!important;height:3.55%;display:flex;align-items:center;justify-content:center;line-height:1;color:#fff!important;font:900 1.9cqw 'Microsoft YaHei',sans-serif!important;text-shadow:-1px -1px #171017,1px -1px #171017,-1px 1px #171017,1px 1px #171017!important}
+body .native-edicts #edictsReset,body .native-edicts #edictsBack,body .native-edicts #edictsReset:hover,body .native-edicts #edictsBack:hover{background:transparent url('assets/takeover/ui/atlases/screens/results--button.webp?v=20261006-r6') center/100% 100% no-repeat!important;transform:none!important;font-family:'Microsoft YaHei',sans-serif!important;color:#fff!important}
+
+body .native-edicts #edictsBack,body .native-edicts #edictsReset,body .native-edicts #edictsBack:hover,body .native-edicts #edictsReset:hover{background:none!important}
+
+/* native-world.css */
+/* Native 800 × 600 scenes, with artwork drawn once and fixed hit areas. */
+.native-world-screen .modal,.native-campaign-screen .modal{width:min(100%,133.33vh)!important;max-width:100%!important;max-height:none!important;padding:0!important;border:0!important;background:none!important;box-shadow:none!important;overflow:visible!important}
+main:has(.native-world-screen:not(.hidden)),main:has(.native-campaign-screen:not(.hidden)){width:min(100vw,133.333vh)}
+.battlefield:has(.native-world-screen:not(.hidden)),.battlefield:has(.native-campaign-screen:not(.hidden)){height:min(100vh,75vw);aspect-ratio:4/3}
+.native-world-screen,.native-campaign-screen{padding:0!important;background:#111!important}
+.native-world,.native-campaign{position:relative;width:100%;aspect-ratio:4/3;container-type:inline-size;overflow:hidden}
+.native-world{background:var(--world-art) center/100% 100% no-repeat}
+.native-world::after{content:'';position:absolute;inset:0;background:var(--world-controls) center/100% 100% no-repeat;pointer-events:none}
+.native-world h1{left:10%;top:3%;background:none;font:bold 3cqw Georgia;color:#805e25}
+body .native-world .world-nodes button,body .native-world .world-nodes button:hover:not(:disabled){width:15%;height:25%;padding:0!important;min-width:0;min-height:0;transform:none!important;background:var(--level-art) center/100% 100% no-repeat!important;outline:none!important;box-shadow:none!important}
+.native-world .world-nodes button:nth-child(even){margin:0}
+.native-world .world-nodes button:disabled{opacity:.5}
+.native-world .world-nodes button span{position:absolute;left:57%;top:73%;width:23%;font:bold 2cqw Georgia;text-align:center;color:#fff8d5}
+.native-world .level-badge,.native-world .level-swords{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none}
+.native-world .level-swords[hidden]{display:none!important}
+.native-world #campaignBack,.native-world #edictsOpen{z-index:1;background:none!important;min-height:0;padding:0!important;font:bold 1.8cqw Georgia}
+.native-world #campaignBack{left:1.4%;top:89%;width:19%;height:8%;bottom:auto}
+.native-world #edictsOpen{left:65.5%;top:82.2%;width:23.8%;height:9.8%;bottom:auto;right:auto}
+.native-world #worldDifficulty{position:absolute;left:27%;top:89%;width:23.8%;height:8%;min-height:0;padding:0!important;font:bold 1.8cqw Georgia;z-index:1}
+.native-world .world-rank{position:absolute;left:56%;top:87%;font:bold 4.7cqw/1 Georgia;width:7%;text-align:center;z-index:1;color:#fff4bb;text-shadow:0 2px #563907}
+.native-world .world-free{position:absolute;right:.8%;top:89.8%;width:8%;text-align:center;font:bold 3cqw Georgia;color:#36cffa;text-shadow:0 1px #46300c;z-index:1}
+.native-world .world-xp-fill{position:absolute;left:64.06%;top:93.15%;width:25.17%;height:3.55%;background:url('assets/takeover/ui/atlases/screens/native-edict-xp-fill.webp?v=20261006-r6') center/100% 100% no-repeat;clip-path:inset(0 calc((1 - var(--xp))*100%) 0 0);z-index:1;pointer-events:none}
+.native-world .campaign-progress{left:64%;right:auto;top:93.5%;bottom:auto;width:25%;padding:0;background:none;font:bold 1.45cqw Georgia;color:#f6dc46;text-align:center;z-index:1}
+.native-campaign{background:url('assets/takeover/ui/atlases/screens/native-campaign.webp?v=20261006-r6') center/100% 100% no-repeat}
+.native-campaign h1{position:absolute;left:0;right:0;top:1%;font:bold 4cqw Georgia;color:#fff1b9;margin:0;text-shadow:0 2px #311718}
+.native-factions{position:absolute;inset:0}
+body .native-factions button,body .native-factions button:hover:not(:disabled){position:absolute;top:21%;width:26%;height:64%;padding:0;background:none!important;min-height:0;box-shadow:none!important;outline:none!important}
+.native-factions [data-faction=Blue]{left:7.5%}.native-factions [data-faction=Green]{left:37%}.native-factions [data-faction=Red]{left:66%}
+.native-factions span{position:absolute;bottom:2%;left:0;right:0;font:bold 2.2cqw Georgia;color:#fff0ba;text-shadow:0 2px #23120d}
+.native-factions small{position:absolute;bottom:-4%;left:0;right:0;font:bold 1.5cqw Georgia;color:#eadcb0}
+.native-campaign #profilesBack{position:absolute;left:1%;top:91%;width:19%;height:8%;background:none!important;min-height:0;padding:0;font:bold 1.8cqw Georgia}
+.native-campaign .dark-campaign{position:absolute;left:39%;top:91%;width:22%;height:8%;min-height:0;padding:0;font:bold 1.8cqw Georgia}
+.native-campaign #resumeBattle{position:absolute;right:2%;top:91%;width:22%;height:8%;min-height:0;padding:0;font:bold 1.8cqw Georgia}
+@media(max-aspect-ratio:4/3){.battlefield:has(.native-world-screen:not(.hidden)),.battlefield:has(.native-campaign-screen:not(.hidden)){height:min(100vh,75vw);aspect-ratio:4/3}}
+.four-campaigns{background-image:url('assets/takeover/ui/atlases/screens/native-campaign-background.webp?v=20261006-r6')}
+/* Cloth begins at native y=80.5, overlapping the original wooden pole.
+   Preserve image registration; compensate its transparent top per country. */
+body .four-campaigns .native-factions button,body .four-campaigns .native-factions button:hover:not(:disabled){top:var(--campaign-mount-top,9.363333%);width:24%;height:73%;background:none!important;overflow:visible}
+.four-campaigns .native-factions [data-faction=Blue]{left:2%;--campaign-mount-top:10.643333%;--campaign-cloth-anchor:3.799087%}.four-campaigns .native-factions [data-faction=Green]{left:26%}.four-campaigns .native-factions [data-faction=Red]{left:50%;--campaign-mount-top:10.003333%;--campaign-cloth-anchor:4.675799%}.four-campaigns .native-factions [data-faction=Purple]{left:74%}
+.four-campaigns .campaign-flag{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center top;pointer-events:none}
+.four-campaigns [data-faction=Purple] .campaign-flag{filter:none!important}
+.four-campaigns .native-factions span{bottom:14.200913%;font-size:1.9cqw}.four-campaigns .native-factions small{bottom:10.200913%}
+/* The native red header ends near x=435 in the 800-pixel campaign scene. */
+.native-campaign.four-campaigns h1{left:0;right:auto;top:0;width:54.4%;height:9.5%;display:grid;place-items:center;font:bold 3.4cqw/1 Georgia;letter-spacing:.1cqw;text-shadow:0 2px 2px #461813;pointer-events:none}
+body .native-campaign.four-campaigns .native-factions button[data-faction]{cursor:pointer!important}
+/* Campaign entrances alone may gently expand; battle controls keep fixed size. */
+body .native-campaign.four-campaigns .native-factions button[data-faction] img.campaign-flag{transform:scale(1)!important;transform-origin:50% var(--campaign-cloth-anchor,5.552511%);transition:transform .2s ease-out!important}
+body .native-campaign.four-campaigns .native-factions button[data-faction]:is(:hover,:focus-visible) img.campaign-flag{transform:scale(1.04)!important}
+/* Replace the temporary scale only after that country's original hover has decoded. */
+body .native-campaign.four-campaigns .native-factions button[data-faction][data-native-hover-ready=true] img.campaign-flag{transform:none!important;transition:none!important}
+.native-campaign.four-campaigns{user-select:none}
+.native-campaign.four-campaigns .campaign-description{position:absolute;left:14%;right:14%;bottom:28.200913%;z-index:1;padding:2.4cqw .7cqw 1.2cqw;color:#fff3d5;font:1.55cqw/1.5 Georgia,serif;text-align:center;text-shadow:0 1px 2px #100c17;background:none;opacity:0;transform:translateY(5px);transition:opacity .18s ease-out,transform .18s ease-out;pointer-events:none}
+.native-campaign.four-campaigns button[data-faction]:is(:hover,:focus-visible) .campaign-description{opacity:1;transform:translateY(0)}
+@media(prefers-reduced-motion:reduce){body .native-campaign.four-campaigns .native-factions button[data-faction] img.campaign-flag,.native-campaign.four-campaigns .campaign-description{transition:none!important}}
+.level-info-layer{position:absolute;inset:0;z-index:5}
+body .native-world .level-dismiss,body .native-world .level-dismiss:hover{position:absolute;inset:0;width:100%;height:100%;background:none!important;border:0;box-shadow:none;min-height:0;padding:0}
+.level-info-art{position:absolute;width:162.5%;height:53.333%;max-width:none;pointer-events:none;object-fit:fill}
+.level-info-layer #toBattle,.level-info-layer #toBattle:hover{position:absolute;width:15.06%;height:6.2%;background:none!important;min-height:0;min-width:0;border:0;padding:0;font:bold 1.9cqw Georgia;color:#fff2a8}
+.level-info-title,.level-info-xp{position:absolute;pointer-events:none;color:#fff3c6;font:bold 2cqw Georgia;text-align:left}
+.level-info-title{width:22.57%;height:3.84%;font-size:1.6cqw}.level-info-xp{width:10.87%;height:5.83%;color:#ffec00;font-size:2.8cqw}
+
+.level-info-intro{position:absolute;width:30.75%;height:22%;font:bold 1.7cqw/1.05 Georgia;color:#ffffcc;text-align:left;pointer-events:none}.level-info-title{font-size:1.5cqw}
+/* Actual Empire crest and CastlePurpleClass sit on shared original geography;
+   the eighth-stage route is an adaptation, not an undocumented original map. */
+.native-world[data-country=Purple] h1{position:absolute;left:10%;top:3%;margin:0;padding:.7cqw 1.6cqw;color:#fff;background:none;text-shadow:-1px -1px #171017,1px 1px #171017;font:bold 2.8cqw Georgia;z-index:1}
+.empire-world-crest{position:absolute;left:2%;top:1.4%;width:8%;height:11%;object-fit:contain;z-index:1;pointer-events:none}
+.native-world[data-country=Purple] .world-nodes button span{left:37%;top:73%;width:26%;background:none;border:0;color:#fff;text-shadow:-1px -1px #171017,1px 1px #171017}
+.native-world[data-country=Purple] .world-nodes button:disabled{opacity:.57}
+.native-world[data-country=Purple] .world-rank{color:#f6e6ff;text-shadow:0 2px #321345}
+.empire-world-route{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.empire-route-shadow{fill:none;stroke:#292031;stroke-width:7;opacity:.75}
+.empire-route-line{fill:none;stroke:#c6afd7;stroke-width:2;stroke-dasharray:5 5;opacity:.85}
+.empire-route-territory{fill:#634778;fill-opacity:.16;stroke:#755387;stroke-opacity:.65;stroke-width:2}
+.empire-route-territory.is-completed{fill:#744191;fill-opacity:.55;stroke:#cdb0e1;stroke-width:3}
+.native-world[data-country=Purple] .world-nodes{z-index:1}
+.empire-world-caption{position:absolute;left:11.5%;top:11%;padding:.4cqw .9cqw;background:#221d2ddd;color:#dfd1ea;border-radius:.5cqw;font:1.5cqw 'Microsoft YaHei',sans-serif;z-index:1;pointer-events:none}
+.native-world[data-country=Purple] h1{font-family:'Microsoft YaHei',sans-serif;font-size:2.6cqw}
+.native-world .world-nodes button .level-completed-marker,.native-world .world-nodes button .level-open-marker{left:24%;top:55%;width:52%;display:block;font:bold 1.35cqw 'Microsoft YaHei',sans-serif;text-align:center;color:#f1d488;background:#27252be3;border-radius:.4cqw;border:1px solid #a78d5e;padding:.3cqw 0;white-space:nowrap}
+.native-world .world-nodes button .level-open-marker{font-size:1.15cqw;color:#ebe0c9}
+.native-world[data-country=Purple] .world-nodes button .level-completed-marker,.native-world[data-country=Purple] .world-nodes button .level-open-marker{left:24%;top:55%;width:52%;border-radius:.4cqw}
+
+/* Original popup and footer art stay in place; only runtime Chinese text overlays. */
+.level-info-layer{display:block;background:none}
+.level-info-art{z-index:1}.level-info-title,.level-info-xp,.level-info-intro{z-index:2;font-family:'Microsoft YaHei',sans-serif}
+.level-info-title{font-size:1.5cqw;line-height:1.2}.level-info-intro{margin:0;font-size:1.6cqw;line-height:1.5;padding:0}
+body .native-world .level-info-layer #toBattle{z-index:3;cursor:pointer!important;outline-offset:2px}
+.native-world .world-rank small,.native-world .world-free small{display:block;font:1.1cqw 'Microsoft YaHei',sans-serif;color:#fff0bb}
+body .native-world #worldDifficulty{background:url('assets/takeover/ui/atlases/screens/results--button.webp?v=20261006-r6') center/100% 100% no-repeat!important;border:0;box-shadow:none;color:#fff3d2;font-family:'Microsoft YaHei',sans-serif}
+/* Keep large visible castles separate from their formerly overlapping transparent hit boxes. */
+body .native-world .world-nodes button,body .native-world .world-nodes button:hover:not(:disabled){width:11.25%;height:18.333%;transform:translate(-50%,-72.727%)!important;background:none!important;overflow:visible;cursor:pointer!important;z-index:2}
+body .native-world .world-nodes button:disabled{pointer-events:none;cursor:default!important;z-index:0}
+.native-world .world-node-art{position:absolute;left:50%;top:72.727%;width:133.333%;height:136.364%;max-width:none;transform:translate(-50%,-66.667%) scale(1.5)!important;transform-origin:50% 66.667%;object-fit:fill;pointer-events:none}
+.native-world .world-nodes button>span:not(.level-completed-marker):not(.level-open-marker){left:66%;top:82%;width:26%;font-size:2cqw;pointer-events:none}
+.native-world .world-nodes button .level-completed-marker,.native-world .world-nodes button .level-open-marker{left:7%;top:99%;width:86%;font-size:1.2cqw;pointer-events:none}
+.native-world .level-swords{left:-16.667%;top:-18.182%;width:133.333%;height:136.364%;transform:scale(1.5)!important;transform-origin:50% 66.667%;pointer-events:none}
+body .native-world .world-nodes button:focus-visible{outline:2px solid #f2d27b!important;outline-offset:2px}
+
+body .native-world .world-nodes button .level-open-marker{display:none}
+body .native-world[data-country] .world-nodes button .level-completed-marker{left:-5%;top:-1%;width:62%;height:46%;padding:0;border:0;background:none}
+.level-completed-crown{width:100%;height:100%;object-fit:contain;pointer-events:none}
+
+/* Source art provides every surface, including the Empire labels. */
+.native-world[data-country=Purple] h1,.empire-world-caption{background:none;border:0;border-radius:0;text-shadow:0 1px 2px #201325;padding:0}
+/* Extra maps reuse the eight original castle anchors, one segment at a time. */
+.native-world .world-pages{position:absolute;left:43%;right:2%;top:2.2%;height:6.8%;display:flex;align-items:center;justify-content:space-between;gap:.7cqw;z-index:3}
+.native-world .world-pages>span{color:#fff;font:700 1.35cqw 'Microsoft YaHei',sans-serif;white-space:nowrap;text-shadow:-1px -1px #171017,1px -1px #171017,-1px 1px #171017,1px 1px #171017}
+body .native-world .world-page-button,body .native-world .world-page-button:hover:not(:disabled){position:relative;left:auto;top:auto;width:24%;height:100%;min-height:0;padding:0;transform:none!important;background:transparent url('assets/takeover/ui/button.png') center/100% 100% no-repeat!important;box-shadow:none;border:0;color:#fff;font:700 1.35cqw 'Microsoft YaHei',sans-serif;text-shadow:0 1px 2px #231510}
+body .native-world .world-page-button:hover:not(:disabled){background-image:url('assets/takeover/ui/button-hover.png')!important}
+body .native-world .world-page-button:disabled{opacity:.45;cursor:default}
+.native-world[data-country=Purple] .world-nodes button>span:not(.level-completed-marker):not(.level-open-marker){background:none;border:0;border-radius:0}
+.native-campaign .campaign-description{background:none;text-shadow:0 1px 2px #100c17}
+
+/* The rating scales with the enlarged castle; XP text sits below its fill. */
+body .native-world[data-country] .world-nodes button .level-completed-marker{transform:scale(1.5)!important;transform-origin:50% 90%}
+.native-world .campaign-progress{top:97%;font-size:1.2cqw;line-height:1.5;color:#fff8e6;text-shadow:0 1px 2px #171017}
+.native-world .world-rank{color:#fff8e6;-webkit-text-stroke:0;text-shadow:0 1px 2px #171017}
+
+/* Source rating stays centred above the actual castle anchor. */
+body .native-world[data-country] .world-nodes button .level-completed-marker{left:50%!important;top:12%!important;width:58%!important;height:26%!important;transform:translateX(-50%)!important;transform-origin:center!important;background:none!important;border:0!important}
+body .native-world[data-country] .world-rank,body .native-world[data-country] .world-rank small{color:#fff!important;-webkit-text-stroke:0!important;text-shadow:-1px -1px #171017,1px -1px #171017,-1px 1px #171017,1px 1px #171017!important}
+body .native-world[data-country] .campaign-progress{top:93.15%!important;height:3.55%;display:flex;align-items:center;justify-content:center;line-height:1;color:#fff!important;font:900 1.9cqw 'Microsoft YaHei',sans-serif!important;text-shadow:-1px -1px #171017,1px -1px #171017,-1px 1px #171017,1px 1px #171017!important}
+body .native-world #campaignBack,body .native-world #edictsOpen,body .native-world #worldDifficulty,body .native-world #campaignBack:hover,body .native-world #edictsOpen:hover,body .native-world #worldDifficulty:hover{background:transparent url('assets/takeover/ui/atlases/screens/results--button.webp?v=20261006-r6') center/100% 100% no-repeat!important;transform:none!important;font-family:'Microsoft YaHei',sans-serif!important;color:#fff!important}
+
+/* These two frames already belong to the original footer; draw only their labels. */
+body .native-world #campaignBack,body .native-world #edictsOpen,body .native-world #campaignBack:hover,body .native-world #edictsOpen:hover{background:none!important}
+body .native-world #campaignBack{left:1.5%;top:89.833%;width:19.5%;height:8.667%}
+body .native-world #worldDifficulty{top:89.833%;width:19.5%;height:8.667%}
+body .native-world #edictsOpen{left:65.475%;top:82.117%;width:24.375%;height:10.833%}
+
+body .native-world[data-country=Purple] .world-nodes button .level-completed-marker{top:-10%!important}
+
+/* Native crown viewBox includes its lower tips. Position its full footprint. */
+body .native-world[data-country] .world-nodes button .level-completed-marker{top:-4%!important;width:68%!important;height:48%!important;overflow:visible!important}
+body .native-world[data-country=Purple] .world-nodes button .level-completed-marker{top:-10%!important}
+body .native-world[data-country] .world-rank{left:55.6%;top:87.5%;width:7.8%;height:8.3%;display:flex;align-items:center;justify-content:center;line-height:1;font-size:3.8cqw}
+body .native-world[data-country] .world-rank small{position:absolute;left:0;right:0;top:100%;font-size:1cqw}
+
+/* Red/Green share the original text anchor; other emblems have different centres. */
+body .native-world[data-country] .world-rank{left:55.225%;top:87.333%;width:7.8%;height:6.5%;font-size:initial}
+/* Native 800 x 600 artwork: Blue (466.5,539), Purple (480.5,555). */
+body .native-world[data-country=Blue] .world-rank{left:54.4125%;top:86.583333%}
+body .native-world[data-country=Purple] .world-rank{left:56.1625%;top:89.25%}
+body .native-world[data-country] .world-rank svg{display:block;width:100%;height:100%;overflow:visible}
+body .native-world[data-country] .world-rank svg text{fill:white;stroke:#171017;stroke-width:2;paint-order:stroke fill;font:bold 31px Georgia}
+body .native-world[data-country] .world-rank small{top:105%;font-size:1cqw}
+.native-world .level-swords{background:url('assets/takeover/ui/atlases/native-world-swords.webp') 0 0/1000% 600% no-repeat;z-index:3}
+body .native-world .world-nodes button:not(:disabled){opacity:1;filter:none}
+
+/* native-results.css */
+/* Neutral settlement screen. Nation colours appear only on the original badges. */
+main:has(.native-result-screen:not(.hidden)){width:min(100vw,133.333vh)}
+.battlefield:has(.native-result-screen:not(.hidden)){height:min(100vh,75vw);aspect-ratio:4/3}
+.native-result-screen{padding:0!important;background:#151719!important;backdrop-filter:none!important;overflow:hidden!important}
+.native-result-screen .modal{width:100%!important;max-width:100%!important;max-height:none!important;padding:0!important;border:0!important;background:none!important;box-shadow:none!important;overflow:visible!important}
+.native-results{position:relative;width:100%;aspect-ratio:4/3;container-type:inline-size;overflow:hidden;background:none;color:#eee7d8;font-family:'Microsoft YaHei','PingFang SC',sans-serif;padding:3cqw 4cqw;box-sizing:border-box;display:flex;flex-direction:column;gap:2.2cqw;text-align:left}
+.native-result-header{display:flex;align-items:center;gap:1.8cqw;min-height:8cqw;border-bottom:1px solid #55504a;padding-bottom:1.5cqw}
+.native-result-header img{width:7cqw;height:8cqw;object-fit:contain;pointer-events:none}
+.native-result-header p{margin:0 0 .8cqw;color:#bcb4a4;font-size:1.5cqw}
+.native-result-header h1{position:static;margin:0;font-size:3.5cqw;letter-spacing:.15cqw;color:#f0dfb4}
+.native-result-reward{margin-left:auto;font-size:2cqw;color:#e2c987;white-space:nowrap}
+.native-result-table{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center;gap:.9cqw}
+.native-result-headings,.native-result-row{display:grid;grid-template-columns:2fr repeat(5,.76fr) 1.1fr 1.1fr;gap:.7cqw;align-items:center}
+.native-result-headings{font-size:1.35cqw;color:#b8b5b1;text-align:center;padding:0 1.2cqw 1cqw}
+.native-result-headings span:first-child{text-align:left}
+.native-result-row{min-height:7.8cqw;padding:1.2cqw;background:transparent url('assets/takeover/ui/frame.png') center/100% 100% no-repeat;border:0;border-radius:0;box-sizing:border-box}
+.native-result-country{display:flex;align-items:center;gap:.6cqw;font-size:1.5cqw;white-space:nowrap;color:#eee7d8}
+.native-result-country img{width:3.8cqw;height:3.8cqw;object-fit:contain}
+.native-result-country small{display:block;margin-top:.5cqw;font-size:1.1cqw;color:#aaa5a0}
+.native-result-cell{position:relative;text-align:center;font-size:1.6cqw;overflow:hidden;border-radius:.4cqw;background:#1c1e20;height:3.8cqw;display:grid;place-items:center}
+.native-result-cell span{position:relative;z-index:1;color:#eee7d8;font-variant-numeric:tabular-nums}
+.native-result-bar{position:absolute;left:0;bottom:0;height:.35cqw;width:0;background:#a99564;opacity:.7}
+.native-result-bottom{display:grid;grid-template-columns:1fr 1fr;gap:3cqw;border-top:1px solid #55504a;padding-top:2cqw;min-height:12cqw}
+.native-result-rating strong{display:block;color:#e5d3ac;font-size:1.7cqw}
+.native-result-medal{display:block;font-size:3.4cqw;letter-spacing:.5cqw;color:#dfbb64;margin-bottom:.6cqw}
+.native-result-playtime{margin-top:1cqw;font-size:1.5cqw;color:#bcb5a6}.native-result-playtime b{font-weight:normal;color:#eee7d8}
+.native-result-task{margin-top:.7cqw;color:#b2aaa0;font-size:1.15cqw}
+.native-result-progression{font-size:1.4cqw;color:#c4bdaf}.native-result-progression b{color:#eee7d8;font-size:1.8cqw}
+.native-result-free{float:right}
+.native-result-xp-track{height:2.6cqw;margin:1cqw 0 1.3cqw;background:#121416;border:1px solid #49494a;border-radius:.4cqw;position:relative;overflow:hidden;text-align:center;line-height:2.6cqw;font-size:1.15cqw}
+.native-result-xp-track i{display:block;height:100%;background:#5b666d}.native-result-xp-track span{position:absolute;inset:0;color:#efe9dd}
+body .native-results #continue,body .native-results #continue:hover:not(:disabled){display:block;width:100%;min-height:0;margin:0;padding:1.2cqw;border:1px solid #8c7750;border-radius:.6cqw;background:#444039!important;color:#fff0c7;font:bold 1.7cqw 'Microsoft YaHei',sans-serif;transform:none!important;box-shadow:none!important}
+body .native-results #continue:focus-visible{outline:2px solid #c5b17c;outline-offset:2px}
+
+/* Reusable source materials, without changing the approved table layout. */
+.native-results{background:url('assets/takeover/ui/atlases/screens/results--background-Purple.webp?v=20261006-r6') center/100% 100% no-repeat}
+.native-result-cell{background:none;border-radius:0;overflow:visible}
+.native-result-indicator,.native-result-bar,.native-result-bar img{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;pointer-events:none}
+.native-result-bar{opacity:1;background:none;border-radius:0}
+.native-result-cell span{font-size:1.45cqw;color:#fff3cf;text-shadow:0 1px 2px #20101b}
+.native-result-medal{display:flex;align-items:center;gap:.8cqw;font-size:2.7cqw;letter-spacing:.25cqw}
+.native-result-medal img{width:8cqw;height:5.5cqw;object-fit:contain}
+.native-result-xp-track{height:3cqw;background:none;border:0;border-radius:0;overflow:visible;line-height:3cqw}
+.native-result-xp-art{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;pointer-events:none}
+body .native-results #continue,body .native-results #continue:hover:not(:disabled){border:0;border-radius:0;padding:1.5cqw;background:transparent url('assets/takeover/ui/atlases/screens/results--button.webp?v=20261006-r6') center/100% 100% no-repeat!important;color:#fff3cf;text-shadow:0 1px 2px #381944}
+
+.native-result-header,.native-result-bottom{border:0}
+
+.native-result-header{background:url('assets/takeover/ui/atlases/screens/results--header.webp?v=20261006-r6') center/100% 100% no-repeat;padding:1.3cqw 2cqw}
+.native-result-row[data-country=Green]{background-image:url('assets/takeover/ui/atlases/screens/results--row-Green.webp?v=20261006-r6')}
+.native-result-row[data-country=Red]{background-image:url('assets/takeover/ui/atlases/screens/results--row-Red.webp?v=20261006-r6')}
+.native-result-row[data-country=Blue]{background-image:url('assets/takeover/ui/atlases/screens/results--row-Blue.webp?v=20261006-r6')}
+.native-result-row[data-country=Purple]{background-image:url('assets/takeover/ui/atlases/screens/results--row-Purple.webp?v=20261006-r6')}
+.native-result-xp-track{margin-bottom:2.5cqw}
+.native-result-xp-track span{inset:auto 0;top:100%;font-size:1.1cqw;line-height:1.7cqw;color:#fff8e6;text-shadow:0 1px 2px #171017}
+
+/* Native strips contain the frame once; the source crest is a separate layer. */
+.native-result-country img{width:5.2cqw;height:5.8cqw}
+.native-result-xp-track span{color:#fff!important;font-weight:900;font-size:1.6cqw;text-shadow:-1px -1px #111,1px -1px #111,-1px 1px #111,1px 1px #111}
+
+/* Reuse the actual original map/country frames beneath the native result art. */
+.native-result-landscape{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;opacity:.42}
+.native-results>header,.native-result-table,.native-result-bottom{position:relative;z-index:1}
+.native-result-headings,.native-result-bottom{background:url('assets/takeover/ui/atlases/screens/results--background-Purple.webp?v=20261006-r6') center/cover no-repeat}
+.native-result-bottom{padding:1.4cqw 1.2cqw}
+.native-result-country span,.native-result-headings,.native-result-bottom{text-shadow:-1px -1px #111,1px 1px #111}
+
+/* Keep the native coloured textures; outline the Chinese labels above them. */
+.native-result-rating strong,.native-result-playtime,.native-result-playtime b,.native-result-task,
+.native-result-progression,.native-result-progression b,.native-result-cell span{
+ color:#fff;font-weight:700;
+ text-shadow:-1px -1px #171017,0 -1px #171017,1px -1px #171017,-1px 0 #171017,1px 0 #171017,-1px 1px #171017,0 1px #171017,1px 1px #171017;
+}
+.native-result-xp-track span{
+ text-shadow:-1px -1px #171017,0 -1px #171017,1px -1px #171017,-1px 0 #171017,1px 0 #171017,-1px 1px #171017,0 1px #171017,1px 1px #171017;
+}
+
+/* multiplayer.css */
+/* Shared original cloth, panels and button textures for the LAN lobby. */
+.network-screen{background:#100c17 url('assets/takeover/ui/atlases/screens/results--background-Purple.webp?v=20261006-r6') center/100% 100% no-repeat!important;backdrop-filter:none}
+.network-screen .modal{width:min(880px,98%);max-height:97%;overflow:auto;padding:20px 28px;background:transparent url('assets/takeover/ui/frame.png') center/100% 100% no-repeat;container-type:inline-size}
+.network-screen h1{font-size:28px;letter-spacing:2px;margin:6px 0 12px}
+.network-screen p{color:#fff1c8;font-size:12px;line-height:1.6}
+.network-entry,.network-options{display:flex;gap:12px;justify-content:center;align-items:center;flex-wrap:wrap;margin:14px 0}
+.network-screen input,.network-screen select{font:12px 'Microsoft YaHei',sans-serif;color:#fff5d1;border:0;border-radius:0;padding:7px 12px;background:transparent url('assets/takeover/ui/button.png') center/100% 100% no-repeat;max-width:100%}
+.network-screen option{background:#20172a;color:#fff3cd}
+.network-screen input[type=number]{width:65px}.network-entry input{display:block;margin:5px 0}
+.network-invite{display:flex;align-items:center;justify-content:center;gap:6px;flex-wrap:wrap}.network-invite input{width:350px}
+.network-flags{height:240px;display:flex;align-items:stretch;justify-content:center;margin:8px 0}
+body .network-flags button,body .network-flags button:hover:not(:disabled){position:relative;width:25%;height:100%;padding:0;background:none!important;border:0;min-height:0}
+.network-flags img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none}
+.network-flags span,.network-flags small,.network-flags b{position:absolute;left:0;right:0;bottom:8%;color:#fff4cb;text-shadow:0 1px 3px #140e17;pointer-events:none}
+.network-flags small{bottom:0;font-size:11px}.network-flags b{top:12%;bottom:auto;color:#9de5ff}
+.network-buttons{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}.network-buttons button{min-width:100px}
+.network-lan-heading,.network-lan-room{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:8px 0}.network-lan-rooms{max-height:180px;overflow:auto;font-size:12px;color:#fff1c8}.network-lan-room button{flex-shrink:0;min-width:100px}.network-manual{margin:12px 0;color:#fff1c8;font-size:12px}.network-manual summary{cursor:pointer}#networkEntryStatus{min-height:1.6em;margin:4px 0;color:#fff}
+/* These controls use the same original GameButtonClass up/over pair. */
+body .network-screen .network-buttons button:is(:hover,:focus-visible):not(:disabled),
+body .network-screen .network-options button:is(:hover,:focus-visible):not(:disabled),
+body .network-screen .network-invite button:is(:hover,:focus-visible):not(:disabled){background-image:url('assets/takeover/ui/button-hover.png')}
+.network-status{position:absolute;left:50%;top:3%;transform:translateX(-50%);z-index:20;max-width:85%;padding:10px 24px;background:transparent url('assets/takeover/ui/button.png') center/100% 100% no-repeat;color:#fff6ce;text-align:center;font:12px 'Microsoft YaHei',sans-serif;pointer-events:none}
+.title-screen .modal #titleStart{left:23%;width:25%}.title-screen .modal #onlineStart{position:absolute;left:52%;top:86%;width:25%;height:9%;min-height:0;padding:0;font-size:2.2cqw}
+@media(max-width:700px){.network-screen .modal{padding:14px}.network-flags{height:180px}.network-screen h1{font-size:20px}.network-screen p,.network-flags small{font-size:10px}}

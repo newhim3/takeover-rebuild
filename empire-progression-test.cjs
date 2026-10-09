@@ -1,0 +1,20 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),P=require('./progression'),U=require('./unit-art');
+assert.deepEqual(P.UNITS,JSON.parse(fs.readFileSync('assets/takeover/data/units.json','utf8')).units);
+const tribe=JSON.stringify(P.tree('Red')),empire=P.tree('Purple');
+assert.equal(empire.length,9);assert.equal(new Set(empire.map(e=>e.n)).size,9);
+assert(empire.every(e=>e.n>27));assert.equal(JSON.stringify(P.tree('Red')),tribe);
+const initial=P.bonuses('Purple',P.initial('Purple'));
+assert.equal(initial[44],1);assert.equal(initial[46],undefined);assert.equal(initial[48],undefined);
+const all=P.bonuses('Purple',Object.fromEntries(empire.map(e=>[e.n,3])));
+assert.equal(all[41],40);assert.equal(all[42],20);assert.equal(all[43],20);
+assert.equal(all[12],-15);assert.equal(all[13],15);assert.equal(all[51],8);assert.equal(all[28],-8);
+for(const tribal of [18,19,20,21,22,23,24,25,26,27])assert.equal(all[tribal],undefined);
+for(const [type,name] of [['Infantry','Zombie Warriors'],['Archers','Skeleton Archers'],['Cavalry','Dark Knights'],['Siege','Poison Catapult'],['Magic','Shades']])assert.equal(U.recruit('Purple',type,all).name,name);
+// Separate old archer/siege nodes merge with duplicated points returned.
+const old={10:3,11:2,12:3,13:1,14:2,15:2,16:1,17:3,18:2},converted=P.migrate('Purple',old);
+assert.equal(converted[29],3);assert.equal(converted[28],2);assert.equal(converted[31],3);
+assert.equal(converted[32],3);assert.equal(converted[33],1);assert.equal(converted[34],2);
+assert.deepEqual(P.migrate('Purple',converted),converted);assert.deepEqual(P.migrate('Green',{1:3,2:1}),{1:3,2:1});
+assert.deepEqual(P.bonuses('Purple',old),P.bonuses('Purple',converted));assert.equal(Object.values(old).reduce((a,b)=>a+b)-Object.values(converted).reduce((a,b)=>a+b),2);
+for(const e of empire)assert(fs.existsSync(`assets/takeover/ui/edict-${e.n}.png`));
+console.log('PASS: independent Empire video tree, five actual troop upgrades, rewards, original records, legacy migration and source icons');

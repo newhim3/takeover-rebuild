@@ -1,0 +1,350 @@
+{
+  "scope": "Offline selected native timelines, atlas dimensions and registration; no live battle balance claim",
+  "animations": [
+    {
+      "key": "GreenInfantryDown_Go",
+      "frames": 40,
+      "fps": 30,
+      "registration": [
+        8.9,
+        14.9
+      ],
+      "sheetDimensions": [
+        800,
+        18
+      ]
+    },
+    {
+      "key": "GreenInfantryDown_Attack",
+      "frames": 15,
+      "fps": 30,
+      "registration": [
+        9.55,
+        15.75
+      ],
+      "sheetDimensions": [
+        480,
+        25
+      ]
+    },
+    {
+      "key": "GreenInfantryDown_Die",
+      "frames": 33,
+      "fps": 30,
+      "registration": [
+        18.8,
+        14.9
+      ],
+      "sheetDimensions": [
+        1056,
+        19
+      ]
+    },
+    {
+      "key": "RedInfantryDown_Go",
+      "frames": 20,
+      "fps": 30,
+      "registration": [
+        6.75,
+        15.95
+      ],
+      "sheetDimensions": [
+        300,
+        20
+      ]
+    },
+    {
+      "key": "RedInfantryDown_Attack",
+      "frames": 20,
+      "fps": 30,
+      "registration": [
+        10.85,
+        23.9
+      ],
+      "sheetDimensions": [
+        600,
+        36
+      ]
+    },
+    {
+      "key": "RedInfantryDown_Die",
+      "frames": 33,
+      "fps": 30,
+      "registration": [
+        8.35,
+        18.1
+      ],
+      "sheetDimensions": [
+        792,
+        24
+      ]
+    },
+    {
+      "key": "BlueInfantryDown_Go",
+      "frames": 20,
+      "fps": 30,
+      "registration": [
+        21.1,
+        17.3
+      ],
+      "sheetDimensions": [
+        420,
+        33
+      ]
+    },
+    {
+      "key": "BlueInfantryDown_Attack",
+      "frames": 30,
+      "fps": 30,
+      "registration": [
+        21.65,
+        28.35
+      ],
+      "sheetDimensions": [
+        1650,
+        52
+      ]
+    },
+    {
+      "key": "BlueInfantryDown_Die",
+      "frames": 35,
+      "fps": 30,
+      "registration": [
+        21.65,
+        28.35
+      ],
+      "sheetDimensions": [
+        1295,
+        32
+      ]
+    },
+    {
+      "key": "PurpleInfantryDown_Go",
+      "frames": 40,
+      "fps": 30,
+      "registration": [
+        12.95,
+        15.95
+      ],
+      "sheetDimensions": [
+        920,
+        24
+      ]
+    },
+    {
+      "key": "PurpleInfantryDown_Attack",
+      "frames": 20,
+      "fps": 30,
+      "registration": [
+        10.85,
+        28.75
+      ],
+      "sheetDimensions": [
+        620,
+        42
+      ]
+    },
+    {
+      "key": "PurpleInfantryDown_Die",
+      "frames": 33,
+      "fps": 30,
+      "registration": [
+        7.95,
+        18.95
+      ],
+      "sheetDimensions": [
+        825,
+        31
+      ]
+    },
+    {
+      "key": "GrayMagicLeft_Die",
+      "frames": 23,
+      "fps": 30,
+      "registration": [
+        42.95,
+        39.25
+      ],
+      "sheetDimensions": [
+        1633,
+        83
+      ]
+    },
+    {
+      "key": "GreenCavalryRight_Attack",
+      "frames": 30,
+      "fps": 30,
+      "registration": [
+        13.7,
+        29.6
+      ],
+      "sheetDimensions": [
+        1470,
+        42
+      ]
+    },
+    {
+      "key": "RedSiegeDown_Attack",
+      "frames": 30,
+      "fps": 30,
+      "registration": [
+        51.1,
+        101.95
+      ],
+      "sheetDimensions": [
+        4050,
+        123
+      ]
+    },
+    {
+      "key": "BlueArchersDown_Attack",
+      "frames": 40,
+      "fps": 30,
+      "registration": [
+        12.25,
+        26.55
+      ],
+      "sheetDimensions": [
+        1960,
+        47
+      ]
+    },
+    {
+      "key": "PurpleMagicDown_Attack",
+      "frames": 20,
+      "fps": 30,
+      "registration": [
+        13.05,
+        21.4
+      ],
+      "sheetDimensions": [
+        620,
+        30
+      ]
+    },
+    {
+      "key": "SignOfAdventEffectClass",
+      "frames": 31,
+      "fps": 30,
+      "registration": [
+        50,
+        63
+      ],
+      "sheetDimensions": [
+        3100,
+        90
+      ]
+    },
+    {
+      "key": "FireballEffectClass",
+      "frames": 15,
+      "fps": 30,
+      "registration": [
+        28.05,
+        409.5
+      ],
+      "sheetDimensions": [
+        1560,
+        438
+      ]
+    },
+    {
+      "key": "GrandTransformationEffectClass",
+      "frames": 54,
+      "fps": 30,
+      "registration": [
+        77,
+        180.5
+      ],
+      "sheetDimensions": [
+        3950,
+        648
+      ]
+    },
+    {
+      "key": "TerrorSplashEffectClass",
+      "frames": 31,
+      "fps": 30,
+      "registration": [
+        101,
+        65
+      ],
+      "sheetDimensions": [
+        4000,
+        250
+      ]
+    },
+    {
+      "key": "CastleGreenAnimClass",
+      "frames": 21,
+      "registration": [
+        55.25,
+        103.4
+      ],
+      "base": "CastleGreenClass"
+    },
+    {
+      "key": "CastleRedAnimClass",
+      "frames": 72,
+      "registration": [
+        40.1,
+        91.75
+      ],
+      "base": "CastleRedClass"
+    },
+    {
+      "key": "CastleBlueAnimClass",
+      "frames": 39,
+      "registration": [
+        64.85,
+        96.1
+      ],
+      "base": "CastleBlueClass"
+    },
+    {
+      "key": "CastlePurpleAnimClass",
+      "frames": 80,
+      "registration": [
+        52.65,
+        99.95
+      ],
+      "base": "CastlePurpleClass"
+    },
+    {
+      "key": "MineBlueAnimClass",
+      "frames": 35,
+      "registration": [
+        21.8,
+        47.25
+      ],
+      "base": "MineBlueClass"
+    },
+    {
+      "key": "VillagePurpleAnimClass",
+      "frames": 25,
+      "registration": [
+        30.5,
+        34.4
+      ],
+      "base": "VillagePurpleClass"
+    },
+    {
+      "key": "ObeliskGreenAnimClass",
+      "frames": 60,
+      "registration": [
+        -0.85,
+        27.9
+      ],
+      "base": "ObeliskGreenClass"
+    },
+    {
+      "key": "TownRedAnimClass",
+      "frames": 185,
+      "registration": [
+        67.2,
+        90.4
+      ],
+      "base": "TownRedClass"
+    }
+  ]
+}

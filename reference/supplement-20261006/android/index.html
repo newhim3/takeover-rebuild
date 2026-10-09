@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script id="cc-volume-js">(function(){
+  "use strict";
+  var DEF=5;
+  var v=DEF;
+  try{var s=parseFloat(localStorage.getItem("__ccVolBoost"));if(s>0&&s<=20)v=s;}catch(e){}
+  window.__ccVolBoost=v;
+  function H(){return window["Howler"]||null;}
+  function apply(){var h=H();try{if(h&&h.__ccBoostNode)h.__ccBoostNode["gain"]["value"]=window.__ccVolBoost;}catch(e){}}
+  window.__ccSetVol=function(x){try{x=parseFloat(x);if(x>0&&x<=20){window.__ccVolBoost=x;try{localStorage.setItem("__ccVolBoost",String(x));}catch(e){}apply();}}catch(e){}return window.__ccVolBoost;};
+  function chain(){
+    try{
+      var h=H();if(!h)return false;
+      if(h.__ccChained){apply();return true;}
+      var ctx=h["ctx"],mg=h["masterGain"];
+      if(!h["usingWebAudio"]||!ctx||!mg)return false;
+      var boost=ctx["createGain"]();
+      var lim=ctx["createDynamicsCompressor"]();
+      lim["threshold"]["value"]=-3;lim["knee"]["value"]=6;lim["ratio"]["value"]=12;lim["attack"]["value"]=0.003;lim["release"]["value"]=0.25;
+      try{mg["disconnect"]();}catch(e){}
+      mg["connect"](boost);boost["connect"](lim);lim["connect"](ctx["destination"]);
+      h.__ccBoostNode=boost;h.__ccChained=true;apply();
+      return true;
+    }catch(e){return false;}
+  }
+  window.__ccVolInfo=function(){var h=H();return {boost:window.__ccVolBoost,chained:!!(h&&h.__ccChained),usingWebAudio:!!(h&&h["usingWebAudio"]),ctxState:(h&&h["ctx"])?h["ctx"]["state"]:"none"};};
+  var tries=0;
+  (function poll(){tries++;if(chain())return;if(tries>1500)return;setTimeout(poll,200);})();
+  function onceChain(){chain();}
+  window.addEventListener("touchstart",onceChain,{passive:true});
+  window.addEventListener("pointerdown",onceChain,{passive:true});
+})();</script>
+
+<script>window.__cheat={gold:3000,mana:500,on:{gold:true,mana:true,ult:true}};</script>
+<style id="cc-mobile">
+html,body{position:fixed !important;inset:0 !important;width:100% !important;height:100% !important;overflow:hidden !important;background:#000 !important;margin:0 !important;padding:0 !important;touch-action:none;overscroll-behavior:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}
+#app{position:fixed !important;inset:0 !important;width:100% !important;height:100% !important;touch-action:none}
+#app canvas,#app div{touch-action:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+</style>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+  <meta http-equiv="x-rim-auto-match" content="none" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta content="false" id="twcClient" name="twcClient" />
+  <meta name="full-screen" content="true" />
+  <meta name="screen-orientation" content="true" />
+  <meta name="x5-fullscreen" content="true" />
+  <meta name="360-fullscreen" content="true" />
+  <meta name="renderer" content="webkit" />
+  <title>城邦争霸之黑暗帝国</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+    }
+    #app {
+      width: 100%;
+      height: 100%;
+    }
+    /* 防止 canvas 高度失控增长（游戏 updateSize 每帧回写父元素高度，inline 基线形成正反馈） */
+    #app canvas {
+      display: block !important;
+      width: 100vw !important;
+      height: 100vh !important;
+    }
+    #updatePopupOverlay {
+      display: none;
+    }
+  </style>
+  <!-- 自定义关卡注册表(由 tools/mod/level_compiler.js 生成; 补丁 024 读取: 敌人配置/标题/玩家势力/额外关卡槽位) -->
+  <script src="ui/custom-levels.js"></script>
+  <!-- 独立战役静态数据(条令/兵种上限; 编译器同步自 docs/地图编译器/cc_data.js) -->
+  <script src="ui/cc_data.js"></script>
+  <!-- 独立战役运行时 UI/进度库(补丁 026 消费) -->
+  <script src="ui/cc_ui.js"></script>
+  <script>
+    // 关卡设计器测试入口: URL ?ld=31 → window.__ldUID=31, getLevelUID 返回 31(进入设计器导出的新关卡)
+    // 存 sessionStorage: 游戏的 ?slot= 存档导航会改写 URL 丢掉 ?ld=, 但同标签页会话内仍生效
+    (function () {
+      try {
+        var m = (location.search || '').match(/[?&]ld=(\d+)/);
+        if (m && m[1]) { window.__ldUID = parseInt(m[1], 10); try { sessionStorage.setItem('__ldUID', String(window.__ldUID)); } catch (e) { /* ignore */ } }
+        else { var s = null; try { s = sessionStorage.getItem('__ldUID'); } catch (e) { /* ignore */ } if (s) window.__ldUID = parseInt(s, 10); }
+      } catch (e) { /* ignore */ }
+    })();
+    // 独立战役入口: URL ?cc=战役id → window.__ccActive(补丁 026 消费); sessionStorage 防 ?slot= 导航冲掉
+    (function () {
+      try {
+        var m = (location.search || '').match(/[?&]cc=([^&]+)/);
+        if (m && m[1]) { window.__ccActive = decodeURIComponent(m[1]); try { sessionStorage.setItem('__ccActive', window.__ccActive); } catch (e) { /* ignore */ } }
+        else { var s = null; try { s = sessionStorage.getItem('__ccActive'); } catch (e) { /* ignore */ } if (s) window.__ccActive = s; }
+        if (/[?&]reset=1/.test(location.search || '')) { try { sessionStorage.setItem('__ccReset', '1'); } catch (e) { /* ignore */ } }
+      } catch (e) { /* ignore */ }
+    })();
+    // 初始化日志
+    window.__log = [];
+    // Hook createElement 拦截 canvas 创建
+    var origCreateElement = document.createElement.bind(document);
+    document.createElement = function(tag) {
+      if (tag && String(tag).toLowerCase() === 'canvas') {
+        window.__log.push('[CREATEELEMENT] canvas created! stack: ' + (new Error().stack||'').substring(0, 300));
+      }
+      return origCreateElement(tag);
+    };
+    // Hook appendChild 监控 #app 的变化（需要等 DOM ready）
+    document.addEventListener('DOMContentLoaded', function() {
+      var appEl = document.getElementById('app');
+      if (appEl && window.MutationObserver) {
+        var observer = new MutationObserver(function(mutations) {
+          mutations.forEach(function(m) {
+            if (m.addedNodes.length > 0) {
+              window.__log.push('[MUTATION] #app added: ' + Array.from(m.addedNodes).map(function(n){return n.tagName;}).join(','));
+            }
+          });
+        });
+        observer.observe(appEl, {childList: true, subtree: true});
+        window.__log.push('[HOOK] MutationObserver set on #app');
+      } else {
+        window.__log.push('[HOOK] MutationObserver NOT set, appEl: ' + !!appEl);
+      }
+    });
+    // Hook requestAnimationFrame
+    var rafCount = 0;
+    var origRAF = window.requestAnimationFrame;
+    window.requestAnimationFrame = function(cb) {
+      rafCount++;
+      if (rafCount <= 3) window.__log.push('[RAF] requestAnimationFrame called #' + rafCount);
+      return origRAF.call(window, cb);
+    };
+    // Hook appendChild/insertBefore 追踪 canvas 附加
+    window.__canvasParent = null;
+    var origAppend = Node.prototype.appendChild;
+    Node.prototype.appendChild = function(child) {
+      if (child && child.tagName === 'CANVAS') {
+        var parentTag = this.tagName + (this.id ? '#' + this.id : '');
+        var inDOM = document.body.contains(this) || this === document.body || this === document.documentElement;
+        window.__log.push('[APPEND] canvas to <' + parentTag + '> inDOM:' + inDOM);
+        if (!inDOM) {
+          window.__canvasParent = this;
+        }
+      }
+      return origAppend.call(this, child);
+    };
+    var origInsert = Node.prototype.insertBefore;
+    Node.prototype.insertBefore = function(child, ref) {
+      if (child && child.tagName === 'CANVAS') {
+        window.__log.push('[INSERT] canvas to <' + this.tagName + (this.id ? '#' + this.id : '') + '>');
+      }
+      return origInsert.call(this, child, ref);
+    };
+    // Hook getContext 检测 WebGL 是否失败
+    var origGetContext = HTMLCanvasElement.prototype.getContext;
+    HTMLCanvasElement.prototype.getContext = function(type) {
+      var ctx = origGetContext.call(this, type);
+      if (type === 'webgl' || type === 'webgl2' || type === 'experimental-webgl') {
+        window.__log.push('[GETCONTEXT] ' + type + ' => ' + (ctx ? 'SUCCESS' : 'FAILED (null)'));
+      }
+      return ctx;
+    };
+    // Mock GameDistribution SDK（提前定义，避免 main.min.js 加载失败时的错误）
+    window.gdsdk = window.gdsdk || {};
+    // Mock 4399 h5api - 让游戏中的3处调用安全失败
+    // 第7358行: window.h5api.canPlayAd(callback) - 检查广告可用性
+    // 第7362行: window.h5api.playAd(callback) - 播放激励广告
+    // 第7580行: window.h5api.playInterstitialAd() - 插屏广告
+    window.h5api = {
+      canPlayAd: function(callback) {
+        if (typeof callback === 'function') {
+          setTimeout(function() { callback({ canPlayAd: false }); }, 0);
+        }
+      },
+      playAd: function(callback) {
+        if (typeof callback === 'function') {
+          setTimeout(function() { callback({ code: 10001, message: 'Ad not available (local mode)' }); }, 0);
+        }
+      },
+      playInterstitialAd: function() {
+      }
+    };
+    // Capture all errors for debugging
+    window.__errors = [];
+    window.addEventListener('error', function(e) {
+      var _st = 'no stack';
+      try { if (e.error) { _st = (typeof e.error.stack === 'string') ? e.error.stack.substring(0, 1000) : String(e.error); } } catch (err) { _st = String(err); }
+      window.__errors.push({
+        message: e.message,
+        filename: e.filename,
+        line: e.lineno,
+        col: e.colno,
+        stack: _st
+      });
+    });
+  </script>
+</head>
+<body>
+  <div id="app"></div>
+  <div id="updatePopupOverlay"></div>
+  <div id="saveSlotOverlay" style="display:none;">
+    <div id="slotPanel">
+      <div id="slotHead">
+        <div class="slotHeadL">
+          <div id="slotTitle">选择存档</div>
+          <div id="slotHint">点击存档立即进入 · 右上角 ✕ 删除该存档</div>
+        </div>
+        <div id="slotClock"></div>
+      </div>
+      <div id="slotList"></div>
+      <div id="slotFoot">
+        <span id="slotKbd">Ctrl + Shift + S 呼出存档</span>
+        <span class="slotFootBtns">
+          <a id="btnResetAll">重置全部进度</a>
+          <a id="btnCloseSlots">进入游戏 →</a>
+        </span>
+      </div>
+    </div>
+  </div>
+  <!-- 存档面板样式（类驱动，配合三档响应式：桌面竖排 / 矮屏横排三列 / 窄屏全宽） -->
+  <style>
+    #saveSlotOverlay{position:fixed;inset:0;z-index:9999;background:rgba(8,10,16,.82);backdrop-filter:blur(6px);
+      flex-direction:column;align-items:center;justify-content:center;
+      font-family:Vollkorn-Regular,'Times New Roman',serif;color:#e8e4d8;
+      padding:max(8px,env(safe-area-inset-top)) max(8px,env(safe-area-inset-right)) max(8px,env(safe-area-inset-bottom)) max(8px,env(safe-area-inset-left));
+      box-sizing:border-box;}
+    #slotPanel{width:min(760px,96vw);max-height:100%;display:flex;flex-direction:column;
+      background:linear-gradient(160deg,#171926 0%,#10131c 100%);border:1px solid rgba(201,168,76,.45);border-radius:14px;
+      box-shadow:0 24px 70px rgba(0,0,0,.6);padding:26px 32px 20px;box-sizing:border-box;position:relative;overflow:hidden;}
+    #slotHead{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex:none;
+      border-bottom:1px solid rgba(201,168,76,.25);padding-bottom:14px;margin-bottom:16px;}
+    #slotTitle{font-size:26px;font-weight:bold;color:#d8b963;letter-spacing:2px;}
+    #slotHint{font-size:12px;color:#8f8d84;margin-top:3px;letter-spacing:1px;}
+    #slotClock{font-size:12px;color:#6f6d66;letter-spacing:1px;flex:none;}
+    #slotList{display:flex;flex-direction:column;gap:10px;min-height:0;overflow:auto;-webkit-overflow-scrolling:touch;}
+    #slotFoot{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;flex:none;
+      margin-top:16px;border-top:1px solid rgba(201,168,76,.15);padding-top:12px;}
+    #slotFoot a{font-size:12px;cursor:pointer;text-decoration:none;letter-spacing:1px;padding:6px 2px;}
+    #slotKbd{font-size:11px;color:#6f6d66;letter-spacing:1px;}
+    #btnResetAll{color:#a05656;}
+    #btnCloseSlots{color:#c9a84c;font-weight:bold;}
+    .slotFootBtns{display:flex;gap:14px;align-items:center;}
+    .slotCard{position:relative;display:flex;align-items:center;gap:14px;padding:13px 16px;border-radius:10px;
+      border:1px solid rgba(120,118,108,.25);background:rgba(255,255,255,.02);cursor:pointer;
+      transition:border-color .15s ease,background .15s ease;}
+    .slotCard.active{border-color:rgba(216,185,99,.7);background:rgba(216,185,99,.07);}
+    .slotCard:hover{border-color:rgba(216,185,99,.55);}
+    .slotNo{width:46px;height:46px;flex:none;display:flex;align-items:center;justify-content:center;border-radius:50%;
+      font-size:20px;font-weight:bold;color:#d8b963;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.35);}
+    .slotMain{flex:1;min-width:0;}
+    .slotNameRow{display:flex;align-items:center;gap:8px;}
+    .slotName{font-size:15px;font-weight:bold;letter-spacing:.5px;color:#e8e4d8;}
+    .slotCard.active .slotName{color:#d8b963;}
+    .slotCur{font-size:10px;color:#10131c;background:#d8b963;border-radius:3px;padding:1px 6px;letter-spacing:1px;}
+    .slotProg{display:grid;grid-template-columns:1fr 1fr;gap:2px 20px;margin-top:5px;}
+    .slotFact{display:flex;align-items:center;gap:7px;font-size:12px;letter-spacing:.5px;line-height:1.75;white-space:nowrap;}
+    .slotFact .fDot{display:inline-block;width:8px;height:8px;border-radius:50%;flex:none;opacity:.92;}
+    .slotFact .fName{color:#7f7c72;flex:none;}
+    .slotFact .fVal{color:#8f8d84;}
+    .slotFact.has .fVal,.slotFact.done .fVal{color:#d8b963;}
+    .slotChevron{flex:none;color:rgba(216,185,99,.5);font-size:20px;padding:2px 2px 2px 4px;}
+    .slotDel{position:absolute;top:6px;right:6px;width:32px;height:32px;border:1px solid rgba(255,90,90,.35);border-radius:50%;
+      background:rgba(90,20,20,.4);color:#e07a7a;font-size:14px;line-height:1;cursor:pointer;
+      display:flex;align-items:center;justify-content:center;opacity:.55;transition:opacity .2s ease;}
+    .slotCard:hover .slotDel{opacity:1;}
+    /* 触屏设备：删除键常显加大、键盘提示隐藏 */
+    @media (hover:none){
+      #slotKbd{display:none;}
+      .slotDel{opacity:1;width:38px;height:38px;font-size:15px;}
+    }
+    /* 矮横屏（手机横屏常见 360~480 逻辑像素高）：面板压扁、三张卡改横向三列，不滚动即可全部够到 */
+    @media (max-height:560px){
+      #slotPanel{width:min(920px,96vw);padding:12px 16px 10px;border-radius:10px;}
+      #slotHead{padding-bottom:7px;margin-bottom:9px;}
+      #slotTitle{font-size:18px;letter-spacing:1px;}
+      #slotHint{font-size:10px;margin-top:1px;}
+      #slotClock{display:none;}
+      #slotList{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;}
+      .slotCard{padding:9px 11px;gap:9px;}
+      .slotNo{width:30px;height:30px;font-size:14px;}
+      .slotName{font-size:13px;}
+      .slotCur{font-size:9px;padding:1px 5px;}
+      .slotProg{grid-template-columns:1fr;gap:0;margin-top:3px;}
+      .slotFact{font-size:10.5px;line-height:1.6;white-space:normal;}
+      .slotFact .fDot{width:7px;height:7px;}
+      .slotChevron{display:none;}
+      #slotFoot{margin-top:9px;padding-top:8px;}
+      #slotFoot a{font-size:11px;padding:8px 2px;}
+      .slotDel{width:26px;height:26px;font-size:12px;top:4px;right:4px;}
+    }
+    /* 窄竖屏：全宽卡片、紧凑边距 */
+    @media (max-width:620px){
+      #slotPanel{padding:16px 14px 12px;}
+      #slotTitle{font-size:20px;}
+      .slotCard{padding:11px 12px;gap:11px;}
+      .slotNo{width:38px;height:38px;font-size:16px;}
+      .slotProg{grid-template-columns:1fr;}
+    }
+  </style>
+  <!-- 自定义删除确认框（替代原生 confirm，避免黑屏/弹窗割裂） -->
+  <div id="confirmOverlay" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:10000;background:rgba(8,10,16,.7);flex-direction:column;align-items:center;justify-content:center;font-family:Vollkorn-Regular,'Times New Roman',serif;color:#e8e4d8;">
+    <div style="width:min(420px,88vw);background:linear-gradient(160deg,#171926 0%,#10131c 100%);border:1px solid rgba(201,168,76,.45);border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.6);padding:24px 26px 20px;text-align:center;">
+      <div id="confirmMsg" style="font-size:15px;line-height:1.8;letter-spacing:.5px;margin-bottom:22px;"></div>
+      <div style="display:flex;gap:12px;justify-content:center;">
+        <button id="confirmYes" style="min-width:104px;padding:9px 16px;border:1px solid rgba(255,90,90,.5);border-radius:8px;background:rgba(120,25,25,.5);color:#ff9a9a;font-size:14px;cursor:pointer;letter-spacing:1px;">确认删除</button>
+        <button id="confirmNo" style="min-width:104px;padding:9px 16px;border:1px solid rgba(120,118,108,.4);border-radius:8px;background:rgba(255,255,255,.04);color:#b6b3a8;font-size:14px;cursor:pointer;letter-spacing:1px;">取消</button>
+      </div>
+    </div>
+  </div>
+  <!-- 友好错误提示（替代浏览器黑屏+Details） -->
+  <div id="errOverlay" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:10001;background:#0a0c12;flex-direction:column;align-items:center;justify-content:center;font-family:Vollkorn-Regular,'Times New Roman',serif;color:#e8e4d8;text-align:center;padding:24px;box-sizing:border-box;">
+    <div style="font-size:24px;color:#d8b963;letter-spacing:3px;margin-bottom:12px;">出错了</div>
+    <div id="errMsg" style="font-size:13px;color:#b6b3a8;line-height:1.8;max-width:540px;word-break:break-all;margin-bottom:24px;"></div>
+    <div style="display:flex;gap:12px;justify-content:center;">
+      <button id="errReload" style="min-width:110px;padding:9px 16px;border:1px solid rgba(201,168,76,.5);border-radius:8px;background:rgba(201,168,76,.12);color:#d8b963;font-size:14px;cursor:pointer;letter-spacing:1px;">刷新重试</button>
+      <button id="errClose" style="min-width:110px;padding:9px 16px;border:1px solid rgba(120,118,108,.4);border-radius:8px;background:rgba(255,255,255,.04);color:#b6b3a8;font-size:14px;cursor:pointer;letter-spacing:1px;">忽略并继续</button>
+    </div>
+  </div>
+  <!-- 切换存档时的过渡提示 -->
+  <div id="switchOverlay" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:10002;background:#0a0c12;flex-direction:column;align-items:center;justify-content:center;font-family:Vollkorn-Regular,'Times New Roman',serif;color:#d8b963;letter-spacing:3px;font-size:17px;">正在切换存档…</div>
+  <script>
+    // 存档系统：3 槽位 · 点选即进 · 每档三势力进度与经验 · 悬停显示删除
+    (function() {
+      var overlay = document.getElementById('saveSlotOverlay');
+      var slotList = document.getElementById('slotList');
+      var slotNames = ['com.iriysoft.takeover', 'com.iriysoft.takeover_slot2', 'com.iriysoft.takeover_slot3'];
+      var curSlot = parseInt(new URLSearchParams(location.search).get('slot')) || 1;
+      // 关键：把当前槽位名暴露给游戏（决定存档键），并跳过启动屏的“开始游戏”按钮
+      window.__saveSlotName = slotNames[curSlot - 1];
+      window.__skipTitle = true;
+      var factName = ['公国', '汗国', '邪教', '帝国'];
+      var factColor = ['#3fae6a', '#d9584f', '#4a90d9', '#9b59d0'];
+      var KEY = function(name) { return location.pathname + ':' + name; };
+      function getMeta(i) {
+        try {
+          var raw = window.localStorage.getItem(KEY(slotNames[i]) + '.meta');
+          return raw ? JSON.parse(raw) : null;
+        } catch (e) { return null; }
+      }
+      function factLine(meta, fi) {
+        if (!meta || !meta[fi]) return '未开始';
+        if (meta[fi].d) return '已通关 · 经验 ' + meta[fi].x;
+        return '已过 ' + meta[fi].c + '/' + meta[fi].t + ' · 经验 ' + meta[fi].x;
+      }
+      function progHTML(meta) {
+        var h = '';
+        for (var f = 0; f < 4; f++) {
+          var has = meta && meta[f] && (meta[f].c > 0 || meta[f].d);
+          var st = has ? (meta[f].d ? 'done' : 'has') : '';
+          h += '<span class="slotFact ' + st + '">' +
+               '<span class="fDot" style="background:' + factColor[f] + '"></span>' +
+               '<span class="fName">' + factName[f] + '</span>' +
+               '<span class="fVal">' + factLine(meta, f) + '</span></span>';
+        }
+        return h;
+      }
+      function saveSlot() { try { if (window.__takeoverSave) window.__takeoverSave(); } catch (e) {} }
+      function freshStart() {
+        // 删除/重置当前档后：强制整页重载让游戏以空档启动；
+        // 若只在内存中保留旧档案，下次自动存档会把"已删除"的进度写回来（旧档复活）
+        sessionStorage.setItem('__takeover_slot_entered', '1');
+        var so = document.getElementById('switchOverlay');
+        if (so) so.style.display = 'flex';
+        var cur = new URLSearchParams(location.search).get('slot');
+        if (cur === '1' || !cur) {
+          location.reload();
+        } else {
+          window.location.href = location.pathname + '?slot=1' + (location.hash || '');
+        }
+      }
+      function enterGame(target) {
+        sessionStorage.setItem('__takeover_slot_entered', '1');
+        if (target === curSlot) { hide(); return; }
+        saveSlot(); // 切换槽位前先保存当前档，避免未保存进度在重载中丢失
+        var url = location.pathname + '?slot=' + target;
+        if (location.hash) url += location.hash;
+        var so = document.getElementById('switchOverlay');
+        if (so) so.style.display = 'flex'; // 先给过渡提示，避免直接黑屏
+        window.location.href = url;
+      }
+      function pauseGame() { try { if (window.__takeoverPauseOn) window.__takeoverPauseOn(); } catch (e) {} }
+      function resumeGame() { try { if (window.__takeoverPauseOff) window.__takeoverPauseOff(); } catch (e) {} }
+      function hide() { resumeGame(); overlay.style.display = 'none'; }
+      function show() {
+        try {
+          var clock = document.getElementById('slotClock');
+          if (clock) clock.textContent = new Date().toLocaleString();
+        } catch (e) {}
+        render(); overlay.style.display = 'flex'; pauseGame();
+      }
+      // 暴露给游戏：开始屏幕的"存档"按钮点击时调用
+      window.__showSaveOverlay = show;
+      window.__hideSaveOverlay = hide;
+      // 自定义删除确认框（替代原生 confirm）
+      var confirmCb = null;
+      function confirmDialog(msg, onYes) {
+        var m = document.getElementById('confirmMsg');
+        if (!m) { if (onYes) onYes(); return; }
+        m.textContent = msg;
+        confirmCb = onYes || null;
+        document.getElementById('confirmOverlay').style.display = 'flex';
+      }
+      document.getElementById('confirmYes').onclick = function() {
+        document.getElementById('confirmOverlay').style.display = 'none';
+        var cb = confirmCb; confirmCb = null;
+        if (cb) cb();
+      };
+      document.getElementById('confirmNo').onclick = function() {
+        document.getElementById('confirmOverlay').style.display = 'none';
+        confirmCb = null;
+      };
+      function delSlot(i) {
+        confirmDialog('删除 存档' + (i + 1) + ' 的所有进度？此操作不可恢复！', function() {
+          try { window.localStorage.removeItem(KEY(slotNames[i])); } catch (e) {}
+          try { window.localStorage.removeItem(KEY(slotNames[i]) + '.meta'); } catch (e) {}
+          try { window.localStorage.removeItem(KEY(slotNames[i]) + '.bak'); } catch (e) {}
+          if (curSlot === i + 1) {
+            freshStart(); // 删除当前档：强制重载以空档启动，防止旧档复活
+          } else {
+            render();
+          }
+        });
+      }
+      function render() {
+        slotList.innerHTML = '';
+        for (var i = 0; i < 3; i++) {
+          var meta = getMeta(i);
+          var isActive = (curSlot === i + 1);
+          var card = document.createElement('div');
+          card.className = 'slotCard' + (isActive ? ' active' : '');
+          card.innerHTML =
+            '<div class="slotNo">' + (i + 1) + '</div>' +
+            '<div class="slotMain">' +
+              '<div class="slotNameRow">' +
+                '<span class="slotName">存档 ' + (i + 1) + '</span>' +
+                (isActive ? '<span class="slotCur">当前</span>' : '') +
+              '</div>' +
+              '<div class="slotProg">' + progHTML(meta) + '</div>' +
+            '</div>' +
+            '<span class="slotChevron">›</span>' +
+            '<button class="slotDel" title="删除此存档">✕</button>';
+          var delBtn = card.querySelector('button');
+          // 注意：必须用 IIFE 捕获 i（var 是函数作用域，直接引用会在循环结束后都指向 3）
+          delBtn.onclick = (function(idx) { return function(ev) { ev.stopPropagation(); delSlot(idx); }; })(i);
+          delBtn.addEventListener('touchstart', function(ev) { ev.stopPropagation(); }, { passive: false });
+          card.onclick = (function(t) { return function() { enterGame(t); }; })(i + 1);
+          slotList.appendChild(card);
+        }
+      }
+      document.getElementById('btnCloseSlots').onclick = function() { sessionStorage.setItem('__takeover_slot_entered', '1'); hide(); };
+      document.getElementById('btnResetAll').onclick = function() {
+        confirmDialog('确定重置全部存档进度？此操作不可恢复！', function() {
+          for (var i = 0; i < slotNames.length; i++) {
+            try { window.localStorage.removeItem(KEY(slotNames[i])); } catch (e) {}
+            try { window.localStorage.removeItem(KEY(slotNames[i]) + '.meta'); } catch (e) {}
+            try { window.localStorage.removeItem(KEY(slotNames[i]) + '.bak'); } catch (e) {}
+          }
+          freshStart(); // 全部重置后强制重载，防止内存旧档复活
+        });
+      };
+      document.addEventListener('keydown', function(e) {
+        if (e.ctrlKey && e.shiftKey && e.key === 'S') {
+          e.preventDefault();
+          if (overlay.style.display === 'none') show(); else hide();
+        }
+      });
+      // 首次进入本标签页会话：显示存档选择；之后直接进游戏（通过开始屏幕的"存档"按钮）
+      if (!sessionStorage.getItem('__takeover_slot_entered')) {
+        setTimeout(function() { show(); }, 400);
+      }
+      // 友好错误提示：捕获未处理异常/加载失败，替代浏览器黑屏+Details
+      var errOverlayEl = document.getElementById('errOverlay');
+      function showErr(msg) {
+        if (!errOverlayEl) return;
+        var m = document.getElementById('errMsg');
+        if (m) m.textContent = msg || '发生未知错误';
+        errOverlayEl.style.display = 'flex';
+      }
+      document.getElementById('errReload').onclick = function() { location.reload(); };
+      document.getElementById('errClose').onclick = function() {
+        errOverlayEl.style.display = 'none';
+        resumeGame(); // 若游戏已暂停则恢复
+      };
+      window.addEventListener('error', function(e) {
+        if (e && e.error) showErr(e.message || (e.error && e.error.message));
+      });
+      window.addEventListener('unhandledrejection', function(e) {
+        var r = e && e.reason;
+        showErr(r && r.message ? r.message : String(r));
+      });
+    })();
+  </script>
+  <script type="text/javascript" src="Takeover.beautified.js?v=074"></script>
+  <script>
+    // 自动启动游戏引擎
+    window.addEventListener('unhandledrejection', function(e) {
+      window.__log.push('[REJECTION] ' + (e.reason && e.reason.message ? e.reason.message : e.reason));
+    });
+    function startGame() {
+      try {
+        if (window.lime && typeof window.lime.embed === 'function' && window.lime['$scripts'] && window.lime['$scripts']['takeover']) {
+          window.__log.push('[START] lime ready, wrapping create with element config');
+          // 包装 create 函数，传入 element 配置让 canvas 附加到 #app
+          var origCreate = window.lime['$scripts']['takeover'];
+          window.lime['$scripts']['takeover'] = function(F, E) {
+            F = F || {};
+            F.element = document.getElementById('app');
+            F.width = window.innerWidth || 800;
+            F.height = window.innerHeight || 600;
+            window.__log.push('[CREATE] calling origCreate with element: ' + !!F.element + ' w:' + F.width + ' h:' + F.height);
+            try {
+              var result = origCreate(F, E);
+              window.__log.push('[CREATE] origCreate returned: ' + typeof result);
+              return result;
+            } catch(ex) {
+              window.__log.push('[CREATE ERROR] ' + ex.message + ' | stack: ' + (ex.stack||'').substring(0, 600));
+              throw ex;
+            }
+          };
+          window.__log.push('[START] calling lime.embed');
+          var result = lime.embed('takeover');
+          window.__log.push('[START] lime.embed returned, keys: ' + Object.keys(result).length);
+          // 检查是否有 detached canvas，附加到 #app
+          if (window.__canvasParent) {
+            var cp = window.__canvasParent;
+            var cpInDOM = document.body.contains(cp);
+            window.__log.push('[ATTACH] canvasParent inDOM: ' + cpInDOM + ' tag: ' + cp.tagName + ' children: ' + cp.children.length);
+            if (!cpInDOM) {
+              var appEl2 = document.getElementById('app');
+              if (appEl2) {
+                appEl2.appendChild(cp);
+                window.__log.push('[ATTACH] canvas parent attached to #app');
+              } else {
+                document.body.appendChild(cp);
+                window.__log.push('[ATTACH] canvas parent attached to body');
+              }
+            }
+          } else {
+            window.__log.push('[ATTACH] no canvasParent found');
+          }
+          setTimeout(function() {
+            window.__log.push('[CHECK] canvas: ' + document.querySelectorAll('canvas').length + ' | body children: ' + document.body.children.length + ' | app children: ' + (document.getElementById('app') ? document.getElementById('app').children.length : -1) + ' | errors: ' + (window.__errors ? window.__errors.length : 'n/a'));
+          }, 5000);
+        } else {
+          window.__log.push('[WAIT] lime not ready, retrying...');
+          setTimeout(startGame, 100);
+        }
+      } catch(e) {
+        window.__log.push('[ERROR] ' + e.message + ' | stack: ' + (e.stack||'').substring(0, 500));
+      }
+    }
+    startGame();
+  </script>
+<script src="diag/diag.js"></script>
+
+<script id="cc-mobile-js">(function(){
+  // 兜底：拦掉页面拖动/回弹，但【放行弹层内部滚动】——存档/确认框里的内容是可能超出屏幕的
+  var SCROLLABLE=["saveSlotOverlay","confirmOverlay","errOverlay","updatePopupOverlay"];
+  function inOverlay(t){while(t&&t.nodeType===1){if(t.id&&SCROLLABLE.indexOf(t.id)>=0)return true;t=t.parentNode;}return false;}
+  document.addEventListener("touchmove",function(e){if(inOverlay(e.target))return;if(e.cancelable)e.preventDefault();},{passive:false});
+  document.addEventListener("contextmenu",function(e){e.preventDefault();},false);
+  document.addEventListener("selectstart",function(e){e.preventDefault();},false);
+  document.addEventListener("gesturestart",function(e){e.preventDefault();},false);
+  function kick(){try{window.dispatchEvent(new Event("resize"));}catch(e){}}
+  window.addEventListener("load",function(){kick();setTimeout(kick,300);setTimeout(kick,1200);setTimeout(kick,3000);});
+  window.addEventListener("orientationchange",function(){setTimeout(kick,400);setTimeout(kick,1200);});
+})();</script>
+<style id="cc-cheat-css">
+#cc-cheat{position:fixed;right:8px;bottom:8px;z-index:2147483000;font:12px/1.5 -apple-system,"Segoe UI",sans-serif;
+color:#e8e4d8;background:rgba(10,13,18,.78);border:1px solid rgba(201,168,76,.5);border-radius:10px;
+padding:6px 8px;user-select:none;-webkit-user-select:none;touch-action:none}
+#cc-cheat .hd{display:flex;align-items:center;justify-content:space-between;gap:10px;color:#d8b963;font-weight:bold;letter-spacing:1px;cursor:move}
+#cc-cheat .hd b{cursor:pointer;font-weight:normal;color:#8b95a3;font-size:11px;padding:4px 2px}
+#cc-cheat .chs{display:flex;gap:6px;margin-top:6px}
+#cc-cheat .ch{padding:4px 12px;border-radius:12px;border:1px solid #45506580;background:#ffffff0d;color:#8b95a3;cursor:pointer}
+#cc-cheat .ch.on{border-color:rgba(201,168,76,.85);background:rgba(201,168,76,.16);color:#ffd54f}
+#cc-cheat.min .chs{display:none}
+/* 隐藏态：收缩为半掩在屏幕边缘的小把手，点击恢复 */
+#cc-cheat.hide{width:30px;height:64px;padding:0;display:flex;align-items:center;justify-content:center;opacity:.9}
+#cc-cheat.hide .hd,#cc-cheat.hide .chs{display:none}
+#cc-cheat .grip{display:none;color:#d8b963;font-size:17px;letter-spacing:0}
+#cc-cheat.hide .grip{display:block}
+</style>
+<div id="cc-cheat"><div class="hd"><span class="tt">无限模式</span><span><b id="cc-cheat-h">隐藏</b><b id="cc-cheat-t">收起</b></span></div>
+<div class="chs"><span class="ch" data-k="gold">金币</span><span class="ch" data-k="mana">法力</span><span class="ch" data-k="ult">终极技</span></div>
+<span class="grip" title="无限模式">∞</span></div>
+<script id="cc-cheat-js">(function(){function boot(){
+var box=document.getElementById("cc-cheat");if(!box)return;var C=window.__cheat;
+var chips=box.querySelectorAll(".ch");
+function sync(){for(var i=0;i<chips.length;i++){var k=chips[i].getAttribute("data-k");
+chips[i].className="ch"+(C.on[k]?" on":"");}}
+for(var i=0;i<chips.length;i++){(function(el){el.onclick=function(e){e.stopPropagation();
+var k=el.getAttribute("data-k");C.on[k]=!C.on[k];sync();};})(chips[i]);}
+var KEY="__ccCheatUI",lastPos=null;
+function loadS(){try{return JSON.parse(localStorage.getItem(KEY))||{};}catch(e){return{};}}
+function saveS(o){try{localStorage.setItem(KEY,JSON.stringify(o));}catch(e){}}
+function clamp(x,y,w,h){x=Math.max(-w*0.4,Math.min(window.innerWidth-w*0.6,x));
+y=Math.max(0,Math.min(window.innerHeight-40,y));return[x,y];}
+function place(x,y){box.style.left=x+"px";box.style.top=y+"px";box.style.right="auto";box.style.bottom="auto";}
+function savePos(){var r=box.getBoundingClientRect();lastPos={x:r.left,y:r.top};saveS({x:r.left,y:r.top,hidden:false});}
+function setHidden(on,silent){
+var st=loadS();
+if(on){var r=box.getBoundingClientRect();
+var bx=(st.x!=null)?st.x:r.left,by=(st.y!=null)?st.y:r.top;
+lastPos={x:bx,y:by};var leftEdge=(bx+box.offsetWidth/2<window.innerWidth/2);
+box.className="hide";box.style.top=Math.max(0,Math.min(window.innerHeight-72,by))+"px";
+if(leftEdge){box.style.left="-12px";box.style.right="auto";box.style.borderRadius="0 12px 12px 0";}
+else{box.style.right="-12px";box.style.left="auto";box.style.borderRadius="12px 0 0 12px";}
+if(!silent)saveS({x:bx,y:by,hidden:true});}
+else{box.className="";box.style.borderRadius="";
+var x=(lastPos&&lastPos.x!=null)?lastPos.x:(st.x!=null?st.x:window.innerWidth-box.offsetWidth-8);
+var y=(lastPos&&lastPos.y!=null)?lastPos.y:(st.y!=null?st.y:window.innerHeight-box.offsetHeight-8);
+var p=clamp(x,y,box.offsetWidth,box.offsetHeight);place(p[0],p[1]);if(!silent)savePos();}}
+function restore(){var s=loadS();if(s.hidden){setHidden(true,true);return;}if(s.x!=null){lastPos={x:s.x,y:s.y};var p=clamp(s.x,s.y,box.offsetWidth,box.offsetHeight);place(p[0],p[1]);}}
+var drag=null,hd=box.querySelector(".hd");
+hd.addEventListener("pointerdown",function(e){if(box.className.indexOf("hide")>=0)return;
+if(e.target&&e.target.tagName==="B")return;var r=box.getBoundingClientRect();
+drag={dx:e.clientX-r.left,dy:e.clientY-r.top};e.preventDefault();});
+window.addEventListener("pointermove",function(e){if(!drag)return;
+var x=e.clientX-drag.dx,y=e.clientY-drag.dy;var p=clamp(x,y,box.offsetWidth,box.offsetHeight);place(p[0],p[1]);});
+window.addEventListener("pointerup",function(e){if(!drag)return;drag=null;
+var r=box.getBoundingClientRect();var x=(r.left+r.width/2<window.innerWidth/2)?8:Math.max(8,window.innerWidth-r.width-8);
+var y=Math.max(4,Math.min(window.innerHeight-r.height-4,r.top));place(x,y);savePos();});
+box.querySelector(".grip").onclick=function(e){e.stopPropagation();setHidden(false);};
+document.getElementById("cc-cheat-h").onclick=function(e){e.stopPropagation();
+setHidden(box.className.indexOf("hide")<0);};
+document.getElementById("cc-cheat-t").onclick=function(e){e.stopPropagation();
+var m=box.className.indexOf("min")>=0;box.className=m?"":"min";
+document.getElementById("cc-cheat-t").textContent=m?"收起":"展开";savePos();};
+window.addEventListener("resize",function(){if(box.className.indexOf("hide")>=0){box.style.top=Math.max(0,Math.min(window.innerHeight-72,box.getBoundingClientRect().top))+"px";return;}
+if(!box.style.left)return;var r=box.getBoundingClientRect();
+var p=clamp(Math.max(0,r.left),r.top,box.offsetWidth,box.offsetHeight);place(p[0],p[1]);});
+sync();restore();setTimeout(function(){box.style.opacity=".4";},8000);
+box.onmouseenter=function(){box.style.opacity="1";};box.ontouchstart=function(){box.style.opacity="1";};}
+if(document.readyState==="complete"||document.readyState==="interactive")setTimeout(boot,1200);
+else window.addEventListener("DOMContentLoaded",function(){setTimeout(boot,1200);});})();</script>
+</body>
+</html>

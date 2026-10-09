@@ -1,0 +1,91 @@
+{
+  "name": "Original world-rating ornament readability adaptation",
+  "logicalWidth": 84,
+  "logicalHeight": 70,
+  "viewBox": "-42 -48 84 70",
+  "rasterWidth": 168,
+  "rasterHeight": 140,
+  "rgb": {
+    "gain": 1.4,
+    "lift": 58
+  },
+  "checks": [
+    {
+      "rank": 1,
+      "source": "assets/takeover/ui/native-world-rating-1.svg",
+      "sourceHash": "2996902da192bd945040d3659874b60fa4b8bb7615979a006700534325be2b83",
+      "originalColor": "#883c1b",
+      "readableColor": "#f88e60",
+      "pattern": "shape4",
+      "alphaDifferences": 0,
+      "changedPixels": 1431,
+      "unchangedPixels": 22089,
+      "changedBounds": {
+        "left": 36,
+        "top": 85,
+        "right": 132,
+        "bottom": 107
+      },
+      "exactOutsideOrnament": true,
+      "losslessEncoding": true
+    },
+    {
+      "rank": 2,
+      "source": "assets/takeover/ui/native-world-rating-2.svg",
+      "sourceHash": "99be0ad3415b991053589b7a22f51f508e4cc4de3d928d5d5053a68ff09e1317",
+      "originalColor": "#1c727b",
+      "readableColor": "#61dae6",
+      "pattern": "shape3",
+      "alphaDifferences": 0,
+      "changedPixels": 1431,
+      "unchangedPixels": 22089,
+      "changedBounds": {
+        "left": 36,
+        "top": 85,
+        "right": 132,
+        "bottom": 107
+      },
+      "exactOutsideOrnament": true,
+      "losslessEncoding": true
+    },
+    {
+      "rank": 3,
+      "source": "assets/takeover/ui/native-world-rating-3.svg",
+      "sourceHash": "0216274d75645e7fcc470bb05bf3bf4321a1cbffe56116ed3643e5d25c9e9a3e",
+      "originalColor": "#770000",
+      "readableColor": "#e13a3a",
+      "pattern": "shape3",
+      "alphaDifferences": 0,
+      "changedPixels": 1431,
+      "unchangedPixels": 22089,
+      "changedBounds": {
+        "left": 36,
+        "top": 85,
+        "right": 132,
+        "bottom": 107
+      },
+      "exactOutsideOrnament": true,
+      "losslessEncoding": true
+    }
+  ],
+  "metadata": {
+    "1": {
+      "file": "assets/takeover/ui/world-rating-readable-1.webp",
+      "hash": "35c814f92ffa139b",
+      "width": 168,
+      "height": 140
+    },
+    "2": {
+      "file": "assets/takeover/ui/world-rating-readable-2.webp",
+      "hash": "23371378a00aab4f",
+      "width": 168,
+      "height": 140
+    },
+    "3": {
+      "file": "assets/takeover/ui/world-rating-readable-3.webp",
+      "hash": "25f99a2398dbdb0f",
+      "width": 168,
+      "height": 140
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "source": "extracted/swf2/scripts/§_-Em§/Badges.as — 22 descriptors at lines 692..1389; conditions at 681..1378",
+  "derivedFrom": "城邦争霸.swf",
+  "constructors": {
+    "badge descriptor": {
+      "declaration": "§_-Em§/§_-jI§.as:16 public function §_-jI§(_name:String, _iconNum:uint, _condition:§_-Ga§, _description:String)",
+      "getters": { "name": ":34", "iconNum": ":45", "condition": ":56", "description": ":67" },
+      "note": "arg1 = short title, arg4 = the requirement text shown under it"
+    },
+    "condition": {
+      "declaration": "§_-hd§/§_-gN§.as:19 public function §_-gN§(_metric:Metric, _comparisionOperator:§_-ab§, _constant:Number)",
+      "getters": { "metric": ":60", "threshold §_-qc§": ":71" },
+      "nesting": "the §_-gN§ is wrapped in a §_-Ga§, and that wrapper is what is passed as _condition"
+    },
+    "comparison enum": {
+      "file": "§_-hd§/§_-ab§.as",
+      "used": "GREATER_OR_EQUAL (:36, compare() case 5 -> :261-269)",
+      "note": "all 22 badges use GREATER_OR_EQUAL"
+    }
+  },
+  "rules": {
+    "count": 22,
+    "perPage": 8,
+    "pages": 3,
+    "iconNumOrder": "BADGES_IDS (:439) order matches iconNum 1..22 exactly, no gaps",
+    "correctsEarlierRecord": "there are 22 badges, not 21 — BADGE_CHESTS_OPENED is declared separately at :400, outside the :69-111 constant block",
+    "comparison": "all badges are >= threshold on their metric"
+  },
+  "badges": [
+    {"id":1,"constant":"BADGE_WESTARIA_CAMPAIGN_COMPLETE","name":"Valor of the West","iconNum":1,"metric":"METRIC_WESTARIA_MISSIONS_COMPLETED","metricIndex":0,"threshold":8,"description":"Complete the Duchy of Westaria campaign","line":692},
+    {"id":2,"constant":"BADGE_HORDE_CAMPAIGN_COMPLETE","name":"Rampage of the South","iconNum":2,"metric":"METRIC_HORDE_MISSIONS_COMPLETED","metricIndex":1,"threshold":8,"description":"Complete the Crimson Horde campaign","line":725},
+    {"id":3,"constant":"BADGE_CULT_CAMPAIGN_COMPLETE","name":"Freedom of the North","iconNum":3,"metric":"METRIC_CULT_MISSIONS_COMPLETED","metricIndex":2,"threshold":8,"description":"Complete the Icedales Cult campaign","line":759},
+    {"id":4,"constant":"BADGE_WESTARIA_ALL_PERFECT","name":"The Holy King","iconNum":4,"metric":"METRIC_WESTARIA_MISSIONS_PERFECT","metricIndex":3,"threshold":8,"description":"Complete all the Duchy of Westaria missions with Perfect rating","line":783},
+    {"id":5,"constant":"BADGE_HORDE_ALL_PERFECT","name":"The Great Khan","iconNum":5,"metric":"METRIC_HORDE_MISSIONS_PERFECT","metricIndex":4,"threshold":8,"description":"Complete all the Crimson Horde missions with Perfect rating","line":814},
+    {"id":6,"constant":"BADGE_CULT_ALL_PERFECT","name":"The Prophet","iconNum":6,"metric":"METRIC_CULT_MISSIONS_PERFECT","metricIndex":5,"threshold":8,"description":"Complete all the Icedales Cult missions with Perfect rating","line":845},
+    {"id":7,"constant":"BADGE_WESTARIA_ALL_BASE_EDICTS","name":"Justice of the Lord","iconNum":7,"metric":"METRIC_WESTARIA_MAIN_EDICTS_ISSUED","metricIndex":7,"threshold":9,"description":"Issue all the basic edicts of the Duchy of Westaria","line":880},
+    {"id":8,"constant":"BADGE_HORDE_ALL_BASE_EDICTS","name":"The Law of the Steppe","iconNum":8,"metric":"METRIC_HORDE_MAIN_EDICTS_ISSUED","metricIndex":8,"threshold":9,"description":"Issue all the basic edicts of the Crimson Horde","line":918},
+    {"id":9,"constant":"BADGE_CULT_ALL_BASE_EDICTS","name":"Patronage of the Cult","iconNum":9,"metric":"METRIC_CULT_MAIN_EDICTS_ISSUED","metricIndex":9,"threshold":9,"description":"Issue all the basic edicts of the Icedales Cult","line":942},
+    {"id":10,"constant":"BADGE_ANY_MISSION_PERFECT","name":"Veni, Vidi, Vici","iconNum":10,"metric":"METRIC_PERFECT_RATINGS","metricIndex":6,"threshold":1,"description":"Complete a mission with the Perfect rating","line":971},
+    {"id":11,"constant":"BADGE_VILLAGES_OWNED","name":"Peaceful Place","iconNum":11,"metric":"METRIC_VILLAGES_OWNED","metricIndex":10,"threshold":7,"description":"Control 7 farms at the same time","line":1007},
+    {"id":12,"constant":"BADGE_MINES_OWNED","name":"Land of Artisians","iconNum":12,"metric":"METRIC_MINES_OWNED","metricIndex":11,"threshold":7,"description":"Control 7 mines at the same time","line":1039},
+    {"id":13,"constant":"BADGE_OBELISKS_OWNED","name":"Enchanted Kingdom","iconNum":13,"metric":"METRIC_OBELISKS_OWNED","metricIndex":12,"threshold":7,"description":"Control 7 obelisks at the same time","line":1074},
+    {"id":14,"constant":"BADGE_SQUADS_PURCHASED","name":"General Mobilization","iconNum":14,"metric":"METRIC_SQUADS_PURCHASED","metricIndex":20,"threshold":10,"description":"Purchase 10 squads in a mission","line":1111},
+    {"id":15,"constant":"BADGE_BANNERS_SET","name":"Banner Time","iconNum":15,"metric":"METRIC_BANNERS_SET","metricIndex":14,"threshold":5,"description":"Set 5 banners in a battlefield in a mission","line":1142},
+    {"id":16,"constant":"BADGE_ULTIMATES_USED","name":"Test of Faith","iconNum":16,"metric":"METRIC_ULITIMATE_USED","metricIndex":15,"threshold":5,"description":"Use an ultimate spell 5 times in a mission","line":1176},
+    {"id":17,"constant":"BADGE_CHESTS_OPENED","name":"My Precious!","iconNum":17,"metric":"METRIC_CHESTS_OPENED","metricIndex":16,"threshold":1,"description":"Open a treasure chest","line":1209},
+    {"id":18,"constant":"BADGE_ENEMY_SQUADS_DESTROYED","name":"Onslaught","iconNum":18,"metric":"METRIC_ENEMY_SQUADS_DESTROYED","metricIndex":17,"threshold":30,"description":"Destroy 30 enemy squads in a mission","line":1249},
+    {"id":19,"constant":"BADGE_HEROIC_MODE_ENGAGED","name":"Epic Battle","iconNum":19,"metric":"METRIC_HEROIC_MODE_ENGAGED","metricIndex":18,"threshold":20,"description":"You squads must enter in the heroic state 20 times during a mission","line":1282},
+    {"id":20,"constant":"BADGE_GOLD_COLLECTED","name":"Put It Into Treasury","iconNum":20,"metric":"METRIC_GOLD_COLLECTED","metricIndex":19,"threshold":3000,"description":"Collect 3000 gold in a mission","line":1317},
+    {"id":21,"constant":"BADGE_SQUADS_OWNED","name":"Great Army","iconNum":21,"metric":"METRIC_SQUADS_PURCHASED","metricIndex":20,"threshold":20,"description":"Control 20 squads at the same time","line":1357,
+     "shippedBug":"the descriptor says 'Control 20 squads' but its condition watches METRIC_SQUADS_PURCHASED (Badges.as:1342), duplicating badge 14. METRIC_SQUADS_OWNED exists at index 13 and is set by BattleScreen.as:1170, but no badge condition reads it. Reproduced literally, not corrected."},
+    {"id":22,"constant":"BADGE_STRONGHOLDS_SIEZED","name":"From Hand to Hand","iconNum":22,"metric":"METRIC_STRONGHOLDS_CAPTURED","metricIndex":21,"threshold":10,"description":"Seize strongholds 10 times in a mission","line":1389}
+  ],
+  "metrics": {
+    "note": "METRICS_IDS (Badges.as:300) has 28 entries; index order below is 0-based. Setter for the battle ones is BattleScreen.as §_-ub§ (:896-1190); campaign ones are set in CompanyProgress.as checkLevelBadges (:2135) and Profile.as:285.",
+    "setters": {
+      "METRIC_WESTARIA_MISSIONS_COMPLETED": "CompanyProgress.as:2284",
+      "METRIC_HORDE_MISSIONS_COMPLETED": "CompanyProgress.as:2314",
+      "METRIC_CULT_MISSIONS_COMPLETED": "CompanyProgress.as:2350/:2353",
+      "METRIC_WESTARIA_MISSIONS_PERFECT": "CompanyProgress.as:2298",
+      "METRIC_HORDE_MISSIONS_PERFECT": "CompanyProgress.as:2339",
+      "METRIC_CULT_MISSIONS_PERFECT": "CompanyProgress.as:2350/:2353",
+      "METRIC_PERFECT_RATINGS": "Profile.as:285",
+      "METRIC_WESTARIA_MAIN_EDICTS_ISSUED": "CompanyProgress.as:2489",
+      "METRIC_HORDE_MAIN_EDICTS_ISSUED": "CompanyProgress.as:2509",
+      "METRIC_CULT_MAIN_EDICTS_ISSUED": "CompanyProgress.as:2500",
+      "METRIC_VILLAGES_OWNED": "BattleScreen.as:1121",
+      "METRIC_MINES_OWNED": "BattleScreen.as:1133",
+      "METRIC_OBELISKS_OWNED": "BattleScreen.as:1160",
+      "METRIC_SQUADS_PURCHASED": "BattleScreen.as:989 (read by badges 14 AND 21)",
+      "METRIC_BANNERS_SET": "BattleScreen.as:1032",
+      "METRIC_ULITIMATE_USED": "BattleScreen.as:1182",
+      "METRIC_CHESTS_OPENED": "BattleScreen.as:1016",
+      "METRIC_ENEMY_SQUADS_DESTROYED": "BattleScreen.as:1048",
+      "METRIC_HEROIC_MODE_ENGAGED": "BattleScreen.as:1106",
+      "METRIC_GOLD_COLLECTED": "BattleScreen.as:1004",
+      "METRIC_SQUADS_OWNED": "BattleScreen.as:1170 — set but watched by no badge",
+      "METRIC_STRONGHOLDS_CAPTURED": "BattleScreen.as:932"
+    },
+    "unusedByAnyBadge": ["METRIC_WESTARIA_RANK","METRIC_HORDE_RANK","METRIC_ICEDALES_RANK","METRIC_XP_GAINED_TOTAL","METRIC_STRONGHOLDS_CAPTURED_TOTAL","METRIC_ENEMY_SQUADS_DESTROYED_TOTAL"]
+  },
+  "ui": {
+    "slotClip": "#7440 (20 frames: _unlocked / _locked)",
+    "pageClip": "AchievementsPageClass (8 slots)",
+    "pageIndicator": "PageIndicatorClass (20 frames)",
+    "arrow": "BadgesArrowButton (30 frames)",
+    "textFieldsInsideSlot": {
+      "txtName": [95.25, -51.85],
+      "txtDesc": [63.5, -32.1],
+      "txtProgress": [112.35, 25.25]
+    },
+    "slotStates": "BadgesRoomScreen.as:845 gotoAndStop(\"_unlocked\") / :858 \"_locked\"; :850 txtProgress.visible = false when unlocked",
+    "progressBar": "BadgesRoomScreen.as:910 `bar.gotoAndStop(barFrame)` where barFrame = value/max * (bar.totalFrames-1) + 1 (:882)",
+    "iconFrame": "BadgesRoomScreen.as:924 `icon.gotoAndStop(badge.iconNum)`"
+  },
+  "stillToFetch": [
+    "METRIC_STRONGHOLDS_CAPTURED_TOTAL and the other *_TOTAL metrics (used by badge counters, not conditions)",
+    "the badge icon artwork for iconNum 1..22 (inside the slot clip; may need its own symbol export)"
+  ]
+}

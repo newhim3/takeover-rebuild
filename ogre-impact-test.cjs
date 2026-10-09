@@ -1,0 +1,10 @@
+'use strict';
+const assert=require('node:assert/strict'),{Battle}=require('./engine');
+const map={grid:Array(60).fill('1'.repeat(80)),roads:{points:[{x:100,y:300},{x:700,y:300}],edges:[[0,1]]},nodes:[{markerClass:'NodeCastleGreenClass',x:100,y:300,locationNum:0},{markerClass:'NodeCastleRedClass',x:700,y:300,locationNum:1}]};
+const b=new Battle(map);b.ai=()=>{};const ogre=b.spawnOgre({x:400,y:300}),u=b.spawn(b.owned()[0],'archers');b.deploy(u);u.x=500;u.y=300;u.stance='hold';u.attackCd=100;
+b.update(.04);assert.equal(ogre.state,'move','Ogre must detect and slowly approach archers beyond melee range');assert(ogre.x>400);assert(ogre.x<402,'Ogre retains source slow walk speed');
+const c=new Battle(map);c.ai=()=>{};const o=c.spawnOgre({x:400,y:300}),v=c.spawn(c.owned()[0],'infantry');c.deploy(v);v.x=425;v.y=300;v.attackCd=100;v.stance='hold';const hp=v.hp;
+c.update(.04);assert.equal(v.hp,hp,'Damage must wait for the native strike frame');assert(o.pendingAttack);
+for(let i=0;i<20&&v.hp===hp;i++)c.update(.04);
+assert(v.hp<hp,'Strike must hit within native 25-frame animation');assert(v.knockPath?.length||v.x>425,'The same hit must immediately start recoil');assert(c.time<1,'Strike must not stretch to the whole 3-second attack interval');
+console.log('PASS slow ogre pursuit, native impact timing and simultaneous damage/recoil');

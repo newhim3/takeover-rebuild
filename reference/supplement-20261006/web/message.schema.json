@@ -1,0 +1,197 @@
+{
+  "Completed": "完成：消息规范、聊天",
+  "TODO": "实时对战、单位操作、快照同步",
+  "title": "Takeover",
+  "description": "WebSocket",
+  "type": "object",
+  "oneOf": [
+    {
+      "title": "加入房间",
+      "properties": {
+        "type": { "const": "join_lobby" },
+        "lobbyId": { "type": "string" }
+      },
+      "required": ["type", "lobbyId"]
+    },
+    {
+      "title": "玩家准备",
+      "properties": {
+        "type": { "const": "ready" },
+        "ready": { "type": "boolean" }
+      },
+      "required": ["type", "ready"]
+    },
+    {
+      "title": "输入命令",
+      "properties": {
+        "type": { "const": "input" },
+        "tick": { "type": "integer", "minimum": 0 },
+        "seq": { "type": "integer", "minimum": 0 },
+        "commands": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "unitId": { "type": "string" },
+              "action": { "type": "string", "enum": ["move", "attack", "skill", "build"] },
+              "params": {
+                "type": "object",
+                "properties": {
+                  "x": { "type": "number" },
+                  "y": { "type": "number" },
+                  "targetId": { "type": "string" }
+                },
+                "additionalProperties": true
+              }
+            },
+            "required": ["unitId", "action", "params"]
+          }
+        }
+      },
+      "required": ["type", "tick", "seq", "commands"]
+    },
+    {
+      "title": "聊天",
+      "properties": {
+        "type": { "const": "chat" },
+        "text": { "type": "string" },
+        "playerId": { "type": "string" }
+      },
+      "required": ["type", "text"]
+    },
+    {
+      "title": "ping",
+      "properties": {
+        "type": { "const": "ping" },
+        "clientTime": { "type": "integer" }
+      },
+      "required": ["type", "clientTime"]
+    },
+    {
+      "title": "房间状态更新",
+      "properties": {
+        "type": { "const": "lobby_update" },
+        "lobbyId": { "type": "string" },
+        "players": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "playerId": { "type": "string" },
+              "displayName": { "type": "string" },
+              "ready": { "type": "boolean" }
+            },
+            "required": ["playerId", "displayName", "ready"]
+          }
+        },
+        "state": { "type": "string", "enum": ["waiting", "playing", "ended"] }
+      },
+      "required": ["type", "lobbyId", "players", "state"]
+    },
+    {
+      "title": "开始对局",
+      "properties": {
+        "type": { "const": "match_start" },
+        "matchId": { "type": "string" },
+        "seed": { "type": "integer" },
+        "startTick": { "type": "integer" },
+        "players": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "playerId": { "type": "string" },
+              "team": { "type": "integer" }
+            },
+            "required": ["playerId", "team"]
+          }
+        }
+      },
+      "required": ["type", "matchId", "seed", "startTick", "players"]
+    },
+    {
+      "title": "实时快照",
+      "properties": {
+        "type": { "const": "snapshot" },
+        "tick": { "type": "integer" },
+        "seq": { "type": "integer" },
+        "stateDelta": {
+          "type": "object",
+          "properties": {
+            "units": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "unitId": { "type": "string" },
+                  "x": { "type": "number" },
+                  "y": { "type": "number" },
+                  "hp": { "type": "integer" },
+                  "status": { "type": "string", "enum": ["alive", "dead", "moving", "attacking"] }
+                },
+                "required": ["unitId", "x", "y", "hp", "status"]
+              }
+            },
+            "events": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "eventType": { "type": "string", "enum": ["unit_die", "unit_spawn", "building_destroyed"] },
+                  "unitId": { "type": "string" },
+                  "timestamp": { "type": "integer" }
+                },
+                "required": ["eventType", "unitId", "timestamp"]
+              }
+            }
+          },
+          "required": ["units", "events"]
+        }
+      },
+      "required": ["type", "tick", "seq", "stateDelta"]
+    },
+    {
+      "title": "输入确认",
+      "properties": {
+        "type": { "const": "input_ack" },
+        "lastSeq": { "type": "integer" }
+      },
+      "required": ["type", "lastSeq"]
+    },
+    {
+      "title": "对局结束",
+      "properties": {
+        "type": { "const": "match_end" },
+        "matchId": { "type": "string" },
+        "results": {
+          "type": "object",
+          "properties": {
+            "players": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "playerId": { "type": "string" },
+                  "score": { "type": "integer" },
+                  "win": { "type": "boolean" }
+                },
+                "required": ["playerId", "score", "win"]
+              }
+            }
+          },
+          "required": ["players"]
+        }
+      },
+      "required": ["type", "matchId", "results"]
+    },
+    {
+      "title": "错误消息",
+      "properties": {
+        "type": { "const": "error" },
+        "code": { "type": "integer" },
+        "message": { "type": "string" }
+      },
+      "required": ["type", "code", "message"]
+    }
+  ]
+}

@@ -1,0 +1,375 @@
+{
+  "width": 450,
+  "height": 735,
+  "frames": 10,
+  "fps": 30,
+  "delayMs": [
+    33,
+    33,
+    34,
+    33,
+    33,
+    34,
+    33,
+    33,
+    34,
+    33
+  ],
+  "loop": 0,
+  "countries": {
+    "Green": {
+      "file": "native-campaign-hover-Green.webp",
+      "bytes": 1596528,
+      "sha256": "b4c0898d68c9fb25ce5f1cd32ac6d4cf9761e23d7f372b425031a80a3a1a60de",
+      "frameHashes": [
+        "b422996b17e81d25cbad120c2c6efdfa6b45fb10d8da4bf22f80d515e726508d",
+        "bc5e70deee71474f9469d9faac47f1026282ad1cadd3cd8be85f398f5bdf8422",
+        "02b74c77fa2f9c10ac61c02d0e76cb0d16cd477eb9770a7e15f311fbc67f4c9b",
+        "311330e879edd2f6b7be7a75e766012f6a58be5a82827f535863a40e64bec9dd",
+        "6fadda11b4527ea3ea64f0fe90d597ccc6dbcf5e3f24d997a14bd0bce8f9adc6",
+        "df0b780e9d517e00e9a85c96d855cbee8d401a68d75c5a177148cbbb054b44d7",
+        "aa8922a8d982f4f8fcc7eb767e247d06e960402d212d50fcb29d54341c54b7cb",
+        "9b995534fdfeccf7879e07b5e4fa3e28105508c93cc278ea0fedf2d595a3720a",
+        "03828b3514acfee40bb752cfa90c81e75fa620b15f42b9b48b6a8a64cb84821e",
+        "a74e7347894b17131bf71afae5527313ebba2c8a8e5d096ea678ff105a99208b"
+      ],
+      "uniqueFrames": 10,
+      "bounds": [
+        {
+          "left": 49,
+          "top": 50,
+          "right": 398,
+          "bottom": 716,
+          "edgePixels": 0,
+          "outsidePixels": 0
+        },
+        {
+          "left": 49,
+          "top": 50,
+          "right": 398,
+          "bottom": 716,
+          "edgePixels": 0,
+          "outsidePixels": 0
+        },
+        {
+          "left": 49,
+          "top": 50,
+          "right": 398,
+          "bottom": 716,
+          "edgePixels": 0,
+          "outsidePixels": 0
+        },
+        {
+          "left": 49,
+          "top": 50,
+          "right": 398,
+          "bottom": 716,
+          "edgePixels": 0,
+          "outsidePixels": 0
+        },
+        {
+          "left": 49,
+          "top": 50,
+          "right": 398,
+          "bottom": 716,
+          "edgePixels": 0,
+          "outsidePixels": 0
+        },
+        {
+          "left": 49,
+          "top": 50,
+          "right": 398,
+          "bottom": 716,
+          "edgePixels": 0,
+          "outsidePixels": 0
+        },
+        {
+          "left": 49,
+          "top": 50,
+          "right": 398,
+          "bottom": 716,
+          "edgePixels": 0,
+          "outsidePixels": 0
+        },
+        {
+          "left": 49,
+          "top": 50,
+          "right": 398,
+          "bottom": 716,
+          "edgePixels": 0,
+          "outsidePixels": 0
+        },
+        {
+          "left": 49,
+          "top": 50,
+          "right": 398,
+          "bottom": 716,
+          "edgePixels": 0,
+          "outsidePixels": 0
+        },
+        {
+          "left": 49,
+          "top": 50,
+          "right": 399,
+          "bottom": 716,
+          "edgePixels": 0,
+          "outsidePixels": 0
+        }
+      ],
+      "metadata": {
+        "pages": 10,
+        "pageHeight": 735,
+        "loop": 0,
+        "delay": [
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33
+        ]
+      },
+      "losslessVisiblePixels": "passed"
+    },
+    "Blue": {
+      "file": "native-campaign-hover-Blue.webp",
+      "bytes": 1591652,
+      "sha256": "4730ed10f42d1963d6862a3df5851a6627be72cbbabf8c0287c27ee60ecb019d",
+      "frameHashes": [
+        "cccb69e32a99c21bca1b7a74efc1da3fdba047a6beaa7827a0dd14cae98a0afe",
+        "3009a2a70e48e978e3249d6218a7c9e8c0c771ad33694cac68cc7eb3649178f8",
+        "71189276bbf26b605759cb7bf20814dc60d42bad46e10ec607c31a7dcbf8c34a",
+        "3e30126f247c980a8058004680009349354e54a8260c99f241778ecd3e8fe041",
+        "f3e4ffd7d306f72b2b4dd8d1c8a85e2805f645c6692b5fee184a976a4704cab1",
+        "75649e80567483529b4ec230239513d41d050c81efec63da58f2dcd1b83017bb",
+        "8cd11c2d209e81bf211c1dba995d2130d20b46679b8baeaec5c3e147be10feb3",
+        "d33a411997e5ccdda300764fb37262d9b77094389ad76a1783089be5ae51b83b",
+        "f0db4659e85442b3a4bc170bbba0a8f4765c3aee55cefa4f657dc3f5d59847cc",
+        "f200dd60f3e13f6b8233483aa109690f90f49dacbc8e715efb4c295a5a317ec4"
+      ],
+      "uniqueFrames": 10,
+      "bounds": [
+        {
+          "left": 58,
+          "top": 32,
+          "right": 401,
+          "bottom": 734,
+          "edgePixels": 7,
+          "outsidePixels": 0
+        },
+        {
+          "left": 58,
+          "top": 32,
+          "right": 401,
+          "bottom": 734,
+          "edgePixels": 7,
+          "outsidePixels": 0
+        },
+        {
+          "left": 58,
+          "top": 32,
+          "right": 401,
+          "bottom": 734,
+          "edgePixels": 7,
+          "outsidePixels": 0
+        },
+        {
+          "left": 58,
+          "top": 32,
+          "right": 401,
+          "bottom": 734,
+          "edgePixels": 7,
+          "outsidePixels": 0
+        },
+        {
+          "left": 58,
+          "top": 32,
+          "right": 401,
+          "bottom": 734,
+          "edgePixels": 7,
+          "outsidePixels": 0
+        },
+        {
+          "left": 58,
+          "top": 32,
+          "right": 401,
+          "bottom": 734,
+          "edgePixels": 7,
+          "outsidePixels": 0
+        },
+        {
+          "left": 58,
+          "top": 32,
+          "right": 401,
+          "bottom": 734,
+          "edgePixels": 7,
+          "outsidePixels": 0
+        },
+        {
+          "left": 58,
+          "top": 32,
+          "right": 401,
+          "bottom": 734,
+          "edgePixels": 7,
+          "outsidePixels": 0
+        },
+        {
+          "left": 58,
+          "top": 32,
+          "right": 401,
+          "bottom": 734,
+          "edgePixels": 7,
+          "outsidePixels": 0
+        },
+        {
+          "left": 58,
+          "top": 32,
+          "right": 401,
+          "bottom": 734,
+          "edgePixels": 7,
+          "outsidePixels": 0
+        }
+      ],
+      "metadata": {
+        "pages": 10,
+        "pageHeight": 735,
+        "loop": 0,
+        "delay": [
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33
+        ]
+      },
+      "losslessVisiblePixels": "passed"
+    },
+    "Red": {
+      "file": "native-campaign-hover-Red.webp",
+      "bytes": 1646424,
+      "sha256": "25d97997022f1ab6fc046fef712be0cb11281216a13eb2b91197e0a3c036039e",
+      "frameHashes": [
+        "c83c6a6a04ccafcaf76704623dc590738891cc5d9569aa00e1f08c5fba0b8ed4",
+        "d08d91767703dbe0d7ab580ca283a66bdae3e8a12e17287e5af4f59d1afedeed",
+        "0c6c49399854d09ce8254e86189d3d2458af9abec2d3f199f825ccfd4a52e653",
+        "61258a3400bceae2bf23cb25748e8b1eef82b150bc0b64967d8652858852c41b",
+        "f3bf49ca0a9df1016203f4238bc170a30cd1b4812628d48674e096f7eead84fa",
+        "1b55e5116e791b2758b6693e13692411935163b532aa345cbe03929ae6342eb2",
+        "a81eeb6beeef5291b0f02b592e7fdfb674a9f9418f0a3082fe45840d0e41a30d",
+        "e51a7d24e65e9df20f9dc842c355a417da2b5b9a66ed76512dc79065e28b24d9",
+        "780ba27543703485698f857955ac3c8c27141b66d0a45fc4cca65116558def75",
+        "458891d643016e6bec9cdd41fc2a714cd073728fb18982599bd7f3cc53e81570"
+      ],
+      "uniqueFrames": 10,
+      "bounds": [
+        {
+          "left": 45,
+          "top": 39,
+          "right": 393,
+          "bottom": 726,
+          "edgePixels": 0,
+          "outsidePixels": 0
+        },
+        {
+          "left": 45,
+          "top": 39,
+          "right": 393,
+          "bottom": 726,
+          "edgePixels": 0,
+          "outsidePixels": 0
+        },
+        {
+          "left": 45,
+          "top": 39,
+          "right": 393,
+          "bottom": 726,
+          "edgePixels": 0,
+          "outsidePixels": 0
+        },
+        {
+          "left": 45,
+          "top": 39,
+          "right": 393,
+          "bottom": 726,
+          "edgePixels": 0,
+          "outsidePixels": 0
+        },
+        {
+          "left": 45,
+          "top": 39,
+          "right": 393,
+          "bottom": 726,
+          "edgePixels": 0,
+          "outsidePixels": 0
+        },
+        {
+          "left": 45,
+          "top": 39,
+          "right": 393,
+          "bottom": 726,
+          "edgePixels": 0,
+          "outsidePixels": 0
+        },
+        {
+          "left": 45,
+          "top": 39,
+          "right": 393,
+          "bottom": 726,
+          "edgePixels": 0,
+          "outsidePixels": 0
+        },
+        {
+          "left": 45,
+          "top": 39,
+          "right": 393,
+          "bottom": 726,
+          "edgePixels": 0,
+          "outsidePixels": 0
+        },
+        {
+          "left": 45,
+          "top": 39,
+          "right": 393,
+          "bottom": 726,
+          "edgePixels": 0,
+          "outsidePixels": 0
+        },
+        {
+          "left": 45,
+          "top": 39,
+          "right": 393,
+          "bottom": 726,
+          "edgePixels": 0,
+          "outsidePixels": 0
+        }
+      ],
+      "metadata": {
+        "pages": 10,
+        "pageHeight": 735,
+        "loop": 0,
+        "delay": [
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33,
+          33,
+          34,
+          33
+        ]
+      },
+      "losslessVisiblePixels": "passed"
+    }
+  }
+}

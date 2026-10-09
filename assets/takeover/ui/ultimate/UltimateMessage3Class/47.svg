@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ns1="https://www.free-decompiler.com/flash" xmlns:xlink="http://www.w3.org/1999/xlink" ns1:objectType="frame" height="600" width="800" viewBox="0 0 800 600">
+  <g>
+    <use ns1:characterId="4707" height="600.0" transform="matrix(1.0, 0.0, 0.0, 1.0, 0.0, 0.0)" width="800.0" xlink:href="#morphshape0" />
+    <use ns1:characterId="4703" height="600.0" transform="matrix(0.6135, 0.0, 0.0, 0.6136, 234.15, 268.65)" width="600.0" xlink:href="#sprite0" />
+    <use ns1:characterId="4703" height="600.0" transform="matrix(0.4829, 0.0, 0.0, 0.4829, 510.15, 292.65)" width="600.0" xlink:href="#sprite1" />
+    <use ns1:characterId="4703" height="600.0" transform="matrix(0.4041, 0.459, -0.459, 0.4041, 621.1, 295.65)" width="600.0" xlink:href="#sprite2" />
+    <use ns1:characterId="4703" height="600.0" transform="matrix(0.4926, -0.3625, 0.3625, 0.4926, 424.2, 286.6)" width="600.0" xlink:href="#sprite3" />
+    <filter color-interpolation-filters="sRGB" height="300%" id="filter15" width="300%" x="-100%" y="-100%">
+      <feGaussianBlur in="SourceGraphic" result="filterResult4" stdDeviation="34.351128074635334 NaN" />
+    </filter>
+    <use ns1:characterId="4706" filter="url(#filter15)" height="48.35" transform="matrix(1.0, 0.0, 0.0, 1.0001, 414.1, 300.0)" width="567.05" xlink:href="#sprite4" />
+  </g>
+  <defs>
+    <g id="morphshape0">
+      <path d="M0.0 0.0 L0.0 600.0 800.0 600.0 800.0 0.0 0.0 0.0" fill="#000000" fill-opacity="0.050980393" fill-rule="evenodd" stroke="none" />
+      <path d="M0.0 0.0 L800.0 0.0 800.0 600.0 0.0 600.0 0.0 0.0 Z" ns1:has-small-stroke="true" ns1:original-stroke-width="0.0" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.0" stroke-width="1.0" />
+    </g>
+    <g id="sprite0">
+      <use ns1:characterId="4702" height="600.0" transform="matrix(1.0, 0.0, 0.0, 1.0, 0.0, 0.0)" width="600.0" xlink:href="#shape0" />
+    </g>
+    <g id="shape0">
+      <pattern height="600" id="PatternID_4702_1" overflow="visible" patternTransform="matrix(1.0, 0.0, 0.0, 1.0, -300.0, -300.0)" patternUnits="userSpaceOnUse" viewBox="0 0 600 600" width="600">
+        <use xlink:href="#localized-bitmap-7671f6445ec8475b3b78" /></pattern>
+      <path d="M-300.0 -300.0 L300.0 -300.0 300.0 300.0 -300.0 300.0 -300.0 -300.0" ns1:fill-bitmapId="4701" fill-rule="evenodd" style="fill:url(#PatternID_4702_1)" />
+    </g>
+    <g id="sprite1">
+      <use ns1:characterId="4702" height="600.0" transform="matrix(1.0, 0.0, 0.0, 1.0, 0.0, 0.0)" width="600.0" xlink:href="#shape1" />
+    </g>
+    <g id="shape1">
+      <pattern height="600" id="PatternID_4702_1" overflow="visible" patternTransform="matrix(1.0, 0.0, 0.0, 1.0, -300.0, -300.0)" patternUnits="userSpaceOnUse" viewBox="0 0 600 600" width="600">
+        <use xlink:href="#localized-bitmap-54a7d526b5536639ffea" /></pattern>
+      <path d="M-300.0 -300.0 L300.0 -300.0 300.0 300.0 -300.0 300.0 -300.0 -300.0" ns1:fill-bitmapId="4701" fill-rule="evenodd" style="fill:url(#PatternID_4702_1)" />
+    </g>
+    <g id="sprite2">
+      <use ns1:characterId="4702" height="600.0" transform="matrix(1.0, 0.0, 0.0, 1.0, 0.0, 0.0)" width="600.0" xlink:href="#shape2" />
+    </g>
+    <g id="shape2">
+      <pattern height="600" id="PatternID_4702_1" overflow="visible" patternTransform="matrix(1.0, 0.0, 0.0, 1.0, -300.0, -300.0)" patternUnits="userSpaceOnUse" viewBox="0 0 600 600" width="600">
+        <use xlink:href="#localized-bitmap-ab5970f63505048c38ae" /></pattern>
+      <path d="M-300.0 -300.0 L300.0 -300.0 300.0 300.0 -300.0 300.0 -300.0 -300.0" ns1:fill-bitmapId="4701" fill-rule="evenodd" style="fill:url(#PatternID_4702_1)" />
+    </g>
+    <g id="sprite3">
+      <use ns1:characterId="4702" height="600.0" transform="matrix(1.0, 0.0, 0.0, 1.0, 0.0, 0.0)" width="600.0" xlink:href="#shape3" />
+    </g>
+    <g id="shape3">
+      <pattern height="600" id="PatternID_4702_1" overflow="visible" patternTransform="matrix(1.0, 0.0, 0.0, 1.0, -300.0, -300.0)" patternUnits="userSpaceOnUse" viewBox="0 0 600 600" width="600">
+        <use xlink:href="#localized-bitmap-749a32b63c8ce32fb84d" /></pattern>
+      <path d="M-300.0 -300.0 L300.0 -300.0 300.0 300.0 -300.0 300.0 -300.0 -300.0" ns1:fill-bitmapId="4701" fill-rule="evenodd" style="fill:url(#PatternID_4702_1)" />
+    </g>
+    <g id="sprite4">
+      <filter color-interpolation-filters="sRGB" height="300%" id="filter14" width="300%" x="-100%" y="-100%">
+        <feOffset dx="0.0" dy="0.0" in="SourceGraphic" result="filterResult0" />
+        <feColorMatrix in="filterResult0" result="filterResult1" type="matrix" values="0 0 0 0 1.0,0 0 0 0 1.0,0 0 0 0 1.0,0 0 0 1.0 0" />
+        <feGaussianBlur in="filterResult1" result="filterResult2" stdDeviation="3.452052529534663 3.452052529534663" />
+        <feComposite in="SourceGraphic" in2="filterResult2" operator="over" result="filterResult3" />
+      </filter>
+      <use ns1:characterId="4705" filter="url(#filter14)" height="18.1" transform="matrix(2.6752, 0.0, 0.0, 2.6752, -272.5, -31.9)" width="212.0" xlink:href="#text0" />
+    </g>
+    <g id="text0">
+      <text x="106.0" y="19" text-anchor="middle" font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="900" fill="#ffffff">墓穴召唤</text></g>
+    <image height="600" style="image-rendering:optimizeSpeed; image-rendering:pixelated" width="600" xlink:href="__ULT_BITMAP_7671f6445ec8475b3b78__" id="localized-bitmap-7671f6445ec8475b3b78" /><image height="600" style="image-rendering:optimizeSpeed; image-rendering:pixelated" width="600" xlink:href="__ULT_BITMAP_54a7d526b5536639ffea__" id="localized-bitmap-54a7d526b5536639ffea" /><image height="600" style="image-rendering:optimizeSpeed; image-rendering:pixelated" width="600" xlink:href="__ULT_BITMAP_ab5970f63505048c38ae__" id="localized-bitmap-ab5970f63505048c38ae" /><image height="600" style="image-rendering:optimizeSpeed; image-rendering:pixelated" width="600" xlink:href="__ULT_BITMAP_749a32b63c8ce32fb84d__" id="localized-bitmap-749a32b63c8ce32fb84d" /></defs>
+</svg>

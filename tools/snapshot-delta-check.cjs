@@ -1,0 +1,11 @@
+'use strict';
+const assert=require('node:assert/strict'),{Encoder,Decoder}=require('../snapshot-codec');
+const clone=v=>JSON.parse(JSON.stringify(v)),base={sequence:1,sentAt:1000,time:0,units:[{id:1,definitionKey:'soldier',x:10,y:20,hp:100,path:[{x:500,y:20}],order:{target:2}}],definitions:[{key:'soldier',stats:{hp:100,speed:50}}],buildings:[{id:2,owner:'Red',hp:100}],slots:[{id:3,type:'mine',parent:2}],chests:[{id:4,collected:false}],factions:{Green:{gold:300,mana:50}},factionEdicts:{Green:{1:1}},settings:{difficulty:'normal'},effects:[]};
+const encoder=new Encoder(),decoder=new Decoder(),full=encoder.encode(base,true);decoder.decode(full);
+const state=clone(base);state.sequence=2;state.sentAt=1100;state.time=.1;state.units[0].x=15;state.units[0].hp=70;state.buildings[0].owner='Green';state.slots[0].type=null;state.chests[0].collected=true;state.factions.Green.gold=250;
+const packet=encoder.encode(state);assert.equal(packet.fields.factionEdicts,undefined);assert.equal(packet.definitions.length,0);assert.equal(packet.entities.units.upsert[0].path,undefined);assert.deepEqual(decoder.decode(packet),state);
+const later=clone(state);later.sequence=4;later.sentAt=1300;later.units=[];later.definitions=[];assert.deepEqual(decoder.decode(encoder.encode(later)),later,'a skipped intermediate state must not break a delta');
+const added=clone(later);added.sequence=5;added.units=[{id:8,definitionKey:'new',hp:80,x:30,y:20}];added.definitions=[{key:'new',stats:{hp:80}}];assert.deepEqual(decoder.decode(encoder.encode(added)),added,'a new unit and definition must arrive together');
+const missing=new Decoder();assert.equal(missing.decode(packet),null);assert.deepEqual(missing.decode(encoder.encode(added,true)),added);assert.deepEqual(missing.decode(encoder.encode({...added,sequence:6})),{...added,sequence:6});
+const bare=clone(base);bare.sequence=7;delete bare.units[0].order;assert.deepEqual(decoder.decode(encoder.encode(bare,true)),bare);
+console.log('Full/delta reconstruction, HP/ownership, deletion, new definitions, skipped packets and full recovery passed.');

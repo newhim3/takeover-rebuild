@@ -1,0 +1,39 @@
+{
+  "heal": {
+    "source": "D:\\桌面\\tools\\bilbildownload\\全网唯一！城邦争霸之黑暗帝国4国混战！\\1-全网唯一！城邦争霸之黑暗帝国4国混战！-480P 标清-AVC.mp4",
+    "seconds": 85,
+    "crop": [
+      252,
+      358,
+      280,
+      378
+    ],
+    "note": "Original video art above the UI price, resampled for the web button"
+  },
+  "fire": {
+    "source": "D:\\桌面\\tools\\bilbildownload\\全网唯一！城邦争霸之黑暗帝国4国混战！\\1-全网唯一！城邦争霸之黑暗帝国4国混战！-480P 标清-AVC.mp4",
+    "seconds": 85,
+    "crop": [
+      298,
+      358,
+      326,
+      378
+    ],
+    "note": "Original video art above the UI price, resampled for the web button"
+  },
+  "summon": {
+    "source": "D:\\桌面\\tools\\bilbildownload\\全网唯一！城邦争霸之黑暗帝国4国混战！\\1-全网唯一！城邦争霸之黑暗帝国4国混战！-480P 标清-AVC.mp4",
+    "seconds": 85,
+    "crop": [
+      344,
+      358,
+      372,
+      378
+    ],
+    "note": "Original video art above the UI price, resampled for the web button"
+  },
+  "ultimate": {
+    "source": "original SWF bitmap 1519",
+    "note": "Empire crest; newer video ultimate icon is covered by charging curtain"
+  }
+}

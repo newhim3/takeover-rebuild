@@ -1,0 +1,1 @@
+window.NativeWorldRatingArt={"1":{"file":"assets/takeover/ui/world-rating-readable-1.webp","hash":"35c814f92ffa139b","width":168,"height":140},"2":{"file":"assets/takeover/ui/world-rating-readable-2.webp","hash":"23371378a00aab4f","width":168,"height":140},"3":{"file":"assets/takeover/ui/world-rating-readable-3.webp","hash":"25f99a2398dbdb0f","width":168,"height":140}};

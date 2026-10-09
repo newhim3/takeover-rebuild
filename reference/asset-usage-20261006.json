@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-06",
+  "method": "static code reachability, not runtime coverage",
+  "total": 12152,
+  "bytes": 535969939,
+  "counts": {
+    "未确认引用": 3050,
+    "未接入": 683,
+    "代码接入": 1819,
+    "源档保留": 5861,
+    "数据/索引": 62,
+    "历史中间产物": 677
+  }
+}

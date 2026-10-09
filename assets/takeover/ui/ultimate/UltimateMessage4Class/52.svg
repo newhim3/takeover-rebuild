@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:ns1="https://www.free-decompiler.com/flash" xmlns:xlink="http://www.w3.org/1999/xlink" ns1:objectType="frame" height="600" width="800" viewBox="0 0 800 600">
+  <g>
+    <use ns1:characterId="4708" height="600.0" transform="matrix(1.0, 0.0, 0.0, 1.0, 0.0, 0.0)" width="800.0" xlink:href="#shape0" />
+  </g>
+  <defs>
+    <g id="shape0">
+      <path d="M800.0 600.0 L0.0 600.0 0.0 0.0 800.0 0.0 800.0 600.0" fill="#000000" fill-opacity="0.007843138" fill-rule="evenodd" stroke="none" />
+    </g>
+  </defs>
+</svg>

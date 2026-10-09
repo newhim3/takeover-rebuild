@@ -1,0 +1,23 @@
+{
+  "provider": "OpenArt",
+  "model": "nano-banana-2",
+  "mode": "image2image",
+  "prompt": "Generate one entirely NEW organically continuous large 2D battlefield terrain illustration for the Takeover Flash RTS, not a collage and not UI. Reference 1 shows all 25 original maps: borrow its restrained flat 2D cartoon terrain, winding pale roads, small circular clearings and low peripheral cliffs, NEVER stitch/paste its separate maps. Reference 2 shows original terrain variants of four countries: grass green, ochre orange, snow white, cracked gray purple wasteland. Match that SIMPLE original art, with very few tiny decorative details so original troop sprites remain readable. One large uninterrupted plateau, broad irregular organic biome boundaries across rolling terrain rather than 4 square panels, four roughly comparable starting castle pads at the periphery, central neutral-village clearing, around 16-20 wide building clearings joined by curved roads with loops and alternative paths. A low central hill cluster with roads going around it. Put snow mostly north, orange east, green southwest and cracked gray northwest but transitions must follow organic contours. All roads fully connected on the SAME elevation, no cliffs cutting roads, no dead end routes, no bridges, no water crossings, no stitched islands. Original style shallow-isometric outer-edge rock faces only, flat overhead gameplay surface with mountains and sparse trees at edges. No buildings, troops, flags, text, numbers, grids, cards, HUD, decorative UI, or treasure chests. Terrain fills a 4:3 image. This is an additional map candidate D, not an alteration of the playable original level-7 small map. Existing source buildings and future ownership terrain layers will be placed later. Prefer low visual complexity and usable wide roads to a dense detailed illustration.",
+  "resolution": "2K",
+  "aspectRatio": "4:3",
+  "inputs": [
+    "all-original-maps.jpg",
+    "all-native-terrain.jpg"
+  ],
+  "status": "COMPLETED",
+  "historyId": "cy0PRYTztQWdAmBfI3mE",
+  "output": "D-原版风格高地.webp",
+  "actualFormat": "WEBP",
+  "actualDimensions": [
+    2400,
+    1792
+  ],
+  "limitation": "插件返回图带明显 OpenArt 水印，仅供方案比较；未用于游戏。未提供无水印资源地址。",
+  "reviewStatus": "rejected_by_user",
+  "userFeedback": "第四版完全没有前三个版本精致；从推荐候选中淘汰，保留记录，不接入游戏。"
+}

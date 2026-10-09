@@ -1,0 +1,23 @@
+'use strict';
+const assert=require('assert/strict'),fs=require('fs'),vm=require('vm'),feedback=require('../native-feedback.js');
+const game=fs.readFileSync('game.js','utf8'),engine=fs.readFileSync('engine.js','utf8');
+assert(game.includes('if(spell)drawSpellCursor();'),'Casting still uses the handmade ellipse');
+assert(!game.includes("ctx.arc(p.x,p.y,24"),'Selection still paints a replacement badge frame');
+assert(engine.includes("const visualKey=UnitArt.prefix(u.record)+(u.facing||'Down')+'_Die'"),'Death loses the source unit/facing');
+const timing=require('../animation-timing.js');
+const original=JSON.parse(fs.readFileSync('assets/takeover/animation/anim_manifest.json')).sheets;
+for(const sheet of original.filter(s=>/_Die$/.test(s.key)))assert.equal(timing[sheet.key],sheet.frames,'Death must retain original frame duration');
+for(const [id,name]of [[0,'LordsJudgement'],[1,'Heal'],[2,'Heroism'],[4,'StoneWorm'],[5,'Disentomb'],[6,'Bloodlust'],[8,'IceBlast'],[9,'MistyClones'],[10,'Liberation']])for(const enabled of [true,false])assert.equal(feedback.cursor({row:{id,type:0,radius:75}},enabled).key,`Cursor${enabled?'On':'Off'}_${name}Class`);
+for(const id of [12,13,14])assert(feedback.cursor({row:{id,type:0,radius:75}}).shared,'Empire must use the unlettered shared ring, not another nation glyph');
+assert.equal(feedback.cursor({row:{id:15,type:2,radius:0}}),null);
+assert.equal(feedback.deathKey({visualKey:'GrayMagicLeft_Die'}, {GrayMagicLeft_Die:{}}),'GrayMagicLeft_Die');
+const ctx={window:{}};vm.runInNewContext(fs.readFileSync('assets/takeover/ui/atlases/native-feedback.js','utf8'),ctx);
+assert.equal(Object.keys(ctx.window.NativeFeedbackArt).length,25);
+for(const [key,c]of Object.entries(ctx.window.NativeFeedbackArt)){assert(c.x+c.w<=720&&c.y+c.h<=840);assert(c.pivot.every(Number.isFinite),key);}
+const unitArt=require('../unit-art.js'),P=require('../progression.js');
+for(const [tech,key]of [[1,'BulletClass'],[2,'GunbotBulletClass'],[3,'GiantbotBulletClass']])assert.equal(unitArt.projectile(P.unit('Blue','Archers',tech)),key);
+assert.equal(unitArt.projectile(P.unit('Green','Archers',1)),null);
+assert.equal(unitArt.projectile(P.unit('Green','Magic',1)),'ZealotBulletClass');
+assert.equal(unitArt.projectile(P.unit('Blue','Magic',1)),'AcolytesBulletClass');
+assert.equal(unitArt.projectile(P.unit('Purple','Siege',1)),'CatapultMissileClass');
+console.log('Native spell variants, original registration, selection and death orientation: passed.');

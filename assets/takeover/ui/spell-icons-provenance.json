@@ -1,0 +1,98 @@
+{
+  "spell-Green-fire": {
+    "source": "SpellIconSetClass",
+    "frame": 0,
+    "trim": null,
+    "crop": null,
+    "width": 53,
+    "height": 53
+  },
+  "spell-Green-heal": {
+    "source": "SpellIconSetClass",
+    "frame": 1,
+    "trim": null,
+    "crop": null,
+    "width": 53,
+    "height": 53
+  },
+  "spell-Green-summon": {
+    "source": "SpellIconSetClass",
+    "frame": 2,
+    "trim": null,
+    "crop": null,
+    "width": 53,
+    "height": 53
+  },
+  "spell-Green-ultimate": {
+    "source": "SpellIconSetClass",
+    "frame": 3,
+    "trim": null,
+    "crop": null,
+    "width": 53,
+    "height": 53
+  },
+  "spell-Red-fire": {
+    "source": "SpellIconSetClass",
+    "frame": 4,
+    "trim": null,
+    "crop": null,
+    "width": 53,
+    "height": 53
+  },
+  "spell-Red-heal": {
+    "source": "SpellIconSetClass",
+    "frame": 5,
+    "trim": null,
+    "crop": null,
+    "width": 53,
+    "height": 53
+  },
+  "spell-Red-summon": {
+    "source": "SpellIconSetClass",
+    "frame": 6,
+    "trim": null,
+    "crop": null,
+    "width": 53,
+    "height": 53
+  },
+  "spell-Red-ultimate": {
+    "source": "SpellIconSetClass",
+    "frame": 7,
+    "trim": null,
+    "crop": null,
+    "width": 53,
+    "height": 53
+  },
+  "spell-Blue-fire": {
+    "source": "SpellIconSetClass",
+    "frame": 8,
+    "trim": null,
+    "crop": null,
+    "width": 53,
+    "height": 53
+  },
+  "spell-Blue-heal": {
+    "source": "SpellIconSetClass",
+    "frame": 9,
+    "trim": null,
+    "crop": null,
+    "width": 53,
+    "height": 53
+  },
+  "spell-Blue-summon": {
+    "source": "SpellIconSetClass",
+    "frame": 10,
+    "trim": null,
+    "crop": null,
+    "width": 53,
+    "height": 53
+  },
+  "spell-Blue-ultimate": {
+    "source": "SpellIconSetClass",
+    "frame": 11,
+    "trim": null,
+    "crop": null,
+    "width": 53,
+    "height": 53
+  }
+}

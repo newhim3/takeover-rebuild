@@ -1,0 +1,459 @@
+{
+  "base": "https://house-easter-highland-nothing.trycloudflare.com",
+  "label": "after-public",
+  "errors": [],
+  "samples": [
+    {
+      "name": "cold-title",
+      "elapsed": 11136.100000023842,
+      "tasks": [],
+      "resources": [
+        {
+          "url": "game-shell.js?v=20261006-r11",
+          "ms": 4907,
+          "bytes": 148143,
+          "transfer": 148443,
+          "type": "script"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/screens/native-title-background.webp?v=20261006-r6",
+          "ms": 4887,
+          "bytes": 1246214,
+          "transfer": 1246514,
+          "type": "link"
+        },
+        {
+          "url": "game-shell.css?v=20261006-r11",
+          "ms": 4411,
+          "bytes": 15176,
+          "transfer": 15476,
+          "type": "link"
+        },
+        {
+          "url": "assets/takeover/ui/upgrade-arrow.png",
+          "ms": 2103,
+          "bytes": 2559,
+          "transfer": 2859,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/spell-heal.png",
+          "ms": 2027,
+          "bytes": 6718,
+          "transfer": 7018,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/screens/results--background-Purple.webp?v=20261006-r6",
+          "ms": 1972,
+          "bytes": 321276,
+          "transfer": 321576,
+          "type": "css"
+        },
+        {
+          "url": "assets/takeover/ui/crest.png",
+          "ms": 1611,
+          "bytes": 4327,
+          "transfer": 4627,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/spell-summon.png",
+          "ms": 1611,
+          "bytes": 6511,
+          "transfer": 6811,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/spell-fire.png",
+          "ms": 1492,
+          "bytes": 6979,
+          "transfer": 7279,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/speed-fast.png",
+          "ms": 1419,
+          "bytes": 3617,
+          "transfer": 3917,
+          "type": "css"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/screens/native-spell-slot.webp?v=20261006-r6",
+          "ms": 1207,
+          "bytes": 290,
+          "transfer": 590,
+          "type": "css"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/screens/native-hud-back-Green.webp?v=20261006-r6",
+          "ms": 1207,
+          "bytes": 26698,
+          "transfer": 26998,
+          "type": "css"
+        },
+        {
+          "url": "assets/takeover/ui/button.png",
+          "ms": 1206,
+          "bytes": 9882,
+          "transfer": 10182,
+          "type": "css"
+        },
+        {
+          "url": "assets/takeover/ui/help.png",
+          "ms": 1206,
+          "bytes": 3208,
+          "transfer": 3508,
+          "type": "css"
+        },
+        {
+          "url": "assets/takeover/ui/sound.png",
+          "ms": 1206,
+          "bytes": 5447,
+          "transfer": 5747,
+          "type": "css"
+        },
+        {
+          "url": "assets/takeover/ui/menu.png",
+          "ms": 1150,
+          "bytes": 3535,
+          "transfer": 3835,
+          "type": "css"
+        }
+      ]
+    },
+    {
+      "name": "campaign",
+      "elapsed": 2385.099999964237,
+      "tasks": [],
+      "resources": [
+        {
+          "url": "assets/takeover/ui/atlases/screens/native-campaign-background.webp?v=20261006-r6",
+          "ms": 2371,
+          "bytes": 367682,
+          "transfer": 367982,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/screens/native-campaign-flag-Purple.webp?v=20261006-r6",
+          "ms": 1957,
+          "bytes": 124756,
+          "transfer": 125056,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/screens/native-campaign-flag-Blue.webp?v=20261006-r6",
+          "ms": 1955,
+          "bytes": 302918,
+          "transfer": 303218,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/screens/native-campaign-flag-Red.webp?v=20261006-r6",
+          "ms": 1846,
+          "bytes": 292506,
+          "transfer": 292806,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/screens/native-campaign-flag-Green.webp?v=20261006-r6",
+          "ms": 1639,
+          "bytes": 295906,
+          "transfer": 296206,
+          "type": "img"
+        }
+      ]
+    },
+    {
+      "name": "world",
+      "elapsed": 3702.400000035763,
+      "tasks": [],
+      "resources": [
+        {
+          "url": "assets/takeover/ui/atlases/native-world-swords.webp",
+          "ms": 3680,
+          "bytes": 37356,
+          "transfer": 37656,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/screens/native-world-1.webp?v=20261006-r6",
+          "ms": 2753,
+          "bytes": 860450,
+          "transfer": 860750,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/native-world-node-Green.webp?v=20261006-r4",
+          "ms": 2318,
+          "bytes": 9768,
+          "transfer": 10068,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/screens/results--button.webp?v=20261006-r6",
+          "ms": 2317,
+          "bytes": 17810,
+          "transfer": 18110,
+          "type": "css"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/native-world-controls-Green.webp?v=20261006-r4",
+          "ms": 2315,
+          "bytes": 138088,
+          "transfer": 138388,
+          "type": "css"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/screens/native-edict-xp-fill.webp?v=20261006-r6",
+          "ms": 885,
+          "bytes": 1404,
+          "transfer": 1704,
+          "type": "css"
+        }
+      ]
+    },
+    {
+      "name": "repeat-world",
+      "elapsed": 8.800000011920929,
+      "tasks": [],
+      "resources": []
+    },
+    {
+      "name": "paused-battle",
+      "elapsed": 9910.800000011921,
+      "tasks": [
+        {
+          "start": 25919.600000023842,
+          "ms": 312
+        }
+      ],
+      "resources": [
+        {
+          "url": "assets/takeover/animation/anim/CastleGreenClass.png",
+          "ms": 5213,
+          "bytes": 22301,
+          "transfer": 22601,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/maps/level-1.js?v=20261006-r11",
+          "ms": 5212,
+          "bytes": 419166,
+          "transfer": 419466,
+          "type": "script"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/native-render-ui.webp",
+          "ms": 5208,
+          "bytes": 40780,
+          "transfer": 41080,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/building-health-Purple.webp",
+          "ms": 3744,
+          "bytes": 2670,
+          "transfer": 2970,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/building-health-Green.webp",
+          "ms": 3744,
+          "bytes": 2336,
+          "transfer": 2636,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/packs/map-1.pack?v=20261006-r11",
+          "ms": 3414,
+          "bytes": 1279597,
+          "transfer": 1279897,
+          "type": "fetch"
+        },
+        {
+          "url": "assets/takeover/packs/unit-GreenCavalry.pack?v=20261006-r11",
+          "ms": 3001,
+          "bytes": 197253,
+          "transfer": 197553,
+          "type": "fetch"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/screens/native-recruit-Castle-Green-right.webp?v=20261006-r6",
+          "ms": 2857,
+          "bytes": 153140,
+          "transfer": 153440,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/spell-Green-heal.png?v=20261002",
+          "ms": 2857,
+          "bytes": 6718,
+          "transfer": 7018,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/packs/unit-GreenArchers.pack?v=20261006-r11",
+          "ms": 2433,
+          "bytes": 137573,
+          "transfer": 137873,
+          "type": "fetch"
+        },
+        {
+          "url": "assets/takeover/animation/anim/IconT1_W_ArchersClass.png",
+          "ms": 2419,
+          "bytes": 1078,
+          "transfer": 1378,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/ultimate/atlases/UltimateMessage3Class-0.webp?v=20261006-r5",
+          "ms": 1970,
+          "bytes": 809642,
+          "transfer": 809942,
+          "type": "fetch"
+        },
+        {
+          "url": "assets/takeover/packs/unit-GreenInfantry.pack?v=20261006-r11",
+          "ms": 1966,
+          "bytes": 130435,
+          "transfer": 130735,
+          "type": "fetch"
+        },
+        {
+          "url": "assets/takeover/ui/spell-Green-fire.png?v=20261002",
+          "ms": 1966,
+          "bytes": 6909,
+          "transfer": 7209,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/badge-health.webp",
+          "ms": 1965,
+          "bytes": 1174,
+          "transfer": 1474,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/unit-Green-Infantry.png",
+          "ms": 1965,
+          "bytes": 827,
+          "transfer": 1127,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/unit-Green-Archers.png",
+          "ms": 1964,
+          "bytes": 1050,
+          "transfer": 1350,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/spell-Green-summon.png?v=20261002",
+          "ms": 1964,
+          "bytes": 6859,
+          "transfer": 7159,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/spell-Green-ultimate.png?v=20261002",
+          "ms": 1964,
+          "bytes": 7038,
+          "transfer": 7338,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/ultimate/atlases/UltimateMessage1Class-0.webp?v=20261006-r5",
+          "ms": 1963,
+          "bytes": 203614,
+          "transfer": 203914,
+          "type": "fetch"
+        },
+        {
+          "url": "assets/takeover/ui/unit-Green-Cavalry.png",
+          "ms": 1963,
+          "bytes": 1003,
+          "transfer": 1303,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/unit-Green-Siege.png",
+          "ms": 1963,
+          "bytes": 1189,
+          "transfer": 1489,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/tile-Green.png",
+          "ms": 1962,
+          "bytes": 3292,
+          "transfer": 3592,
+          "type": "css"
+        },
+        {
+          "url": "assets/takeover/ui/spell-frame.png",
+          "ms": 1962,
+          "bytes": 1693,
+          "transfer": 1993,
+          "type": "css"
+        },
+        {
+          "url": "assets/takeover/animation/anim/ChestClass.png",
+          "ms": 1961,
+          "bytes": 5224,
+          "transfer": 5524,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/animation/anim/BuildHereTopClass.png",
+          "ms": 1961,
+          "bytes": 2392,
+          "transfer": 2692,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/packs/building-TownPurple.pack?v=20261006-r11",
+          "ms": 1775,
+          "bytes": 867214,
+          "transfer": 867514,
+          "type": "fetch"
+        },
+        {
+          "url": "assets/takeover/packs/building-CastlePurple.pack?v=20261006-r11",
+          "ms": 1767,
+          "bytes": 82354,
+          "transfer": 82654,
+          "type": "fetch"
+        },
+        {
+          "url": "assets/takeover/animation/anim/IconT1_W_InfantryClass.png",
+          "ms": 1432,
+          "bytes": 862,
+          "transfer": 1162,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/ui/frame.png",
+          "ms": 900,
+          "bytes": 6548,
+          "transfer": 6848,
+          "type": "img"
+        },
+        {
+          "url": "assets/takeover/packs/building-CastleGreen.pack?v=20261006-r11",
+          "ms": 885,
+          "bytes": 61061,
+          "transfer": 61361,
+          "type": "fetch"
+        },
+        {
+          "url": "assets/takeover/ui/atlases/native-world-swords.webp",
+          "ms": 1,
+          "bytes": 37356,
+          "transfer": 0,
+          "type": "img"
+        }
+      ]
+    }
+  ]
+}

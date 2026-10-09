@@ -1,0 +1,20 @@
+{
+  "scope": "Offline original color transforms and registered frames only",
+  "cache": {
+    "frames": 10,
+    "queued": 0,
+    "processedFrames": 10,
+    "estimatedMiB": 0.07
+  },
+  "transition": {
+    "frames": [
+      1,
+      35
+    ],
+    "duration": 1.1333333333333333,
+    "pivot": [
+      60.75,
+      45.25
+    ]
+  }
+}

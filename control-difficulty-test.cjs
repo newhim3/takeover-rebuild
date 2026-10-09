@@ -1,0 +1,19 @@
+const assert=require('node:assert/strict'),{Battle}=require('./engine'),P=require('./progression'),R=require('./unit-rules'),Difficulty=require('./difficulty');
+const node=(owner,x,y)=>({markerClass:'NodeCastle'+owner+'Class',x,y,locationNum:owner==='Green'?0:1});
+const lane={grid:Array(60).fill('1'.repeat(80)),roads:{points:[{x:100,y:100},{x:650,y:100}],edges:[[0,1]]},nodes:[node('Green',100,100),node('Red',650,100)]};
+const create=(difficulty='normal',mission=0)=>new Battle(structuredClone(lane),{difficulty,mission});
+const forks=create();forks.data.roads={points:[{x:100,y:100},{x:150,y:130},{x:200,y:100},{x:90,y:100},{x:210,y:100}],edges:[[0,1],[1,2],[0,3],[3,4],[4,2]]};forks.roadLinks=null;
+const short=forks.path({x:100,y:100},{x:200,y:100});assert.equal(forks.routeLength({x:100,y:100},short),140,'Choose the shortest route in the original isometric world');
+const b=create();b.ai=()=>{};const home=b.owned()[0],first=b.spawn(home,'infantry'),second=b.spawn(home,'infantry');b.command([first.id,second.id],{x:450,y:100});assert.equal(first.order.x-second.order.x,48);
+for(let i=0;i<250;i++){b.update(.04);for(const u of [first,second])assert.equal(u.y,100,'Stay on the road centerline');assert(first.x>=second.x,'Followers must not overtake through a squad');}
+const facing={facing:'Down',visualHeading:Math.PI/2};for(let i=0;i<100;i++){b.steer(facing,Math.PI/2+(i%2?.07:-.07),.04);assert.equal(facing.facing,'Down','Small path changes must not flicker facing');}
+first.x=300;first.y=100;first.order={x:450,y:100,target:null};b.knockBack(first,{x:280,y:100});assert(first.knockPath?.length);for(let i=0;i<10;i++)b.stepKnockback(first,.04);assert.equal(first.x,318);assert.equal(first.y,100);assert.equal(first.order.x,450);assert(first.path.length,'Resume the existing order after recoil');
+for(const difficulty of Difficulty.order){const test=create(difficulty),enemy=test.buildings.find(v=>v.owner==='Red');test.bonuses[0]=1;test.factionBonuses.Red=Difficulty.enemyBonus(difficulty,test.bonuses);const u=test.spawn(enemy,'infantry');assert.equal(u.tech,P.unit('Red','Infantry',2+Difficulty.get(difficulty).techLead).techLevel);enemy.level=3;const high=test.spawn(enemy,'infantry');assert(high.rank<=Difficulty.get(difficulty).rankCap);test.addXP(high,10000);assert(high.rank<=Difficulty.get(difficulty).rankCap);}
+const paid=create('expert'),enemy=paid.buildings.find(v=>v.owner==='Red');paid.spawn(enemy,'infantry');paid.spawn(enemy,'infantry');paid.time=31;paid.ai();assert.equal(enemy.level,2);assert.equal(paid.factions.Red.gold,150,'AI castle upgrades spend gold');
+assert.equal(create('nightmare').buildings.find(v=>v.owner==='Red').level,2);assert.equal(create('nightmare',4).buildings.find(v=>v.owner==='Red').level,3);
+for(let i=1;i<Difficulty.order.length;i++)assert(Difficulty.get(Difficulty.order[i]).three>Difficulty.get(Difficulty.order[i-1]).three);
+for(const name of Difficulty.order){assert.equal(Difficulty.stars(Difficulty.get(name).three,name),3);assert.equal(Difficulty.stars(Difficulty.get(name).three+.1,name),2);}
+const archer=P.unit('Green','Archers',1),range=archer.range;assert.equal(R.stats(archer,'archers').contactRange,range*.85);assert.equal(archer.range,range,'Keep the unpacked source record unchanged');
+const final=create();final.ai=()=>{};const last=final.buildings.find(v=>v.owner==='Red'),survivor=final.spawn(last,'infantry');final.destroy(last);survivor.x=300;survivor.y=100;final.claim(last,'Green');final.update(.04);assert.equal(final.result,'victory');assert(last.hp<last.maxHp,'Do not wait for full repair or remaining field troops');
+assert.equal(R.walkFrame(15.5,{baseSpeedAnimWalk:15.5}),30,'Use source 30 FPS walk timing, scaled by distance');
+console.log('PASS: shortest isometric road routes, group spacing, stable facing, road recoil/order recovery, five difficulty tiers, paid AI upgrades, proficiency caps, archer tuning and immediate final capture victory.');

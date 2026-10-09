@@ -1,0 +1,1072 @@
+{
+  "scope": "Original SWF unit registration matrices; no generated art or battle simulation",
+  "source": "takeover拆解/scratch/surgery/nohit.swf (existing extracted source)",
+  "pivots": {
+    "BlueMagic2RightSpecialA": [
+      28.85,
+      32.7
+    ],
+    "PurpleArchersUpSpecialA": [
+      15.55,
+      18.8
+    ],
+    "RedMagicLeftSpecialA": [
+      14.45,
+      20.8
+    ],
+    "RedCavalryUpSpecialA": [
+      26.05,
+      42.1
+    ],
+    "GreenMagicRightSpecialA": [
+      31.45,
+      42.8
+    ],
+    "BlueMagic2LeftSpecialA": [
+      20.4,
+      29.05
+    ],
+    "GreenInfantry3UpSpecialA": [
+      20.55,
+      24.45
+    ],
+    "RedCavalry2UpSpecialA": [
+      26.7,
+      40.8
+    ],
+    "BlueArchersDownSpecialA": [
+      13.45,
+      27.95
+    ],
+    "RedArchers2UpSpecialA": [
+      12.85,
+      20.1
+    ],
+    "PurpleMagic2LeftSpecialA": [
+      15.05,
+      22.6
+    ],
+    "RedCavalryRightSpecialA": [
+      23.55,
+      42.1
+    ],
+    "GreenMagic2LeftSpecialA": [
+      40.35,
+      48.15
+    ],
+    "PurpleArchers2RightSpecialA": [
+      8.8,
+      17.9
+    ],
+    "BlueArchers2RightSpecialA": [
+      16.8,
+      31.2
+    ],
+    "GreenArchers2RightSpecialA": [
+      10.2,
+      26.15
+    ],
+    "BlueMagicLeftSpecialA": [
+      19.75,
+      28.45
+    ],
+    "RedArchers2RightSpecialA": [
+      9,
+      20.1
+    ],
+    "PurpleMagicLeftSpecialA": [
+      16.05,
+      20.85
+    ],
+    "RedArchers2DownSpecialA": [
+      9.55,
+      20.1
+    ],
+    "PurpleMagic2DownSpecialA": [
+      16,
+      22.6
+    ],
+    "RedArchersLeftSpecialA": [
+      13.3,
+      18.05
+    ],
+    "GreenArchersDownSpecialA": [
+      8.55,
+      17.75
+    ],
+    "GreenArchersRightSpecialA": [
+      8.8,
+      18.3
+    ],
+    "GreenInfantry3RightSpecialA": [
+      12.3,
+      24.45
+    ],
+    "PurpleArchers2LeftSpecialA": [
+      13.05,
+      17.75
+    ],
+    "GreenMagic2UpSpecialA": [
+      39.85,
+      48.6
+    ],
+    "BlueArchersLeftSpecialA": [
+      16.95,
+      28.35
+    ],
+    "RedArchers2LeftSpecialA": [
+      12.1,
+      20.1
+    ],
+    "RedCavalry2LeftSpecialA": [
+      28,
+      38.95
+    ],
+    "BlueArchers3RightSpecialA": [
+      20.35,
+      48.4
+    ],
+    "PurpleArchersRightSpecialA": [
+      9.4,
+      18.8
+    ],
+    "GreenMagicLeftSpecialA": [
+      27.55,
+      44
+    ],
+    "BlueArchers3LeftSpecialA": [
+      27.7,
+      35.45
+    ],
+    "RedMagicUpSpecialA": [
+      14.25,
+      24.55
+    ],
+    "PurpleArchersDownSpecialA": [
+      8.8,
+      18.2
+    ],
+    "GreenInfantry3LeftSpecialA": [
+      19.15,
+      24.2
+    ],
+    "BlueMagicRightSpecialA": [
+      15.1,
+      29.4
+    ],
+    "GreenArchersLeftSpecialA": [
+      12.1,
+      18.4
+    ],
+    "BlueArchersRightSpecialA": [
+      14.1,
+      26.65
+    ],
+    "GreenArchersUpSpecialA": [
+      12.4,
+      18.5
+    ],
+    "RedCavalryDownSpecialA": [
+      26,
+      38.95
+    ],
+    "PurpleMagicUpSpecialA": [
+      14.7,
+      24.7
+    ],
+    "GreenArchers2UpSpecialA": [
+      13.5,
+      26.15
+    ],
+    "PurpleMagic2UpSpecialA": [
+      15.05,
+      30.35
+    ],
+    "GreenMagic2DownSpecialA": [
+      26.75,
+      48.15
+    ],
+    "BlueArchers2DownSpecialA": [
+      11.75,
+      25.5
+    ],
+    "RedArchersDownSpecialA": [
+      8.55,
+      18.05
+    ],
+    "RedCavalry2DownSpecialA": [
+      28.2,
+      38.95
+    ],
+    "GreenMagicUpSpecialA": [
+      23.25,
+      42.8
+    ],
+    "GreenMagicDownSpecialA": [
+      13,
+      44
+    ],
+    "RedArchersRightSpecialA": [
+      8.9,
+      18.35
+    ],
+    "PurpleArchersLeftSpecialA": [
+      16.15,
+      18.85
+    ],
+    "GreenArchers2LeftSpecialA": [
+      13.2,
+      21.7
+    ],
+    "RedArchersUpSpecialA": [
+      12.75,
+      18.35
+    ],
+    "GreenMagic2RightSpecialA": [
+      31.05,
+      48.6
+    ],
+    "GreenArchers2DownSpecialA": [
+      10.65,
+      21.7
+    ],
+    "RedCavalryLeftSpecialA": [
+      28,
+      38.95
+    ],
+    "PurpleMagicRightSpecialA": [
+      11.9,
+      24.7
+    ],
+    "RedMagicDownSpecialA": [
+      12.2,
+      20.85
+    ],
+    "GreenInfantry3DownSpecialA": [
+      11,
+      24.4
+    ],
+    "BlueArchers2LeftSpecialA": [
+      20.65,
+      25.45
+    ],
+    "BlueArchers2UpSpecialA": [
+      20.75,
+      31.2
+    ],
+    "PurpleMagicDownSpecialA": [
+      12.2,
+      20.85
+    ],
+    "BlueMagicDownSpecialA": [
+      12.7,
+      28.45
+    ],
+    "BlueMagicUpSpecialA": [
+      20.35,
+      29.4
+    ],
+    "BlueArchers3UpSpecialA": [
+      38.1,
+      48.4
+    ],
+    "RedMagicRightSpecialA": [
+      11.75,
+      24.55
+    ],
+    "BlueArchersUpSpecialA": [
+      14.1,
+      26.65
+    ],
+    "BlueArchers3DownSpecialA": [
+      30.25,
+      35.45
+    ],
+    "RedCavalry2RightSpecialA": [
+      23.2,
+      40.8
+    ],
+    "PurpleArchers2UpSpecialA": [
+      13.35,
+      17.9
+    ],
+    "PurpleMagic2RightSpecialA": [
+      15.5,
+      30.35
+    ],
+    "BlueMagic2UpSpecialA": [
+      9.85,
+      32.95
+    ],
+    "BlueMagic2DownSpecialA": [
+      7.85,
+      29.05
+    ],
+    "PurpleArchers2DownSpecialA": [
+      8.5,
+      17.75
+    ]
+  },
+  "animations": [
+    {
+      "key": "BlueMagic2RightSpecialA",
+      "charId": 1161,
+      "frames": 20,
+      "pivot": [
+        28.85,
+        32.7
+      ],
+      "originalSvg": "DefineSprite_1161_BlueMagic2RightSpecialA_BlueMagic2RightSpecialA/1.svg"
+    },
+    {
+      "key": "PurpleArchersUpSpecialA",
+      "charId": 1438,
+      "frames": 30,
+      "pivot": [
+        15.55,
+        18.8
+      ],
+      "originalSvg": "DefineSprite_1438_PurpleArchersUpSpecialA_PurpleArchersUpSpecialA/1.svg"
+    },
+    {
+      "key": "RedMagicLeftSpecialA",
+      "charId": 1576,
+      "frames": 20,
+      "pivot": [
+        14.45,
+        20.8
+      ],
+      "originalSvg": "DefineSprite_1576_RedMagicLeftSpecialA_RedMagicLeftSpecialA/1.svg"
+    },
+    {
+      "key": "RedCavalryUpSpecialA",
+      "charId": 1667,
+      "frames": 30,
+      "pivot": [
+        26.05,
+        42.1
+      ],
+      "originalSvg": "DefineSprite_1667_RedCavalryUpSpecialA_RedCavalryUpSpecialA/1.svg"
+    },
+    {
+      "key": "GreenMagicRightSpecialA",
+      "charId": 166,
+      "frames": 30,
+      "pivot": [
+        31.45,
+        42.8
+      ],
+      "originalSvg": "DefineSprite_166_GreenMagicRightSpecialA_GreenMagicRightSpecialA/1.svg"
+    },
+    {
+      "key": "BlueMagic2LeftSpecialA",
+      "charId": 2004,
+      "frames": 20,
+      "pivot": [
+        20.4,
+        29.05
+      ],
+      "originalSvg": "DefineSprite_2004_BlueMagic2LeftSpecialA_BlueMagic2LeftSpecialA/1.svg"
+    },
+    {
+      "key": "GreenInfantry3UpSpecialA",
+      "charId": 2109,
+      "frames": 15,
+      "pivot": [
+        20.55,
+        24.45
+      ],
+      "originalSvg": "DefineSprite_2109_GreenInfantry3UpSpecialA_GreenInfantry3UpSpecialA/1.svg"
+    },
+    {
+      "key": "RedCavalry2UpSpecialA",
+      "charId": 2128,
+      "frames": 30,
+      "pivot": [
+        26.7,
+        40.8
+      ],
+      "originalSvg": "DefineSprite_2128_RedCavalry2UpSpecialA_RedCavalry2UpSpecialA/1.svg"
+    },
+    {
+      "key": "BlueArchersDownSpecialA",
+      "charId": 2154,
+      "frames": 30,
+      "pivot": [
+        13.45,
+        27.95
+      ],
+      "originalSvg": "DefineSprite_2154_BlueArchersDownSpecialA_BlueArchersDownSpecialA/1.svg"
+    },
+    {
+      "key": "RedArchers2UpSpecialA",
+      "charId": 2179,
+      "frames": 30,
+      "pivot": [
+        12.85,
+        20.1
+      ],
+      "originalSvg": "DefineSprite_2179_RedArchers2UpSpecialA_RedArchers2UpSpecialA/1.svg"
+    },
+    {
+      "key": "PurpleMagic2LeftSpecialA",
+      "charId": 2197,
+      "frames": 20,
+      "pivot": [
+        15.05,
+        22.6
+      ],
+      "originalSvg": "DefineSprite_2197_PurpleMagic2LeftSpecialA_PurpleMagic2LeftSpecialA/1.svg"
+    },
+    {
+      "key": "RedCavalryRightSpecialA",
+      "charId": 2485,
+      "frames": 30,
+      "pivot": [
+        23.55,
+        42.1
+      ],
+      "originalSvg": "DefineSprite_2485_RedCavalryRightSpecialA_RedCavalryRightSpecialA/1.svg"
+    },
+    {
+      "key": "GreenMagic2LeftSpecialA",
+      "charId": 2501,
+      "frames": 30,
+      "pivot": [
+        40.35,
+        48.15
+      ],
+      "originalSvg": "DefineSprite_2501_GreenMagic2LeftSpecialA_GreenMagic2LeftSpecialA/1.svg"
+    },
+    {
+      "key": "PurpleArchers2RightSpecialA",
+      "charId": 2773,
+      "frames": 30,
+      "pivot": [
+        8.8,
+        17.9
+      ],
+      "originalSvg": "DefineSprite_2773_PurpleArchers2RightSpecialA_PurpleArchers2RightSpecialA/1.svg"
+    },
+    {
+      "key": "BlueArchers2RightSpecialA",
+      "charId": 2815,
+      "frames": 30,
+      "pivot": [
+        16.8,
+        31.2
+      ],
+      "originalSvg": "DefineSprite_2815_BlueArchers2RightSpecialA_BlueArchers2RightSpecialA/1.svg"
+    },
+    {
+      "key": "GreenArchers2RightSpecialA",
+      "charId": 2930,
+      "frames": 30,
+      "pivot": [
+        10.2,
+        26.15
+      ],
+      "originalSvg": "DefineSprite_2930_GreenArchers2RightSpecialA_GreenArchers2RightSpecialA/1.svg"
+    },
+    {
+      "key": "BlueMagicLeftSpecialA",
+      "charId": 2952,
+      "frames": 28,
+      "pivot": [
+        19.75,
+        28.45
+      ],
+      "originalSvg": "DefineSprite_2952_BlueMagicLeftSpecialA_BlueMagicLeftSpecialA/1.svg"
+    },
+    {
+      "key": "RedArchers2RightSpecialA",
+      "charId": 2961,
+      "frames": 30,
+      "pivot": [
+        9,
+        20.1
+      ],
+      "originalSvg": "DefineSprite_2961_RedArchers2RightSpecialA_RedArchers2RightSpecialA/1.svg"
+    },
+    {
+      "key": "PurpleMagicLeftSpecialA",
+      "charId": 3048,
+      "frames": 20,
+      "pivot": [
+        16.05,
+        20.85
+      ],
+      "originalSvg": "DefineSprite_3048_PurpleMagicLeftSpecialA_PurpleMagicLeftSpecialA/1.svg"
+    },
+    {
+      "key": "RedArchers2DownSpecialA",
+      "charId": 3254,
+      "frames": 30,
+      "pivot": [
+        9.55,
+        20.1
+      ],
+      "originalSvg": "DefineSprite_3254_RedArchers2DownSpecialA_RedArchers2DownSpecialA/1.svg"
+    },
+    {
+      "key": "PurpleMagic2DownSpecialA",
+      "charId": 3255,
+      "frames": 20,
+      "pivot": [
+        16,
+        22.6
+      ],
+      "originalSvg": "DefineSprite_3255_PurpleMagic2DownSpecialA_PurpleMagic2DownSpecialA/1.svg"
+    },
+    {
+      "key": "RedArchersLeftSpecialA",
+      "charId": 3604,
+      "frames": 30,
+      "pivot": [
+        13.3,
+        18.05
+      ],
+      "originalSvg": "DefineSprite_3604_RedArchersLeftSpecialA_RedArchersLeftSpecialA/1.svg"
+    },
+    {
+      "key": "GreenArchersDownSpecialA",
+      "charId": 3695,
+      "frames": 30,
+      "pivot": [
+        8.55,
+        17.75
+      ],
+      "originalSvg": "DefineSprite_3695_GreenArchersDownSpecialA_GreenArchersDownSpecialA/1.svg"
+    },
+    {
+      "key": "GreenArchersRightSpecialA",
+      "charId": 3696,
+      "frames": 30,
+      "pivot": [
+        8.8,
+        18.3
+      ],
+      "originalSvg": "DefineSprite_3696_GreenArchersRightSpecialA_GreenArchersRightSpecialA/1.svg"
+    },
+    {
+      "key": "GreenInfantry3RightSpecialA",
+      "charId": 3956,
+      "frames": 15,
+      "pivot": [
+        12.3,
+        24.45
+      ],
+      "originalSvg": "DefineSprite_3956_GreenInfantry3RightSpecialA_GreenInfantry3RightSpecialA/1.svg"
+    },
+    {
+      "key": "PurpleArchers2LeftSpecialA",
+      "charId": 4038,
+      "frames": 30,
+      "pivot": [
+        13.05,
+        17.75
+      ],
+      "originalSvg": "DefineSprite_4038_PurpleArchers2LeftSpecialA_PurpleArchers2LeftSpecialA/1.svg"
+    },
+    {
+      "key": "GreenMagic2UpSpecialA",
+      "charId": 4050,
+      "frames": 30,
+      "pivot": [
+        39.85,
+        48.6
+      ],
+      "originalSvg": "DefineSprite_4050_GreenMagic2UpSpecialA_GreenMagic2UpSpecialA/1.svg"
+    },
+    {
+      "key": "BlueArchersLeftSpecialA",
+      "charId": 4215,
+      "frames": 30,
+      "pivot": [
+        16.95,
+        28.35
+      ],
+      "originalSvg": "DefineSprite_4215_BlueArchersLeftSpecialA_BlueArchersLeftSpecialA/1.svg"
+    },
+    {
+      "key": "RedArchers2LeftSpecialA",
+      "charId": 4234,
+      "frames": 30,
+      "pivot": [
+        12.1,
+        20.1
+      ],
+      "originalSvg": "DefineSprite_4234_RedArchers2LeftSpecialA_RedArchers2LeftSpecialA/1.svg"
+    },
+    {
+      "key": "RedCavalry2LeftSpecialA",
+      "charId": 4291,
+      "frames": 30,
+      "pivot": [
+        28,
+        38.95
+      ],
+      "originalSvg": "DefineSprite_4291_RedCavalry2LeftSpecialA_RedCavalry2LeftSpecialA/1.svg"
+    },
+    {
+      "key": "BlueArchers3RightSpecialA",
+      "charId": 4343,
+      "frames": 20,
+      "pivot": [
+        20.35,
+        48.4
+      ],
+      "originalSvg": "DefineSprite_4343_BlueArchers3RightSpecialA_BlueArchers3RightSpecialA/1.svg"
+    },
+    {
+      "key": "PurpleArchersRightSpecialA",
+      "charId": 4434,
+      "frames": 30,
+      "pivot": [
+        9.4,
+        18.8
+      ],
+      "originalSvg": "DefineSprite_4434_PurpleArchersRightSpecialA_PurpleArchersRightSpecialA/1.svg"
+    },
+    {
+      "key": "GreenMagicLeftSpecialA",
+      "charId": 4438,
+      "frames": 30,
+      "pivot": [
+        27.55,
+        44
+      ],
+      "originalSvg": "DefineSprite_4438_GreenMagicLeftSpecialA_GreenMagicLeftSpecialA/1.svg"
+    },
+    {
+      "key": "BlueArchers3LeftSpecialA",
+      "charId": 4874,
+      "frames": 20,
+      "pivot": [
+        27.7,
+        35.45
+      ],
+      "originalSvg": "DefineSprite_4874_BlueArchers3LeftSpecialA_BlueArchers3LeftSpecialA/1.svg"
+    },
+    {
+      "key": "RedMagicUpSpecialA",
+      "charId": 5025,
+      "frames": 20,
+      "pivot": [
+        14.25,
+        24.55
+      ],
+      "originalSvg": "DefineSprite_5025_RedMagicUpSpecialA_RedMagicUpSpecialA/1.svg"
+    },
+    {
+      "key": "PurpleArchersDownSpecialA",
+      "charId": 5075,
+      "frames": 30,
+      "pivot": [
+        8.8,
+        18.2
+      ],
+      "originalSvg": "DefineSprite_5075_PurpleArchersDownSpecialA_PurpleArchersDownSpecialA/1.svg"
+    },
+    {
+      "key": "GreenInfantry3LeftSpecialA",
+      "charId": 5138,
+      "frames": 15,
+      "pivot": [
+        19.15,
+        24.2
+      ],
+      "originalSvg": "DefineSprite_5138_GreenInfantry3LeftSpecialA_GreenInfantry3LeftSpecialA/1.svg"
+    },
+    {
+      "key": "BlueMagicRightSpecialA",
+      "charId": 5381,
+      "frames": 28,
+      "pivot": [
+        15.1,
+        29.4
+      ],
+      "originalSvg": "DefineSprite_5381_BlueMagicRightSpecialA_BlueMagicRightSpecialA/1.svg"
+    },
+    {
+      "key": "GreenArchersLeftSpecialA",
+      "charId": 5549,
+      "frames": 30,
+      "pivot": [
+        12.1,
+        18.4
+      ],
+      "originalSvg": "DefineSprite_5549_GreenArchersLeftSpecialA_GreenArchersLeftSpecialA/1.svg"
+    },
+    {
+      "key": "BlueArchersRightSpecialA",
+      "charId": 5579,
+      "frames": 30,
+      "pivot": [
+        14.1,
+        26.65
+      ],
+      "originalSvg": "DefineSprite_5579_BlueArchersRightSpecialA_BlueArchersRightSpecialA/1.svg"
+    },
+    {
+      "key": "GreenArchersUpSpecialA",
+      "charId": 5586,
+      "frames": 30,
+      "pivot": [
+        12.4,
+        18.5
+      ],
+      "originalSvg": "DefineSprite_5586_GreenArchersUpSpecialA_GreenArchersUpSpecialA/1.svg"
+    },
+    {
+      "key": "RedCavalryDownSpecialA",
+      "charId": 5658,
+      "frames": 30,
+      "pivot": [
+        26,
+        38.95
+      ],
+      "originalSvg": "DefineSprite_5658_RedCavalryDownSpecialA_RedCavalryDownSpecialA/1.svg"
+    },
+    {
+      "key": "PurpleMagicUpSpecialA",
+      "charId": 565,
+      "frames": 20,
+      "pivot": [
+        14.7,
+        24.7
+      ],
+      "originalSvg": "DefineSprite_565_PurpleMagicUpSpecialA_PurpleMagicUpSpecialA/1.svg"
+    },
+    {
+      "key": "GreenArchers2UpSpecialA",
+      "charId": 5672,
+      "frames": 30,
+      "pivot": [
+        13.5,
+        26.15
+      ],
+      "originalSvg": "DefineSprite_5672_GreenArchers2UpSpecialA_GreenArchers2UpSpecialA/1.svg"
+    },
+    {
+      "key": "PurpleMagic2UpSpecialA",
+      "charId": 5780,
+      "frames": 20,
+      "pivot": [
+        15.05,
+        30.35
+      ],
+      "originalSvg": "DefineSprite_5780_PurpleMagic2UpSpecialA_PurpleMagic2UpSpecialA/1.svg"
+    },
+    {
+      "key": "GreenMagic2DownSpecialA",
+      "charId": 6061,
+      "frames": 30,
+      "pivot": [
+        26.75,
+        48.15
+      ],
+      "originalSvg": "DefineSprite_6061_GreenMagic2DownSpecialA_GreenMagic2DownSpecialA/1.svg"
+    },
+    {
+      "key": "BlueArchers2DownSpecialA",
+      "charId": 6063,
+      "frames": 30,
+      "pivot": [
+        11.75,
+        25.5
+      ],
+      "originalSvg": "DefineSprite_6063_BlueArchers2DownSpecialA_BlueArchers2DownSpecialA/1.svg"
+    },
+    {
+      "key": "RedArchersDownSpecialA",
+      "charId": 6214,
+      "frames": 30,
+      "pivot": [
+        8.55,
+        18.05
+      ],
+      "originalSvg": "DefineSprite_6214_RedArchersDownSpecialA_RedArchersDownSpecialA/1.svg"
+    },
+    {
+      "key": "RedCavalry2DownSpecialA",
+      "charId": 6558,
+      "frames": 30,
+      "pivot": [
+        28.2,
+        38.95
+      ],
+      "originalSvg": "DefineSprite_6558_RedCavalry2DownSpecialA_RedCavalry2DownSpecialA/1.svg"
+    },
+    {
+      "key": "GreenMagicUpSpecialA",
+      "charId": 6567,
+      "frames": 30,
+      "pivot": [
+        23.25,
+        42.8
+      ],
+      "originalSvg": "DefineSprite_6567_GreenMagicUpSpecialA_GreenMagicUpSpecialA/1.svg"
+    },
+    {
+      "key": "GreenMagicDownSpecialA",
+      "charId": 6626,
+      "frames": 30,
+      "pivot": [
+        13,
+        44
+      ],
+      "originalSvg": "DefineSprite_6626_GreenMagicDownSpecialA_GreenMagicDownSpecialA/1.svg"
+    },
+    {
+      "key": "RedArchersRightSpecialA",
+      "charId": 6982,
+      "frames": 30,
+      "pivot": [
+        8.9,
+        18.35
+      ],
+      "originalSvg": "DefineSprite_6982_RedArchersRightSpecialA_RedArchersRightSpecialA/1.svg"
+    },
+    {
+      "key": "PurpleArchersLeftSpecialA",
+      "charId": 6995,
+      "frames": 30,
+      "pivot": [
+        16.15,
+        18.85
+      ],
+      "originalSvg": "DefineSprite_6995_PurpleArchersLeftSpecialA_PurpleArchersLeftSpecialA/1.svg"
+    },
+    {
+      "key": "GreenArchers2LeftSpecialA",
+      "charId": 7062,
+      "frames": 30,
+      "pivot": [
+        13.2,
+        21.7
+      ],
+      "originalSvg": "DefineSprite_7062_GreenArchers2LeftSpecialA_GreenArchers2LeftSpecialA/1.svg"
+    },
+    {
+      "key": "RedArchersUpSpecialA",
+      "charId": 7092,
+      "frames": 30,
+      "pivot": [
+        12.75,
+        18.35
+      ],
+      "originalSvg": "DefineSprite_7092_RedArchersUpSpecialA_RedArchersUpSpecialA/1.svg"
+    },
+    {
+      "key": "GreenMagic2RightSpecialA",
+      "charId": 7120,
+      "frames": 30,
+      "pivot": [
+        31.05,
+        48.6
+      ],
+      "originalSvg": "DefineSprite_7120_GreenMagic2RightSpecialA_GreenMagic2RightSpecialA/1.svg"
+    },
+    {
+      "key": "GreenArchers2DownSpecialA",
+      "charId": 7122,
+      "frames": 30,
+      "pivot": [
+        10.65,
+        21.7
+      ],
+      "originalSvg": "DefineSprite_7122_GreenArchers2DownSpecialA_GreenArchers2DownSpecialA/1.svg"
+    },
+    {
+      "key": "RedCavalryLeftSpecialA",
+      "charId": 7216,
+      "frames": 30,
+      "pivot": [
+        28,
+        38.95
+      ],
+      "originalSvg": "DefineSprite_7216_RedCavalryLeftSpecialA_RedCavalryLeftSpecialA/1.svg"
+    },
+    {
+      "key": "PurpleMagicRightSpecialA",
+      "charId": 7255,
+      "frames": 20,
+      "pivot": [
+        11.9,
+        24.7
+      ],
+      "originalSvg": "DefineSprite_7255_PurpleMagicRightSpecialA_PurpleMagicRightSpecialA/1.svg"
+    },
+    {
+      "key": "RedMagicDownSpecialA",
+      "charId": 7284,
+      "frames": 20,
+      "pivot": [
+        12.2,
+        20.85
+      ],
+      "originalSvg": "DefineSprite_7284_RedMagicDownSpecialA_RedMagicDownSpecialA/1.svg"
+    },
+    {
+      "key": "GreenInfantry3DownSpecialA",
+      "charId": 7420,
+      "frames": 15,
+      "pivot": [
+        11,
+        24.4
+      ],
+      "originalSvg": "DefineSprite_7420_GreenInfantry3DownSpecialA_GreenInfantry3DownSpecialA/1.svg"
+    },
+    {
+      "key": "BlueArchers2LeftSpecialA",
+      "charId": 7447,
+      "frames": 30,
+      "pivot": [
+        20.65,
+        25.45
+      ],
+      "originalSvg": "DefineSprite_7447_BlueArchers2LeftSpecialA_BlueArchers2LeftSpecialA/1.svg"
+    },
+    {
+      "key": "BlueArchers2UpSpecialA",
+      "charId": 7474,
+      "frames": 30,
+      "pivot": [
+        20.75,
+        31.2
+      ],
+      "originalSvg": "DefineSprite_7474_BlueArchers2UpSpecialA_BlueArchers2UpSpecialA/1.svg"
+    },
+    {
+      "key": "PurpleMagicDownSpecialA",
+      "charId": 7544,
+      "frames": 20,
+      "pivot": [
+        12.2,
+        20.85
+      ],
+      "originalSvg": "DefineSprite_7544_PurpleMagicDownSpecialA_PurpleMagicDownSpecialA/1.svg"
+    },
+    {
+      "key": "BlueMagicDownSpecialA",
+      "charId": 7568,
+      "frames": 28,
+      "pivot": [
+        12.7,
+        28.45
+      ],
+      "originalSvg": "DefineSprite_7568_BlueMagicDownSpecialA_BlueMagicDownSpecialA/1.svg"
+    },
+    {
+      "key": "BlueMagicUpSpecialA",
+      "charId": 7610,
+      "frames": 28,
+      "pivot": [
+        20.35,
+        29.4
+      ],
+      "originalSvg": "DefineSprite_7610_BlueMagicUpSpecialA_BlueMagicUpSpecialA/1.svg"
+    },
+    {
+      "key": "BlueArchers3UpSpecialA",
+      "charId": 7622,
+      "frames": 20,
+      "pivot": [
+        38.1,
+        48.4
+      ],
+      "originalSvg": "DefineSprite_7622_BlueArchers3UpSpecialA_BlueArchers3UpSpecialA/1.svg"
+    },
+    {
+      "key": "RedMagicRightSpecialA",
+      "charId": 7658,
+      "frames": 20,
+      "pivot": [
+        11.75,
+        24.55
+      ],
+      "originalSvg": "DefineSprite_7658_RedMagicRightSpecialA_RedMagicRightSpecialA/1.svg"
+    },
+    {
+      "key": "BlueArchersUpSpecialA",
+      "charId": 7767,
+      "frames": 30,
+      "pivot": [
+        14.1,
+        26.65
+      ],
+      "originalSvg": "DefineSprite_7767_BlueArchersUpSpecialA_BlueArchersUpSpecialA/1.svg"
+    },
+    {
+      "key": "BlueArchers3DownSpecialA",
+      "charId": 8138,
+      "frames": 20,
+      "pivot": [
+        30.25,
+        35.45
+      ],
+      "originalSvg": "DefineSprite_8138_BlueArchers3DownSpecialA_BlueArchers3DownSpecialA/1.svg"
+    },
+    {
+      "key": "RedCavalry2RightSpecialA",
+      "charId": 8335,
+      "frames": 30,
+      "pivot": [
+        23.2,
+        40.8
+      ],
+      "originalSvg": "DefineSprite_8335_RedCavalry2RightSpecialA_RedCavalry2RightSpecialA/1.svg"
+    },
+    {
+      "key": "PurpleArchers2UpSpecialA",
+      "charId": 8343,
+      "frames": 30,
+      "pivot": [
+        13.35,
+        17.9
+      ],
+      "originalSvg": "DefineSprite_8343_PurpleArchers2UpSpecialA_PurpleArchers2UpSpecialA/1.svg"
+    },
+    {
+      "key": "PurpleMagic2RightSpecialA",
+      "charId": 8367,
+      "frames": 20,
+      "pivot": [
+        15.5,
+        30.35
+      ],
+      "originalSvg": "DefineSprite_8367_PurpleMagic2RightSpecialA_PurpleMagic2RightSpecialA/1.svg"
+    },
+    {
+      "key": "BlueMagic2UpSpecialA",
+      "charId": 8386,
+      "frames": 20,
+      "pivot": [
+        9.85,
+        32.95
+      ],
+      "originalSvg": "DefineSprite_8386_BlueMagic2UpSpecialA_BlueMagic2UpSpecialA/1.svg"
+    },
+    {
+      "key": "BlueMagic2DownSpecialA",
+      "charId": 8540,
+      "frames": 20,
+      "pivot": [
+        7.85,
+        29.05
+      ],
+      "originalSvg": "DefineSprite_8540_BlueMagic2DownSpecialA_BlueMagic2DownSpecialA/1.svg"
+    },
+    {
+      "key": "PurpleArchers2DownSpecialA",
+      "charId": 8546,
+      "frames": 30,
+      "pivot": [
+        8.5,
+        17.75
+      ],
+      "originalSvg": "DefineSprite_8546_PurpleArchers2DownSpecialA_PurpleArchers2DownSpecialA/1.svg"
+    }
+  ]
+}
