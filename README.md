@@ -1,8 +1,8 @@
 # 城邦征战 · 黑暗边境
 
-专用私有仓库：[newhim3/takeover-rebuild](https://github.com/newhim3/takeover-rebuild)。可运行的单文件 EXE 在 [Releases](https://github.com/newhim3/takeover-rebuild/releases) 下载；源码、完整原素材与来源记录留在仓库。后续本项目完成的修改会提交并同步到这里。
+专用公开仓库：[newhim3/takeover-rebuild](https://github.com/newhim3/takeover-rebuild)。可运行的单文件 EXE 在 [Releases](https://github.com/newhim3/takeover-rebuild/releases) 下载；源码、完整原素材与来源记录留在仓库。后续本项目完成的修改会提交并同步到这里。
 
-克隆后安装 Node.js 24 或更新版本，在项目目录运行 `node server.cjs` 即可启动本地服务。Windows 发布构建运行 `powershell -NoProfile -ExecutionPolicy Bypass -File tools/build-release.ps1`，生成 `dist/城邦征战.exe`。它使用版本化的素材清单、逐文件校验和完整构建链路，详见 [克隆与发布构建](reference/GitHub克隆与发布构建-r27-20261009.md)。下载 EXE 无需另装 Node；私有仓库与 Release 需要有访问权限的 GitHub 账号。
+克隆后安装 Node.js 24 或更新版本，在项目目录运行 `node server.cjs` 即可启动本地服务。Windows 发布构建运行 `powershell -NoProfile -ExecutionPolicy Bypass -File tools/build-release.ps1`，生成 `dist/城邦征战.exe`。它使用版本化的素材清单、逐文件校验和完整构建链路，详见 [克隆与发布构建](reference/GitHub克隆与发布构建-r27-20261009.md)。下载 EXE 无需另装 Node；仓库和 Release 已公开，可以直接查看和下载。
 
 2026-10-09：单文件分发入口为 `dist/城邦征战.exe`，内含本地运行环境与发布资源。首次运行自动准备本地缓存，后续直接复用；无需另外解压素材或使用 CMD。用法与素材审计边界见 [单文件 EXE 说明](reference/单文件EXE使用说明-r26-20261009.md)。
 
